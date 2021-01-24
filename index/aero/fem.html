@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FEM</title>
+
+	<link href="../_css/bootstrap.min.css" rel="stylesheet">
+ 	<link rel="stylesheet" href="../_css/style.css">
+</head>
+<body>
+	<!-- ================================= Navigation ==================================== -->
+	<nav class="navbar navbar-default">
+
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+
+			<div class="navbar-header">
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			<a class="navbar-brand" href="C:\avk\index.html">AvK <span class="glyphicon glyphicon-flash"></span></a>
+
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav">
+			<!-- Sites -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sites<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\stravkcom\index.html">stravk.com</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\sowlru\index.html">sowl.ru</a></li>
+						</ul>
+        			</li>
+			<!-- Aero -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aero<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\aero\general.html">General</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="active"><a href="C:\avk\index\aero\fem.html">FEM</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\static.html">Static</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fatigue.html">Fatigue</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\dt.html">Damage Tolerance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\structure.html">Structure</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\doors.html">Door</a></li>
+						</ul>
+        			</li>
+			<!-- Code General -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code G<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_g\basics.html">Basics</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\objects.html">Objects</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\algorithm.html">Algorithm</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\other_code.html">Other</a></li>
+						</ul>
+	    			</li>
+			<!-- Code Project -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code P<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_p\c.html">C</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\unix.html">UX</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\python.html">Python</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\php.html">PHP</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\vba.html">VBA</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\ml.html">ML</a></li>
+						</ul>
+	    			</li>
+			<!-- Front -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Front<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\front\web.html">HTML - 1991</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ecma.html">ECMA - 1995</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ajax.html">AJAX - 2005</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\jquery.html">jQuery - 2006</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\nodejs.html">Node - 2009</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\angular.html">Angular - 2014</a></li>
+						</ul>
+	    			</li>
+			<!-- Other -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\other\finance.html">Finance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\english.html">English</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\electro.html">Electro</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\scratch.html">Scratch</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\roblox.html">Roblox</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\other.html">Other</a></li>
+						</ul>
+	    			</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+
+		</div><!-- /.container-fluid -->
+
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<h3>FEM |</h3>
+				<div class="panel-group" id="accord">
+					<!-- ======================================= Patran ======================================= -->			  
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#Patran" data-toggle="collapse" data-panel="#accord">PATRAN</a> |
+						</div>
+						<div class="panel-collapse collapse" id="Patran">
+							<div class="panel-body">
+								<p>
+1 | Установка |<br>
+_._ | docs: <a href="\\fil-mow01-01\Stress\MSCSOFTWARE\TR_MATERIALS_LIBRARY\NASTRAN_120\nas120_Coursenotes_md_r2" target="_blank">120</a> |
+<a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\" target="_blank">nastran</a> |
+<a href="\\fil-mow01-01\PTGroup\STRESS\MSC\PAT304_PCL_Customization\Pat304_CourseNotes.pdf" target="_blank">PCL</a> |
+<a href="https://docs.plm.automation.siemens.com/data_services/resources/nxnastran/10/help/en_US/custom/theoretical/theoretical_NXN.pdf" target="_blank">theory Nastran</a> |
+<a href="http://web.mscsoftware.com/patran/current/html_patran/wwhelp/wwhimpl/js/html/wwhelp.htm#href=Tutorial%20Code%20Examples/code_intro.02.2.html" target="_blank">www</a> |<br>
+_.1 | установить Patran & Nastran 2017 |<br>
+_.2 | copy folder + ярлык Patran <a href="C:/avk_pdf/aero/5_fem/" target="_blank">C:/avk_pdf/aero/5_fem</a> -> <a href="C:/avk/test/patran/" target="_blank">C:/avk/test/patran/</a> |<br>
+_._ | check: ярлык Patran -> RC -> Properties -> Start in: C:\avk\test\patran |<br>
+_.3 | запустить Patran 2017.0.2 |<br>
+_.4 | file -> session -> play/ record -> t.ses |<br>
+_.5 | 1.points -> 2.lines -> 3.mesh -> 4.mat -> 5.properties -> 6.loads&amp;bc -> 7.equiv |<br>
+								</p><div class="divider"></div><p>
+2 | Часто используемые |<br>
+_.1 | отобразить сечение 1D: Display -> Load/BC/Elem.Props.. -> Beam Display:3DFullSpan+Offset |<br>
+_.2 | отобразить сечение 2D: MSC Tools -> Properties -> 3D Plate Thickness -> выбрать эл-ты |<br>
+_.3 | отобразить эпюру моментов: MSC Tools -> Results -> Beam Results |<br>
+_._ | Analysis -> Subcases -> Output Result: Element Forces + Grid Point Force Balance |<br>
+_.4 | белый экран: панель Viewport -> Tile Viewport(последняя) |<br>
+								</p><div class="divider"></div><p>
+3 | 0D.ses |<br>
+_.1 | bush | фастенеры Рутмена | методика расчета Хута? |<br>
+_._ | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=3246" target="_blank">PBUSH</a> | #prop | K(flag) | 6 stiffness |<br>
+_._ | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=1552" target="_blank">CBUSH</a> | #el | #prop | 2 node | GO/X1 |<br>
+_.2 | rbe | 2:жесткий в соединениях | 3:задаются коэффициенты |<br>
+								</p><div class="divider"></div><p>
+4 | Mat |<br>
+_.1 | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=2320" target="_blank">MAT1</a>: linear isotropic | id_mat | E | G | nu | density | thermal |<br>
+_.2 | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=2324" target="_blank">MAT2</a>: linear anisotropic | id_mat | 2*3 matrix | density | thermal |<br>
+_.3 | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=2327" target="_blank">MAT3</a>: linear orthotropic | id_mat | 3*E | 3*nu | density | G | 3*thermal |<br>
+								</p><div class="divider"></div><p>
+4 | Rod | tens/comp/torsion |<br>
+_.1 | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=3387" target="_blank">PROD</a> | id_prop | id_mat | A | J | mass per length |<br>
+_.2 | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=1710" target="_blank">CROD</a> | id_el | id_prop | 2 node |<br>
+_.3 | rod_01.ses $#triangle 3x3 nodes |<br>
+								</p><div class="divider"></div><p>
+5 | Bar/Beam |<br>
+_.1 | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=3166" target="_blank">PBAR</a> | id_prop | id_mat | A | 2*I | J | mass per length |<br>
+_.2 | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=3166" target="_blank">PBEAM</a> | id_prop | id_mat | A | 2*I | J | mass per length |<br>
+_.3 | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=3168" target="_blank">PBARL</a> | id_prop | id_mat | group | type(bar,..) | 9*DIM | mass per length |<br>
+_._ | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=1533" target="_blank">CBAR</a>  | id_el | id_prop | 2 node | orient.vector | 2 DOF | 2 offset vector |<br>
+_._ | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=1540" target="_blank">CBEAM</a> | id_el | id_prop | 2 node | orient.vector | 2 DOF | 2 offset vector |<br>
+_.1 | beam_01_2support.ses $#simple supported beam with offset |<br>
+								</p><div class="divider"></div><p>
+6 | Quad |<br>
+_.2 | <a href="C:\appl\MSC\Nastran_Documentation\20171\doc\pdf_nastran\reference\qrg\qrg.pdf#page=3398" target="_blank">PSHELL</a> | id_prop | id_mat1(membrane) | thk | id_mat2(bending) |<br>
+_._ | CQUAD4  | #el | #prop | 4 node | offset |<br>
+_.1 | 5 степеней свободы: K6ROT |<br>
+_.2 | offset: see отобразить сечение 2D |<br>
+_.3 | normals |<br>
+_.4 | symmetry(пирог): T&lt; ,0, &gt; T&lt;0, ,0&gt; |<br>
+								</p><div class="divider"></div><p>
+7 | hi.pcl-> test.plb |<br>
+_.1 | рабочая папка: C:\avk\test\patran |<br>
+_.2 | RC-> New-> hi.pcl | FUNCTION hi() || write_line("hi there") | END FUNCTION |<br>
+_.3 | cmd-> cd C:\avk\test\patran |<br>
+_.4 | p3pclcomp -> !!Input hi.pcl | компиляция |<br>
+_.5 | !!library create test | создать новую библиотеку test |<br>
+_.6 | !!compile hi test | добавить ф-цию в библиотеку test |<br>
+_.7 | !!library list test | проверка: HI в конце - норм |<br>
+_.8 | <a href="C:\appl\MSC\Patran_x64\20170\" target="_blank">p3epilog.sys</a> -> !!library "C:\avk\test\patran\test.plb" |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ======================================= Patran Laminate Modeler (PLM) ======================================= -->			  
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#PLM" data-toggle="collapse" data-panel="#accord">Laminate Modeler</a> |
+						</div>
+						<div class="panel-collapse collapse" id="PLM">
+							<div class="panel-body">
+								<p>
+1 | Процесс |<br>
+_.1 | laminate material definition | E1,E2,nu12, G12, G1z, G2z, Xt, Xc, Yt, Yc, S |<br>
+_.2 | Tools -> Laminate Modeler -> Draping/ Layup(Laminate)/ Laminate |<br>
+_.3 | solve | MSC.Nastran |<br>
+_.4 | post | MSC.Patran |<br>
+								</p><div class="divider"></div><p>
+2 |  |<br>
+_.1 |  |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ======================================= FEADMS ======================================= -->			  
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#feadms" data-toggle="collapse" data-panel="#accord">FEADMS</a> | 
+						</div>
+						<div class="panel-collapse collapse" id="feadms">
+							<div class="panel-body">
+								<p>
+1 | Основные комманды |<br>
+_.1 | F2 - выделить |<br>
+_.2 | Middle Click - закончить выделение |<br>
+_.3 | F3 - отменить выделение |<br>
+_.4 | View -> Solid Line Inactive Element | для лучшей читаемости |<br>
+_.5 | File -> Save As: сохранить детейл |<br>
+
+								</p><div class="divider"></div><p>
+2 | Создание настроечного файла 2d.settings | лежит в ~/_profile |<br>
+_.1 | System -> Attributes |<br>
+_.2 | Element: element(sorted)/ type/ xmid/ ymid/ zmid |<br>
+_.3 | Loadcase: loadcase: loadcase(sorted) | <br> 
+_.4 | 2DStress: element(sorted)/ loadcase(sorted)/ sigx/sigy/ taux |<br>
+_.5 | Print: Element/ LoadCase/ 2-D_Stress -> Apply |<br>
+_.6 | Export: Element/ LoadCase/ 2-D_Stress |<br>
+_.7 | Save Settings -> 2d.settings |<br>
+								</p><div class="divider"></div><p>
+3 | Создание файла нагрузок feadms_out.dat |<br>
+_.1 | XTerm -> <code>bash</code> -> <code>~/b</code> - запустится батч файл с подсказками -> <code>cd cur/m/ текущий проект</code> |<br>
+_.2 | <code>cp ~/_profile/acd.det.Z .</code> - скачать детейл Aft Cargo Door в текущую папку |<br>
+_.3 | <code>feadms -m B478FC46FDMS -det acd.det.Z</code> -> min Feadms window -> max GRS window |<br>
+_.4 | дождаться в окне FEADMS: Msg: Preloading of GRS Detail, Loadcases, and Settings completes. Going Interactive !!!<br>
+_.5 | GRS -> Selection -> Element by Identifier -> ввести номер (495094) -> OK |<br>
+_.6 | Working Volume -> Promote Selected -> pick -> желтая рамка | если не обрезать ненужное - считает долго  (~ 7min) | <br>
+_.7 | File -> Save As -> d.det.Z | Ctrl+C -> <code>ls -l</code> - проверка наличия |<br>
+_.8 | <code>cp ~/_profile/2d.settings .</code> - файл настроек копируется в текущую папку |<br>
+_.9 | <code>feadms -m B478FC46FDMS -det d.det.Z -set 2d.settings -o feadms_out.dat</code> |<br>
+								</p><div class="divider"></div><p>
+4 | Bias |<br>
+_.1 | Bias - смещение элемента к узлу |<br>
+_.2 | Просмотреть в GRS: Selection -> Modes -> Bias Elements |<br>
+_.3 | Прибиасить: Biasing |<br>
+								</p><div class="divider"></div><p>
+5 | Intro |<br>
+_.1 | Overview |<br>
+_.2 | What is Feadms? |<br>
+_.3 | Start |<br>
+_.4 | GRS |<br>
+								</p><div class="divider"></div><p>
+6 | Tutorial |<br>
+_.1 | Select Model: CBEAMTRN |<br>
+_.2 | Sum Forces: F2-> MidCl | Pick nodes 5/ 10-> Source one | Pick nodes 5/ 10-> Nodes-> Aux-> Select B/w | Pick prev. node-> Target | Solution-> LoadCase-> C4 | Results-> Corner Force |<br>
+_.3 | Extract Loads | 2.4 Derive Attributes | 2.5 Bias | 2.6 Control Pick |<br>
+								</p><div class="divider"></div><p>
+7 | GRS |<br>
+_.1 | File I/O |<br>
+_.2 | View |<br>
+_.3 | Deflection |<br>
+_.4 | Properties |<br>
+_.5 | Menu: Working Volume |<br>
+_.6 | Menu: Selection |<br>
+_.7 | Menu: Node Operation |<br>
+_.8 | Menu: Elements |<br>
+_.9 | Menu: Associations |<br>
+_.10 | Menu: Bias |<br>
+_.11 | Menu: Geometry |<br>
+_.12 | Relation Dialog |<br>
+_.13 | Beam and Node Info Dialog |<br>
+								</p><div class="divider"></div><p>
+8 | FEADMS |<br>
+_.1 | Structure-> Model-> LC |<br>
+_.2 | Description -> Node/ Elem/ Mat/ Constr/ Prop |<br>
+_.3 | Solution Report-> Bound/ Loadcase/ Mskey/ Solset |<br>
+_.4 | Result Report-> Displacement/ CornerF/ Int.Load/ Stress/ Strain |<br>
+_.5 | System-> Save/ Read/ Attribute/ Export (SDIO-> .dat) |<br>
+_.6 | Exit |<br>
+								</p><div class="divider"></div><p>
+9 | Other |<br>
+_.1 | Glossary |<br>
+_.2 | Ref |<br>
+_.3 | A.Consideration |<br>
+_.4 | B.Sign Convention |<br>
+_.5 | C.Command Line |<br>
+_.6 | D.Beam example |<br>
+								<p>
+							</div>
+						</div>
+					</div>
+					<!-- ======================================= GETDATA ======================================= -->			  
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#getdata" data-toggle="collapse" data-panel="#accord">GETDATA</a> |
+						</div>
+						<div class="panel-collapse collapse" id="getdata">
+							<div class="panel-body">
+								<p>
+1 | Загрузка модели |<br>
+_.1 | XTerm-> Analysis Sustaining -> Finite Element-> Getdata -> Use 1280 by 1024 screen size |<br>
+_.2 | Plot/Get 757-200 SAMECS related data -> Щелчок -> Get ACTSOL output (2ая сверху) |<br>
+_.3 | Output Information for every loadcase -> I want ... (recomended) -> Fatigue -> Щелчок |<br>
+_.4 | FWD-Body -> Freighter -> Substructure35 -> Apply -> Yes -> Reset All Settings .. |<br>
+								</p><div class="divider"></div><p>
+2 | Extract loads |<br>
+_.1 | Find element in model and write it's number down |<br>
+_.2 | Main Menu/ Controls -> Exit the viewer and continue the current analysis |<br>
+_.3 | Ignore Node .. with No Preselected Item |<br>
+_.4 | Reaction Forces=Yes | Stresses and Loads=Yes -> Apply |<br>
+_.5 | Plates -> Apply | Beams (Direct Pick Box) -> Apply | Nodes -> Apply -> Input A Title: xxx |<br>
+_.6 | Output Filename: xxx -> Do you want create IAS ... -> Yes -> xxx.dta -> Create IAS I & J(loadcase) |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ======================================= Abaqus ======================================= -->			  
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#Abaqus" data-toggle="collapse" data-panel="#accord">ABAQUS</a> |
+						</div>
+						<div class="panel-collapse collapse" id="Abaqus">
+							<div class="panel-body">
+								<p>
+0 | Scripts |<br>
+_.1 | <a href="C:/avk_pdf/aero/5_fem/abaqus" target="_blank">abaqus</a> -> перенести xxx.py в <a href="C:/avk/test/abaqus" target="_blank">test/abaqus</a> |<br>
+_.2 | File -> Set Work Directory -> C:\avk\test\abaqus -> OK |<br>
+_.3 | File -> Macro Manager -> Create -> Dir..:Work -> Continue -> Dismiss |<br>
+_._ | проверить файл abaqusMacros.py в test/abaqus |<br>
+								</p><div class="divider"></div><p>								
+1 | 1D console | Middle Click(MC)<br>
+_.1 | Module:Part -> Create Part(1,1) -> name:b/wire/100-> Continue |<br>
+_._ | Create Line(1,2) -> LC -> LC+100 -> MC:появилась линия -> 2MC(выход) |<br>
+_.2 | Module:Property -> Material Manager(1,2) -> Create -> name:al |<br>
+_._ | Mechanical -> Elasticity -> Elastic | Young: 10e6 | mu=0.3 -> OK -> Dismiss |<br>
+_._ | Create Section(2,1) -> name:r/beam -> Continue -> |<br>
+_.__ | Сreate beam profile (иконка трубы) -> name:rect, shape:rect.. -> Continue -> 1,1 -> 2OK |<br>
+_._ | Assign Section(3,1) -> выделить линию -> Done -> OK (green) |<br>
+_._ | Assign Beam Orient..(5,2) -> выделить линию -> Done -> 0,0,1 -> Enter -> OK (green) |<br>
+_.3 | Module:Assembly -> Create Instance(1,1) -> OK |<br>
+_.4 | Module:Step -> Create Step(1,1) -> Type:Static,Genearal -> Continue -> OK |<br>
+_.5 | Module:Load -> Create Load(1,1) -> name:c -> Continue -> |<br>
+_.__ | выбрать точку -> Done -> CF2:-1 -> OK |<br>
+_._ | Bound.Cond.Manager(2,2) -> Create -> name:z -> Continue -> |<br>
+_.__ | выбрать плоскость -> Done -> Encastre -> OK -> Dismiss |<br>
+_.6 | Module:Mesh -> check Part -> Seed Part(1,1) -> size:10 -> Apply -> OK  |<br>
+_._ | Assign Element4,1) -> выбрать линию -> Done -> family:beam -> OK |<br>
+_._ | Mesh part(2,1) -> Yes(внизу) |<br>
+_.7 | Module:Job -> Job Manager(1,2) -> Create -> Continue -> OK -> Submit |<br>
+_._ | дождаться "Job completed successfully" -> Results |<br>
+_._ | Plot Contour(4,1) -> вверху S поменять на U(деформации) -> Stop Recording |<br>
+								</p><div class="divider"></div><p>
+2 | 3D console |<br>
+_.1 | Module:Part -> Part Manager(1,2) -> Create -> name:b/3D -> Continue  |<br>
+_._ | Create Rect(2,2) -> X,Y:0,0 -> Enter -> X,Y:1,1 -> Enter -> MC -> Done -> Depth:10 -> OK |<br>
+_.2 | Module:Property -> Material Manager(1,2) -> Create -> name:al |<br>
+_._ | Mechanical -> Elasticity -> Elastic | Young: 10e6 | mu=0.3 -> OK -> Dismiss |<br>
+_._ | Create Section(2,1) -> name:r -> Continue -> OK |<br>
+_._ | Assign Section(3,1) -> выделить балку -> Done -> OK (green) |<br>
+_.3 | Module:Assembly -> Create Instance(1,1) -> OK |<br>
+_.4 | Module:Step -> Create Step(1,1) -> Type:Static,Genearal -> Continue -> OK |<br>
+_.5 | Module:Load -> Create Load(1,1) -> name:c -> Continue -> |<br>
+_._ | выбрать точку -> Done -> CF2:-1 -> OK |<br>
+_._ | Bound.Cond.Manager(2,2) -> Create -> name:z -> Continue -> |<br>
+_._ | выбрать плоскость -> Done -> Encastre -> OK -> Dismiss |<br>
+_.6 | Module:Mesh -> check Part -> Seed Edge(1,2) -> |<br>
+_._ | выбрать грани (Shift+..) -> Done -> By number:20 -> Apply -> OK |<br>
+_._ | выбрать малые грани -> By number:2 -> Apply -> OK |<br>
+_._ | Mesh part(2,1) -> Yes(внизу) |<br>
+_.7 | Module:Job -> Job Manager(1,2) -> Create -> Continue -> OK -> Submit |<br>
+_._ | дождаться "Job completed successfully" -> Results |<br>
+_._ | Plot Contour(4,1) -> вверху S поменять на U(деформации) -> Stop Recording |<br>
+								</p><div class="divider"></div><p>
+3 | 3D console(batch) |<br>
+_.1 | Copy abaqusMacros.py -> 3D_beam.py -> RC -> Edit with Notepad++ |<br>
+_.2 | удалить def Macro1() -> убрать все отступы (Shift+Tab) |<br>
+_.3 | File -> New Model | File -> Run Script |<br>
+_.4 | дождаться "Job completed successfully" |<br>
+_.5 | проверить: Property, Mesh, Visualization |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ======================================= Theory ======================================= -->			  
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#Theory" data-toggle="collapse" data-panel="#accord">Theory</a> |
+						</div>
+						<div class="panel-collapse collapse" id="Theory">
+							<div class="panel-body">
+								<p>
+1 | Theory |<br>
+_.1 | Ф-ция- закон, по которому каждому эл-ту одного мн-ва ставится в соответсвие эл-т другого мн-ва |<br>
+_.2 | Функционал- переменная в-на, зависящая от ф-ции (площадь, внутри замкнутой кривой) |<br>
+_.3 | Вариация ф-нала- главная линейная часть приращения ф-нала вдоль определенного направления |<br>
+_.4 | Вариационное исчисление- раздел ф-ного анализа, в к-ром изучаются вариации ф-лов |<br>
+								</p><div class="divider"></div><p>
+2 | Метод Ритца |<br>
+_.1 | Метод Ритца - прямой метод нахождения приблизительного решения краевых задач вариационного исчисления |<br>
+_.2 | Краевая задча- диф. ур-ние с заданными линейными соотношениями между значениями искомых ф-ций на начале и конце интервала интегрирования |<br>
+								</p><div class="divider"></div><p>
+2 | Метод Рунге- Кутты |<br>
+_.1 | Метод Рунге- Кутты- семейство численных алгоритмов обыкновенных дифф. ур-ний |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ======================================== Next ======================================== -->	
+				</div>	    
+			</div>
+		</div>
+	</div>
+	<script src="../_js/jquery.min.js"></script>
+	<script src="../_js/bootstrap.min.js"></script>
+</body>
+</html>

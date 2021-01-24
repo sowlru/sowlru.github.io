@@ -1,0 +1,1243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VBA</title>
+
+	<link href="../_css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../_css/style.css">
+</head>
+<body>
+	<!-- ================================= Navigation ==================================== -->
+	<nav class="navbar navbar-default">
+
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="C:\avk\index.html">AvK <span class="glyphicon glyphicon-flash"></span></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav">
+			<!-- Sites -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sites<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\stravkcom\index.html">stravk.com</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\sowlru\index.html">sowl.ru</a></li>
+						</ul>
+        			</li>
+			<!-- Aero -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aero<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\aero\general.html">General</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fem.html">FEM</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\static.html">Static</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fatigue.html">Fatigue</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\dt.html">Damage Tolerance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\structure.html">Structure</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\doors.html">Door</a></li>
+						</ul>
+        			</li>
+			<!-- Code General -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code G<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_g\basics.html">Basics</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\objects.html">Objects</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\algorithm.html">Algorithm</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\other_code.html">Other</a></li>
+						</ul>
+	    			</li>
+			<!-- Code Project -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code P<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_p\c.html">C</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\unix.html">UX</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\python.html">Python</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\php.html">PHP</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="active"><a href="C:\avk\index\code_p\vba.html">VBA</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\ml.html">ML</a></li>
+						</ul>
+	    			</li>
+			<!-- Front -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Front<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\front\web.html">HTML - 1991</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ecma.html">ECMA - 1995</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ajax.html">AJAX - 2005</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\jquery.html">jQuery - 2006</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\nodejs.html">Node - 2009</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\angular.html">Angular - 2014</a></li>
+						</ul>
+	    			</li>
+			<!-- Other -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\other\finance.html">Finance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\english.html">English</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\electro.html">Electro</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\scratch.html">Scratch</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\roblox.html">Roblox</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\other.html">Other</a></li>
+						</ul>
+	    			</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<h3>VBA</h3>
+				<div class="panel-group" id="accord">
+
+					<!-- ===================================== VBA ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#vba" data-toggle="collapse" data-panel="#accord">basic</a> | dim | if | loop |
+						</div>
+						<div class="panel-collapse collapse" id="vba">
+							<div class="panel-body">
+								<p>
+									<a href="C:\avk_pdf\code\vba_walkenbach.pdf" target="_blank">Walkenbach</a> |
+									<a href="C:\avk_pdf\code\vba_horev.pdf" target="_blank">Хорев</a> |
+									<a href="C:\avk_pdf\code\vba_boeing.doc" target="_blank">Boeing</a>
+								</p><div class="divider"></div><p>
+1 | Клавиши |<br>
+_.1 | Alt+F11 - режим редактирования макроса |<br>
+_.2 | Ctrl+Break - принудительно остановить макрос  |<br>
+								</p><div class="divider"></div><p>
+2 | Кнопка быстрого доступа |<br>
+_.1 | Customize...(стрелка вверху)-> More Commands |<br>
+_.2 | Choose commands from: -> Macros -> Выбрать свой -> Add -> OK |<br>
+_.3 | Изменить иконку: Выбрать нужную -> Modify -> Выбрать иконку -> OK |<br>
+								</p><div class="divider"></div><p>
+3 | Счетчик времени |<br>
+Dim startTime As Date, endTime As Date: startTime = Timer |... | endTime = Timer |<br>
+MsgBox "Completed within " & Format(endTime - startTime, "0.0") & " sec." |<br>
+								</p><div class="divider"></div><p>
+4 | Текущая папка |<br>
+Dim filePath As String: filePath = ThisWorkbook.Path: Debug.Print filePath |<br>
+								</p><div class="divider"></div><p>
+5 | Последний непустой столбик/ строку |<br>
+_.1 | last_col = sh_dat.Cells(1, Columns.Count).End(xlToLeft).Column |<br>
+_.2 | last_row = sh_dat.Cells(Rows.Count, 1).End(xlUp).Row |<br>
+								</p><div class="divider"></div><p>
+6 | for each | удаляет все листы кроме первого |<br>
+Dim ws As Worksheet<br>
+Application.DisplayAlerts = False<br>
+For Each ws In ThisWorkbook.Worksheets<br>
+If Not ws Is Sheet1 Then ws.Delete<br>
+Next ws<br>
+								</p><div class="divider"></div><p>
+7 | case | now | weekday |<br>
+Select Case Weekday(Now) '1-sunday<br>
+Case 2, 3, 4, 5, 6: Debug.Print "It's not a weekend"<br>
+Case Else: Debug.Print "It's weekend"<br>
+End Select<br>
+								</p><div class="divider"></div><p>
+8 | function | находит номер Row в к-ром находится text |<br>
+Sub main()<br>
+Debug.Print findRowNumWithText("text")<br>
+End Sub<br>
+'------------------------------------<br>
+Function findRowNumWithText(text As String) As Integer<br>
+Dim sh As Worksheet, cellFind As Range, rowNum As Integer<br>
+Set sh = Worksheets("Sheet1")<br>
+Set cellFind = sh.Range(sh.Cells(1, "A"), sh.Cells(1, "A").End(xlDown)).Find(text)<br>
+findRowNumWithText = cellFind.Row<br>
+End Function<br>
+								</p><div class="divider"></div><p>
+								<b>Function 1. Принимает гиперссылку, проверяет код сервера (200) и возвращает полный html</b></p>
+								<p class="well"><code>
+									Function iLink_oHtml(linkURL As String) As String<br>
+									Dim xmlReq As New MSXML2.XMLHTTP60<br>
+									xmlReq.Open "get", linkURL, False<br>
+									xmlReq.send<br>
+									If xmlReq.Status <> 200 Then<br>
+									MsgBox "Problem " & xmlReq.Status & "-" & xmlReq.StatusText<br>
+									Exit Function<br>
+									End If<br>
+									iLink_oHtml = xmlReq.responseText<br>
+									End Function
+								</code>
+								</p><div class="divider"></div><p>
+9 | Ускорение |<br>
+Application.Calculation = xlCalculationManual | xlCalculationAutomatic |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== files ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#files" data-toggle="collapse" data-panel="#accord">files</a> | folders |
+						</div>
+						<div class="panel-collapse collapse" id="files">
+							<div class="panel-body">
+								<p>
+0 | Подготовка и подключение FileSystemOject (FSO) |<br>
+Dim FSO As Object<br>
+Set FSO = CreateObject("Scripting.FileSystemObject")<br>
+Dim fOld As String, fNew As String, dirOld as String, dirNew as String <br>
+dirOld = ThisWorkbook.Path<br>
+dirNew = ThisWorkbook.Path & "\t"<br>
+dirNew2 = ThisWorkbook.Path & "\t2"<br>
+fOld = "t.txt"<br>
+fNew = "t2.txt"<br>
+								</p><div class="divider"></div><p>
+1 | проверка существования папки |<br>
+Function pathExist(pathName) As Boolean<br>
+On Error Resume Next<br>
+pathExist = (GetAttr(pathName) And vbDirectory) = vbDirectory<br>
+End Function<br>
+								</p><div class="divider"></div><p>
+2 | создать |<br>
+_.1 | folder | If Not pathExist(dirNew) Then MkDir dirNew<br>
+_.2 | FSO | If FSO.FolderExists(dirNew2) = False Then FSO.CreateFolder (dirNew2)<br>
+								</p><div class="divider"></div><p>
+3 | изменить имя |<br>
+_.1 | file | If Dir(dirOld & "/" & fOld) <> "" Then Name dirOld & "/" & fOld As dirOld & "/" & fNew <br>
+_.2 | FSO |<br>
+_.3 | folder |<br>
+_.4 | FSO |<br>
+								</p><div class="divider"></div><p>
+4 | переместить |<br>
+_.1 | file |  <br>
+_.2 | FSO |<br>
+_.3 | folder |<br>
+_.4 | FSO |<br>
+								</p><div class="divider"></div><p>
+5 | скопировать |<br>
+_.1 | file |  <br>
+_.2 | FSO |<br>
+_.3 | all files FSO |  <br>
+Dim f As Scripting.Folder<br>
+Set f = FSO.GetFolder(dirNew)<br>
+f.Copy dirNew2<br>
+_.4 | folder |<br>
+_.5 | FSO |<br>
+								</p><div class="divider"></div><p>
+6 | удалить |<br>
+_.1 | file | If Dir(dirOld & "/" & fOld) <> "" Then Kill (dirOld & "/" & fOld)<br>
+_.2 | FSO |<br>
+_.3 | folder |<br>
+_.4 | FSO |<br>
+
+
+								</p><div class="divider"></div><p>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== arrays ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#arrays" data-toggle="collapse" data-panel="#accord">arrays</a> |
+						</div>
+						<div class="panel-collapse collapse" id="arrays">
+							<div class="panel-body">
+								<p>
+0 | Двумерный массив |<br>
+_.1 | Sub ar(): Dim ar(1, 1) As Long: ar(0, 0) = 2: Cells(1, 1) = ar(0, 0): End Sub |<br>
+								</p><div class="divider"></div><p>
+1 |  |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== txt ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#txt" data-toggle="collapse" data-panel="#accord">txt</a> | 26 |
+						</div>
+						<div class="panel-collapse collapse" id="txt">
+							<div class="panel-body">
+								<p>
+1 | читает txt-файл по 1 строке и выводит в accum  |<br>
+Function read_txt(txtFileName As String) As String<br>
+Open txtFileName For Input As #1<br>
+Dim stringTxt As String, accum As String<br>
+Do Until EOF(1)<br>
+Input #1, stringTxt<br>
+accum = accum & stringTxt & " "<br>
+Loop<br>
+Close #1<br>
+read_txt = accum<br>
+End Function<br>
+								</p><div class="divider"></div><p>
+2 | принимает текст, начальный (+ отступ) и конечный символ и возвращает текст между символами  |<br>
+Function return_between(fullString, delimeter, offset, endChar) As String<br>
+Dim splitHere As Integer, cutString As String<br>
+If InStr(fullString, delimeter) <> 0 Then 'if no delimiter in string - do nothing<br>
+splitHere = InStr(fullString, delimeter) + Len(delimeter) 'position after delimiter<br>
+cutString = Mid(fullString, splitHere + offset, Len(fullString)) 'remove all before delimiter<br>
+return_between = Left(cutString, InStr(cutString, endChar) - 1)<br>
+Else<br>
+return_between = "-"<br>
+End If<br>
+End Function
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== word ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#word" data-toggle="collapse" data-panel="#accord">word</a> | 30 |
+						</div>
+						<div class="panel-collapse collapse" id="word">
+							<div class="panel-body">
+								<p>
+0 | Подключить библиотеку: Tools -> References -> MS Word 15.0 |<br>
+								</p><div class="divider"></div><p>
+1a | t.docx | bookmark |<br>
+_.1 | Создать Bookmark: Insert-> Bookmark-> ввести имя-> Add |<br>
+_.2 | Посмотреть Bookmark: File-> Options-> Advanced | Show Document Content: Show bookmarks |<br>
+								</p><div class="divider"></div><p>
+1b | Excel | записывает text в bookmark  |<br>
+Dim wdApp As Word.Application<br>
+Set wdApp = New Word.Application<br>
+<br>
+wdApp.Documents.Open (ThisWorkbook.Path & "\t.docx")<br>
+wdApp.Visible = True<br>
+wdApp.Activate<br>
+<br>
+With wdApp.Selection<br>
+   .GoTo -1, , , "bm1"<br>
+   .TypeText "hi bm1"<br>
+End With<br>
+<br>
+wdApp.ActiveDocument.Save<br>
+wdApp.ActiveDocument.Close<br>
+wdApp.Quit<br>
+Set wdApp = Nothing<br>
+								</p><div class="divider"></div><p>
+
+								</p>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- ===================================== html ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#html" data-toggle="collapse" data-panel="#accord">html</a> | 51-54 |
+						</div>
+						<div class="panel-collapse collapse" id="html">
+							<div class="panel-body">
+								<p>
+1 | Query Table |<br>
+ Dim ws As Worksheet, qt As queryTable, url As String<br>
+ url = "https://acts.web.boeing.com/servlet/AirplaneIDDetailServlet?airplaneID=NE085"<br>
+ Set ws = Worksheets.Add<br>
+ ws.Name = "ACT"<br>
+ Set qt = ws.QueryTables.Add(Connection:="url;" & url, Destination:=Range("A1"))<br>
+ qt.Refresh<br>
+								</p><div class="divider"></div><p>
+
+									<b>Tools -> References: Microsoft Internet Control</b><br>
+									2. Подключение к сайту и ввод данных в input
+								</p>
+								<p class="well"><code>
+									Sub browseBoeing()<br>
+									Dim IE As SHDocVw.InternetExplorer<br>
+									Set IE = New SHDocVw.InternetExplorer<br>
+									IE.Visible = True<br>
+									IE.navigate "www.boeing.com"<br>
+									Do While IE.readyState <> READYSTATE_COMPLETE<br>
+									Loop<br>
+									IE.document.input("input-text").Value = "777"<br>
+									End Sub
+								</code></p>
+								<p>
+									<b>Tools -> References: Microsoft XML v.6</b><br>
+									3a. Получение html-текста и выборка текста ссылки внутри класса
+								</p>
+								<p class="well"><code>
+									Sub kursBaksa()<br>
+									Dim htmlDoc As New MSHTML.HTMLDocument<br>
+									Dim itemClass As MSHTML.IHTMLElement<br>
+									<b>htmlDoc.body.innerHTML = iLink_oHtml("https://yandex.ru")</b><br>
+									Set itemClass = htmlDoc.getElementsByClassName("inline-stocks__value_inner")(0)<br>
+									MsgBox (itemClass.innerHTML)<br>
+									End Sub
+								</code></p>
+								<p>
+									3b. Получение html-текста и выборка текста ссылок внутри класса циклом
+								</p>
+								<p class="well"><code>
+									Sub iLink_oLinksInsideClass()<br>
+									Dim htmlDoc As New MSHTML.HTMLDocument<br>
+									Dim i As Integer<br>
+									Dim itemClass As MSHTML.IHTMLElement<br>
+									Dim itemTag As MSHTML.IHTMLElementCollection<br>
+									<b>htmlDoc.body.innerHTML = iLink_oHtml("http://www.wiseowl.co.uk/video/")</b><br>
+									Set itemClass = htmlDoc.getElementsByClassName("woMenuList")(0)<br>
+									Set itemTag = itemClass.getElementsByTagName("a")<br>
+									For i = 1 To itemTag.Length - 1<br>
+									Debug.Print itemTag(i).innerHTML<br>
+									Next i<br>
+									End Sub
+								</code></p>
+								<p>
+									3c. 1b + URL как const + формирование полной ссылки и передача другой ф-ции
+								</p>
+								<p class="well"><code>
+									Public Const mainURL As String = "http://www.wiseowl.co.uk/video/"<br>
+									Sub iLink_oLinksInsideClass()<br>
+									Dim htmlDoc As New MSHTML.HTMLDocument<br>
+									Dim i As Integer<br>
+									Dim itemClass As MSHTML.IHTMLElement<br>
+									Dim itemTag As MSHTML.IHTMLElementCollection<br>
+									Dim nextLink As String<br>
+									<b>htmlDoc.body.innerHTML = iLink_oHtml(mainURL)</b><br>
+									Set itemClass = htmlDoc.getElementsByClassName("woMenuList")(0)<br>
+									Set itemTag = itemClass.getElementsByTagName("a")<br>
+									For i = 1 To itemTag.Length - 1<br>
+									nextLink = itemTag(i).getAttribute("href")<br>
+									nextLink = "http://www.wiseowl.co.uk/videos/" & Mid(nextLink, InStr(nextLink, ":") + 9)<br>
+									ListVideosOnPage itemTag(i).innerHTML, nextLink<br>
+									Next i<br>
+									End Sub
+								</code></p>
+
+								<p>
+									4. Функция, выполняет второй круг прохода по ссылкам
+								</p>
+								<p class="well"><code>
+									Sub ListVideosOnPage(secondName As String, secondURL As String)<br>
+									Dim htmlDoc As New MSHTML.HTMLDocument<br>
+									Dim itemClass As MSHTML.IHTMLElementCollection<br>
+									Dim vidRow As MSHTML.IHTMLElement<br>
+									Dim vidLinks As MSHTML.IHTMLElement<br>
+									<b>htmlDoc.body.innerHTML = iLink_oHtml(secondURL)7:07 PM 3/28/2017</b><br>
+									Set itemClass = htmlDoc.getElementsByClassName("woVideoListRow")<br>
+									For Each vidRow In itemClass<br>
+									Set vidLinks = vidRow.getElementsByTagName("a")(0)<br>
+									Debug.Print vidLinks.innerText, vidLinks.getAttribute("href")<br>
+									Next vidRow<br>
+									End Sub
+								</code></p>
+								<p>
+									5-0. Декларация <a href="https://msdn.microsoft.com/en-us/library/ms775123(v=vs.85).aspx" target="_blank">функции </a>  URLDownloadToFile
+								</p>
+								<p class="well"><code>
+									#If VBA7 Then<br>
+									Private Declare PtrSafe Function URLDownloadToFile Lib "urlmon" Alias _<br>
+									"URLDownloadToFileA" (ByVal pCaller As LongPtr, ByVal szURL As String,  _<br>
+									ByVal szFileName As String, ByVal dwReserved As LongPtr, ByVal lpfnCB As LongPtr) As LongPtr<br>
+									#Else<br>
+									Private Declare Function URLDownloadToFile Lib "urlmon" Alias _<br>
+									"URLDownloadToFileA" (ByVal pCaller As Long, ByVal szURL As String,  _<br>
+									ByVal szFileName As String, ByVal dwReserved As Long, ByVal lpfnCB As Long) As Long<br>
+									#End If<br> Public Const globeURL As String = "http://www.wiseowl.co.uk"
+								</code></p>
+								<p>
+									5a. Базовая загрузка файла
+								</p>
+								<p class="well"><code>
+									Sub downloadSingleFile()<br>
+									Dim fileURL As String<br>
+									Dim destinationFile As String<br>
+									fileURL = "http://www.wiseowl.co.uk/files/videos/excel-vba/Pt48%20-%20Scraping%20Multiple%20Web%20Pages.zip"<br>
+									destinationFile = "C:\avk\alexload.zip"<br>
+									URLDownloadToFile 0, fileURL, destinationFile, 0, 0<br>
+									End Sub</code><br>
+								</p>
+								<p>
+									5b. Ф-ция, принимает гиперссылку, скачивает по ней файл  и переименовывает его
+								</p>
+								<p class="well"><code>
+									Sub getHyperlinkReturnDownload(fileURL As String)<br>
+									Dim fso As New Scripting.FileSystemObject
+									Dim destinationFile As String<br>
+									Dim destinationFolder As String<br>
+									destinationFolder = mainDownloadFolder & "\" & vidCatFolder<br>
+									if not fso.FolderExists(destinationFolder) Then<br>
+									fso.CreateFolder destinationFolder<br>
+									End If<br>
+
+									destinationFile = mid(fileURL, instrrev(fileURL, "/"))<br>
+									destinationFile = replace(destinationFile, "%20", " ")<br>							
+									destinationFile = destinationFolder & " \" &destinationFile<br>
+									If URLDownloadToFile(0, fileURL, destinationFile, 0, 0) = 0 Then<br>
+									Debug.Print "Started"<br>
+									Else<br>
+									Debug.Print "Not started"<br>
+									End If<br>
+									End Sub</code><br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== classes ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#classes" data-toggle="collapse" data-panel="#accord">class</a> | 39 |
+						</div>
+						<div class="panel-collapse collapse" id="classes">
+							<div class="panel-body">
+								<p>
+1 | Создать простой класс |<br>
+_.1 | посмотреть все классы: View -> Object Browser or F2 |<br>
+_.2 | Insert -> Class Module | Properties -> Name:MatClass | <br>
+_.3 | Insert -> Module | MatClass должен быть в выпадающем списке |<br>
+Sub matDatabase() : Dim m As MatClass : Set m = New MatClass : End Sub |<br>
+_.4 | General -> Class - класс можно инициализировать и удалить |<br>
+_.5 | m.name = "2024" 'св-ва можно создать, но нет проверки типов |<br>
+								</p><div class="divider"></div><p>
+2 | Property: name | Let - передает значение  | Set - передает объект |<br>
+_.1 | Class Module | Private pName As String 'p:private |<br>
+Public Property Let name(v As String): pName = v: End Property |<br>
+_.2 | Module | m.name="a" | name - через выпадающее окно |<br>
+_._ | F8 -> v="a" -> pName="a" -> m.name="a" |<br>
+_._ | Debug.Print m.name 'Compile error: Invalid use of property |<br>
+								</p><div class="divider"></div><p>
+3 | Property | Get - возвращает значение из Property |<br>
+_.1 | Public Property Get name() As String: name=pName: End Property |<br>
+_._ | Debug.Print m.name ' a |<br>
+								</p><div class="divider"></div><p>
+4 | Enum |<br>
+_.1 | Class Module | должно быть в самом верху |<br>
+Private pType As matType: Public Enum matType: alum: steel: End Enum<br><br>
+Public Property Let typ(v As matType): pType = v: End Property<br>
+Public Property Get typ() As matType: typ = pType: End Property<br>
+								</p><div class="divider"></div><p>
+5 | Method: add() | Class Module |<br>
+_.1 | Public Sub add(): Range("A1") = Me.name: Range("B1") = Me.typ: End Sub |<br>
+_.2 | Module | m.add |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== P01 ============================= -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#P01" data-toggle="collapse" data-panel="#accord">P01</a> | pnt29b | elem(file) -> row -> col |
+						</div>
+						<div class="panel-collapse collapse" id="P01">
+							<div class="panel-body">
+								<p>
+0 | File for processing: |<br>
+_.1 | 1 wing xxxxx 055001007001001 0.3 eru |<br>
+_.2 | 2 rib bay  1 - upr  rear spar chord 055001007002001 1.1 eru |<br>
+								</p><div class="divider"></div><p>
+1 | Declare var for element(file) |<br>
+_.1 | Dim file_path As String:  file_path = ThisWorkbook.Path + "\" |<br>
+_.2 | Dim ar_elem() As Variant: ar_elem = Array("t", "t2") |<br>
+_.3 | Dim cur_elem As Variant: Dim cur_elem_shift As Integer: cur_elem_shift = 0 |<br>
+_.4 | Dim full_file As String: Dim cut_file As String 'From file delete all unnecessary |<br>
+								</p><div class="divider"></div><p>
+2 | Declare var for row and column |<br>
+_.1 | Dim ar_row() As String: Dim ar_row_size As Integer |<br>
+_.2 | Dim cur_row As String:  Dim cur_row_num As Integer |<br>
+_.3 | Dim ar_col() As String: Dim ar_col_size As Integer |<br>
+_.4 | Dim cur_col As String: Dim cur_col_num As Integer |<br>
+								</p><div class="divider"></div><p>
+3 | Declare var for sheet &amp; time |<br>
+_.1 | Dim sh_dta As Worksheet: Set sh_dta = ActiveWorkbook.Worksheets("dta"): sh_dta.Cells.Clear |<br>
+_.2 | Dim startTime As Date, endTime As Date: startTime = Timer |<br>
+_.3 | Application.Calculation = xlCalculationManual |<br>
+								</p><div class="divider"></div><p>
+4 | For Each cur_elem In ar_elem .. Next cur_elem |<br>
+_.1 | full_file = read_txt(file_path + cur_elem + ".PNT29B") |<br>
+_.2 | cut_file = return_between(full_file, "SET", 1, "DMF Set") |<br>
+_.3 | ar_row = Split(cut_file, vbLf): ar_row_size = UBound(ar_row) - 1 |<br>
+_.4 | For cur_row_num = 1 To ar_row_size |<br>
+_._ || cur_row = Mid(ar_row(cur_row_num), 45, 200) 'delete first 45 chars from each row |<br>
+_._ || Do While InStr(cur_row, " "): cur_row = Replace(cur_row, " ", " "): Loop 'delete spaces |<br>
+_._ || ar_col = Split(cur_row, " "): ar_col_size = UBound(ar_col) - 1 |<br>
+_._ || For cur_col_num = 0 To ar_col_size |<br>
+_._ ||| sh_dta.Cells(cur_row_num+cur_elem_shift, cur_col_num+2) = ar_col(cur_col_num) |<br>
+_._ || Next cur_col_num: Next cur_row_num |<br>
+_.5 | cur_elem_shift = sh_dta.Cells(Rows.Count, 2).End(xlUp).Row |<br>
+								</p><div class="divider"></div><p>
+5 | End |<br>
+_.1 | endTime = Timer |<br>
+_.2 | Application.Calculation = xlCalculationAutomatic |<br>
+_.3 | MsgBox "Completed within " & Format(endTime - startTime, "0.00") & " sec." |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== VBA Project 2 ============================= -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#vbap2" data-toggle="collapse" data-panel="#accord">Project 2</a> | Поиск дома на Avito | F1/ 3 |
+						</div>
+						<div class="panel-collapse collapse" id="vbap2">
+							<div class="panel-body">
+								<p><b>Структура объявлений Avito</b></p>
+								<p class="well"><code>
+									' InnerHTML of div class="item item_table clearfix js-catalog-item-enum c-b-0" (<b>innerText показан жирным)</b>:<br>
+									'_b -photo<br>
+									'_favorites-add is-design-simple js-favorites-add<br>
+									'__a.favorites-add__link js-favorites-add-toggle<br>
+									'___i.i i-favorites-big js-favorites-add-icon<br>
+									'___span.favorites-add__label pseudo-link js-favorites-add-label: <b>В избранное</b><br>
+									'_description<br>
+									'__h3.title item-description-title<br>
+									'___a.item-description-title-link href="/dorogobuzh/doma_dachi_kottedzhi/dom_74_m_na_uchastke_22_sot._1002051695": <b>Дом на участке 22 сот.</b><br>
+									'__about: <b>1 000 350 руб.</b><br>
+									'___popup-prices popup-prices__wrapper clearfix<br>
+									'____button.button button-origin popup-prices-show js-btn-circle<br>
+									'____select-override<br>
+									'___input.hidden-input-for-tab<br>
+									'__p.address fader: <b>д.Кузино</b><br>
+									'__data<br>
+									'___clearfix<br>
+									'____date c-2: <b>Вчера 23:43</b>
+								</code></p>
+								<p><b>Варианты:</b><br>
+									1. Добавляются новые объявления
+								</p>
+								<p><b>Подключение библиотек: Tools -> References: Microsoft HTML Object Library || Microsoft XML 6 </b></p>
+								<p><b>и ф-ций.</b> Шаги:<br>
+								1 | Загрузка данныx с сайта на Sheet2.<br>
+								2 | Если появились новые записи - копирование их на Sheet1. <br>
+								3 | Если дома до этого уже висели на сайте (rowSh1 != 0) и описание с ценой не менялось - удаление старой строки и замена новой даты на старую. Если поменялась - копирование новой и старой строки в Res и удаление старой. <br>
+								4 | Сравнение id из Sheet1 и Sheet2, и если id в Sheet2 отсутствует, это означает что запись удалена (дом продан) и строка перемещается из Sheet1 в Res.<br>
+								5 | Сравнение description и price, при изменении - копирование в Res<br>
+								</p>
+								<p class="well"><code>
+Public addedEntry As Integer, soldEntry As Integer, changedEntry As Integer<br>
+Public shN As Worksheet, shO As Worksheet, shRes As Worksheet<br>
+<br>
+Sub allAvito()<br>
+    Call avito("https://www.avito.ru/dorogobuzh/doma_dachi_kottedzhi/prodam/dom", "dgbzDom", "c-b-0")<br>
+    Call avito("https://www.avito.ru/moskva/avtomobili/nissan/almera?user=1&f=188_897b897", "nis04", "c-b-0 item_table_9")<br>
+End Sub<br>
+<br>
+Sub avito(url As String, shName As String, iClass As String)<br>
+Dim htmlDoc As New MSHTML.HTMLDocument<br>
+Dim itemClass As MSHTML.IHTMLElementCollection<br>
+Dim descClass As MSHTML.IHTMLElementCollection<br>
+Dim itemHtml As String<br>
+startTime = Timer<br>
+Dim i As Integer<br>
+Set shN = Worksheets(shName & "N")<br>
+Set shO = Worksheets(shName & "O")<br>
+Set shRes = Worksheets(shName & "R")<br>
+shN.Range("A1:D500").Clear<br>
+<b>htmlDoc.body.innerHTML = iLink_oHtml(url) ' Function 1</b><br>
+Set itemClass = htmlDoc.getElementsByClassName("item item_table clearfix js-catalog-item-enum " & iClass)<br>
+Set descClass = htmlDoc.getElementsByClassName("item-description-title-link")<br>
+For i = 0 To itemClass.Length - 1<br>
+    shN.Cells(i + 1, "A") = itemClass(i).getAttribute("id")<br>
+    shN.Cells(i + 1, "B") = descClass(i).innerText<br>
+    itemHtml = itemClass(i).innerHTML<br>
+    If InStr(itemHtml, "руб") <> 0 Then<br>
+        <b>shN.Cells(i + 1, "C") = Trim(return_between(itemHtml, "class=about", 1, "руб")) ' Function 3</b><br>
+    Else<br>
+        shN.Cells(i + 1, "C") = "-"<br>
+    End If<br>
+    <b>shN.Cells(i + 1, "D") = Trim(return_between(itemHtml, "date c-2", 2, "&nbsp")) ' Function 3</b><br>
+Next i<br>
+step2<br>
+endTime = Timer<br>
+diff = Format(endTime - startTime, "0.0")<br>
+MsgBox "Time: " & diff & " sec; add: " & addedEntry & "; sold: " & soldEntry & "; changed: " & changedEntry<br>
+End Sub<br>
+<br>
+Sub step2() 'check new entries and add them from shN to shO<br>
+Dim firstID_shO As String<br>
+Dim i As Integer<br>
+firstID_shO = shO.Cells(1, 1).Value<br>
+Dim cellFind As Range<br>
+Set cellFind = shN.Range(shN.Cells(1, 1), shN.Cells(1, 1).End(xlDown)).Find(firstID_shO)<br>
+addedEntry = cellFind.row - 1<br>
+If addedEntry > 0 Then<br>
+    For i = 1 To addedEntry<br>
+        shO.Rows("1:1").Insert<br>
+    Next<br>
+    shN.Range("A1:D" & addedEntry).Copy shO.Range("A1")<br>
+End If<br>
+step3<br>
+End Sub<br>
+<br>
+Sub step3() 'check if new entries already exist in shO<br>
+Dim idSh1 As String<br>
+Dim rowSh1 As Integer<br>
+Dim i As Integer<br>
+If addedEntry > 0 Then<br>
+    For i = 1 To addedEntry<br>
+        idSh1 = shO.Cells(i, "A").Value<br>
+        Dim cellFind As Range<br>
+        Set cellFind = shO.Range(shO.Cells(addedEntry + 1, 1), shO.Cells(addedEntry + 1, 1).End(xlDown)).Find(idSh1)<br>
+        If Not cellFind Is Nothing Then<br>
+            rowSh1 = cellFind.row<br>
+            If shO.Cells(i, "B") = shO.Cells(rowSh1, "B") And _<br>
+                shO.Cells(i, "C") = shO.Cells(rowSh1, "C") Then<br>
+                shO.Cells(rowSh1, "D").Copy shO.Cells(i, "D")<br>
+            Else<br>
+                shRes.Rows("2:2").Insert<br>
+                shRes.Rows("2:2").Insert<br>
+                shO.Range("A" & i & ":D" & i).Copy shRes.Range("A2")<br>
+                shRes.Range("D2").Value = Format(Now, "dd.mm.yyyy")<br>
+                shO.Range("A" & rowSh1 & ":D" & rowSh1).Copy shRes.Range("A3")<br>
+            End If<br>
+            shO.Rows(rowSh1).Delete shift:=xlUp<br>
+        Else<br>
+            shO.Cells(i, "D") = Format(Now, "dd.mm.yyyy")<br>
+        End If<br>
+    Next<br>
+End If<br>
+step4<br>
+End Sub<br>
+<br>
+Sub step4() 'compare id's of shO and shN and if was remove from Avito - move to Res sheet<br>
+Dim i As Integer<br>
+soldEntry = 0<br>
+i = 1<br>
+Do Until shN.Cells(i, "A") = ""<br>
+If shO.Cells(i, "A") <> shN.Cells(i, "A") Then<br>
+    shRes.Rows("2:2").Insert<br>
+    shO.Range("A" & i & ":D" & i).Cut shRes.Range("A2")<br>
+    shO.Rows(i).Delete shift:=xlUp<br>
+    soldEntry = soldEntry + 1<br>
+End If<br>
+i = i + 1<br>
+Loop<br>
+step5<br>
+End Sub<br>
+<br>
+Sub step5() 'compare description and price of shO and shN and if it was change - copy to Res sheet<br>
+Dim i As Integer<br>
+changedEntry = 0<br>
+i = 1<br>
+Do Until shN.Cells(i, "A") = ""<br>
+    If shO.Cells(i, "B") <> shN.Cells(i, "B") Or _<br>
+        shO.Cells(i, "C") <> shN.Cells(i, "C") Then<br>
+        shRes.Rows("2:2").Insert<br>
+        shRes.Rows("2:2").Insert<br>
+        shN.Range("A" & i & ":D" & i).Copy shRes.Range("A2")<br>
+        shRes.Range("D2").Value = Format(Now, "dd.mm.yyyy")<br>
+        shO.Range("A" & i & ":D" & i).Copy shRes.Range("A3")<br>
+        shO.Cells(i, "B") = shN.Cells(i, "B")<br>
+        shO.Cells(i, "C") = shN.Cells(i, "C")<br>
+        changedEntry = changedEntry + 1<br>
+    End If<br>
+    i = i + 1<br>
+Loop<br>
+End Sub
+								</code></p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== VBA Project 3 ============================= -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#vbap3" data-toggle="collapse" data-panel="#accord">Project 3</a> | Телексы Михая
+						</div>
+						<div class="panel-collapse collapse" id="vbap3">
+							<div class="panel-body">
+								<p><b>'Function 2. Зачитывает txt-файл</b></p>
+								<p><b>'1. Считывание файла Communication Report из "C:/avk/index/xlsm/"</b></p>
+								<p class="well"><code>
+									Sub mihai()<br>
+									Dim telexName As String<br>
+									telexName = Range("P1")<br>
+									<b>Range("Q1").Value = read_txt("C:/avk/index/xlsm/CommReport_" & telexName & ".txt")</b><br>
+									Range("R1").Value = Len(Range("Q1").Value)<br>
+									MsgBox "CommReport_" & telexName & " read."<br>
+									End Sub
+								</code></p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== VBA Project 4 ============================= -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#vbap4" data-toggle="collapse" data-panel="#accord">Project 4</a> | Поиск авто на Auto | F? 1/ 3 |
+						</div>
+						<div class="panel-collapse collapse" id="vbap4">
+							<div class="panel-body">
+								<p><b>Структура объявлений Auto</b></p>
+								<p class="well"><code>
+									' InnerHTML of tbody class="listing-item stat stat_type_listing i-bem listing-item_js_inited stat_js_inited" (<b>innerText показан жирным)</b>:<br>
+									'_tr class="listing__row"<br>
+									'__td class="listing__cell listing__cell_type_thumb"<br>
+									'___div class="listing-item__hidden-desc"<br>
+									'___div class="listing-item__thumb listing-item__thumb_photo_yes brazzers-gallery-stat i-bem brazzers-gallery-stat_js_inited"<br>
+									<br>
+									'__td class="listing__cell listing__cell_type_summary"<br>
+									'___h3 class="listing-item__name"<br>
+									'___div class="listing-item__description":<b> 1.5 MT (98 л.с.) бензин, передний привод, седан, чёрный</b><br>
+									<br>
+									'__td class="listing__cell listing__cell_align_right listing__cell_type_price"<br>
+									'___div class="listing-item__price":<b> 175 000 ₽</b><br>
+									'___div class="listing-item__price-old"<br>
+									<br>
+									'__td class="listing__cell listing__cell_type_year"<br>
+									'___div class="listing-item__year":<b> 2004</b><br>
+									<br>
+									'__td class="listing__cell listing__cell_type_km"<br>
+									'___div class="listing-item__km":<b> 218 000 км</b><br>
+									'__td class="listing__cell listing__cell_type_actions"<br>
+									'___div class="listing-item__actions-list"<br>
+									'___span class="icon icon_type_arrow-down-blue listing-item__show dropdown-hover dropdown-hover_type_tooltip dropdown-hover__switcher i-bem"<br>
+									<br>						
+									'_tr class="listing__row"<br>
+									'__td class="listing__cell listing__cell_type_extra"<br>
+									'___div class="listing-item__details-bottom"<br>
+									'____div class="listing-item__bottom-line-container"<br>
+									'_____span class="listing-item__place":<b> Раменское</b><br>
+									'_____span class="listing-item__date":<b> 15 часов назад</b><br>
+									<br>
+									'_tr class="listing__row"<br>
+									'__td class="listing__cell listing__cell_type_note"<br>
+									'___div class="listing-item__note"<br>
+									'____div class="sale-note sale-note_hidden sale-note_view_show i-bem sale-note_js_inited"<br>
+									'_____div class="sale-note__view"<br>
+									'_____form class="sale-note__edit"<br>
+								</code></p>
+								<p><b>Подключение библиотек: Tools -> References: Microsoft HTML Object Library || Microsoft XML 6 </b></p>
+								<p><b>и ф-ций.</b> Шаги:<br>
+								1 | Загрузка данныx с сайта на Sheet2.<br>
+								2 | Если появились новые записи - копирование их на Sheet1. <br>
+								3 | Если дома до этого уже висели на сайте (rowSh1 != 0) и описание с ценой не менялось - удаление старой строки и замена новой даты на старую. Если поменялась - копирование новой и старой строки в Res и удаление старой. <br>
+								4 | Сравнение id из Sheet1 и Sheet2, и если id в Sheet2 отсутствует, это означает что запись удалена (дом продан) и строка перемещается из Sheet1 в Res.<br>
+								5 | Сравнение description и price, при изменении - копирование в Res<br>
+								</p>
+								<p class="well"><code>
+									Sub auto()<br>
+									End Sub
+								</code></p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== P05 Serega ============================= -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#vbap5" data-toggle="collapse" data-panel="#accord">P05</a> | Serega |
+						</div>
+						<div class="panel-collapse collapse" id="vbap5">
+							<div class="panel-body">
+							<p><b>Структура csv-файла</b> | 1- время в мсек | 2- напряжение аккумулятора</p>
+								<p class="well"><code>
+0;2,192<br>
+1;2,192<br>
+2;2,192<br>
+3;2,192<br>
+4;2,192
+								</code></p>
+								<p>Шаги:<br>
+								1 | Загрузка данныx с csv файла<br>
+								</p>
+								<p class="well"><code>
+Dim strFile As String, i As Integer, j As Integer, k As Integer, m As Integer<br>
+<br>
+With Application.FileDialog(msoFileDialogFilePicker)<br>
+    .InitialFileName = ThisWorkbook.Path & "\"<br>
+    .AllowMultiSelect = False<br>
+    .Filters.Clear<br>
+    .Filters.Add "Файлы CSV", "*.csv"<br>
+    If Not .Show Then Exit Sub<br>
+    strFile = .SelectedItems(1)<br>
+End With<br>
+<br>
+Range("a1").CurrentRegion.Clear<br>
+With ActiveSheet.QueryTables.Add _<br>
+        (Connection:="TEXT;" & strFile, Destination:=Range("$A$1"))<br>
+    .TextFileParseType = xlDelimited<br>
+    .TextFileSemicolonDelimiter = True<br>
+    .TextFileColumnDataTypes = Array(1, 1)<br>
+    .TextFileDecimalSeparator = ","<br>
+    .Refresh BackgroundQuery:=False<br>
+    .Delete<br>
+End With<br>
+'1 определение значения напряжения, после которого начинается падение<br>
+For i = 2 To 13000<br>
+ActiveSheet.Cells(i, 2).Activate<br>
+a = Cells(i, 2).Value<br>
+b = Cells(i + 1, 2).Value<br>
+c = Abs(a - b)<br>
+If c > 0.05 Then GoTo 1<br>
+Next<br>
+1:<br>
+d = ActiveCell.Offset(0, -1).Value<br>
+Cells(5, 11).Activate<br>
+Cells(5, 11).Value = d<br>
+Cells(5, 12).Value = a<br>
+'2 - к времени, из п.1 прибавляется 100 мсек и находится 2ое напряжение<br>
+For j = 2 To 13000<br>
+ActiveSheet.Cells(j, 1).Activate<br>
+a1 = Cells(j, 1).Value<br>
+If a1 = Cells(7, 11).Value Then GoTo 2<br>
+Next<br>
+2:<br>
+d1 = ActiveCell.Offset(0, 1).Value<br>
+Cells(8, 11).Activate<br>
+ActiveCell.Value = d1<br>
+'3 цикл<br>
+For k = 13000 To 2 Step -1<br>
+a2 = Cells(k, 2).Value<br>
+If a2 > Cells(10, 11).Value Then GoTo 3<br>
+Next<br>
+3:<br>
+Cells(k, 2).Activate<br>
+d2 = ActiveCell.Offset(0, -1).Value<br>
+Cells(11, 11).Activate<br>
+ActiveCell.Value = d2<br>
+'4 цикл<br>
+For m = 13000 To 2 Step -1<br>
+a3 = Cells(m, 2).Value<br>
+If a3 > Cells(16, 11).Value Then GoTo 4<br>
+Next<br>
+4:<br>
+Cells(m, 2).Activate<br>
+d3 = ActiveCell.Offset(1, -1).Value<br>
+Cells(17, 11).Activate<br>
+ActiveCell.Value = d3<br>
+'5 - форматирование<br>
+Columns("B:B").Select<br>
+Selection.NumberFormat = "0.000"<br>
+Columns("A:B").Select<br>
+Selection.HorizontalAlignment = xlCenter<br>
+								</code></p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== P06 Chris ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#chris" data-toggle="collapse" data-panel="#accord">P06</a> | Chris |
+						</div>
+						<div class="panel-collapse collapse" id="chris">
+							<div class="panel-body">
+								<p>
+1 | m01_ParseRequest - заполняет Excel-таблицу для каждого телекса |<br>
+Dim nextRow As Integer, i As Integer, telexName As String<br>
+Set shGen = ThisWorkbook.Worksheets("general")<br>
+filePath = ThisWorkbook.Path<br>
+txtFile = filePath & "\p06_data.txt"<br>
+<br>
+Call s01_copyPrevious<br>
+<br>
+t = read_txt(txtFile) ' user function<br>
+shGen.Range("A18").ClearContents<br>
+shGen.Range("A18").Value = t<br>
+shGen.Range("A20").ClearContents<br>
+shGen.Range("A20").Value = Len(t)<br>
+<br>
+telexName = return_between(t, "Message Number:", 1, "-01C") ' telex name<br>
+shGen.Cells(lastRow, 2).Value = telexName<br>
+shGen.Cells(lastRow, 7).Value = return_between(t, "PRODUCT:", 20, " ") ' dash number<br>
+shGen.Cells(lastRow, 9).Value = return_between(t, "AIRPLANE (VARIABLE/SERIAL):", 1, "/") ' variable<br>
+shGen.Cells(lastRow, 13).Value = return_between(t, "AIRPLANE (VARIABLE/SERIAL):", 7, " ") ' serial<br>
+shGen.Cells(lastRow, 15).Value = return_between(t, "HOURS/CYCLES:", 0, "/") ' hours<br>
+shGen.Cells(lastRow, 17).Value = return_between(t, "HOURS/CYCLES:", 7, "  ") ' cycles<br>
+shGen.Cells(lastRow, 19).Value = return_between(t, "REGISTRY:", 1, " ") ' registry<br>
+shGen.Cells(lastRow, 25).Value = return_between(t, "AFT CARGO DOOR P/N:", 1, " ") ' p/n<br>
+shGen.Cells(lastRow, 29).Value = return_between(t, "S/N:", 1, " ") ' s/n<br>
+shGen.Cells(lastRow, 36).Value = return_between(t, "SR #:", 1, " ") ' SR number<br>
+<br>
+Dim x 'paint cells in black if data changed<br>
+x = Array(2, 7, 9, 13, 15, 17, 19, 25, 29, 36)<br>
+For i = 1 To UBound(x)<br>
+shGen.Cells(lastRow, x(i)).Font.Color = vbBlack<br>
+Next i<br>
+							</p><div class="divider"></div><p>
+2 | m02_CreateReport - создание отчета на основе Excel-таблицы |<br>
+startTime = Timer<br>
+firstRow = shGen.Range("tem").Row<br>
+lastRow = shGen.Range("tem").End(xlDown).Row<br>
+fileName = filePath & "\main.docx"<br>
+<br>
+Call s01_chooseMain   'choose 1 main template out of 4<br>
+<br>
+devsRange = Range(shGen.Cells(lastRow, "AU"), shGen.Cells(lastRow, "CR")) 'area in Excel, used for dev number input<br>
+maxv = Application.WorksheetFunction.Max(devsRange) 'total deviations numbers<br>
+<br>
+shGen.Range("AN20:AS20").ClearContents<br>
+For i = 1 To maxv<br>
+devColumn = shGen.Range(shGen.Cells(lastRow, "AU"), shGen.Cells(lastRow, "CR")).Find(i, LookIn:=xlValues).Column<br>
+devFilename = shGen.Cells(firstRow, devColumn).Value<br>
+<br>
+Call s02_putD(devColumn)<br>
+Call s03_addDevs(devFilename)<br>
+Call s04_devDesc(devColumn)<br>
+Next<br>
+<br>
+telexName = shGen.Range("B" & lastRow).Value<br>
+Call s05_histDesc<br>
+Call s06_updateProp<br>
+Call s07_checkCrack_Devs<br>
+Call s08_checkForeign<br>
+Call s09_checkGroupConfig<br>
+<br>
+reportName = filePath & "\Substantiation_" & telexName & ".docx"<br>
+If Dir(reportName) <> "" Then Kill (reportName)<br>
+Name fileName As reportName<br>
+<br>
+endTime = Timer<br>
+MsgBox "Report is completed within " & Format(endTime - startTime, "0.0") & " sec."<br>
+<br>
+Set wdApp = New Word.Application<br>
+wdApp.Documents.Open (reportName)<br>
+wdApp.Visible = True<br>
+wdApp.Activate<br>
+								</p><div class="divider"></div><p>
+3 | m03_sendEmail - обновляет отчет на сервере и создает письмо |<br>
+Dim FSO As Object<br>
+Set FSO = CreateObject("Scripting.FileSystemObject")<br>
+<br>
+telexNumber = shGen.Cells(lastRow, 1).Value<br>
+telexName = shGen.Cells(lastRow, 2).Value<br>
+reportName = "\Substantiation_" & telexName & ".docx"<br>
+'----------------- create folder in mow --------------------<br>
+fullMowPath = mowPath & telexNumber & "_" & telexName<br>
+If Dir(fullMowPath, vbDirectory) = "" Then MkDir (fullMowPath)<br>
+<br>
+'----------------- move report in mow ----------------------<br>
+If Dir(fullMowPath & reportName) <> "" Then Kill (fullMowPath & reportName)<br>
+FileCopy ThisWorkbook.Path & reportName, fullMowPath & reportName<br>
+<br>
+'----------------- copy from mow to nw folder --------------<br>
+fullNwPath = nwPath & telexNumber & "_" & telexName<br>
+If FSO.FolderExists(fullNwPath) = False Then FSO.CreateFolder (fullNwPath)<br>
+Dim f As Scripting.Folder<br>
+Set f = FSO.GetFolder(fullMowPath)<br>
+f.Copy fullNwPath<br>
+<br>
+'----------------- create letter --------------<br>
+Dim outApp As Outlook.Application<br>
+Set outApp = CreateObject("Outlook.Application")<br>
+Dim mlItem As Outlook.MailItem, outlookText As String<br>
+Set mlItem = outApp.CreateItem(olMailItem)<br>
+<br>
+outlookText = "&lt;body&gt;&lt;font size='2' color='blue' face='Tahoma'&gt;Hi Chris,&lt;br&gt;&lt;br&gt;" & _<br>
+"Package " & "#" & telexNumber & "_" & telexName & ".docx is ready and is on the server < " & fullNwPath & "> &lt;br&gt;&lt;br&gt;" & _<br>
+"Please check.&lt;br&gt;&lt;br&gt;" & _<br>
+"Best regards,&lt;br&gt;&lt;br&gt;" & _<br>
+"Alex Klimovskikh,&lt;br&gt;" & _<br>
+"Stress engineer&lt;/font&gt;&lt;/body&gt;"<br>
+<br>
+With mlItem<br>
+.To = "alexander.v.klimovskikh@boeing.com"<br>
+.Subject = "#" & telexNumber & "_" & telexName & " is ready"<br>
+.HTMLBody = outlookText<br>
+.Save<br>
+End With<br>
+mlItem.Display<br>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- ===================================== VBA Project 7 ============================= -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#vbap7" data-toggle="collapse" data-panel="#accord">P07</a>  | WiseOwl download |
+						</div>
+						<div class="panel-collapse collapse" id="vbap7">
+							<div class="panel-body">
+								<p><b>'0. Декларация переменных  и подключение библиотек: Tools -> References: Microsoft HTML Object Library | Microsoft Scripting Runtime | Microsoft XML 6 </b></p>
+								<p class="well"><code>
+									#If VBA7 Then<br>
+									Private Declare PtrSafe Function URLDownloadToFile Lib "urlmon" Alias _<br>
+									"URLDownloadToFileA" (ByVal pCaller As LongPtr, ByVal szURL As String, _<br>
+									ByVal szFileName As String, ByVal dwReserved As LongPtr, ByVal lpfnCB As LongPtr) As LongPtr<br>
+									#Else<br>
+									Private Declare Function URLDownloadToFile Lib "urlmon" Alias _<br>
+									"URLDownloadToFileA" (ByVal pCaller As Long, ByVal szURL As String, _<br>
+									ByVal szFileName As String, ByVal dwReserved As Long, ByVal lpfnCB As Long) As Long<br>
+									#End If<br>
+									Public Const globeURL As String = "http://www.wiseowl.co.uk"<br>
+									Const woVidURL As String = "http://www.wiseowl.co.uk/videos/"<br>
+									Public Const mainDownloadFolder As String = "C:/avk/test"<br>
+									Public vidCatFolder As String
+								</code></p>
+								<p><b>'Function 1. Принимает гиперссылку, проверяет код сервера (200) и возвращает полный html</b></p>
+								<p><b>'1. Получение всех ссылок класса "woMenuList" со страницы 1 ур-ня</b><br></p>
+								<p class="well"><code>
+									Sub getHyperlinkReturnAllHyperlinksInsideClass()<br>
+									Dim htmlDoc As New MSHTML.HTMLDocument<br>
+									Dim vidCatList As MSHTML.IHTMLElement<br>
+									Dim vidCatID As Integer<br>
+									Dim vidCats As MSHTML.IHTMLElementCollection<br>
+									Dim vidCat As MSHTML.IHTMLElement<br>
+									Dim nextHref As String<br>
+									Dim nextURL As String<br>
+
+									<b>htmlDoc.body.innerHTML = iLink_oHtml(woVidURL) ' Function 1</b><br>
+
+									Set vidCatList = htmlDoc.getElementsByClassName("woMenuList")(0)<br>
+									Set vidCats = vidCatList.getElementsByTagName("a")<br>
+									For vidCatID = 1 To vidCats.Length - 1<br>
+									Set vidCat = vidCats(vidCatID)<br>
+									nextHref = vidCat.getAttribute("href")<br>
+									nextURL = woVidURL & Mid(nextHref, InStr(nextHref, ":") + 9)<br>
+									ListVideosOnPage vidCat.innerHTML, nextURL<br>
+									Next vidCatID<br>
+									End Sub
+								</code></p>
+								<p><b>'2. Получение всех ссылок класса "woPagingItem" со страницы 2 ур-ня</b></p>
+								<p class="well"><code>
+									Sub ListVideosOnPage(vidCatName As String, vidCatURL As String)<br>
+									Dim htmlDoc As New MSHTML.HTMLDocument<br>
+									Dim vidRows As MSHTML.IHTMLElementCollection<br>
+									Dim vidRow As MSHTML.IHTMLElement<br>
+									Dim vidLinks As MSHTML.IHTMLElement<br>
+									Dim vidPages As MSHTML.IHTMLElementCollection<br>
+									Dim i As Integer<br>
+									Dim nextHref As String<br>
+									Dim nextURL As String<br>
+									Dim vidHref As String<br>
+									Dim vidURL As String<br>
+
+									<b>htmlDoc.body.innerHTML = iLink_oHtml(vidCatURL) ' Function 1</b><br>
+
+									Worksheets.Add<br>
+									Range("A1").Value = vidCatName<br>
+									Range("B1").Value = "Video URL"<br>
+									Range("A1:B1").Interior.Color = rgbCornflowerBlue<br>
+									Range("A1:B1").Font.Color = rgbWhite<br>
+									Range("A1:B1").Font.Bold = True<br>
+									Range("A1").Select<br>
+									Set vidPages = htmlDoc.getElementsByClassName("woPagingItem")<br>
+									For i = 0 To vidPages.Length - IIf(vidPages.Length, 1, 0)<br>
+									If i > 0 Then<br>
+									nextHref = vidPages(i).getAttribute("href")<br>
+									nextURL = woVidURL & Mid(nextHref, InStr(nextHref, ":") + 9)<br>
+
+									<b>htmlDoc.body.innerHTML = iLink_oHtml(nextURL) ' Function 1</b><br>
+
+									End If<br>
+									Set vidRows = htmlDoc.getElementsByClassName("woVideoListRow")<br>
+									For Each vidRow In vidRows<br>
+									Set vidLinks = vidRow.getElementsByTagName("a")(0)<br>
+									vidHref = vidLinks.getAttribute("href")<br>
+									vidURL = woVidURL & Mid(vidHref, InStr(vidHref, ":") + 9)<br>
+									ActiveCell.Value = vidLinks.innerText<br>
+									ActiveCell.Offset(0, 1) = vidURL<br>
+									ActiveCell.Offset(0, 1).Hyperlinks.Add ActiveCell.Offset(0, 1), vidURL<br>
+
+									Dim htmlText As String<br>
+									<b>htmlText = iLink_oHtml(vidURL) ' Function 1</b><br>
+									getAllHtmlReturnAllHyperlinksInsideClass htmlText<br>
+
+									ActiveCell.Offset(1, 0).Select<br>
+									Next vidRow<br>
+									Next i<br>
+									Range("A1").Select<br>
+									ActiveCell.CurrentRegion.EntireColumn.AutoFit<br>
+									End Sub
+								</code></p>
+								<p><b>'3. Поиск ссылок с title="video files download" для скачивания</b></p>
+								<p class="well"><code>
+									Sub getAllHtmlReturnAllHyperlinksInsideClass(htmlText As String)<br>
+									Dim htmlDoc As New MSHTML.HTMLDocument<br>
+									Dim Links As MSHTML.IHTMLElementCollection<br>
+									Dim Link As MSHTML.IHTMLElement<br>
+									Dim textInsideClass As MSHTML.IHTMLElement<br>
+									Dim fileLinkFound As Boolean<br>
+									Dim fileURL As String<br>
+									htmlDoc.body.innerHTML = htmlText<br>
+									Set textInsideClass = htmlDoc.getElementsByClassName("woVideoShowPost")(0)<br>
+									Set Links = textInsideClass.getElementsByTagName("a")<br>
+									fileLinkFound = False<br>
+									For Each Link In Links<br>
+									If LCase(Link.getAttribute("title")) = "video files download" Then<br>
+									'Debug.Print Link.innerText, Link.getAttribute("href")<br>
+									fileLinkFound = True<br>
+									Exit For<br>
+									End If<br>
+									Next Link<br>
+									If Not fileLinkFound Then Exit Sub<br>
+									'creating full hyperlink<br>
+									fileURL = Link.getAttribute("href")<br>
+									fileURL = Mid(fileURL, InStr(fileURL, ":") + 1)<br>
+									Debug.Print fileURL<br>
+									fileURL = globeURL & fileURL<br>
+									getHyperlinkReturnDownload fileURL<br>
+									End Sub
+								</code></p>
+								<p><b>'4. Скачивание файла</b></p>
+								<p class="well"><code>
+									Sub getHyperlinkReturnDownload(fileURL As String)<br>
+									Dim destinationFile As String<br>
+									destinationFile = Mid(fileURL, InStrRev(fileURL, "/"))<br>
+									destinationFile = Replace(destinationFile, "%20", " ")<br>
+									destinationFile = mainDownloadFolder & destinationFile<br>
+									If URLDownloadToFile(0, fileURL, destinationFile, 0, 0) = 0 Then<br>
+									Debug.Print "Started"<br>
+									Else<br>
+									Debug.Print "Not started"<br>
+									End If<br>
+									End Sub
+								</code></p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== P08 Catia ============================= -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#Catia" data-toggle="collapse" data-panel="#accord">P08</a> | CATIA |
+						</div>
+						<div class="panel-collapse collapse" id="Catia">
+							<div class="panel-body">
+								<p>
+1 | Begin | <a href="http://www.scripting4v5.com/ " target="_blank">VB script </a> | <a href="https://insite.web.boeing.com/culture/viewQuestion.do?questionId=269081 " target="_blank">Alex Lumbab</a> |<br>
+_.1 | Catia -> Tools -> Macro -> VB editor -> yes -> create new lib -> ok -> close |<br>
+_.2 | Tools -> Macro -> start record | Normal View | square button to stop |<br>
+_.3 | Tools -> Macro -> start record | Normal View | square button to stop |<br>
+								</p><div class="divider"></div><p>
+2 |  |<br>
+_.1 |  |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ======================================== Next ======================================== -->		    
+				</div>	    
+			</div>
+		</div>
+	</div>
+	<script src="../_js/jquery.min.js"></script>
+	<script src="../_js/bootstrap.min.js"></script>
+</body>
+</html>

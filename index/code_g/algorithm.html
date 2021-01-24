@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Algorithm</title>
+	<link href="../_css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../_css/style.css">
+</head>
+<body>
+	<!-- ================================= Navigation ==================================== -->
+	<nav class="navbar navbar-default">
+
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="C:\avk\index.html">AvK <span class="glyphicon glyphicon-flash"></span></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav">
+			<!-- Sites -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sites<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\stravkcom\index.html">stravk.com</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\sowlru\index.html">sowl.ru</a></li>
+						</ul>
+        			</li>
+			<!-- Aero -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aero<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\aero\general.html">General</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fem.html">FEM</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\static.html">Static</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fatigue.html">Fatigue</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\dt.html">Damage Tolerance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\structure.html">Structure</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\doors.html">Door</a></li>
+						</ul>
+        			</li>
+			<!-- Code General -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code G<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_g\basics.html">Basics</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\objects.html">Objects</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="active"><a href="C:\avk\index\code_g\algorithm.html">Algorithm</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\other_code.html">Other</a></li>
+						</ul>
+        			</li>
+			<!-- Code Project -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code P<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_p\c.html">C</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\unix.html">UX</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\python.html">Python</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\php.html">PHP</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\vba.html">VBA</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\ml.html">ML</a></li>
+						</ul>
+        			</li>
+			<!-- Front -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Front<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\front\web.html">HTML - 1991</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ecma.html">ECMA - 1995</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ajax.html">AJAX - 2005</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\jquery.html">jQuery - 2006</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\nodejs.html">Node - 2009</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\angular.html">Angular - 2014</a></li>
+						</ul>
+        			</li>
+
+			<!-- Other -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\other\finance.html">Finance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\english.html">English</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\electro.html">Electro</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\scratch.html">Scratch</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\roblox.html">Roblox</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\other.html">Other</a></li>
+						</ul>
+        			</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+
+		</div><!-- /.container-fluid -->
+
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<h3>Algorithm</h3> 
+				<div class="panel-group" id="accord">
+					<!-- ============================= Algoritm 01 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#alg01" data-toggle="collapse" data-panel="#accord">01</a> | сортировка вставкой | n^2 |
+						</div>
+						<div class="panel-collapse collapse" id="alg01">
+							<div class="panel-body">
+								<p>
+1 | Определения алгоритма | д. - данные |<br>
+_.1 | алгоритм - корректно определенная вычислительная процедура |<br>
+_.2 | вычислительная процедура - последовательность формальных манипуляций с д. |<br>
+_.3 | корректный алгоритм - выполняется конечное время и выдает корректные д. |<br>
+_.4 | алгоритм решает некоторую задачу и вых.д. должны удовл. требованиям задачи |<br>
+_.5 | задача - описание мн-ва вх.д. и требования а вых.д. |<br>
+_.6 | экземпляр задачи - конкретн. вх.д., удовл. описанию этой задачи |<br>
+								</p><div class="divider"></div><p>
+2 | Стр-ра д. |<br>
+_.1 | стр-ра д. - способ организ. д., корректно поддержив. опред. набор операций |<br>
+_.2 | способ организ. - д. хран. в опред. состоянии и не изменяются |<br>
+_.3 | операции - алгоритмы, приним. на вход д. и .. |<br>
+_.__ | возвращают инфу о д. (запросы) |<br>
+_.__ | изменяют сами д. (модификация) |<br>
+_.4 | корректное состояние опред. при определении стр-ры д. |<br>
+								</p><div class="divider"></div><p>
+3 | Асимптотические обозначения |<br>
+_.1 | j=1 (c1); for(var i=1; i<=n; i++){j=j*i (c2)} |<br>
+_.2 | T(n)=c1+c2*n; - время работы алгоритма, n - размер вх.д. |<br>
+_.3 | g(n) - точная асимптот. оценка ф-ции f(n) | <br>
+_.4 | c1*n^2 < 1/2*n^2 - 3n < c2*n^2 => c1 < 1/2 - 3/n < c2 | <br>
+_._ | n > 7 | c1 > 1/14 | c2 > 1/2 |<br>
+								</p><div class="divider"></div><p>
+4 | Алгоритм сортировки вставками |<br>
+_.1 | вход: последовательность n-чисел (ar[n]) |<br>
+_.2 | выход: a1 < .. < an |<br>
+_.3 | 1й эл-т - отсортир. подмассив |<br>
+_.4 | след. эл-т вставляется в правильном месте и т.д. |<br>
+_.5 | for(var j=2; j <=n; j++) | с1 | j - текущий эл-т |<br>
+_.6 | i = j-1; | c2 | i - предыдущий эл-т |<br>
+_.7 | while(ar[i] > ar[i-1]) {..} | переставить местами |<br>
+_.__ | tmp=ar[i]; ar[i] = ar[i+1]; ar[i+1]=tmp |<br>
+								</p><div class="divider"></div><p>
+6 | t01.py | a+b |<br>
+_.0 | Win+R -> cmd -> cd C:\Python34 -> python t.py |<br>
+_.1 | fi=open("C:/Python34/avk/input.txt", "rt") |<br>
+_.2 | for line in fi: print(line) |<br>
+_.3 | n = line.split(' ') #получение массива из строки |<br>
+_.4 | a=int(n[0]) | b=int(n[1]) | c=str(a+b) |<br>
+_.5 | fo=open("output.txt", "wt+") |<br>
+_.6 | fo.write(c) |<br>
+								</p><div class="divider"></div><p>
+7 | t01.py | обертки |<br>
+from edx_io import edx_io <br>
+with edx_io() as io: io.writeln(io.next_int() + io.next_int())<br>
+								</p><div class="divider"></div><p>
+8 | t04.pypy |<br>
+# input.txt (входной файл):<br>
+# l1(1я строка): 5 - число эл-тов массива<br>
+# l2(2я строка): массив - 10 8.7 0.01 5.0 3.00<br>
+# задача: отсортировать массив и вывести старые индексы (min-3, avg-4, max-1)<br>
+# создаются 2 массива: ar_m хранит данные из файла, ar_i хранит неотсортированные индексы (1,2,3,..)<br>
+# print идут только для отладки, удаляются при работе для ускорения<br>
+fi=open("input.txt", "rt")<br>
+line=fi.readlines() #чтение по строкам<br>
+l1=int(line[0]) #первая строка - длина массива<br>
+l2=line[1] #вторая строка - массив<br>
+ar_m_str=l2.split(' ') #получение массива из строки<br>
+ar_m=list(map(float, ar_m_str))<br>
+print(ar_m) #[10.0, 8.7, 0.01, 5.0, 3.0]<br>
+<br>
+ar_i=[] #массив нужен для сохранения неотсортированных индексов<br>
+for j in range(0,l1): ar_i.append(j+1) #заполнение массива числами от 1 до длины<br>
+print(str(ar_i)+" \n") #[1, 2, 3, 4, 5]<br>
+<br>
+for i in range(1,l1): #проход по каждому эл-ту массива, начиная со второго<br>
+_cur_i=i #1: текущий индекс=2, т.к. 1й - отсортир. подмассив | одновременно - max число сравнений цикла в while<br>
+_cur_valm=ar_m.pop(i) #8.7: текущее значение ar_m, вытаскивается чтобы при множ.сравнениях не менялось<br>
+_cur_vali=ar_i.pop(i) #2: текущее значение ar_i, вытаскивается чтобы при множ.сравнениях не менялось<br>
+_print("for "+str(i)+": "+str(cur_i)+">0 "+str(ar_m[cur_i-1])+">"+str(cur_valm)+" "+str(cur_vali)+' ') # for 1: 1 > 0 10 > 8.7 2<br>
+<br>
+_while ((cur_i>0) and (ar_m[cur_i-1]>cur_valm)): #смещение текущ.позиции влево, если предыдущий > текущего<br>
+__print("while executed")<br>
+__cur_i-=1 #0: смещение влево<br>
+__print(str(cur_i)+" ") #0: смещенный индекс<br>
+<br>
+_ar_m.insert(cur_i, cur_valm) #текущ.значение ar_m вставляется в смещенный индекс<br>
+_print("ar_m: "+str(ar_m)) #[8.7, 10, 0.01, 5.0, 3.0]<br>
+_ar_i.insert(cur_i, cur_vali) #текущ.значение ar_i вставляется в смещенный индекс<br>
+_print("ar_i: "+str(ar_i)+" \n") #[2, 1, 3, 4, 5]<br>
+<br>
+mid = int((l1-1)/2) #нахождение среднего индекса <br>
+out = str(ar_i[0])+' '+str(ar_i[mid])+' '+str(ar_i[l1-1])<br>
+print(out) #3 4 1<br>
+<br>
+fo=open("output.txt", "wt+") #записать результат в файл<br>
+fo.write(out)<br>
+								</p><div class="divider"></div><p>
+9 | t05.py |<br>
+out=''<br>
+for i in range(0,l1-1): i - текщ. позиция<<br>
+_ min_i = min(range(i,l1), key=n.__getitem__) #min значение справа от текщ. позиции i<br>
+_ if min_i != i:#если текущ = min - идти к след. эл-ту<br>
+__ min_val=n.pop(min_i) #min достается из массива<br>
+__ n.insert(i, min_val) #ложится в текущую<br>
+__ cur_val=n.pop(i+1) #текущ. достается из массива смещенного на 1 (i+1)<br>
+__ n.insert(min_i, cur_val) #ложится в миним. позиции - произошел обмен<br>
+__ out += 'Swap elements at indices '+str(i+1)+' and '+str(min_i+1)+'.\n'<br>
+out+='No more swaps needed.\n'<br>
+for i in range(0,l1): out+=str(n[i])+' '<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ============================= Insertion sort ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#Insertion_sort" data-toggle="collapse" data-panel="#accord">01b</a> | python |
+						</div>
+						<div class="panel-collapse collapse" id="Insertion_sort">
+							<div class="panel-body">
+								<p>
+1 | t3.py | sort4 |<br>
+_.1 | for i in range(1,4): print(n[i]) |<br>
+								</p><div class="divider"></div><p>
+2 | t3.py | сравнивает все индексы |<br>
+_.1 | сравнивает только верхние индексы|<br>
+_._ | for i in range(1,4): |<br>
+_.__ | print('------ '+str(i)+' ------') |<br>
+_.__ | prev_i = i-1 |<br>
+_.__ | if n[prev_i] > n[i]: print(str(prev_i)+'>'+str(i)+' = bad') |<br>
+_.__ | else: print(str(prev_i)+'<'+str(i)+' = good')|<br>
+								</p><div class="divider"></div><p>
+3 | t3.py | сравнивает все индексы |<br>
+_._ | for i in range(1,4): |<br>
+_.__ | print('------ '+str(i)+' ------') |<br>
+_.__ | while i > 0: |<br>
+_.___ | prev_i = i-1 |<br>
+_.___ | if n[prev_i] > n[i]: print(str(prev_i)+'>'+str(i)+' = bad') |<br>
+_.___ | else: print(str(prev_i)+'<'+str(i)+' = good') |<br>
+_.___ | i=i-1 |<br>
+								</p><div class="divider"></div><p>
+4 | input.txt |<br>
+_.1 | 10 | число элементов маcсива |<br>
+_.2 | 1 8 4 2 3 7 5 6 9 0 | маcсив |<br>
+								</p><div class="divider"></div><p>
+5 | output.txt |<br>
+_.1 | 1 2 2 2 3 5 5 6 9 1 | индекс на момент обработки |<br>
+_.2 | отсортированный маcсив |<br>
+								</p><div class="divider"></div><p>
+6 | t3.py | финальная версия |<br>
+import time #модуль для подсчета времени выполнения |<br>
+start_time=time.time() #начальное время |<br>
+fi=open("input.txt", "rt") # |<br>
+line=fi.readlines() #чтение по строкам |<br>
+l1=int(line[0]) #первая строка - длина массива |<br>
+l2=line[1] #вторая строка - массив |<br>
+print(str(l1)+' \n'+str(l2)) #контроль правильности чтения |<br>
+_._ | n2=l2.split(' ') #разбиение по строковым эл-там |<br>
+_._ | n=list(map(int,n2)) #преобразование в целое число для послед.обработки |<br>
+_._ | out='1 ' #индекс 1ого эл-та всегда 1 на момент обработки |<br>
+_._ | out2=str(min(n))+' ' #цикл for работает со 2ого значения, поэтому 1ое = min() |<br>
+_._ | for j in range(1,l1): #запуск цикла со 2ого эл-та |<br>
+_.__ | i=j #i - внутр.переменная в цикле, отвечает за кол-во перемещений индекса влево |<br>
+_.__ | pos=0 #число перемещений индекса |<br>
+_.__ | while i > 0: #цикл выполняется пока эл-т не дойдет до начала |<br>
+_.___ | prev_i = i-1 | находится предыдущий эл-т для послед. сравнения |<br>
+_.___ | if n[prev_i] > n[i]:| если предыдущий больше текущего: |<br>
+_.____ | tmp=n[i] | меняются местами через переменную tmp |<br>
+_.____ | n[i]=n[prev_i] |<br>
+_.____ | n[prev_i]=tmp |<br>
+_.____ | pos+=1 | перемещения индеска влево увеличивается на 1 |<br>
+_.___ | else: break | если текущий эл-т больше предыдущего - переходим к след.эл-ту |<br>
+_.___ | i=i-1 | сдвигаем индексы влево и снова проверяем |<br>
+_.__ | out+=str(j-pos+1)+' ' | индекс на момент обработки = текущий - число смещений влево |<br>
+_._ | for i in range(1,l1): out2+=str(n[i])+' ' | вывод отсортированного массива |<br>
+_._ | print(out+' \n'+out2) | контроль правильности работы программы |<br>
+_._ | fo=open("output.txt", "wt+") | запись в файл |<br>
+_._ | fo.write(out+' \n'+out2) |<br>
+_._ | fi.close() |<br>
+_._ | fo.close() |<br>
+_._ | print("--  %s seconds ---" % (time.time() - start_time)) | вывод отработтаного времени |<br>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ============================= Algoritm 02 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#alg02" data-toggle="collapse" data-panel="#accord">02</a> | сортировка слиянием |
+						</div>
+						<div class="panel-collapse collapse" id="alg02">
+							<div class="panel-body">
+								<p>
+1 | Сортировка слиянием |<br>
+_.1 | принцип - разделяй и властвуй |<br>
+_.2 | время О(n*logn) |<br>
+_.3 | A(i)[4,6,6] и B(j)[1,4,5,7] - отсортированные массивы |<br>
+_.4 | Задача - объеденить в массив С |<br>
+_.5 | 1 эл-т = min(A(1),B(1)) = 1 (B) |<br>
+_.6 | 2 эл-т = min(A(1),B(2)) = 4 (A) |<br>
+_.7 | 3 эл-т = min(A(2),B(2)) = 4 (B) |<br>
+								</p><div class="divider"></div><p>
+2 | Слияние массивов |<br>
+_.1 | i,j = 0 | n,m = len(a),len(b) | c=[] |<br>
+_.2 | while i < n or j < m |<br>
+_.3 | if a[i] =< b[j]: c.add(a[i]); i++ |<br>
+_.4 | else: c.add(b[j]); j++ |<br>
+_.5 | Время работы: O(n+m) |<br>
+_.6 | массив делится на 2 равные части, каждая сортируется и сливается |<br>
+								</p><div class="divider"></div><p>
+3 | Быстрая сортировка |<br>
+_.1 | принцип - разделяй и властвуй |<br>
+_.2 | использует генератор случ.чисел х=4 |<br>
+_.3 | время О(n*logn) |<br>
+_.4 | делим ar на 2 части: ar1 < 4 < ar2 |<br>
+								</p><div class="divider"></div><p>
+4 | Время работы |<br>
+_.1 | любая сортировка не может быть меньше чем C*n*log(n) |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ============================= Algoritm 03 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#alg03" data-toggle="collapse" data-panel="#accord">03</a> | cортировка подсчетом |
+						</div>
+						<div class="panel-collapse collapse" id="alg03">
+							<div class="panel-body">
+								<p>
+1 | Сортировка подсчетом | O(n+k) |<br>
+_.1 | Идея - для каждого эл-та х определить число эл-тов меньше х |<br>
+_.2 | используется доп.массив С[] - массив для подсчета числа эл-тов меньше х |<br>
+_.3 | A=[3,4,1,0,5,0,3,1,3] | for i=1 to k | <br>
+_._ | C[i]=0 - массив заполняется 0 | <br>
+_._ | 0 встретился 2 раза - C[1]=2, C[2]=2  и т.д | <br>
+_.4 | for i=0 to k | С[2,4,4,7,8,9] - суммирование |<br>
+_.5 | for i=1 to len(A) | c конца массива А |<br>
+_._ | А[9]=3 -> C[3]=7 -> B[7]=3 | C[3]=7-1=6 |<br>
+_._ | А[8]=1 -> C[1]=4 -> B[4]=1 | C[1]=4-1=3 |<br>
+								</p><div class="divider"></div><p>
+2 | Цифровая сортировка |<br>
+_.1 | A=[bar, box, big, row, ear, rug, cow, tar, tan] |<br>
+_.2 | d=3- длина послед. в А |<br>
+_.3 | for i=1 to d: - от правого к левому 3 прохода сортировки |<br>
+								</p><div class="divider"></div><p>
+3 | Карманная сортировка |<br>
+_.1 | д. равномерно распред. в некотор.интервале |<br>
+_.2 | А=[0.63, 0.19, 0.09, 0.46, 0.61, 0.85, 0.40, 0.60, 0.71, 0.41] |<br>
+_.3 | A[1]=0.63 -> B[6]=0.6-0.7 | A[2]=0.19 -> B[2]=0.1-0.2 |<br>
+_.4 | если значений в 1 эл-те В много - они сортируются |<br>
+_.5 | B[0]=0.09 -> A[1] | B[1]=0.19 -> A[2] |<br>
+								</p><div class="divider"></div><p>
+4 | t11.py |<br>
+f = open('input.txt','r')<br>
+ar = [line.strip() for line in f]<br>
+f.close()<br>
+str1 = list(map(int,ar[0].split()))<br>
+la=str1[0]<br>
+lb=str1[1]<br>
+A = list(map(int,ar[1].split()))<br>
+B = list(map(int,ar[2].split()))<br>
+#1 получение перемноженого массива<br>
+res=[]<br>
+for j in range(0,lb): <br>
+_ for i in range(0,la): res.append(A[i]*B[j])<br>
+#2 сортировка массива<br>
+res_sort = sorted(res)<br>
+#3 суммирование каждого 10 эл-та<br>
+out=0<br>
+for k in range(len(res_sort)): <br>
+_ if k%10==0: out+=int(res_sort[k])<br>
+<br>
+f = open('output.txt','a')<br>
+print(out,file=f)<br>
+f.close()<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ============================= Algoritm 04 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#alg04" data-toggle="collapse" data-panel="#accord">04</a> | стек | очередь |
+						</div>
+						<div class="panel-collapse collapse" id="alg04">
+							<div class="panel-body">
+								<p>
+1 | Стек |<br>
+_.1 | Динам. мн-во - мн-во к-рое поддерживает операции добавления и удаления эл-тов. |<br>
+_.2 | Стек - динам. мн-во, со стратегией LIFO |<br>
+_.3 | ar=[10,7,12,5] | var top = 4 (индекс последнего эл-та - вершина стека) |<br>
+_.4 | if top = 0 - стек пуст |<br>
+_.5 | push(ar,x) = ar[top(ar)] = x - добавить эл-т в стек |<br>
+_.6 | pop(ar) - снять эл-т из стека |<br>
+								</p><div class="divider"></div><p>
+2 | Очередь |<br>
+_.1 | Очередь - динам. мн-во, со стратегией FIFO |<br>
+_.2 | ar=[10,7,12,5] | var head, tail - индексы 1 и последнего эл-та |<br>
+_.3 | enqueue(ar,x) = tail=+1 - добавить эл-т в очередь |<br>
+_.4 | dequeue(ar) = head=+1 - удалить эл-т из очереди |<br>
+								</p><div class="divider"></div><p>
+3 | Связанный список |<br>
+_.1 | динам. мн-во, порядок эл-ов определяется относительно др. эл-та |<br>
+_.2 | поля 1но-связного списка: key, next | head - указатель на перв. эл-т списка |<br>
+_.3 | поля 2х-связного списка: prev, key, next | head - указатель на перв. эл-т списка |<br>
+_.4 | циклический список | ограничитель |<br>
+_.5 | операции |<br>
+_._ | поиск эл-та с ключом k в списке L |<br>
+_._ | вставка эл-та x в список L |<br>
+_._ | удаление эл-та x из списка L |<br>
+								</p><div class="divider"></div><p>
+4 | Двоичное дерево |<br>
+_.1 | конечное мн-во узлов, к-рое состоит из 3 непересекающихся мн-в узлов: |<br>
+_._1 | корневой узел - корень |<br>
+_._2 | двоичное дерево -  левое поддерево (может состоять из 3 таких же мн-в) |<br>
+_._3 | двоичное дерево -  правое поддерево (может состоять из 3 таких же мн-в) |<br>
+_.2 | корень - предок любого узла |<br>
+_.3 | глубина узла - число ребер на пути от корня к узлу |<br>
+_.4 | высота узла - число ребер на самом длинном пути от узла до листа |<br>
+_.5 | полное двоичное дерево |<br>
+_._1 | одна и та же глубина у всех листьев |<br>
+_._2 | все внутренние узлы имеют 2 ребенка |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ============================= Algoritm 05 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#alg05" data-toggle="collapse" data-panel="#accord">05</a> | двоичная куча |
+						</div>
+						<div class="panel-collapse collapse" id="alg05">
+							<div class="panel-body">
+								<p>
+1 | Двоичная куча - binary heap - массив, почти полное двочное дерево |<br>
+_._ | ar = [17,15,13,14,12,11,8,9,1,4,2,10] |<br>
+_.1 | ar[1] = 17 - корень дерева (ключ) |<br>
+_.2 | ключ=13 -> индекс=3 -> 3/2 = 1.5 -> округлить вниз -> индекс родителя = 1 |<br>
+_.3 | ключ=13 -> индекс=3 -> 2*3 -> индекс левого ребенка = 6 (ключ 11) |<br>
+_.3 | ключ=13 -> индекс=3 -> 2*3+1 -> индекс правого ребенка = 7 (ключ 8) |<br>
+_.4 | 2 типа куч |<br>
+_._ | невозрастающая - ключ родителя (17) > ключ ребенка (15,13) |<br>
+_._ | неубывающая - наоборот |<br>
+								</p><div class="divider"></div><p>
+2 | Восстановление св-ва невозврастающей кучи |<br>
+_.1 | ключ родителя должен быть больше ключей детей |<br>
+								</p><div class="divider"></div><p>
+3 | Сортировка кучей |<br>
+_._ | пирамидальная сортировка - heap sort |<br>
+_.1 | ar=[13,17,14,11,12,15] преобразуется в невозрастающую кучу |<br>
+_.2 | ar=[17,13,15,12,11,14] происходит обмен корня и последнего эл-та |<br>
+_.3 | ar=[14,13,15,12,11,17] преобразуется в невозрастающую кучу (17 не входит в кучу) |<br>
+_.4 | ar=[15,13,14,12,11,17] происходит обмен корня и предпоследнего эл-та |<br>
+_.5 | ar=[11,13,14,12,15,17] и т.д. |<br>
+_.6 | время работы = n*log(n) |<br>
+_.7 | требует мало памяти |<br>
+								</p><div class="divider"></div><p>
+4 | Очередь с приоритетами на основе кучи |<br>
+_._ | приоритет - в-на, характериз. каждый эл-т |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ============================= Algoritm 06 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#alg06" data-toggle="collapse" data-panel="#accord">06</a> | алгоритмы поиска |
+						</div>
+						<div class="panel-collapse collapse" id="alg06">
+							<div class="panel-body">
+								<p>
+1 | Двоичный поиск в отсортированном массиве |<br>
+_.1 | for i=0..n-1: if a[i] == x: return i - неотсортированный массив |<br>
+_.2 | ar=[1,3,4,6,7,10,12,20]; | Найти индекс 6 |<br>
+_.3 | l=-1; r=8;  |<br>
+_.3 | while 8>-1+1: mid=(l+r)/2=3; ar[mid]=6, |<br>
+_.__ | if ar[3] < 6: l=mid; else: <b>r=mid=3</b> |<br>
+_.4 | while 3>-1+1: mid=(-1+3)/2=1; ar[1]=3, |<br>
+_.__ | if ar[1] < 6: <b>l=mid=1</b>; else: r=mid=3 |<br>
+								</p><div class="divider"></div><p>
+2| Двоичное дерево поиска |<br>
+_.1 | Двоичное дерево - стр-ра, состоящая из узлов. |<br>
+_.2 | У каждого узла не более 2 детей: левое и правое |<br>
+_.3 | Лист дерева - узел, у которого нет детей |<br>
+_.4 | В программе представляет собой стр-ру с 4 полями: |<br>
+_._1 | ключ элемента |<br>
+_._2 | указатели на левого, правого ребенка и родителя |<br>
+_.5 | 1 3(l) 6 4 7(root) 10(r) 9 |<br>
+_.6 | рекурсивная ф-ция | search: if k < x.key return search(x.left, k)<br>
+
+
+								</p>
+							</div>
+						</div>
+					</div>
+<!-- ============================= 07 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#alg07" data-toggle="collapse" data-panel="#accord">07</a> | сбалансированные деревья поиска |
+						</div>
+						<div class="panel-collapse collapse" id="alg07">
+							<div class="panel-body">
+								<p>
+1 | Мотивация и обзор |<br>
+_.1 | подбор эффективной стр-ры данных для поиска, вставки и удаление произвольного эл-та|<br>
+_.2 | массив - поиск О(n); вставка и удаление не поддерживается |<br>
+_.3 | стек/очередь - поиск О(n); вставка О(1); удаление О(n) |<br>
+_.4 | двухсвязный список - поиск О(n); вставка О(1); удаление О(1) |<br>
+_.5 | куча - поиск О(n); вставка О(logn); удаление О(logn) |<br>
+_.6 | двоичное дерево - поиск О(logn); вставка О(n); удаление О(n) |<br>
+_.7 | простое двоичное дерево - поиск О(высота h); вставка О(h); удаление О(h) |<br>
+_._ | наиболее эффективная стр-ра, только необходимо ограничить h |<br>
+								</p><div class="divider"></div><p>
+2 | Поддержка сбалансированности |<br>
+_.1 | АВЛ-дерево. Разница между левым и правым не больше 1 |<br>
+_.2 | разделить узлы на 2 типа: "черные" и "красные" |<br>
+_._ | дети красных обязательно черные |<br>
+_._ | реализация: C++: std:set; Java: java.util.TreeSet |<br>
+								</p><div class="divider"></div><p>
+3 | АВЛ-дерево: определение, балансировка |<br>
+_.1 | это двоичное дерево поиска, разница между левым и правым не больше 1 |<br>
+_.2 | баланс - разница высот левого и правого поддеревьев |<br>
+_.3 | max число узлов АВЛ - дерева = 2^(h+1)-1 | при h=3; n=15 |<br>
+_.4 | h=1 (n=8) | h=2 (n=4) | h=3 (n=2) | + корень |<br>
+_.5 | операция балансировки: малый правый поворот |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+<!-- ============================= 08 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#alg08" data-toggle="collapse" data-panel="#accord">08</a> | хэширование |
+						</div>
+						<div class="panel-collapse collapse" id="alg08">
+							<div class="panel-body">
+								<p>
+1 | Хэш-таблицы с закрытой адресацией |<br>
+_.1 | неотсортированное мн-во с операциями: add, remove, check |<br>
+_.2 | ar=[А, Б, В]; | ar=[А, Б:брусника, В]; | ar=[А, Б: брусника: банан, В]; |<br>
+								</p><div class="divider"></div><p>
+2 |  |<br>
+_.1 |  |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+<!-- ============================= 09 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#alg09" data-toggle="collapse" data-panel="#accord">09</a> | поиск подстрок: наивный алгоритм |
+						</div>
+						<div class="panel-collapse collapse" id="alg09">
+							<div class="panel-body">
+								<p>
+1 | наивный |<br>
+_.1 | строка - последовательность символов, массив букв |<br>
+_.2 | префикс/ суффикс - начало/ конец строки |<br>
+_.3 | подстрока - непрерывная последовательность символов из строки |<br>
+_.4 | наивный алгоритм - прикладывание подстроки ко всем возможным местам |<br>
+								</p><div class="divider"></div><p>
+2 |  |<br>
+_.1 |  |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+<!-- ============================= 10 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#alg10" data-toggle="collapse" data-panel="#accord">10</a> | поиск подстрок |
+						</div>
+						<div class="panel-collapse collapse" id="alg10">
+							<div class="panel-body">
+								<p>
+1 | алгоритм кнута- морриса- пратта |<br>
+_.1 | префикс-ф-ция - максимальный по длине префикс строки s, к-рый явл. суффиксом |<br>
+_._ | pref('ababab') = 'abab' |<br>
+_.2 | алгоритм |<br>
+_._ | i=0, j=0; whilr i&lt;n && j&lt;m; |<br>
+_.__ | if s[i] == t[j]: i++, j++ | else:.. |<br>
+_.___ | if j>0: j = p[j] | else: i++ |<br>
+_._ | if j == m: return i-m | else: return -1 |<br>
+								</p><div class="divider"></div><p>
+2 | z-функция |<br>
+_.1 | z[i] - длина наибольшей подстроки, начмнается с позиции i, равна префиксу той же длины |<br>
+_.2 | a<code></code>bababacaba => z[1] = <code></code>bababacaba => z[1]=0 |<br>
+_.3 | ab<code>ababa</code>caba => z[2] = <code>ababa</code>caba =>  z[2]=5 |<br>
+_.4 | abab<code>aba</code>caba => z[4] = <code>aba</code>caba =>    z[4]=3 |<br>
+_.5 | z-блок - подстрока от i до (i+z[i]-1) |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ======================================== Next ======================================== -->		    
+				</div>	    
+			</div>
+		</div>
+	</div>
+	<script src="../_js/jquery.min.js"></script>
+	<script src="../_js/bootstrap.min.js"></script>
+</body>
+</html>

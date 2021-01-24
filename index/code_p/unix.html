@@ -1,0 +1,1342 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Unix</title>
+	<link href="../_css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../_css/style.css">
+</head>
+<body>
+	<!-- ================================= Navigation ==================================== -->
+	<nav class="navbar navbar-default">
+
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="C:\avk\index.html">AvK <span class="glyphicon glyphicon-flash"></span></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav">
+			<!-- Sites -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sites<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\stravkcom\index.html">stravk.com</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\sowlru\index.html">sowl.ru</a></li>
+						</ul>
+        			</li>
+			<!-- Aero -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aero<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\aero\general.html">General</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fem.html">FEM</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\static.html">Static</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fatigue.html">Fatigue</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\dt.html">Damage Tolerance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\structure.html">Structure</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\doors.html">Door</a></li>
+						</ul>
+        			</li>
+			<!-- Code General -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code G<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_g\basics.html">Basics</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\objects.html">Objects</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\algorithm.html">Algorithm</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\other_code.html">Other</a></li>
+						</ul>
+	    			</li>
+			<!-- Code Project -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code P<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_p\c.html">C</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="active"><a href="C:\avk\index\code_p\unix.html">UX</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\python.html">Python</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\php.html">PHP</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\vba.html">VBA</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\ml.html">ML</a></li>
+						</ul>
+	    			</li>
+			<!-- Front -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Front<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\front\web.html">HTML - 1991</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ecma.html">ECMA - 1995</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ajax.html">AJAX - 2005</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\jquery.html">jQuery - 2006</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\nodejs.html">Node - 2009</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\angular.html">Angular - 2014</a></li>
+						</ul>
+	    			</li>
+			<!-- Other -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\other\finance.html">Finance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\english.html">English</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\electro.html">Electro</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\scratch.html">Scratch</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\roblox.html">Roblox</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\other.html">Other</a></li>
+						</ul>
+	    			</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+
+		</div><!-- /.container-fluid -->
+
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<h3>UNIX | <a href="https://citrixsfsb.web.boeing.com/Citrix/ERCXAWeb/" target="_blank">XTerm</a> |</h3> 
+				<div class="panel-group" id="accord">
+					<!-- ============================= sh1 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#sh1" data-toggle="collapse" data-panel="#accord">bash 1</a> | vi | cat | head | tail | tr | wc |
+						</div>
+						<div class="panel-collapse collapse" id="sh1">
+							<div class="panel-body">
+								<p>
+1 | Основные команды |<br>
+_.1 | pwd | показать скрытые файлы: ls -a |<br>
+_.2 | вернуться в домашний каталог: cd | вернуться обратно: cd - |<br>
+_.3 | создать | файл: touch f1 | папку: mkdir d1 |<br>
+_.4 | переименовать | файл: mv f1 f2 | папку: mv d1 d2 |<br>
+_.5 | копировать | файл: cp ../n0/f1 . |<br>
+_.6 | удалить | файлы: rm * | папку: rm -r d1 |<br>
+_._ | find . -name "p8*" | xargs rm |<br>
+_.7 | .bashrc:  alias l="ls -l" |<br>
+_.8 | set -v: echo all commands before run |<br>
+								</p><div class="divider"></div><p>
+2 | vi |<br>
+_.1 | открыть файл: <code>vi f1</code> |<br>
+_.2 | вести текст: <kbd>a</kbd> -> hi -> Esc |<br>
+_.3 | перемещение: 0/$ - начало/ конец строки |<br>
+_.4 | строку | копировать: yy | вставить: p |<br>
+_.5 | удалить | символ: x | слово: dw | строка: dd | до конца: d} |<br>
+_.6 | выйти и сохранить: Shift+ZZ | :q - без сохранения |<br>
+_.7 | отмена: <kbd>u</kbd> |<br>
+_.8 | замена hi на hello: <code>:/hi/hello/g</code> |<br>
+_.9 | вызов внешней команды: <code>:!ls</code> |<br>
+								</p><div class="divider"></div><p>	
+3 | Cat (concatenetes or display files) |<br>
+_.1 | cat: принимает данные в STDIN и выводит в командную строку (STDOUT) |<br>
+_.2 | cat > f1: перенаправить вывод в файл |<br>
+_.3 | cat f1: посмотреть файл |<br>
+_.4 | cat >> f1: посмотреть файл |<br>
+_.5 | cat -n f1: пронумеровать строки |<br>
+_.6 | cat -A f1: показать конец строки |<br>
+_.7 | cat f1 f2 > f3: скопировать f1 и f2 в f3 |<br>
+_.8 | cat -s f3: сжимает повторяющиеся пустые строки |<br>
+_.9 | tac f3: вывести в обратном порядке |<br>
+								</p><div class="divider"></div><p>
+4 | Tr (таблица трансляций) |<br>
+_.1 | echo mama | tr abcd ABCD: mAmA |<br>
+_.2 | cat -n /etc/passwd | tr -d '0-9': удалить все цифры |<br>
+_.3 | cat -n /etc/passwd | tr [:space:] '\t': заменить пробелы Tab |<br>
+								</p><div class="divider"></div><p>
+5 | Head/ Tail |<br>
+_.1 | cat -n /etc/passwd | head: выводит первые 10 строк |<br>
+_.2 | cat -n /etc/passwd | head -n2: выводит первые 2 строки |<br>
+_.3 | cat -n /etc/passwd | tail: выводит последние 10 строк |<br>
+_.4 | cat -n f1 | tail -n +9000: выводит строки с 9000 до последней |<br
+								</p><div class="divider"></div><p>
+6 | Другие |<br>
+_.1 | cat -n /etc/passwd | cut -f 1,7 -d :</code> - вырезает 1ое и 7ое поле, с разделителем : |<br>
+_.2 | wc /etc/passwd: 891(line) 2962(word) 689(char) |<br>
+								</p><div class="divider"></div><p>
+7 | Навигация | Tab - автодополнение |<br>
+_.1 | Ctrl+A/E - начало/конец строки | Ctrl+U/K - вырезать |<br>
+_.2 | Alt+F/B - начало/конец слова | Alt+Backspace/D - вырезать |<br>
+_.3 | Ctrl+B/F - влево/ вправо | Ctrl+H/D - вырезать |<br>
+_.4 | Ctrl+Y - вставить | <kbd>Ctrl+Shift+-</kbd> - отмена | Ctrl+T - обмен местами 2х последних символов |<br>
+_.5 | терминал: Ctrl+Shift+T - новый | Ctrl+L - очистка | Alt+1/.. - переключение | Ctrl+D - закрыть |<br>
+_.6 | Alt+L(ower)/U(PPER)/C(apitalize) - смена регистра |<br>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ============================= Shell 2 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#sh2" data-toggle="collapse" data-panel="#accord">bash 2</a> | find | grep | sed | sort | paste | join | split |
+						</div>
+						<div class="panel-collapse collapse" id="sh2">
+							<div class="panel-body">
+								<p>
+1 | Find |<br>
+_.1 | найти все файлы с расширением .tem | find /home/bdc/users/tq353d/ -name "*.tem" |<br>
+_.2 | найти все подпаки в текущ.директории | find . -type d |<br>
+								</p><div class="divider"></div><p>
+2 | Grep (global reg.expression) |<br>
+_.1 | найти строки, начинающиеся на &lt; | grep "^<" t.dta |<br>
+_._ | кончаются на &gt; во всех файлах | grep ">$" * |<br>
+_.2 | + tcp: grep ftp /etc/services | grep tcp |<br>
+_._ | - tcp: grep ftp /etc/services | grep -v tcp |<br>
+_.3 | -n - номер строки | grep -n "^<" t.dta |<br>
+_.4 | -r - рекурсивный поиск |<br>
+_.5 | grep [pattern] t.dta | [pattern] = [0-9] all linies with 0-9 |<br>
+_.6 | grep "Klimov*" /etc/passwd |<br>
+_._ | +gj284c::::Alexander Klimovskikh,1678072,NB-FN:/home/bdc/users/avk8072 |<br>
+
+								</p><div class="divider"></div><p>
+3 | Sed (stream editor) |<br>
+_.1 | sed <b>s</b>/pig/cow/<b>g</b> file > newfile | s - substitute | g-global |<br>
+_.2 | sed <b>-e</b> 's/01/JAN/' -e 's/02/FEB/' file  | e - multi |<br>
+_.3 | sed -f scriptfile < file > newfile | scriptfile: s/pig/cow/g s/dog/cat/g |<br>
+_.4 | sed <b>-i</b> s/pig/cow/<b>g</b> file | replace existing file |<br>
+								</p><div class="divider"></div><p>
+4 | Sort |<br>
+_.1 | по возрастанию | awk '{ print $5 }' pnt29b | sort |<br>
+_.2 | по убыванию | awk '{ print $5 }' pnt29b | sort -r |<br>
+_.3 | удаляет дубли | awk '{ print $5 }' pnt29b | sort -r -u |<br>
+								</p><div class="divider"></div><p>
+5 | Unique |<br>
+_.1 | подсчет уникальных | awk '{ print $5 }' pnt29b | uniq -c |<br>
+								</p><div class="divider"></div><p>
+6 | Paste |<br>
+_.1 | a1: a;b | a2: 1;2 | paste a1 a2 > a3 | a3: a 1; b 2 |<br>
+								</p><div class="divider"></div><p>
+7 | Join (check common field and then join) |<br>
+_.1 | a3: a 1; b 2 | a4: a x; b y |<br>
+_._ | join a3 a4: a 1 x; b 2 y |<br>
+								</p><div class="divider"></div><p>
+8 | Split (1000 line by default) |<br>
+_.1 | split  |<br>
+								</p><div class="divider"></div><p>
+9 | Strings (all printable string from binary) |<br>
+_.1 | split t.tem |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ============================= Shell script ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#shell_script" data-toggle="collapse" data-panel="#accord">bash 3</a> | #!/usr/bin/bash | var | cond | loop | b1; b2 |
+						</div>
+						<div class="panel-collapse collapse" id="shell_script">
+							<div class="panel-body">
+								<p>
+1 | echo | <a href="C:\avk_pdf\code\bash.pdf" target="_blank">ref</a> |<br>
+_.1 | vi t -> i (режима ввода) -> echo "hi" -> Esc -> ZZ -> chmod +x t -> $ s # hi |</p>
+								</p><div class="divider"></div><p>
+2 | arguments |</p>
+_.1 | $0 - имя скрипта | $1 - 1й аргумент |</p>
+_.2 | $# - число принятых аргументов |</p>
+_.3 | $? - код позврата последней комманды | |</p>
+								</p><div class="divider"></div><p>
+3 | var | math |</p>
+_.1 | x=5; y=6; ((z=x+y)); echo "sum is $z" |</p>
+								</p><div class="divider"></div><p>
+4 | if |<br>
+_.1 | if [[ -d /etc/ ]]; then echo "dir /etc exist"; fi |<br>
+_.2 | if [[ -e /etc/hosts ]]; then echo "file hosts exist"; fi |<br>
+_.3 | if [[ $# -ne 1 ]]; then echo "Args numbers should = 1"; exit 1; fi |<br>
+_.4 | if (( $1<0 )); then echo "x<0"; elif (( $1<5 )); then echo "x<5"; else echo "x>5"; fi |<br>
+								</p><div class="divider"></div><p>
+5 | case | <br>
+echo -e "Enter x: "; read x<br> 
+case $x in <br>
+1) echo "value is 1";; 2|3) echo "value is 2 or 3";; *) echo "enter 1,2,3";;<br>
+esac<br>
+								</p><div class="divider"></div><p>
+6 | for | <br>
+for n in 1 2 3 4 5 6; do<br>
+if (( n == 3 )); then<br>
+continue; fi<br>
+((cube=n*n*n)); echo "$n cubed is $cube."<br>
+done
+								</p><div class="divider"></div><p>
+7 | array in for | <br>
+a=(1 2 3 4 5); b=(6 7 8 9 10)<br>
+for((i=0; i<=4;i++));do<br>
+ echo ${a[i]} ${b[i]}<br>
+done<br>
+								</p><div class="divider"></div><p>								
+8 | while | <br>
+echo -e "Enter x: "; read x; n=1<br> 
+while ((n <= x)); do<br>
+if (( n == 5 )); then<br>
+echo "at 5 breaking"; break; fi<br>
+((cube=n*n*n)); echo "$n cubed is $cube."; (( n=n+1 ))<br>
+done
+								</p><div class="divider"></div><p>
+9 | for in | <br>
+for shell in $(grep / /etc/shells); do<br>
+echo "\t$shell"<br>
+done
+								</p><div class="divider"></div><p>
+10 | function | <br>
+function fn_fdms {<br>
+case $1 in<br>
+p9) m="B779STDYSCDPAN_04B";; <br>
+esac<br>
+feadms -m $m -det 1_details/$2_abv.det.Z -set 2_loads/s -o 2_loads/$1_$2_abv.dat<br>
+}<br>
+fn_fdms $v "p9" $part<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ============================= awk ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#awk" data-toggle="collapse" data-panel="#accord">awk 1</a> | основы |
+						</div>
+						<div class="panel-collapse collapse" id="awk">
+							<div class="panel-body">
+								<p>
+1 | Основы | <a href="http://www.grymoire.com/Unix/Awk.html" target="_blank">ref</a> |<br>
+_.1 | sum полей = запись | sum записей  = входной поток | <br>
+_.2 | структура: awk 'шаблон{действие}; шаблон{действие}' |<br>
+_.3 | если запись совпадает с шаблоном => выполняется действие |<br>
+_.4 | шаблона нет => действие выполняется для любой записи |<br>
+_._ | awk '{print "hi"}' t.csv | выводит "hi" столько раз, сколько строк в файле | <br>
+_.5 | действия нет => выводится запись |<br>
+								</p><div class="divider"></div><p>
+2 | Поля(field) |<br>
+_.1 | разделитель по умолчанию: " " |<br>
+_.2 | замена разделителя при чтении:  FS="," | -F",": установить FS как аргумент | <br>
+_.3 | замена разделителя при выводе: OFS="," |<br>
+_.4 | первое поле: $1 | последнее поле: $NF |<br>
+_.5 | число полей в записи: NF |<br>
+_._ | awk '{ print $2,$NF }' t.csv | печать 2 и последнего столбца для всех строк |<br>
+								</p><div class="divider"></div><p>
+3 | Записи(record) |<br>
+_.1 | разделитель по умолчанию: "\n" |<br>
+_.2 | замена разделителя при чтении:  RS="" (пустая строка) | <br>
+_.3 | замена разделителя при выводе: ORS="," |<br>
+_.4 | первая запись: NR==1 |<br>
+_.5 | число записей для 1 файла: FNR |<br>
+_.6 | число записей для всех файла: NR |<br>
+_._ | awk 'NR==2,NR==$NR{ print $2}' t.csv | печать 2 столбца у 2 и последней строки |<br>
+								</p><div class="divider"></div><p>
+4 | Форматирование вывода |<br>
+_.1 | string | {printf "%-8s\n", $2,$3} | $2:left(%-) align, width=8 символов | $3 - не выводится |<br>
+_.2 | int |{printf "%-8s %5d\n", $2,$3} | $2:см.выше | $3:right(%) align, width=5 чисел |<br>
+_.3 | float | {printf "%-8s %5.2f\n", $2,$3} | $2:см.выше | $3:format(xxx.xx) |<br>
+_.4 | BEGIN {print "===" printf "%-8s %5s\n","Name","MS"} | добавить названия вверху |<br>
+								</p><div class="divider"></div><p>
+5 | Операции |<br>
+_.1 | {if($1>20){x=$1/2; print "NR="NR,x }} |<br>
+								</p><div class="divider"></div><p>
+6 | Массивы | a:11 12; 21 22 | a1:11 12; 51 52 |<br>
+_.1 | awk ' { ar[$1]=$2 ; print $1" " ar[$1] } | END {for(i in ar) print  "i="i" ar="ar[i] } ' a |<br>
+_._ | #11 12; 21 22; i=11 ar=12; i=21 ar=22 |<br>
+_.2 | awk '... ' a a1 |<br>
+_._ | #11 12; 21 22; 11 12; 51 52; i=11 ar=12; i=51 ar=52; i=21 ar=22 |<br>
+								</p><div class="divider"></div><p>
+7 | Getline |<br>
+_.1 |   getline: вывод 2й записи | {getline x; print x} |<br>
+_.2 | getline x: вывод 1й записи |<br>
+_.3 | {getline x &lt;"a"; print x}: вывод всех записей |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ============================= awk2 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#awk2" data-toggle="collapse" data-panel="#accord">awk 2</a> | практика |
+						</div>
+						<div class="panel-collapse collapse" id="awk2">
+							<div class="panel-body">
+								<p>
+1 | Вывести первые столбцы из 2х файлов | a:11 12; 21 22 | a1:11 12; 51 52 |<br>
+_.1 | paste -d / <(awk '{ print $1}' a) <(awk '{print $1}' a1) | nl |<br>
+_._ | 1 11/11; 2 21/51 |<br>
+_._ | -d / - разделитель при выводе (по умолчанию tab) | nl - вывод нумерации строк |<br>
+								</p><div class="divider"></div><p>
+2 | Вывести только уникальные строки |<br>
+_.1 | awk ' !($0 in ar){ ar[$0]; print} ' a a1 | #11 12; 21 22; 51 52 |<br>
+								</p><div class="divider"></div><p>
+3 | Вывести только совпадающие строки |<br>
+_.1 | awk 'NR==FNR{ar[$0];next} $0 in ar' a a1 | #11 12 |<br>
+								</p><div class="divider"></div><p>
+4 | Подстановка из файла f1 в f2 |<br>
+_.1 | f1: a11 2024-T3_bare; a12 2024-T3_clad | f2: sda a11; sdf a12; dfg a11 |<br>
+_.2 | awk 'NR==FNR{a[$1]=$2;next} {$2=a[$2]}1' f1 f2 |<br>
+_.3 | # sda 2024-T3_bare; sdf 2024-T3_clad; dfg 2024-T3_bare |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ============================= p01 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#p01" data-toggle="collapse" data-panel="#accord">p01</a> | FEADMS -> IAS_MID -> IAS_MS |
+						</div>
+						<div class="panel-collapse collapse" id="p01">
+							<div class="panel-body">
+								<p>
+0 | description |<br>
+_.1 | global variables: $1-FEADMS model(p9-"B779..") | $2-part(af-aft frame,..) |<br>
+_.2 | main loop (see 4.4) go through all model and part |<br>
+_.3 | fn_fdms: FEADMS model + af_abv/blw.det + set => p9_af_abv/blw.dat |<br>
+_.4 | fn_mid (use batch f): tem(see 4.2) + p9_af_abv/blw.dat => p9_af_mid.dta |<br>
+_.5 | fn_ms (use batch f2): tem(see 4.3) + p9_af_mid.dta => p9_af_stdy.dta |<br>
+								</p><div class="divider"></div><p>
+1 | function fn_fdms {..} |<br>
+_.1 | case $1 in | p9) model="B779STDYSCDPAN_04B";; | esac |<br>
+_.2 | feadms -m $model -det 1_details/$2_abv.det.Z -set 2_loads/settings -o 2_loads/$1_$2_abv.dat |<br>
+_.3 | feadms -m $model -det 1_details/$2_blw.det.Z -set 2_loads/settings -o 2_loads/$1_$2_blw.dat |<br>
+								</p><div class="divider"></div><p>
+2 | function fn_mid {..} |<br>
+_.1 | echo -e "Assign Conf 1\nAssign skinonly \"N\"" >> $f |<br>
+_.2 | echo -e "Input FEADMS \"abv1\" \"2_loads/$1_$2_abv.dat\"" >> $f |<br>
+_.3 | echo -e "Input FEADMS \"blw\"  \"2_loads/$1_$2_blw.dat\"\nCalculate" >> $f |<br>
+_.4 | echo -e "Output Data \"3_midloads/$1_$2_mid.dta\"" >> $f |<br>
+_.5 | echo -e "Output PDF Color \"3_midloads/$1_$2_mid.pdf\"\nClear Data" >> $f |<br>
+								</p><div class="divider"></div><p>
+3 | function fn_ms {..} |<br>
+_.1 | case $1 in | p8) path="-8_scd_pan_04b";; p9) path="-9_scd_pan_04b";; s9) path="-9_scd_sed_04b";; | esac |<br>
+_.2 | case $2 in | af) name="aftedgefrm";; ai) name="aft_intercostal";; i1) name="intercostal1";; | esac |<br>
+_.3 | echo "Input Data \"famoss_ias_dataset/${path}/777${path}_${name}_famoss.dta\"" >> $f2 |<br>
+_.4 | echo "Input Data \"3_midloads/$1_$2_mid.dta\"" >> $f2 |<br>
+_.5 | case $2 in | mf) sz=7;; i1|i2|i3|i4) sz=3;; *) sz=9;; | esac |<br>
+_.6 | echo "Size $sz 90 1" >> $f2 |<br>
+_.7 | for ((i=1;i<=$sz;i++)); do | .. | done |<br>
+_._ | echo "Case $i 90 1" >> $f2 |<br>
+_._ | echo -e "Assign Sk_fast_type \"YNE6\"\nAssign sk_fast 0.188\nAssign sk_fast_num 1" >> $f2 |<br>
+_._ | echo -e "Assign K_bc 0.2" >> $f2; |<br>
+_.8 | echo -e "Calculate\nOutput Data \"4_ms/$1_$2_stdy.dta\"" >> $f2 |<br>
+_.9 | echo -e "Output TableCSV \"Inner Chord Margin Summary\" \"4_ms/$1_$2_ic_stdy.csv\"" >> $f2 |<br>
+_.10 | echo -e "Output PDF Color \"4_ms/$1_$2_stdy.pdf\"\nClear Data" >> $f2 |<br>
+								</p><div class="divider"></div><p>
+4 | main |<br>
+_.1 | f="tmp1"; f2="tmp2"; touch $f $f2 |<br>
+_.2 | echo -e "Echo\nInput Template \"3_midloads/frames-mid-bay-loads-template_revb.tem\"" > $f |<br>
+_.3 | echo -e "Echo\nInput Template \"4_ms/famossmetal_ias_revx22.tem\"" > $f2 |<br>
+_.4 | for part in af ai ff fi i1 i2 i3 i4 mf mfa mff; do | .. | done |<br>
+_._ | fn_fdms $v "p9" $part | fn_mid $v "p9" $part | fn_ms $v "p9" $part |<br>
+_.5 | echo -e "Clear All\nExit" >> $f | echo -e "Clear All\nExit" >> $f2 | ias -f $f; ias -f $f2; rm $f $f2 |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== UNIX coursers ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#unix_coursers" data-toggle="collapse" data-panel="#accord">UX 1.0</a> | file * | chmod |
+						</div>
+						<div class="panel-collapse collapse" id="unix_coursers">
+							<div class="panel-body">
+								<p>
+1 | Типы файлов |<br>
+_.1 | $ file  *: показывает тип файла |<br>
+_.2 | -: файл | d: dir | l:symbolic link |<br>
+_.3 | p:named pipe(FIFO) | s:soket(network) |<br>
+_.4 | b: block | c:char | device node | communicate with hardware |<br>
+								</p><div class="divider"></div><p>
+2 | Access |<br>
+_.1 | -rw-rw-r-- .. | user - group - other |<br>
+_.2 | r:read | w:write | x:executable |<br>
+_.3 | chmod uo+x: give user and other exec permission |<br>
+_.4 | 1:e | 2:w | 4:r | 5:re | 6:rw | 7:rwe |<br>
+_._ | chmod 1-1: give user and other exec permission |<br>
+_.5 | chown gj284c t | change owner |<br>
+_.6 | umask: указывает какие биты в правах сбросить |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== UNIX 1.1 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#unix11" data-toggle="collapse" data-panel="#accord">UX 1.1</a> | file | env | dd | gz | tar |
+						</div>
+						<div class="panel-collapse collapse" id="unix11">
+							<div class="panel-body">
+								<p>
+1 | Типы файлов |<br>
+_.1 | $ file  *: показывает тип файла |<br>
+_.2 | -: файл | d: dir | l:symbolic link |<br>
+_.3 | p:named pipe(FIFO) | s:soket(network) |<br>
+_.4 | b: block | c:char | device node | communicate with hardware |<br>
+								</p><div class="divider"></div><p>
+1 | Окружение (environment) |<br>
+_.1 | область памяти, в к-рой хранятся переменные и их значения | уникально для каждого процесса |<br>
+_.2 | <code>env</code> - показать переменные окружения shell |<br>
+_.3 | Пишутся большими буквами, поэтому чтобы не перезаписать - свои переменные пишутся маленькими |<br>
+_.4 | <code>name=alex</code> - присвоить значение переменной | <code>echo $name</code> - вывести значение |<br>
+_.5 | <code>export name</code> - добавить переменную в окружение | export - разрешение шеллу отдавать переменные окружения процессам, к-рые начинают работать внутри дочернего окружения |<br>
+								</p><div class="divider"></div><p>
+2 | Этапы обработки командной строки |<br>
+_.1 | shell заменяет переменные окружения, если они есть |<br>
+_.2 | заменяет файловые шаблоны, если они есть | *1 - все файлы, заканчивающиеся на 1 | *[14] - либо 1 либо 4 |<br>
+_.3 | ищет команды среди своих внутр. команд shell | внеш. команды ищутся среди каталогов, указанных в переменной $PATH |<br>
+								</p><div class="divider"></div><p>
+3 | Файловая система |<br>
+_.1 | стр-ра данных на каком-то носителе, к-рая позволяет осущ. доступ к файлам |<br>
+_.2 | пути: абсолютные (/ в начале) и относительные | ., pwd текущий | .. родительский | ~ домашний |<br>
+_.3 | разделители путей: / | в Windows - \ (backslash) |<br>
+								</p><div class="divider"></div><p>
+4 | Иерархия FS | FSSTND - file system standart |<br>
+_.1 | корневой раздел - /  |<br>
+_.2 | /bin, /sbin - исполняемые файлы | для них требуются библиотеки |<br>
+_.3 | /lib - содержит библиотеки, загружаемые модули ядра |<br>
+библиотеки бывают статическими (.a - archive) и динамическими (.so - shared objects) |<br>
+_.4 | /etc - файлы конфигурации |<br>
+_.5 | /home - каталоги пользователей |<br>
+_.6 | /usr - размещение приложений | web-server,.. | имеет свой bin, sbin, lib | <br>
+_.7 | /var - данные приложений | /var/log - систем. журналы | /var/lib - состав ПО,.. |<br>
+_.8 | /tmp - временный каталог системы |<br>
+_.9 | /proc - файловый интерфейс к параметрам ядра | <code>cat /proc/interrupts</code> |<br>
+_.10 | /boot - загрузчик и ядро ОС |<br>
+_.11 | /dev | /dev/null - черная дыра |<br>
+								</p><div class="divider"></div><p>
+5 | Создание FS |<br>
+_.1 | <code>fdisk -l</code> - список всех разделов |<br>
+_.2 | <code>mkfs.ext2 /dev/sdb</code> - создать ФС на блочное устройство |<br>
+_.3 | <code>mount /dev/sdb /mnt/</code> - монтирование (операция подключения к уже существующей FS еще одной)| /mnt/ - точка монтирования (куда подключается корневой каталог) | <br>
+_.4 | <code>fdisk /dev/sdb</code>-> n (new)-> p (основной)-> 1-> 1(цилиндр)-> +512M->p(print) | создать раздел swap (82 раздел) |<br>
+_.5 | <code>free</code> - статистика по использ. памяти |<br>
+_.6 | <code>mkswap /dev/sdb1</code> - инициализация swap | <code>swapon /dev/sdb1</code> - можно использовать |<br>
+_.7 | <code>more /etc/fstab</code> - таблица FS | file system: /dev/sdb1 ... | 3.18 |<br>
+								</p><div class="divider"></div><p>
+6 | Работа с дисками |<br>
+_.1 | <code>df -h</code> | стат. дисков | none - виртуальные |<br>
+_.2 | <code>cat /etc/hosts | dd</code> - сколько записей считано, кол-во байт, скорость |<br>
+_.3 | <code>dd if=/dev/sda of=/dev/null</code> - найти скорость чтения | if- input file |<br>
+_.4 | <code>dd if=/dev/cdrom of=/tmp/image.iso bs=1M</code> - сделать ISO образ | <code>file</code> - убедиться, что это ISO |<br>
+_.5 | <code>cat /etc/hosts | od -x</code> - посмотреть в hex виде |<br>
+_.6 | синхронизация дисков на разных компах |<br>
+_._1 | <code>nc</code> - одним концом связывается с вводом/ выводом, а другим - с сетью |<br>
+_._2 | <code>dd if=/dev/sda | nc hostB 3333</code> - передача |<br>
+_._3 | <code>nc -l -p 3333 | dd of=/dev/sda</code> - прием | -l: прослушка | -p: порт |<br>
+								</p><div class="divider"></div><p>
+7 | Компрессоры |<br>
+_.1 | <code>dd if=/dev/zero of=f2 bs=1M count=512</code> - создание файла, состоящего из 0 размером 512 M |<br>
+_.2 | <code>compress</code> | .Z | устарел |<br>
+_.3 | <code>gzip -v f2</code>| .gz | <code>gunzip f2.gz</code> |<br>
+_.4 | <code>bzip2 -v f2</code>| .bz2 | работат на основании статистики 900к блоков | <code>bzip2 -v f2</code> |<br>
+								</p><div class="divider"></div><p>
+8 | Архиваторы |<br>
+_.1 | создание резервной копии |<br>
+_.2 | <code>ar</code> - устарел | <code>tar</code> - (Tape ARchive) - ленточный архив |<br>
+_.3 | <code>tar сjf etc.tbz /etc/</code> | c - создать | f ..(путь к архиву) |<br>
+_.4 | опции вызова компрессора: Z - compress (.tar.Z) | z - gzip (.tgz) | j - bzip2 (.tbz) |<br>
+_.5 | <code>tar tvf etc.tbz | more</code> | t (test) - посмотреть | v - показывает обрабатываемый объект |<br>
+_.6 | <code>tar xf etc.tbz</code> |  x (extract) - извлечь |<br>
+								</p><div class="divider"></div><p>
+9 | Журналы регистрации |<br>
+_.1 | программа к-рую нужно запротолколировать -> rsyslogd -> файл/ терминал/ UDP514 |<br>
+_.2 | <span class="glyphicon glyphicon-cog"></span> /etc/rsyslog.conf | 2 колонки: |<br>
+_.3 | 1.правила (селекторы), к-рым должно соответствовать сообщение | селекторы разделены точкой на 2 части | слева - семантическая категория | справа - приоритет (none - все кроме указанного) |<br>
+_.4 | 2.куда оно пойдет (/var/log/syslog, .. )  |<br>
+_.5 | семантическая категория: auth/ authpriv/ cron/ daemon/ .. |<br>
+_.6 | ex. | auth,authpriv.*   /var/log/auth.log - все сообщения систем аутентификации идут в журнал auth.log |<br>
+								</p><div class="divider"></div><p>
+10 | Установка Linux |<br>
+_.1 | <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">VirtualBox</a> -> сохранить в avk_programs/VB_OS |<br>
+_.2 | <a href="https://www.ubuntu.com/download/desktop" target="_blank">Ubuntu</a> -> сохранить в avk_programs/VB_OS |<br>
+_.3 | VB -> Создать -> имя: l; тип: linux; версия: linux 2.2; 512Mb; Создать новый ...; VDI | 8GB |<br>
+_.4 | Система: un ACPI; ch PAE/NX | Аудио: un | USB: un | Сеть: Ad1: сет.мост | Ad2: внутр.сеть PCnet |<br>
+_.5 | VB -> запустить -> ubuntu.iso | name: a | password: 1 |<br>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== UNIX 1.2 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#unix12" data-toggle="collapse" data-panel="#accord">UX 1.2</a> | process | ps | kill | fg | cron | at |
+						</div>
+						<div class="panel-collapse collapse" id="unix12">
+							<div class="panel-body">
+								<p>
+1 | Файловые дескрипторы |<br>
+_.1 | для каждого процесса JC уже есть 3 открытых файловых дескриптора |<br>
+_.2 | связаны с потоками ввода-вывода | STDIN 0 | STDOUT >/>> перезапись/ добавление 1> | STDERR 2>  |<br>
+								</p><div class="divider"></div><p>
+2 | Конвейер |<br>
+_.1 | средство межпроцессорного взаимодействия и работают через ядро |<br>
+								</p><div class="divider"></div><p>
+3 | Процессы |<br>
+_.1 | контейнер, в к-ром работает программа |<br>
+_.1 | каждый процесс имеет PID (идентификатор) | <code>echo $$</code> - посмотреть PID shell |<br>
+_.2 | PPID (идентификатор родительского процесса) |<br>
+_.3 | TTY (управляющий терминал) |<br>
+_.4 | zombie | появляются если умирает родитель | удаляется только перезагрузкой | связаны с ошибками в программах или памяти |<br>
+								</p><div class="divider"></div><p>
+4 | Жизненый цикл процесса | 3.1.49 |<br>
+_.1 | init (PID=1) запускает shell (PID=745, PPID=1) |<br>
+_.2 | user набирает <code>ls</code> -> происходит системный вызов fork() -> добавляется дочерний shell (PID=802, PPID=745) |<br>
+_.3 | дочерний shell выясняет где лежит ls (/usr/bin/ls) -> происходит системный вызов exec() |<br>
+_.4 | ОС вычишает shell из этого процесса и запускает туда программу ls (PID=802, PPID=745) |<br>
+_.5 | программа ls заканчивает свою работу -> происходит системный вызов exit() -> система убивает процесс |<br>
+_.6 | shell (PID=745, PPID=1) вызывает систеный вызов wait() для очистки памяти и ждет след. команду |<br>
+								</p><div class="divider"></div><p>
+5 | Команды процессов |  3.1.49 | 1.3.3.22 |<br>
+_.1 | <code>ps</code> - (process status) - моментальный снимок состояния процессов |<br>
+_.2 | <code>ps f</code> - (forest) - дерево процессов | <code>ps auxww</code> |<br>
+_.3 | <code>top</code> - (table of process) - процессы в динамике</code> |<br>
+								</p><div class="divider"></div><p>
+6 | Сигналы |<br>
+_.1 | средство межпроцессного взаимодействия |<br>
+_.2 | _.2 | фоновый режим - STDIN отвязан от терминала |<br> - послать сигнал процессу | <code>kill -l</code> - список сигналов |<br>
+_.3 | процесс P1 -> kill (ядро) - процесс P2 | Перед обработкой сигнала ядро проводит авторизацию (имеет ли право P1 посылать сигнал P2) |<br>
+_.4 | 1.SIGHUP (hang up) | потеря связи, shell завершает работу | демон переконфигурируется |<br>
+_.5 | 2.SIGINT (Ctrl+C)/ 3.SIGQUIT (Ctrl+Backslash) / 15.SIGTERM - завершение работы пользователем |<br>
+_.6 | 9.SIGKILL - планировщик процесса убивает сигнал  | 11.SIGSEGV (segmentation fault)- процесс полез не в свою память |<br>
+_.7 | <code>kill -2 $$</code> - послать сигнал shell | <br>
+_.8 | программист должен обработать каждый сигнал |<br>
+								</p><div class="divider"></div><p>
+7 | Управление заданиями (jobs) |<br>
+_.1 | режим переднего плана - когда 3 потока ввода-вывода связаны с терминалом |<br>
+_.2 | фоновый режим - STDIN отвязан от терминала |<br>
+_.3 | <kbd>Ctrl+Z</kbd> - остановить программу на переднем фоне (SIGSTOP) |<br>
+_.4 | <code>kill -STOP %1</code> - остановить программу на заднем фоне | <code>kill -CONT %1</code> - продолжить |<br>
+_.5 | <code>jobs</code> - информация об остановленных заданиях |<br>
+_.6 | <code>fg %1</code>/<code>bg %1</code> - перевести программу на передний/ задний план | & - признак выполнения на заднем фоне |<br>
+_.7 | <code>%/ bg +</code> - вывести посл.задание на перед./ задний план | знак -/+ - предпоследнее/ последнее задание | <br>
+_.8 | <code>./f1 &</code> - выполнить задание на заднем плане | <br>
+_.9 | <code>./f1 & ./f2</code> - выполнить задания паралельно | <code>./f1; ./f2</code> - последовательно |<br>
+								</p><div class="divider"></div><p>
+8 | Управление заданиями по расписанию |<br>
+_.1 | cron- демон, просыпается каждую минуту, смотрит таблицу /etc/crontab и сравнивает с шаблон времени с текущим |<br>
+_.2 | формат шаблона времени: min/ hour/ day_of_month/ mon/ day of week/  | 47 6 * * 7 - каждое воскресенье в 6.47 |<br>
+_.3 | /etc/crontab - общая, рекомендуется делать пользовательские таблицы |<br>
+_.4 | <code>crontab -l</code> - просматривать пользоват. таблицы | -r - удалить | -e - редактировать |<br>
+_.5 | просроченные задания | cron - не выполняет | anacron выполнит через заданный интервал | <br>
+								</p><div class="divider"></div><p>
+9 | Одноразовое выполнение |<br>
+_.1 | <code>at 12.00</code> -> ввести команду -> <kbd>Ctrl+D</kbd> |<br>
+_.2 | at tomorrow | at midnight | at now +2 min | at now +2 week |<br>
+_.3 | <code>atq</code> - посмотреть очередь заданий |<br>
+_.4 | <code>at -с 1</code> - посмотреть 1ое задание |<br>
+_.5 | <code>atrm 1</code> - удалить 1ое задание |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== UNIX 1.3 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#unix13" data-toggle="collapse" data-panel="#accord">UX 1.3</a> | boot | access | lsmod | id | useradd | chmod |
+						</div>
+						<div class="panel-collapse collapse" id="unix13">
+							<div class="panel-body">
+								<p>
+1 | Этапы загрузки |<br>
+_.1 | BIOS начинает самопроверку при включении (Power On Self Test) | определение оборудования |<br>
+_.2 | BIOS ищет главную загрузочную запись (Master Boot Record) на 1м секторе на диске (512б) | Состоит из загрузчика и таблицы разделов (max 4 для DOS ) | Задача - прочитать таблицу, найти активный раздел и загрузить в загрузчик ОС | <br>
+_.3 | Загрузчик ОС | grub, lilo | загрузка ядра и передача ему управления |<br>
+_.4 | Ядро | ищет оборудование и загружает процесс init | модульного типа = основная программа + модули, к-рые загружаются по мере необходимости |<br>
+_.5 | init | запускает систему инициализации |<br>
+								</p><div class="divider"></div><p>
+2 | Модули ядра | 3.0.18 |<br>
+_.1 | позволяют менять функциональность ядра | .ko - kernel object |<br>
+_.2 | <code>lsmod</code> - посмотреть состав загруженных модулей |<br>
+_.3 | <code>more /etc/modules</code> - посмотреть какие модули грузятся автоматически |<br>
+_.4 | <code>modprobe -l</code> - посмотреть информацию о всех модулях |<br>
+_.5 | <code>modprobe -l | wc -l</code> - посчитать число модулей | wc - l - считает число строк в файле |<br>
+_.6 | <code>modinfo ..</code> - посмотреть чем занимается модуль |<br>
+_.7 | <code>modprobe ..</code> - загрузить модуль |<br>
+_.8 | <code>modprobe -r ..</code> - выгрузить модуль | -r - remove |<br>
+								</p><div class="divider"></div><p>
+3 | Система инициализации | 3.0.35 |<br>
+_.1 | набор скриптов на shell для приведения ОС к нужному ур-ню выполнения (run level)|<br>
+_.2 | процесс init запускает файл /etc/init.d/rc |<br>
+_.3 | rc в свою очередь запускает все остальные скрипты к-рые хранятся в /etc/init.d | <br>		
+								</p><div class="divider"></div><p>
+4 | Уровни выполнения | 3.0.40 |<br>
+_.1 | состояние системы, к которому ее должна привести система инициализации |<br>
+_.2 | init 0 - указание init остановить систему |<br>
+_.3 | init 6 - перезагрузка системы |<br>
+_.4 | init 1 - переход в однопользовательский режим |<br>
+_.5 | многопользовательский режим получается автоматически при запуске |<br>	
+								</p><div class="divider"></div><p>
+5 | Система безопасности | 3.0.51 |<br>
+_.1 | аутентификация - установление подлинности контрагента |<br>
+_.2 | авторизация - процесс выяснения наличия прав (напр. на изменение файла) |<br>
+_.3 | процесс всегда имеет идентификатор PID |<br>
+_.4 | каждый процесс работает с привилегиями пользователя UID (User ID) и GIDs (Group ID)|<br>
+_.5 | UID=0 - суперпользователь |<br>
+_.6 | <code>id</code> - посмотреть информацию (авторизационная) о процессе, пользователе и группе |<br>
+_.7 | <code>ls -l</code> - посмотреть информацию о файле | права доступа/ UID/ GID |<br>
+_.8 | система авторизации сравнивает информацию о файле и процессе и решает можно или нет |<br>
+								</p><div class="divider"></div><p>
+6 | Новый пользователь |<br>
+_.1 | <code>useradd -m -s /bin/bash -u 1111 alex</code> - создать каталог пользователя в home, bash по умолчанию, uid=1111 |<br>
+_.2 | <code>passwd alex</code> - назначить пароль |<br>
+_.3 | <kbd>Ctrl+Alt+F1</kbd> -> ввести имя и пароль |<br>
+_.4 | вернуться в основной терминал -> <code>w</code> (посмотреть кто сейчас в системе)|<br>
+_.5 | <code>usermod</code> - поменять настройки пользователя |<br>
+_.6 | <code>groupadd developers</code> - создать новую группу |<br>
+_.7 | <code>gpasswd -a alex developers</code> - ввести пользователя в группу |<br>
+_.8 | <code>userdel -rf alex</code> - удалить пользователя | -f - force |<br>
+_.9 | <code>groupdel developers</code> - удалить группу |<br>
+_.10 | то же самое делается через редактирование /etc/group |<br>
+								</p><div class="divider"></div><p>
+7 | Права доступа файла |<br>
+_.1 | категории: u(владелец) | g(группа) | o(все остальные) | a(all) |<br>
+_.2 | процесс хочет открыть файл на чтение | ОС выясняет какую из категорий нужно использовать для данного процесса | сначала проверяются UID, если совпадают - применяются права из этой группы |<br>
+_.3 | права файла: r-read | w-write | x-execute | = 3бита |<br>
+_.4 | права каталога: r-читать/ w-писать только имена файлов | х-читает и пишет жесткие ссылки |<br>
+_.5 | числовой формат: r=4 | w=2 | x=1 | rw=6 | rwx=7 |<br>
+_.6 | символьный вариант: ugoa+-=rwx | + -добавить | - -удалить | = -заменить |<br>
+_.7 | <code>chmod 777 f1</code> | <code>chmod a=rwx f1</code> - изменить права доступа f1 |<br>
+								</p><div class="divider"></div><p>
+8 | Повышение привилегий |<br>
+_.1 | SUID (set UID) - если владельцем файла является root, то присваиваится UID=0 | SGID |<br>
+_.2 | Sticky bit - после того как программа отработала - не надо освобождать память |<br>
+_.3 | числовой формат: SUID=4 | SGID=2 | Sticky bit=1 |  |<br>
+_.4 | каталог /tmp имеет номер 1777 | 1-sticky bit, только владелец файла может его изменить |<br>
+_.5 | SUID бит на каталоге означает, что кто-бы в этом каталоге файл не создал, его владельцем будет владелец каталога | SGID-то же самое |<br>
+								</p><div class="divider"></div><p>
+9 | Изменение |<br>
+_.1 | <code>chown alex:developers</code> - изменение владельца |<br>
+_.2 | <code>chgrp developers f1</code> - изменение группу каталога или файла |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== UNIX 1.4 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#unix14" data-toggle="collapse" data-panel="#accord">UX 1.4</a> | network | ifconfig | route | netstat | apt-get |
+						</div>
+						<div class="panel-collapse collapse" id="unix14">
+							<div class="panel-body">
+								<p>
+1 | Интерфейсы |<br>
+_.1 | общение компьютера с сетью происходит через сетевые интерфейсы (eth0, eth1, lo) |<br>
+_.2 | loopback interface | средство межпроцессного взаимодействия для локальной машины |<br>
+_.3 | <code>ifconfig</code> - показывает информацию о сконфигурированных сетевых устройствах |<br>
+_.4 | <code>ifconfig -a</code> - показывает информацию о всех сетевых устройствах |<br>
+_.4 | <code>ifconfig eth0 xxx.xxx.xxx.100</code> - установка IP адреса |<br>
+								</p><div class="divider"></div><p>
+2 | Просмотр интерфейсов |<br>
+_.1 | Link encap: тип инкапсуляции | IP-пакеты вкладываются в Ethernet фрейм |<br>
+_.2 | HWaddr: мак-адрес | <br>
+_.3 | inet addr: IPv4 - семейство адресов | inet6 addr: IPv6 |<br>
+_.4 | UP BROADCAST RUNNING MULTICAST: флаги интерфейса | интерфейс поднят, понимает широковещат. пакеты, он работает, мультикастные пакеты понимаются |<br>
+_.5 | MTU:1500: max размер пакета в байтах, к-рый проходит через интерфейс без фрагментации |<br>
+_.6 | RX/TX: статистика по принятым/ переданным пакетам |<br>
+_.7 | txqueuelen:1000: макс. длина очереди передачи, 1001 пакет будет отправлен обратно  |<br>
+								</p><div class="divider"></div><p>
+3 | Настройка интерфейсов |<br>
+_.1 | /etc/network/interfaces |<br>
+_.2 | <span class="glyphicon glyphicon-pencil"></span> дир-ва auto eth0: при старте должен конфигурироваться |<br>
+_.3 | <span class="glyphicon glyphicon-pencil"></span> дир-ва iface eth0 inet static: интерфейс еth0 для протокола 4 версии имеет стат. настройки |<br>
+_.4 | adress xxx.. | netmask xxx.. | gateway xxx.. |<br>
+_.5 | <code>/etc/init.d/networking restart</code> - после изменения параметров необходимо перезапустить скрипт |<br>
+								</p><div class="divider"></div><p>
+4 | таблица маршрутизации |<br>
+_.1 | <code>route -n</code> - посмотреть таблицу |<br>
+_.2 | destination & genmask - путь назначения |<br>
+_.3 | gateway (шлюз)- посредник до пути назначения | 0.0.0.0 - нет |<br>
+_.4 | flags | U (usable) - пригоден к использованию | H (host) - до хоста | G (gateway) - необходима помощь шлюза |<br>
+_.5 | iface - интерфейс, через который нужно отправлять пакет |<br>
+_.6 | <code>route add default gw xxx.xxx.xxx.254</code> - добавить маршрут |<br>
+								</p><div class="divider"></div><p>
+5 | Сервер DNS |<br>
+_.1 | <span class="glyphicon glyphicon-cog"></span> конфигурационный файл: /etc/resolv.conf |<br>
+_.2 | <span class="glyphicon glyphicon-pencil"></span> дир-ва nameserver xxx..: прописываются сервера |<br>
+								</p><div class="divider"></div><p>
+6 | Программы для работы с сетью |<br>
+_.1 | <code>arp -n</code> - address resolution protocol | выясняет мак-адрес по IP | чтобы каждому IP-пакету не предшествовал arp-запрос - ядро ведет arp-таблицу | машины внутри сети общаются с помощью ethernet-кадров (frames) | внутри этих кадров могут быть пакеты др. протоколов | ethetnet кадры требуют мак-адреса |<br>
+_.2 | <code>ping</code> - определяет доступность хостов в сети и качество связи |<br>
+_.3 | <code>traceroute</code> - отслеживает маршрут от одного хоста до другого |<br>
+_.4 | <code>netstat -rn</code> - посмотреть таблицу маршрутизации |<br>
+_.5 | <code>netstat -ltn</code> - какие порты система слушает | -l -  listen | -t - tcp |<br>
+_.6 | <code>netstat -s</code> - статистика по протоколам |<br>
+_.7 | <code>nslookup</code> - взаимодействие с DNS-сервером |<br>
+_.8 | <code>nmap</code> - сканер портов на предмет поиска уязвимостей |<br>
+_.9 | <code>tcpdump</code> - прослушивание сетевого трафика |<br>
+_.10 | <code>wireshark</code> - средство анализа сетевых протоколов |<br>
+_.11 | <code>iptraf</code> - мониторинг сетевого трафика |<br>
+								</p><div class="divider"></div><p>
+7 | Управление пакетами ПО |<br>
+_.1 | дистрибутивы хранятся в репозиториях (хранилища файлов доступных через сеть) |<br>
+_.2 | репозитории состоят из 2х частей: заголовки и математики |<br>
+_.3 | пакетный менеджер исп. для работы с репозиторием | математика упаковывается в пакеты | пакеты позволяют пакетному менеджеру удалять, устанавливать и т.д. | пакет - сжатые бинарные и конфигурационные файлы, инструкции до и после установки |<br>
+_.4 | пакетный менеджер всегда имеет информацию о том, что установлено в системе | 1.этап - получение свежего заголовка репозитория и сравнивается с тем, что установлено в системе | в заголовке прописывается, какие пакеты нужны для правильно функционирования и они автоматически скачиваются |<br>
+_.5 | <code>apt-get install gulp</code> - установить | <code>apt-get remove gulp</code> - удалить |<br>
+_.6 | <code>apt-get update</code> - обновить заголовки репозиториев |<br>
+_.7 | <code>apt-get upgrade</code> - обновить сами пакеты |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== UX 2.1 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#unix21" data-toggle="collapse" data-panel="#accord">UX 2.1</a> | NTP | FTP |
+						</div>
+						<div class="panel-collapse collapse" id="unix21">
+							<div class="panel-body">
+								<p>
+1 | Синхронизация времени |<br>
+_.1 | сист. время - счетчик прошедших секунд от unix epoch |<br>
+_.2 | UTC (Universal Time Coordinated) = GMT | <code>date</code> |<br>
+_.3 | /etc/localtime - отвечает за перевод сист. времени к local (MSD) |<br>
+_.4 | установка времени: <code>cp /usr/share/zoneinfo/America/New_York /etc/localtime</code> |<br>
+_.5 | установка любого времени: <code>date -s 12:00</code> |<br>
+								</p><div class="divider"></div><p>
+2 | Служба точного времени | NTP (Network Time Protocol) |<br>
+_.1 | передача времени в виде 32-разрядного числа | точность ~ 0.1 sec |<br>
+_.2 | сервера точного времени располагаются эшелонами (stratum) |<br>
+_.3 | синхронизация сист. времени: <code>ntpdate ru.pool.ntp.org</code> |<br>
+_.4 | синхронизация аппаратного времени: <code>hwclock</code> |<br>
+								</p><div class="divider"></div><p>
+3 | Сервер NTP |<br>
+_.1 | установка: <code>apt-get install ntp</code> | через 10-15 мин ntpd приводит время к точному |<br>
+_.2 | посмотреть точность сервера: <code>ntptrace</code> | должен быть stratum 3 - 2 |<br>
+_.3 | ntpd работатает как клиент и как сервер |<br>
+_.4 | <span class="glyphicon glyphicon-cog"></span> конфигурационный файл: /etc/ntp.conf |<br>
+_.5 | <span class="glyphicon glyphicon-pencil"></span> дир-ва server: в ней ntpd смотрит какие сервера ему даны |<br>
+_.6 | можно добавить свои сервера: server time.nist.gov |<br>
+_.7 | порядок серверов не важен | ntpd сам выясняет, какие из них более надежные |<br>
+_.8 | <span class="glyphicon glyphicon-pencil"></span>дир-ва restrict: ограничиват общение с сервером |<br>
+_.9 | restrict default ignore: только установка времени, машины не обращаются к нему |<br>
+								</p><div class="divider"></div><p>
+4 | Сетевой суперсервер | 1.3.25 |<br>
+_.1 | уменьшает кол-во одновременно запущенных процессов на малонагруж. сервере |<br>
+_.2 | слушает порты | при соединении клиента с портом 21 inetd форкуется в ftpd | 23 <=> telnetd |<br>
+_.3 | первый сервер - inetd | из-за проблема с безопасностью  inetd появился xnetd |<br>
+_.4 | установка: <code>apt-get install xinetd fingerd</code> | finger: информация о user, вошел ли в систему? |<br>
+_.5 | <span class="glyphicon glyphicon-cog"></span> конфигурационный файл: /etc/xinetd.conf |<br>
+_.6 | <span class="glyphicon glyphicon-pencil"></span>дир-ва includedir /etc/xinetd.d: содержимое файлов в этой папке будет вкл. вместо этой строки |<br>
+								</p><div class="divider"></div><p>
+5 | директория xinetd.d | <br>
+_.1 | содержит имена сервисов | все сервисы хранятся в /etc/services |<br>
+_.2 | chargen(19) | <span class="glyphicon glyphicon-pencil"></span>дир-ва service chargen: имя сервиса, == имени в /etc/services | вкл. 7 параметров: |<br>
+_._1 | disable=yes: сервис выключен | type=INTERNAL: внешние программы не нужны |<br>
+_._3 | id=chargen-stream: id нужен для ссылки в журнале | socket_type=stream: потоковый |<br>
+_._5 | protocol=tcp | user=root: сервис требует права root | wait=no |<br>
+_.3 | аналогично для daytime(порт 13) | discard(9) | echo(7) | time(37) |<br>
+								</p><div class="divider"></div><p>
+6 | FTP | 1.4.30 |<br>
+_.1 | Процесс: клиент устанавливает управляющее соединение (порт 21) |<br>
+_.2 | клиент передает команды (ls, GET, help, ..) |<br>
+_.3 | сервер просит клиента открыть новый порт и передать ему номер порта |<br>
+_.4 | через 20 порт сервер соединяется с новым портом и отдает данные |<br>
+_.5 | первая программа - ftpd, не шифрует данные | в наст.время использ. proftpd |<br>
+								</p><div class="divider"></div><p>
+7 | PROFTP |<br>
+_.1 | создать нового user для входа в ftp: useradd -m t1 | passwd t1 | 1 | 1 |<br>
+_.2 | установка: <code>apt-get install proftpd openssl</code> |<br>
+_.3 | <span class="glyphicon glyphicon-cog"></span> конфигурационный файл: /etc/proftpd/proftpd.conf |<br>
+_.4 | <span class="glyphicon glyphicon-pencil"></span> DefaultRoot ~: выше домашнего каталога user поднятся не может | демон ставит CHROOT на ~ |<br>
+_.5 | <span class="glyphicon glyphicon-pencil"></span> ServerIdent on "FTP Server ready.": |<br>
+_.6 | <span class="glyphicon glyphicon-pencil"></span> Include /etc/proftpd/tls.conf: |<br>
+								</p><div class="divider"></div><p>
+7 | SSL |<br>
+_.1 | <code>mkdir /etc/proftpd/ssl</code> |<br>
+_.2 | установка: <code>apt-get install ftp-ssl</code> |<br>
+_.3 | <span class="glyphicon glyphicon-cog"></span> конфигурационный файл: /etc/proftpd/tls.conf |<br>
+_.4 | <span class="glyphicon glyphicon-pencil"></span> TLSEngine on | используется шифрование |<br>
+_.5 | <span class="glyphicon glyphicon-pencil"></span> TLSLog /var/log/proftpd/tls.log | журналирование в этот файл |<br>
+_.6 | <span class="glyphicon glyphicon-pencil"></span> SSLv23: |<br>
+_.7 | <span class="glyphicon glyphicon-pencil"></span> TLSOptions NoCertRequest AllowClientRenegotiations: |<br>
+_.8 | <span class="glyphicon glyphicon-pencil"></span> TLSRSACertificateFile /etc/proftpd/ssl/proftpd.cert.pem: |<br>
+_.9 | <span class="glyphicon glyphicon-pencil"></span> TLSRSACertificateKeyFile /etc/proftpd/ssl/proftpd.key.pem: |<br>
+_.10 | <span class="glyphicon glyphicon-pencil"></span> TLSVerifyClient off | сертификат у клиента не требуется |<br>
+_.11 | <span class="glyphicon glyphicon-pencil"></span> TLSRequired on | требуется поддержка шифрования от клиента |<br>
+								</p><div class="divider"></div><p>
+8 | работа с PROFTP |<br>
+_.1 | <code>service proftpd restart</code> |<br>
+_.2 | <code>ftp localhost</code> | Name: t1 | Password: 1 | <br>
+_.3 | <code>mkdir d1</code> | <code>ls</code> | <code>quit</code> | в случае проблем: <a href="http://www.proftpd.org/docs/howto/index.html">howTo</a> |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== UX 2.2 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#unix22" data-toggle="collapse" data-panel="#accord">UX 2.2</a> | DNS |
+						</div>
+						<div class="panel-collapse collapse" id="unix22">
+							<div class="panel-body">
+1a | Аналог tac |<br>
+line=`cat $1 | wc -l` #кол-во строк в док-те<br>
+while [ $line -gt 0]<br>
+do<br>
+tail -n +$line $1 | head -n1<br>
+line=$(($line-1)) #обратный счетчик<br> 
+done<br>
+								</p><div class="divider"></div><p>
+1b | invert |<br>
+I=`df $1 | tail -n 1 | tr -s ' ' | cut -d ' ' -f 5 | tr -d %` <br>
+if [ $I -ge $2]<br>
+then<br>
+echo "System is full"<br>
+fi<br>
+								</p><div class="divider"></div><p>
+1c | dnschk |<br>
+while :<br>
+do<br>
+clear<br>
+for x in 2 3 4<br>
+do<br>
+host c$x.d$x.class.un 10.5.4.$((100+$x)) | grep class<br>
+echo ====================================<br>
+done<br>
+sleep 3<br>
+done<br>
+
+1d | замена .100 на .133 в файле |<br>
+sed -i .bak -e 's/10\.5\.4\.100/10\.5\.4\.133/'<br>
+								</p><div class="divider"></div><p>
+2 | DNS |<br>
+_.1 | когда вводим: ping -c1 ya.ru, команда посылает ICMP пакет (echo request, type 8) на адрес ххх.. |<br>
+_.2 | любая программа всегда обращается к библиотеке RESOLVER, к-рая предоставляет ф-ции gethostbyname |<br>
+_.3 | RESOLVER строит свое поведение на основании содержимого файлов, основной из к-рых /etc/nsswitch.conf |<br>
+_.4 | /etc/nsswitch.conf | hosts: files dns |   |<br>
+_.5 | files - нужно искать информацию в файле /etc/hosts | 127.0.01 localhost |<br>
+_.6 | dns - указание RESOLVER обратиться к DNS-серверам, указанным в /etc/resolve.conf | nameserver xxx.. |<br>
+_.7 | рекурсивные сервера (specialist, sowl) - обычно кэширующие |<br>
+_.8 | делят на первичный (master) и вторичные (slave) сервера | slave - повышают нагрузоустойчивость |<br>
+								</p><div class="divider"></div><p>
+3 | BIND |<br>
+_.1 | BIND (Berkley Internet Name Domain) - самый популярный DNS сервер |<br>
+_.2 | <span class="glyphicon glyphicon-cog"></span> /etc/resolve.conf | domain d0.class.un |<br>
+_.3 | <span class="glyphicon glyphicon-cog"></span> /etc/bind/named.conf |<br>
+_.4 | <span class="glyphicon glyphicon-pencil"></span> Include "/etc/bind/named.conf.options" | directory "/var/cache/bind" | может обновлятся, поэтому вносить настройки нужно в local |<br>
+_.5 | <span class="glyphicon glyphicon-pencil"></span> Include "/etc/bind/named.conf.local" | [1]<span class="glyphicon glyphicon-arrow-right"></span> |<br>
+_.6 | <span class="glyphicon glyphicon-pencil"></span> Include "/etc/bind/named.conf.default-zones" |<br>
+								</p><div class="divider"></div><p>
+4 | [1]<span class="glyphicon glyphicon-arrow-right"></span> | <span class="glyphicon glyphicon-cog"></span> /etc/bind/named.conf.local |<br>
+_.1 | zone "d0.class.un" {type master; file "/etc/bind/d0.class.un.zone";  }; |<br>
+_.2 | bash$ named-checkconf - проверка синтаксиса |<br>
+_.3 | /etc/bind/d0.class.un.zone | <br>
+_.3a | $TTL 30 - время кэширования запроса |<br>
+_.3b | $ORIGIN d0.class.un. - точка в конце обязательна | запись нужна для того, чтобы остальные записи могли записываться не в режиме FQDN, а режиме относительного имени. | обычно используется для определения зоны, к-рая описывается этим файлом описания зоны. | появляется возможность более полно проверить синтаксис и семантику. |<br>
+_.3c | @ SOA c0 root 2018030300 1h 10m 1d 30 | SOA (start of authority) - начало описания зоны ответсвенности сервера | c0 - имя master-сервера | 2018030300 (серийный номер зоны) - сравнивает номер master и slave, если номер master больше, значит slave зону нужно обновить | 1h - интервал обновления slave серверов | 10m - если мастер не доступен, 1h уменьшается | 1d - период, в течении к-ого slave посещает master каждые 10 мин | 30 - время в жизни в кэшах удаленных серверов негативных ответов от вашего сервера |<br>
+_.3d | NS c0 | имена slave - серверов, указывающих на какую-то зону | если slave нет, то указывается master |<br>
+_.3e | MX 10 c0 | mail exchange - маршрутизация почты | 10 - приоритет, чем меньше, тем приоритет выше | c0 - имя почтового сервера |<br>
+_.3f | www CNAME c0 | CNAME - Canonical Name | привязка нескольких имен к одному IP-адресу |<br>
+_.3g | ftp CNAME c0 | CNAME создает 2 запроса к серверу, поэтому не рекомендуется для нагруженных серверов |<br>
+_.3h | c0 A xxx.. | преобразование имен в IP-адреса |<br>
+_.4 | rndc - управление DNS-серверами | без праметров - выдает список доступных комманд |<br>
+_.5 | rndc reconfig - перечитывается конфигурационный файл и загружаются только новые зоны |<br>
+_.6 | host c1 - проверка успешной работы | должно быть типа c1.d0.class.un has address xxx.. |<br>
+								</p><div class="divider"></div><p>
+5 | slave server |<br>
+_.1 | <span class="glyphicon glyphicon-cog"></span> /etc/bind/named.conf.local |<br>
+_.2 | zone "d2.class.un" {type slave; masters {xxx..}; file "d2.class.un.zone" }; |<br>
+_.3 | file "d2.class.un.zone" "" - после каждого обновления зоны записывать ее к себе в файл |<br>
+_.4 | bash$ named-checkconf - проверка синтаксиса |<br>
+_.5 | rndc reconfig - перечитывается конфигурационный файл и загружаются только новые зоны |<br>
+_.6 | ls /var/cache/bind - работа комманды file |<br>
+								</p><div class="divider"></div><p>
+6 | зона обратного преобразования |<br>
+_.1 | 10.5.4.24 => 4.5.10.in-addr.arpa |<br>
+_.2 | <span class="glyphicon glyphicon-cog"></span> /etc/bind/named.conf.local |<br>
+_.3 | zone "4.5.10.in-addr.arp" {type master; file "/etc/bind/4.5.10.in-addr.arp.zone"; }; |<br>
+_.4 | bash$ named-checkconf - проверка синтаксиса |<br>
+_.5 | cp /etc/bind/d0.class.un.zone /etc/bind/4.5.10.in-addr.arp.zone |<br>
+_.5a | 100 PTR c0.d0.class.un | преобразование IP-адреса в имя |<br>
+								</p><div class="divider"></div><p>
+7 | Полезные команды |<br>
+_.1 | при ошибке named-checkconf echo $? = 1 |<br>
+_.2 | netstat -lpa --inet | активые соединения с Интернетом |<br>
+_.3 | AppArmor |<br>
+								</p>							
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== UX 2.3 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#unix23" data-toggle="collapse" data-panel="#accord">UX 2.3</a> | DHCP | email |
+						</div>
+						<div class="panel-collapse collapse" id="unix23">
+							<div class="panel-body">
+								<p>
+1 | DHCP |<br>
+_.1 | Dinamic Host Configuration Protocol |<br>
+_.2 | <span class="glyphicon glyphicon-cog"></span> /etc/dhcp3/dhcpd.conf |<br>
+								</p><div class="divider"></div><p>
+2 | email |<br>
+_.1 | ПА (пользовательский агент) - почтовая программа | формирует письмо, добавляет заголовки и соединяется с ТА | протокол SMTP | порт 25 |<br>
+_.2 | ТА (транспортный агент) соединяется с другим ТА и передает АДП |<br>
+_.3 | АДП (агент доставки почты) => mail box => АД |<br>
+_.4 | АД (агенты доступа) - достают почту из mail box | протокол POP3, IMAP4 |<br>
+_.5 | установка: apt-get install whois postfix dovecot-pop3d dovecot-imapd |<br>
+_.6 | nc locahost 25 | helo localhost | mail from: &lt;..&gt; | rcpt to: &lt;..&gt; | data | quit | все команды SMTP имеют 4 буквы |<br>
+_.7 | установка POP3: apt-get install popa3d |<br>
+_.8 | nc locahost 110 | user student | pass 1 | list: 1 422 - в ящике 1 письмо 422 байта | retr 1 - забрать первое письмо | dele 1 | quit |<br>
+								</p><div class="divider"></div><p>
+3 | виртуальный хостинг |<br>
+_.1 | виртуальный хостинг - когда не имеет отношение к домену, но почта принимается |<br>
+_.2 | scp student@c0:examples.tgz ~ | tar xf examples.tgz | cd examples/mail | cd | ln -s examples/mail mail |<br>
+_.3 | mkdir /home/vmail/unix.specialist.ru/info/ | mkdir /home/vmail/unix.specialist.ru/sales/ |<br>
+_.4 | tree ~vmail | mailq | postsuper -d .. | <br>
+_.5 | ls /etc/postfix/ | main.cf [1]<span class="glyphicon glyphicon-arrow-right"></span> | master.cf | vhosts | vmaps |<br>
+_.6 | master.cf - описывает, как должны взаимодействовать между собой разные компоненты почтовой системы  (от ТА до АДП) |<br>
+_.7 | vmaps - ключ значение | postmap vmap - создает бинарную БД vmaps.db |<br>
+								</p><div class="divider"></div><p>
+4 | [1]<span class="glyphicon glyphicon-arrow-right"></span> main.cf |<br>
+_.1 | главный конфиг. файл POSTFIX (18 строк) |<br>
+_.2 | append_dot_mydomin - добавлять ли окончание |<br>
+_.3 | virtual_mailbox_domains - какие виртуальные домены поддерживаются |<br>
+_.4 | alias_maps - дополнительные имена локальным пользователям |<br>
+_.5 | inet_interfaces = all - цепляется за все интерфейсы |<br>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== UX 2.4 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#unix24" data-toggle="collapse" data-panel="#accord">UX 2.4</a> | SQUID |
+						</div>
+						<div class="panel-collapse collapse" id="unix24">
+							<div class="panel-body">
+								<p>
+1 | SQUID |<br>
+_.1 | прокси-сервер | cl <=> p <-> w | <br>
+_.2 | <span class="glyphicon glyphicon-download-alt"></span> apt-get install squid | /etc/init.d/squid start - запуск вручную |<br>
+_.3 | netstat --inet -lpn | grep squid - на каких интерфейсах сидит |<br>
+_.4 | принимает запросы от клиента на порту 3128 |<br>
+_.5 | <span class="glyphicon glyphicon-cog"></span> /etc/squid/squid.conf |<br>
+_.6 | ifconfig eth1: inet addr: 192.168.0.1 - посмотреть адрес | <br>
+_.7 | <span class="glyphicon glyphicon-pencil"></span> http_port 192.168.0.1:3128 - слушается только внутренний интерфейс |<br>
+_.8 | <span class="glyphicon glyphicon-pencil"></span> tcp_port 0 - отключается 3130 порт по-умолчанию |<br>
+_.9 | squid -k p (parse) | squid -k re - переконфигурация после внесения изменений |<br>
+								</p><div class="divider"></div><p>
+2 | Списки контроля доступа (ACL) |<br>
+_.1 | С точки зрения squid это условия, к-рые могут выполнятся или не выполнятся для каждого конкретного запроса |<br>
+_.2 | <span class="glyphicon glyphicon-pencil"></span> acl aclname acltype string/ file_path |<br>
+_.3a | acltype | acl myhost src myIP - acl сработает, если запрос идет с myIP | <br>
+_.3b | acl ya dstdomain .ya.ru - acl сработает, если запрос идет на ya.ru |<br>
+_.3c | dstdom_regex - запрос на сайт по шаблону (-i - игнорировать регистр) | acl media urlpath_regex -i \.avi$ \.mp3$ |<br>
+_.3d | acl wt time 10:00-17.00 | acl conections maxconn 4 - срабатывает, когда кол-во соединений от клиента превышает число |<br>
+_.4 | <span class="glyphicon glyphicon-pencil"></span> http_access allow|deny acl media wt | !wt - не рабочее время | вставить после: Insert your own rule ... |<br>
+_.5 | <span class="glyphicon glyphicon-download-alt"></span> apt-get install links | links -http-proxy c0 ya.ru | rm -r .links2/ - удалить кэш |<br>
+								</p><div class="divider"></div><p>
+3 | Аутентификация |<br>
+_.1 | <span class="glyphicon glyphicon-pencil"></span> auth_param basic program /usr/lib/squid/ncsa_auth /etc/squid/passwd |<br>
+_.2 | basic - схема аутентификации | <br>
+_.3 | program  - команда, что имеено мы описываем | 
+_.3a | auth_param basic children 5 - кол-во дочерних процессов = 5 | <br>
+_.3b | auth_param basic realm Squid proxi-caching web server - область действия пароля - прокси сервер | <br>
+_.3c | auth_param basic credentialsttl 2 hours - время действия разрешения | <br>
+_.4 | /usr/lib/squid/ncsa_auth - аутентифицирущая программа | <br>
+_.5 | <span class="glyphicon glyphicon-download-alt"></span> apt-get install apache2 - ради файла htpasswd |<br>
+_.6a | <span class="glyphicon glyphicon-pencil"></span> acl passwd proxy_auth REQUIRED |<br>
+_.6b | <span class="glyphicon glyphicon-pencil"></span> acl ya dstdomain .ya.ru .yandex.ru |<br>
+_.7a | <span class="glyphicon glyphicon-pencil"></span> http_access allow ya passwd |<br>
+_.7b | <span class="glyphicon glyphicon-pencil"></span> http_access deny ya |<br>
+_.8 | htpasswd -c /etc/squid/passwd authuser - создание файла с паролями |<br>
+_.9 | squid -k p (parse) | squid -k re - переконфигурация после внесения изменений |<br>
+								</p><div class="divider"></div><p>
+4 | Ограничение ширины канала |<br>
+_.1 | <span class="glyphicon glyphicon-pencil"></span> acl vk dstdomain .vk.ru |<br>
+_.2 | <span class="glyphicon glyphicon-pencil"></span> delay_pools 2 | delay_class 1 1 | delay_class 2 2 |<br>
+_.2 | <span class="glyphicon glyphicon-pencil"></span> delay_parameters 1 4000/4000 400/400 | ограничение для 1ой емкости - 4000 общая и 400 байт/сек на человека |<br>
+_.2 | <span class="glyphicon glyphicon-pencil"></span> delay_access 1 allow vk | delay_acces 1 deny all | разрешаем использовать 1ю емкость задержки  |<br>
+								</p><div class="divider"></div><p>
+5 | Netfilter |<br>
+_.1 | пакетный фильтр Linux | фильтрация пакетов, их преобразование | код в ядре |<br>
+_.2 | работает на основании управяющих таблиц - IPtables |<br>
+_.3 | iptables [-t table] command | 3 table: filter, nat, mangle |<br>
+_.3a | filter table | фильтрация пакетов | drop - отбросить пакет | log - записать в журнал | accept - принять пакет | reject - отвергает пакет |<br>
+_.3a | цепочки фильтров: forward (транзитные пакеты), input (пакет для этого компа), output (пакет сгенерирован здесь) |<br>
+_.3b | nat table | преобразование сетевых адресов |<br>
+_.3b | цепочки фильтров: prerouting (внесение изменений на входе router), input (пакет для этого компа), output (пакет сгенерирован здесь) |<br>
+_.3c | mangle table | внесение изменений в заголовки пакетов | <br>
+_.4 | команды iptables | -a, -d, -r, -i, -l, -f(очистить), -z, -x(удалить цепочку), -p(установить политику по-умолчанию) |<br>
+_.5 | iptables -a input -s 10.10.103.100 -j accept | добавить правило в конец цепочки input от IP -j(jump - действие), пакет принимается |<br>
+								</p><div class="divider"></div><p>
+6 | Критерии отбора пакетов |<br>
+_.1 | общие | не зависят от протокола и не требуют загрузки спецмодулей ядра (протокол IP и выше) |<br>
+_.1a | -p tcp | -s/ -d - IP адрес источника/ получателя |<br>
+_.2 | неявные | зависят от протокола и не требуют загрузки спецмодулей ядра |<br>
+_.2a | tcp: --sport/ --dport/ --tcp-flags/ --syn (запрос на соединение) | udp: --sport/ --dport/ | icmp: --icmp-type |<br>
+_.3 | явные | требуют загрузки спецмодулей ядра |<br>
+_.3a | --limit-burst/ --limit/ --mac-source/ multiport --source-port/ --state/ |<br>
+_.3b | --state для пакета можно определить состояние | new/ established/ related/ invalid (состояние не удалось определить) |<br>
+								</p><div class="divider"></div><p>
+7 | Анализатор журналов SQUID |<br>
+_.1 | <span class="glyphicon glyphicon-download-alt"></span> apt-cashe install sarg |<br>
+_.2 | <span class="glyphicon glyphicon-cog"></span> /etc/sarg/sarg.conf |<br>
+_.3a | <span class="glyphicon glyphicon-pencil"></span> output dir /var/lib/sarg |<br>
+_.3a | <span class="glyphicon glyphicon-pencil"></span> charset UTF-8 вместо Latin1 |<br>
+_.4 | cd /var/www - сюда указывает apache |<br>
+_.5 | ln -s /var/lib/sarg squid |<br>
+_.6 | в браузере набрать 10.5.4.100/squid - появится страница Squid Analysis Report Genarator |<br>
+								</p><div class="divider"></div><p>
+8 | Антивирус |<br>
+_.1 | wget val.bmstu.ru/unix/virus.zip |<br>
+_.2 | <span class="glyphicon glyphicon-download-alt"></span> apt-get install clamsmtp | <a href="https://help.ubuntu.com/community/PostfixVirtualMailBoxClamSmtpHowto" target="_blank">ubuntu help</a> |<br>
+_.3 | <span class="glyphicon glyphicon-cog"></span> /etc/postfix/main.cf |<br>
+_.4a | <span class="glyphicon glyphicon-pencil"></span> content-filter = scan:127.0.0.1:10026 |<br>
+_.4a | <span class="glyphicon glyphicon-pencil"></span> receive_override_options = no_address_mappings |<br>
+_.5 | <span class="glyphicon glyphicon-cog"></span> /etc/postfix/master.cf | copy listing from #AV scan...<br>
+_.6 | copy listing from sudo /etc/init.d/postfix/ restart ... |<br>
+_.7 | антивирус состоит из 2х частей: базы данных на сайте и самой программы |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== UX 2.5 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#unix25" data-toggle="collapse" data-panel="#accord">UX 2.5</a> | NAT | PPTP | NFS |
+						</div>
+						<div class="panel-collapse collapse" id="unix25">
+							<div class="panel-body">
+								<p>
+1 | Уровни |<br>
+_.1 | физический | экранированная витая пара | напряжения на концах должны быть одинаковы |<br>
+_.2 | канальный (link) | Ethernet | пакеты ходет между MAC-адресами  |<br>
+_.3 | сетевой | IP A.B.C.D. | в Ethernet-кадры вкладываются IP-пакеты |<br>
+_.4 | транспортный | TCP UDP Ports | адреса не нужны |<br>
+_.5 | прикладной | HTTP FTP SSH |<br>
+
+								</p><div class="divider"></div><p>
+2 | Network Address Translation (NAT) |<br>
+_.1 | SNAT - замена IP-адреса отправителя |<br>
+_.1a | WinXP == (ICMP ping - вложен в IP) ==> G (IP forwarding eth1->eth0) --> C6 |<br>
+_.1b | при вылете из шлюза ставится адрес шлюза eth0 |<br>
+_.2 | MASQUERADE - IP-адрес получается динамически от DHCP сервера |<br>
+_.2a | iptables -t nat -A -POSTROUTING -o eth0 -j MASQUARADE | в таблицу nat добавляем в конец цепочку postrouting (то, что прошло после маршрутизации) если влетает из наружнего интерфейса - то делается masquerade |<br>
+_.3 | DNAT - замена IP-адреса получателя |<br>
+								</p><div class="divider"></div><p>
+3 | SQUID transparent proxy |<br>
+_.1 | http_port 3128 transparent |<br>
+_.1a | squid -k p (parse) | squid -k re - переконфигурация после внесения изменений |<br>
+_.2 | iptables -t nat -A PREROUTING -i eth1 -p tcp --dport 80 -j DNAT --to 192.168.0.1:3128 |<br>
+_.2a | в таблицу nat в цепочку, в к-рую влетают транзитные пакеты, при условии: входящий интерфейс = внутренний, протокол = tcp и порт = 80 - тогда пакет отправяется к SQUID |<br>
+_.2b | squid -k p (parse) | squid -k re - переконфигурация после внесения изменений |<br>
+_.3 | https не обрабатываются |<br>
+								</p><div class="divider"></div><p>
+4 | VPN |<br>
+_.1 | виртульная частная сеть | применяется для объдинения территориально-распределенных объектов |<br>
+_.2 | виртульная - действует по сетям общего пользования |<br>
+_.3 | частные - обеспечивается некая приватность сети |<br>
+_.4 | адреса сетей одного VPN не должны пересекаться с адресами других сетей |<br>
+_.5 | A === GA --шифрование, сборка/ разборка пакета -- GB ===B | пакет разбивается на 2 части |<br>
+								</p><div class="divider"></div><p>
+5 | PPTP | point-to-point |<br>
+_.1 | <span class="glyphicon glyphicon-download-alt"></span> apt-get install pptpd |<br>
+_.2 | <span class="glyphicon glyphicon-cog"></span> /etc/pptpd.conf |<br>
+_.3 | <span class="glyphicon glyphicon-pencil"></span> localip 172.16.1.1 | адрес сервера |<br>
+_.4 | <span class="glyphicon glyphicon-pencil"></span> remoteip 172.16.1.2-100 | адреса клиентов |<br>
+_.5 | <span class="glyphicon glyphicon-cog"></span> /etc/ppp/pptpd-options |<br>
+_.6 | <span class="glyphicon glyphicon-pencil"></span> auth | #authentication | вызывает у сервера потребность, чтобы клиент представился |<br>
+_.7 | <span class="glyphicon glyphicon-cog"></span> /etc/ppp/chap-secret |<br>
+_.8 | <span class="glyphicon glyphicon-pencil"></span> user1 pptpd 1234 "*" | #client server secret IP addresses |<br>
+								</p><div class="divider"></div><p>
+6 | настройка VPN Windows |<br>
+_.1 | Панель управления -> Сетевые подключения -> Создание нового подключения |<br>
+_.2 | Далее > ..VPN.. -> ..VPN.. -> a -> 192.168.0.1 -> Готово |<br>
+_.3 | win+R -> cmd -> ipconfig | проверка |<br>
+								</p><div class="divider"></div><p>
+7 | Network File System |<br>
+_.1 | позволяет работать с удаленными компами как с локальными | UDP | разработан фирмой Sun |<br>
+_.2 | <span class="glyphicon glyphicon-download-alt"></span> apt-get install nfs-kernel-server |<br>
+_.3 | <span class="glyphicon glyphicon-cog"></span> /etc/exports |<br>
+_.4 | <span class="glyphicon glyphicon-pencil"></span> /usr/share/man 10.5.4.0/24(ro) | ro - read-only |<br>
+_.5 | /etc/init.d/nfs-kernel-server restart |<br>
+_.6 | showmount -e | проверка что экспортирует машина |<br>
+_.7 | mkdir /tmp/man | mount -r c0: /usr/share/man /tmp/man | создать точку монтирования |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- ===================================== UX 3.1 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#unix31" data-toggle="collapse" data-panel="#accord">UX 3.1</a> | Настройка |
+						</div>
+						<div class="panel-collapse collapse" id="unix31">
+							<div class="panel-body">
+								<p>
+1 | Стенд Gate |<br>
+_.1 | 2 Unix и 1 Windows server 2003 + 1 клиент (winXp) |<br>
+_.2 | unix domain corp0.un | внеш.: 10.5.6/24 | внутр.: 192.168.0/24 |<br>
+_.3 | gate | внеш.: 10.5.6.100/24 | внутр.: 192.168.0.1/24 |<br>
+_.4 | server: | 192.168.0.10/24 |<br>
+_.5a | VirtualBox -> name: gate -> freeBSD | 256mb | создать новый жест.диск -> 8gb |<br>
+_.5b | Свойства -> Система | ch. IO APIC | процессор: ch. PAE/NX |<br>
+_.5c | Носители | привод -> выбрать образ оптического диска |<br>
+_.5d | Сеть | тип: сетевой мост | тип адаптера: Intel Pro .. | Адаптер 2: ch. Включить -> тип: внутр.сеть | тип адаптера: PCnet PCi .. |<br>
+_.5e | Аудио: uncheck | USB: unch | OK |<br>
+_.6 | шлюз и DNS: 10.5.6.254 | Groups: wheel |<br>
+
+
+								</p><div class="divider"></div><p>
+2 | Kitty |<br>
+_.1 | Google -> kitty.exe download -> Рабочий стол |<br>
+_.2 | Window | Appearence: Fonts Chnage | Translation: KOI8_R | Colours: Use system.. |<br>
+_.3 | Session | IP: student@10.5.6.100 | Default Settings -> <b>Save</b> |<br>
+_.4 | Open -> Yes -> |<br>
+_.5 | Backtrack Linux |<br>
+_.6 | .bashrc | setenv PACKAGEROOT "ftp://ftp4.ru.freebsd.org" | set autolist - при невозможности дополнения показать все возможные варианты |<br>
+_.7 | source .bashrc - перечитать конфигурационный файл |<br>
+								</p><div class="divider"></div><p>
+3 | Настройка |<br>
+_.1 | /etc/rc.conf | главный конфигурационный файл FreeBSD | ifconfig_ie0="192.168.0.1/24" |<br>
+_.2 | /etc/rc.d/netif restart | запуск скрипта системы инициализации |<br>
+_.3 | /etc/rc.d/routing restart | запуск скрипта маршрутизации |<br>
+_.4 | ifconfig | проверка интерфейсов |<br>
+_.5 | :> /etc/motd | ноль перезаписывает файл (усекает) |<br>
+_.6 | pw useradd user -u10001 | passwd user | id user | создание подопытного |<br>
+_.7 | vi /etc/rc.conf | gateway_enable="YES" - шлюз включен | pf_enable=yes - включение пакетного фильтра |<br>
+_.8 | /etc/pf.conf | nat on em0 from le0:network -> (em0) |<br>
+_.9 | /etc/rc.d/pf start |<br>
+_.10 | pfctl -sn | посмотреть какие правила действуют для NAT |<br>
+								</p><div class="divider"></div><p>
+4 | Настройка DNS |<br>
+_.1 | /etc/rc.conf | named_enable=yes | разрешить запуск сервера имен |<br>
+_.2 | /etc/resolve.conf | nameserver 127.0.0.1 |<br>
+_.3 | /etc/rc.d/named start | запуск сервера имен |<br>
+_.4 | host ya.ru | проверка работы |<br>
+_.5 | <span class="glyphicon glyphicon-cog"></span> /etc/namedb/named.conf |<br>
+_.5a | listen-on {127.0.0.1; 10.5.6.100; 192.168.0.1; } |<br>
+_.5b | zone "corp0.un" {type master; file "/etc/namedb/master/corp0.un.zone";} |<br>
+_.5c | zone "0.168.192.in-addr.arpa" {type master; file "/etc/namedb/master/0.168.192.in-addr.arpa.zone";} |<br>
+_.6 | named-checkconf -z | проверка операций к-рые bind делает при загрузке |<br>
+								</p><div class="divider"></div><p>
+5 | прямая зона DNS |<br>
+_.1 | <span class="glyphicon glyphicon-cog"></span> /etc/namedb/master/corp0.un.zone |<br>
+_.2 | $TTL 3h | $ORIGIN corp0.un. |<br>
+_.3 | @ SOA gate root.gate 1 1d 12h 1w 3h | NS gate |<br>
+_.4 | gate A 192.168.0.1 | server A ..10 | win2k3 A ..20 | winxp A ..30 |<br>
+_.5 | _kerberos._udp SRV 01 00 88 gate | _kerberos._tcp SRV 01 00 88 gate | 01 - приоритет | 00 - вес в ответах на запрос | 88 - номер порта |<br>
+_.6 | _kerberos._udp SRV 01 00 464 gate | _kerberos-adm._tcp SRV 01 00 749 gate |<br>
+_.7 | kerberos TXT CORP0.UN |<br>
+								</p><div class="divider"></div><p>
+6 | обратная зона DNS |<br>
+_.1 | <span class="glyphicon glyphicon-cog"></span> /etc/namedb/master/0.168.192.in-addr.arpa.zone |<br>
+_.2 | $TTL 3h | $ORIGIN  0.168.192.in-addr.arpa. |<br>
+_.3 | @ SOA gate gate.corp0.un. roo 1 1d 12h 1w 3h | NS gate.corp0.un. |<br>
+_.4 | 1 PTR gate.corp0.un. | 10 PTR server.corp0.un. | 20 PTR win2k3.corp0.un. | 30 PTR winxp.corp0.un. |<br>
+_.5 | rndc reconfig | host server | перезагрузка и проверка |<br>
+_.6 | /etc/rc.d/named restart | перезапуск сервера имен |<br>
+								</p><div class="divider"></div><p>
+7 | Установка server |<br>
+_.1 | установка server |<br>
+_.2 | server & gate | vi ./cshrc | set prompt = "[%m:%c]%" |<br>
+_.3 | ping ya.ru - проверка NAT | ping gate - проверка DNS-клиента |<br>
+_.4 | server | pw usermod student -d /usr/student -m | домашним каталогом у student стал /usr/student, -m - переташить данные из старого сюда |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== UX 3.2 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#unix32" data-toggle="collapse" data-panel="#accord">UX 3.2</a> | Авторизация |
+						</div>
+						<div class="panel-collapse collapse" id="unix32">
+							<div class="panel-body">
+								<p>
+1 | Аутентификация |<br>
+_.1 | логин - пароль | многофакторная |<br>
+_.2 | kerberos - агент для разных принципалов | централизованно хранит информацию |<br>
+_.3 | server | RPC v3 |<br>
+_.4 | <span class="glyphicon glyphicon-cog"></span> /etc/rc.conf |<br>
+_.4b | rpcbind_enable="YES" | nisdomainname="corp0.un" | nis_server_enable="YES" |<br>
+_.5 | /etc/rc.d/nisdomain start |<br>
+_.6 | mkdir /var/yp/corp0.un |<br>
+_.7 | /etc/rc.d/rpcbind start | /etc/rc.d/ypserv start - сервер желтых страниц |<br>
+_.8 | cp /etc/master.passwd /var/yp |<br>
+_.9 | <span class="glyphicon glyphicon-cog"></span> /var/yp/master.passwd | проверить user |<br>
+_.10 | ypinit -m corp0.un | quit: no | destroy: yes | Ctrl+D | correct: yes |<br>
+								</p><div class="divider"></div><p>
+2 | Настройка клиента |<br>
+_.1 |  server | <span class="glyphicon glyphicon-cog"></span> /etc/rc.conf |<br>
+_.1b | rpcbind_enable="YES" | nisdomainname="corp0.un" | nis_<b>client</b>_enable="YES" |<br>
+_.2 | /etc/rc.d/nisdomain start |<br>
+_.3 | /etc/rc.d/rpcbind start | /etc/rc.d/ypserv start - сервер желтых страниц |<br>
+_.4 | ypcat passwd | проверка |<br>
+_.5 | /etc/group | *::: |<br>
+_.6 | /etc/master.passwd | *::::::::: |<br>
+_.7 | /etc/nsswitch.conf | group: files nis | passwd: files nis |<br>
+_.8 | id user | проверка |<br>
+								</p><div class="divider"></div><p>
+3 | NFS server |<br>
+_.1 | gate | <span class="glyphicon glyphicon-cog"></span> /etc/rc.conf |<br>
+_.1b | mountd_enable="YES" | nfs_server_enable="YES" |<br>
+_.2 | /etc/exports | /usr/home/ -maproot=0 server |<br>
+_.3 | /etc/rc.d/mountd start | /etc/rc.d/nfsd start |<br>
+_.4 | showmount -e | проверка |<br>
+_.5 | server | showmount -e | проверка |<br>
+_.6 | mount gate:/usr/home /usr/home |<br>
+								</p><div class="divider"></div><p>
+4 | PAM | Pluggable Authentication Modules |<br>
+_.1 | библиотека для аутентификации | разработан SUN |<br>
+_.2 | gate | <span class="glyphicon glyphicon-cog"></span> /etc/pam.d | при запуске ищется файл имя к-ого совпадает с именем программы |<br>
+_.3 | если не находит - то ищется в файле /etc/pam.d/system |<br>
+_.4 | /etc/pam.d/su |<br>
+_.4a | 1 кол - использованная подсистема | auth - аутентицикация | account - накладывает доп. ограничения на использование аккаунта | session - доп. действия, связанные с началом и окончанием сеанса | password - доп. ограничения, на управление паролями (не слишком ли слабый?) |<br>
+_.4b | 2 кол - как PAM-модуль (3 кол) работает с др. модулями (цепочка) | reqOK - запрос удовлетворяется | reqNot - запрос отвергается |<br>
+binding:    modOK => reqOK+chainStop | modNot => reqNot + chainCont |<br>
+required:   modOK => reqOK+chainCont | modNot => reqNot + chainCont |<br>
+requisite:  modOK => reqOK+chainCont | modNot => reqNot + chainStop |<br> 
+sufficient: modOK => reqOK+chainStop | modNot => reqIgnore + chainCont |<br>
+_.4c | 3 кол - PAM-модуль принимает параметры и возвращает код: modOK или modNot | pam_rootok.so - возвращает ОК, если пользователь - root | pam_self.so - возвращает ОК, если пользователь хочет стать собой |<br>
+								</p><div class="divider"></div><p>
+5 | RADIUS | Remote Authentication in Dial-In User Services |<br>
+_.1 | протокол для передачи данных аутентификации, авторизации пользования трафиком между центр.сервером NAS и системой биллинга |<br>
+_._ | v4 1.00 |<br>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ======================================== Next ======================================== -->		    
+				</div>	    
+			</div>
+		</div>
+	</div>
+	<script src="../_js/jquery.min.js"></script>
+	<script src="../_js/bootstrap.min.js"></script>
+</body>
+</html>

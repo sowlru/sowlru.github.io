@@ -1,0 +1,1227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ECMA</title>
+
+	<link href="../_css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../_css/style.css">
+</head>
+<body  onload="init()">
+	<!-- ================================= Navigation ==================================== -->
+	<nav class="navbar navbar-default">
+
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="C:\avk\index.html">AvK <span class="glyphicon glyphicon-flash"></span></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav">
+			<!-- Sites -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sites<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\stravkcom\index.html">stravk.com</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\sowlru\index.html">sowl.ru</a></li>
+						</ul>
+        			</li>
+			<!-- Aero -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aero<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\aero\general.html">General</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fem.html">FEM</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\static.html">Static</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fatigue.html">Fatigue</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\dt.html">Damage Tolerance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\structure.html">Structure</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\doors.html">Door</a></li>
+						</ul>
+        			</li>
+			<!-- Code General -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code G<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_g\basics.html">Basics</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\objects.html">Objects</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\algorithm.html">Algorithm</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\other_code.html">Other</a></li>
+						</ul>
+	    			</li>
+			<!-- Code Project -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code P<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_p\c.html">C</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\unix.html">UX</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\python.html">Python</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\php.html">PHP</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\vba.html">VBA</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\ml.html">ML</a></li>
+						</ul>
+	    			</li>
+			<!-- Front -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Front<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\front\web.html">HTML - 1991</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="active"><a href="C:\avk\index\front\ecma.html">ECMA - 1995</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ajax.html">AJAX - 2005</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\jquery.html">jQuery - 2006</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\nodejs.html">Node - 2009</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\angular.html">Angular - 2014</a></li>
+						</ul>
+	    			</li>
+			<!-- Other -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\other\finance.html">Finance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\english.html">English</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\electro.html">Electro</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\scratch.html">Scratch</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\roblox.html">Roblox</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\other.html">Other</a></li>
+						</ul>
+	    			</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+
+		</div><!-- /.container-fluid -->
+
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<h3>ECMA</h3>
+				<div class="panel-group" id="accord">
+
+<!-- ============================= JS 1 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#js11" data-toggle="collapse" data-panel="#accord">JS 1</a> | ECMA | var | loop | cond |
+	</div>
+	<div class="panel-collapse collapse" id="js11">
+		<div class="panel-body">
+			<p>
+				<a href="C:\avk_pdf\code\js_ecma.pdf" target="_blank">ECMA-262</a> - ядро |
+				<a href="C:\avk_pdf\code\js_flanagan.pdf" target="_blank">Flanagan</a> |
+				<a href="https://karmazzin.gitbooks.io/eloquentjavascript_ru/content/" target="_blank">EloquentJS</a> |	Интерпретатор | Chrome: ECMA(V8)+ BOM+ DOM... | F12 | Очистить: Ctrl+L |
+			</p><div class="divider"></div><p>
+<!-- ------------------------------------- 100 --------------------------------------------- -->
+1 | первая программа t.html |<br>
+<i>&lt;html&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;title&gt;t&lt;/title&gt;&lt;script&gt;</i><br>
+window.onload=function(){document.getElementById("one").innerHTML="hi";}<br>
+<i>&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;div id="one"&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</i>
+			</p><div class="divider"></div><p>
+2 | переменная - поименованная ячейка памяти |<br>
+<i>&lt;html&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;title&gt;t&lt;/title&gt;&lt;script&gt;</i><br>
+window.onload=function(){var s="alex"; document.getElementById("one").innerHTML=s;}<br>
+<i>&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;div id="one"&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</i>
+			</p><div class="divider"></div><p>
+3 | отладка в FireFox |<br>
+_.1 | F12 -> Debugger - войти в окно отладчика |<br>
+_.2 | LC на цифре в начале кода - создать точку остановки |<br>
+_.3 | Ctrl+R - обновить страницу |<br>
+_.4 | F10 - step over |<br>
+			</p><div class="divider"></div><p>
+				1 | string |<br>
+				_.1 | приведение к строке: 2+""; String(2) | 2+2+"2"= "42" | 2+"2"+2= "222" |<br>
+				_.3 | методы | s.concat(" ", s); | то же самое что: s+" "+s; | конкатенация строк |<br>
+				_.4 | s.toLowerCase(); | s.toUpperCase(); |<br>
+				_.5 | s.charAt(s.length-1); //"x" - получить последний символ |<br>
+				_.6 | s.substring(2,4); | s.slice(2,4); //"ex" - получить подстроку | substring не работате с отрицат. |<br>
+				_.7 | s.indexOf('a', 4); //0 - получить позицию символа | 2й параметр - с какой позиции искать |<br>
+				_.8 | s.lastIndexOf('a'); //0 - получить позицию символа |<br>							
+			</p><div class="divider"></div><p>
+				2 | number | var n=123; |<br>
+				_.1 | n+=2 - возьми слева, выполни операцию с тем что справа и верни влево | <br> 
+				_.2 | приведение к числу: '2' * 1; | +'2'; | parseFloat('2'); | Number('2') | <br>
+				_.3 | var out=parseInt(s); | NaN |<br>
+				_.4 | var out=123/0; | Infinity |<br> 
+				_.5 | св-ва | number.MAX_VALUE; //1.8E308 | number.MIN_VALUE; //5E-324 |<br>
+				_.6 | методы | n.toFixed(2); //123.00 |<br>
+				_.7 | n.toString(); //"123" | n.toString(16); //"7b"- hex |<br> 				
+			</p><div class="divider"></div><p>
+				3 (v2) | boolean | var b=true; | 6 видов false: false, underfined, null, 0, "", NaN; | <br> 
+				_.1 | приведение: !!2; | Boolean(2); | <br>
+				_.2 | <,=,>,!, &&, || | приоритет |<br>
+				_.3 | var out=3 && 4; | 3(true), 4(true), результат - последний true = 4 |<br>
+				_.4 | var out=3 || 4; | 3(true), 4 не проверяется, результат - первый true = 3 |<br>
+				_.5 | методы |  b.toString(); //"true" |<br>					
+			</p><div class="divider"></div><p>
+				4 (v3) | циклы | for, while(цикл выполняется пока выражение = true) | <br>
+				_.1 | var i=1, out=""; for(i=1; i<=20; i++){out+= i+ " ";} |<br>
+				_.2 | var i=1, out=""; while(i<=20){out += i+ " "; i++} |
+			</p><div class="divider"></div><p>
+				5 (v4) | ветвление | if(bool){ ...;} else if{ ...;} else { ...;} | switch(bool){case 0: ...; break; case 1: ...; break; default: ...; } |<br>
+				_.1 | var i=1, out=""; for(i=1; i<=20; i++){ if (i%2==0){out += i+ " ";} else {out += "odd "}} |<br>
+				_.2 | var i=1, out=""; out = (i==1)? "One": "Other"; | тернарный |<br>
+				_.3 | var i=4, out="На ветке сидело "+i+" ворон", konec=""; <br>
+				if(i%100<11 || i%100>14) {switch(i%10){case 1: konec = "а"; break; case 2: case 3: case 4: konec = "ы";}} out += konec;<br>
+				</p>
+			</div>
+		</div>
+	</div>
+<!-- ============================= JS 2a ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#2a" data-toggle="collapse" data-panel="#accord">JS 2a</a> | function |
+	</div>
+	<div class="panel-collapse collapse" id="2a">
+		<div class="panel-body">
+			<p>
+				1 (v5) | функция - фрагмент исполняемого кода | <br>
+				_.1 | function fn(x){var y; y=x*x; return y;} var out=fn(2); //4 |<br>
+				_.2 | function fn(x){var x=x||3, y; y=x*x; return y; } var out=fn(2)+"_"+fn(); //4_9 | значение по умолчанию ||<br>
+				_.3 | var n=1, m=n; function fn(a,b){return a+b; } var out=fn(n,m); | операции по значению |<br>
+			</p><div class="divider"></div><p>
+				2 | область видимости | <br>
+				_.1 | var x=20, out=''; function fn(){var x=2; return x; } out=fn()+"_"+x; //2_20 | var x внутри ф-ции, локальный x не выходит за пределы ф-ции |<br>
+				_.2 | var x=20, out=''; function fn(){x=2; return x; } out=fn()+"_"+x; //2_2 | var не указан, локальная x перезаписывает глобальную |<br>
+				_.3 | var x=20, out=''; function fn(){return x; } out=fn()+"_"+x; //20_20 | при удалении локальной х, используется глобальная |<br>
+				_.4 | var x=20, out=''; 
+				function fn(){var x=2;
+				<b>function inner() {x=0.2; return x;}</b> return inner(); } out=fn()+"_"+x; //2_20 | внутри inner x не определена, поэтому x поднимается на уровень выше x=2 | inner()=fn()=2 | т.к fn имеет var x, то глобальная не перезаписывается |<br>
+				_.5 | var y=20; function fn(x){if(x){y=1;} else{var y=2;} return y} out= fn(1)+"_"+y; //1_20 | если в if хоть в одной ветке указана var, то JS создает var y; внутри ф-ции, она становится локальной и не перезаписывает глобальную |<br>
+			</p><div class="divider"></div><p>
+				3 (v6) | тип function |<br>
+				_.1 | for(var i=0;) приводится к var i; for(i=0;) | <br>
+				_.2 | var out=<b>typeof</b> function fn(x){var y; y=x*x; return y;} //function | ф-ция - это тип | можно присвоить переменной |<br>
+				_.3 | var out=fn; //function fn(x){var y; y=x*x; return y;} | без скобок - покажи, что у тебя внутри |<br>
+				_.4 | var out=fn(2); //4 | круглые скобки - исполни, что у тебя внутри |<br>
+				_.5 | var a=fn; var out=a;//function fn(x){var y; y=x*x; return y;} | тип function | переменной a присваивается то, что находится внутри ф-ции | теперь можно вызвать ее - a(2); //4 |<br>
+				_.6 | var a=fn(2); var out=a;//4 | тип number | переменной a присваивается результат выполнения | если нет return - возвращается underfine |<br>
+			</p><div class="divider"></div><p>
+				4 | анонимная ф-ция | ф-циональный литерал | лямбда-ф-ция | <br>
+				_.1 | var a=function fn(x){var y; y=x*x; return y;}; | имя ф-ции fn некий идентификатор, в к-ром она хранится | имя не важно, т.к. ее можно присвоить переменной напрямую | инструкция (function expression) | <br>
+				_.2 | a(); | ф-ция вызывается строго после присваивания |<br>
+				_.3 | все ф-ции высшего порядка | это ф-ция, которая: 1.получает в качестве параметра другую ф-цию | 2.возвращает ф-цию в качестве значения |<br>
+				_.4 | function fn(){<b>function inner(x) {return x;}</b> return inner; }<br>
+				_._ | var a=fn(); a //function inner(x) {return x;}<br>
+				_._ | a('hi'); // hi | ф-ция inner не используется по своему имени, можно переписать как: |<br>
+				_.5 | function fn(){return function(x) {return x;}</b> 
+				}	var a=fn();	var out=a('bye')+" "+typeof a; //bye function |<br>
+				_.6 | function fn(){return function(x) {return x;}</b> 
+				}	var a=fn; var out=a('bye')+" "+typeof a; //function(x) {return x;} function |<br>
+			</p><div class="divider"></div><p>
+				5 | recursive | вызывает сама себя | ресурсозатратно |<br>
+				_.1 | function power(base, exp){if(exp == 0) return 1; return base* power(base, exp-1);} var out = power(2, 2); //4<br>
+				exp 2 !== 0: base* power(2, 1) | exp 1 !== 0: base* power(2, 0) | exp 0 == 0: power=1 | power: 2*1=2 | power: 2*2=4 |<br>
+			</p><div class="divider"></div><p>
+				6 | ф-ция как объект |<br>
+				_.1 | св-во length | function fn(p1, p2){console.log(fn.length);} //2 | кол-во ожидаемых параметров |<br>
+				_.2 | метод call | fn.call(u2) | возьми fn и вызови ее как метод объекта u2 | передача параметра p1: fn.call(u2, p1); |<br>
+				_.3 | метод apply | работает как call, но позволяет передать массив |<br>
+				_.4 | ф-ция имеет объект arguments | function fn(p1, p2){console.log(argument.length);} | fn.call(u2, 2, 3, 4); //3 - число факт. переданных параметров | arguments[0] - обращение к ним | <br>
+			</p><div class="divider"></div><p>
+				7 | немедленная самовызываемая ф-ция  |<br>
+				_.1 | immediately - invoked function expression - (IIFE) | (function(){})(); |<br>
+				_.2 | позволяет избегать конфликта имен | () - оператор группировки |<br>
+				_.3 | 1.js заходит в 1е () | 2.видит ф-цию и разберает ее | 3.видит 2рые () и исполняет |<br>
+				_.4 | function fn(){var ar1=[]; for(var i=0; i<3; i++)(function(j){a.push(function(){clog(j)});})(i);} var a=fn(); a[0](); |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= JS 2b ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#2b" data-toggle="collapse" data-panel="#accord">JS 2b</a> | closures |
+	</div>
+	<div class="panel-collapse collapse" id="2b">
+		<div class="panel-body">
+			<p>
+1 | Контекст выполнения (Execution Context) | <br>
+_.1 | контекст выполнения - среда/ окружение, в которой выполняется JS |<br>
+_.2 | в любой момент времени выполняется только 1 контекст |<br>
+_.3 | всего существуют 3 контекста |<br>
+_._1 | глобальный (GEC)|<br>
+_._2 | ф-ции | только функции создают новую область видимости |<br>
+_._3 | eval() |<br>
+			</p><div class="divider"></div><p>
+2 | Обычное выполнение программы | var a=3; //GEC{a=3;} |<br>
+_.1 | function addTwo(b) {var res = b + 2; return res;} |<br>
+_._ | пропускается |<br>
+_.2 | var c = addTwo(a); |<br>
+_._1 | расчет правой части выражения, поиск функции и параметра |<br>
+_.__ | создание нового контекста addTwo{..} |<br>
+_._2 | GEC{a=3; c=underfined; addTwo{..}} | addTwo_EC{x=3; res=5;} |<br>
+_._3 | return 5 - возвращение в GEC; addTwo удаляется из стека |<br>
+_._4 | GEC{a=3; c=5;} |<br>
+_.3 | console.log(c); |<br>
+			</p><div class="divider"></div><p>
+3 | Поиск у родителя | <br>
+_.1 | function addTwo(b) {var res = b + a; return res;} |<br>
+_.2 | var c = addTwo(3); <br>
+_._1 | a не находится внутри ф-ции, поэтому ищется у родителя |<br>
+_.3 | console.log(c); |<br>
+			</p><div class="divider"></div><p>
+4 | Ф-ция в ф-ции | <br>
+_.1 | function ofn(){function addTwo(b, c) {var res = b+c; return res;} return addTwo;} |<br>
+_.2 | var d = ofn(); |<br>
+_._1 | GEC:{a=3; d=underfined; ofn{..}} | ofn_EC:{return addTwo{..}} |<br>
+_._2 | ofn завершается вместе с локальной областью видимости |<br>
+_._3 | d = function addTwo(b, c) {var res = b+c; return res;} |<br>
+_.3 | var sum = d(a, 8); |<br>
+_._1 | GEC:{a=3; d & sum=underfined; ofn{..}} | addTwo_EC:{b=3; c=8; res=11;} |<br>
+_.4 | console.log(sum); |<br>
+			</p><div class="divider"></div><p>
+5 | closure | способность ф-ции сохранять ссылку на переменную из вышестоящего контекста |<br>
+_.1 |  счетчик без замыкания | var c=1; function fn(){return c++;} var out=fn()+" "+fn(); //1 2<br>
+_._ |  count внутри fn не объявлен, поэтому перезаписывает глобальную |<br>
+_._ |  проблема: count - глобальная, и может пересекаться с другим кодом  |<br>
+_.2 |  замыкание | выражение убирается во внешнюю ф-цию и производится return внутренней |<br>
+_._ |  function ofn() {var c=1; function fn(){return c++;} return fn;} |<br>
+_._ |  присваивается переменная var count = ofn() | count; // function fn(){return c++;} <br>
+_._ |  при вызове и исполнениии count() происходит увеличении внутренней переменной с на 1 | count(); //1<br>				
+_.3 |  имя внутренней ф-ции не нужно |<br>				
+_._ |  function ofn() {var c=1; return function(){return c++;}} |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= JS 3 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#js13" data-toggle="collapse" data-panel="#accord">JS 3</a> | var u1={n:'a', a:1}; | ar.forEach() | ar.map() |
+	</div>
+	<div class="panel-collapse collapse" id="js13">
+		<div class="panel-body">
+			<p>
+				1 (v7) | объект - неупорядоченное хранилище пар ключ: значение |<br>
+				_.1 | var user1 = {}; | typeof user1; //object | <br>
+				_.2 | св-ва | u1.name="John"; u1.age=25; | u1["name"] //John<br>
+				_.3 | 2й вар. | var u2 = {name: "Mike", age: 33}; |<br>
+				_.4 | "age" in u2 // true - проверка существования св-в |<br>
+				_.5 | accum=""; for(var i in u1){accum+= i+ ": "+ u1[i]+ " | "} |<br>
+				_.6 | delete u1.age; //true |<br>
+				_.7 | var x = u1; var y = x; - оба ярлыка ведут на один и тот же файл  |<br>
+				_.8 | build-in | встроенные объекты в ядре: object, array, math |<br>
+				_.9 | host | представляет среда разработки: console |<br>
+			</p><div class="divider"></div><p>		
+				2 | методы объекта: св-во, значением к-ого явл. анонимная ф-ция |<br>
+				_.1 | u1.say = function(word){console.log(word);} u1.say("hi"); | <br>
+				_.2 | this - сам объект, обращение к св-ву this.name | объект Window |<br>
+				u1.say = function(word){console.log(word+" "+this.name);} u1.say("hi"); | <br>
+				_.3 | fn() снаружи | function fn(){console.log("age is "+this.age);} u2{talk: fn}; u2.talk(); |<br>
+				_.4 | u2.say = u1.say; u2.say("hello"); - можно присвоить ф-цию объекта u1 объекту u2 |<br>
+				_.5 | чтобы понять, в чьем контексте вызывается метод - смотрим что стоит влево от точки | если точки нет - объект глобальный |<br>
+				_.6 | var o={p:2; m: function(){function t(){console.log(this.p)} t(); }}; o.m(); //underfined |<br>
+				var o={p:2; m: function(){<b>var a=this;</b> function t(){console.log(<b>a</b>.p)} t(); }}; o.m(); //2 |<br>
+			</p><div class="divider"></div><p>
+				3 (v8) | массив как объект | упорядоченное хранение неких значений |<br>
+				_.1 | var ar1 = [10, "John ", true]; | ar1[1]; //"John"; |<br>
+				_.2 | добавить | ar1[5]=5; ar1; //10, "John ", true, underfined*2, 5; |<br>
+			</p><div class="divider"></div><p>
+				4 | методы массива |<br>
+				_.1 | приведение к строке | var s=ar1.toString(); | var s=ar1.join('-'); |<br>
+				_.2 | сложение | var ar2=[11, 8]; var ar=ar1.concat(ar2); |<br>
+				_.3 | получение частей | var s=ar1.slice(2); //true,,,5 | var s=ar1.slice(2,3); //true |<br>
+				_.4 | копировать | var s=ar1.slice(); |<br>
+				_.5 | перевернуть | ar1.reverse(); | меняется сам массив |<br>
+				_.6 | сортировка | ar1.sort(); //10,5,John,true,, | меняется сам массив | ar1.sort(fn); |<br>
+				_.7 | извлечение | var s=ar1.shift(); //первый эл-т | var s=ar1.pop(); //последний эл-т |<br>
+				_.8 | вставка | ar1.unshift(); //первый эл-т | ar1.push(6); //последний эл-т |<br>
+				var a=[5,12]; var b=[]; for(var i in a){b.push(Math.pow(a[i],2));} //b=[25,144] |<br>
+				_.9 | извлечение | var s=ar1.splice(нач.поз, кол-во символов);  |<br>
+				_.10 | вставка | ar1.splice(нач.поз, 0, что вставить);  |<br>
+				_.11 | ECMA5 цикл | ar1.forEach(function(v){clog(v*10);});  |<br>
+				_.12 | ECMA5 цикл+return | ar1.map(function(v){return v*10;}); |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= JS 4 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#js4" data-toggle="collapse" data-panel="#accord">JS 4</a> | global objects |
+	</div>
+	<div class="panel-collapse collapse" id="js4">
+		<div class="panel-body">
+			<p>
+				1 (v9) | global object | в JS всё - объекты |<br>
+				_.1 | внутри интерпретатора есть "чертеж"(Math, ..), где описаны св-ва и методы будущего объекта |<br>
+				_.2 | var ar1=[]; - строится "дом" по этому "чертежу" |<br>
+				_.3 | св-ва | var a=1; | fn; | Infinity | NaN |<br>
+				_.4 | методы: | isNaN(a); | <br>
+			</p><div class="divider"></div><p>
+				2 (v11) | конструктор |<br>
+				_.1 | function Mat(name, Fty){this.name=name; this.Fty=Fty; } |<br>
+				_.2 | var m1 = new Mat("m2024t3c_thk032", 47); | new - оператор, создающий объект |<br>
+				_.3 | m1.constructor; //function Mat(){..} |<br>
+				_.4 | s.length; | 1.var tmp = new String(s); | 2.tmp.length | 3.del tmp |<br>
+				_.5 | наследование | в основе всех объектов лежит объект Object | <br>
+				_.6 | Mat.prototype.thk = 0.032; | m1.thk=0.1; - перезаписывает | delete m1.thk; |<br>
+				_.7 | методы обычно добавляются через прототипы |<br>
+				_.8 | Number.prototype.pow = function(x) {return Math.pow(this.valueOf(), x);}; n.pow(2); |<br>
+				_.9 | чтобы избежать ошибок: m1.hasOwnProperty |<br>
+			</p><div class="divider"></div><p>
+				3 | test |<br>
+				_.1 | ? | var a = new Inc(); | alert(a); //1 | alert(a); //2 | alert(a+a); //7 | <br>
+				_.2 | создать конструктор | function Inc(){this.cnt = 1; } | <br>
+				_.3 | Inc.prototype.toString = function() {return this.cnt++; }; |
+			</p><div class="divider"></div><p>
+				4 | объект Math |<br>
+				_.1 | св-ва <span class="glyphicon glyphicon-list-alt"></span> | Math.PI | <br>
+				_.2 | методы <span class="glyphicon glyphicon-scissors"></span> | Math.pow(4,2) |<br>
+				_.3 | передать массив | var ar2=[4,3]; Math.min.apply(Math, ar2); |<br>
+			</p><div class="divider"></div><p>
+				5 (v10) | объект RegExp | <a href="http://regexlib.com" target="_blank">regexlib</a> |<br>
+				_.1 | регулярное выражение - шаблон, под который должна попасть строка |<br>
+				_.2 | var re= /.../; - задание рег.выражения |<br>
+				_.3 | s.search(re); - к строке s примени рег. выражения re | возвращает позицию или -1 |<br>
+				_.4 | re.test(s); - к строке s примени рег. выражения re | возвращает true/ false |<br>
+				_.5 | /./ - любой символ | /b?/={0,1} - либо есть, либо нет |<br>
+				_.6 | /b+/={1,} - min 1, max не ограничено | /b*/={0,} - может не быть, max не ограничено |<br>
+				_.7 | [abc] - либо a, либо b, либо c | [a-z] - любая буква | /[^a]/ - не а |<br>
+				_.8 | сокращения: /[0-9]/ = /\d/ | /[^0-9_]/ = /\D/ |<br>
+				_.9 | /[a-zA-Z0-9_]/ = /\w/ | /[^a-zA-Z0-9_]/ = /\W/ |<br>
+				_.10 | /ab{2,4}c/ = "abbc", "abbbc", "abbbbc" |<br>
+				_.11 | /^\d\d?-\d\d?-\d{2}/ //25-02-12, 2-12-12 | /^/ - начало, /$/ - конец строки |<br>
+				_.12 | флаги | /a/i - a или A | /a/m - учитывает что \n - новая строка | /a/g - все вхождения |<br>
+				_.13 | группировка | "12BnM".replace(/^(\d+)([a-z]+$)/i, "$2-$1"); //"BnM-12"|<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= JS 5 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#js5" data-toggle="collapse" data-panel="#accord">JS 5</a> | DOM (Document Object Model) |
+	</div>
+	<div class="panel-collapse collapse" id="js5">
+		<div class="panel-body">
+			<p>
+				1 | Свойства объекта Window |<br>
+				_.1 | history | .length | .back() | .forward() | .go(3) |<br>
+				_.2 | navigator | .userAgent | ... |<br>
+				_.3 | screen | .availHeight | ... |<br>
+				_.4 | location - адресная строка | .hostname - www.site.ru | .reload(true)- Ctrl+F5 | .assign("http://ya.ru") | ... |<br>
+				_.5 | document | .title | .bgColor = "red" | .open() | var text="html" | .write(text) | .close() | ... |<br>
+				_.6 | opener - ссылка на окно, к-рое тебя открыло |<br>				
+			</p><div class="divider"></div><p>
+				2 | Методы объекта Window |<br>
+				_.1 | alert("hi"); |<br>
+				_.2 | var c= confirm("Ok?"); //true/false |<br>
+				_.3 | var p= prompt("Ok?", "Yes"); //строка/null | <br>
+				_.4 | var t= setTimeout("alert('hi')", 2000); | clearTimeout(t); |<br>
+				_.6 | var t= setInterval("alert('hi')", 2000); | clearInterval(t); |<br>
+				_.8 | var w= window.open("","", p); | var p= "width="+wd+",height="+h+",top="+t+",left="+l; |<br>
+				_.9 | w.focus(); | w.blur() | w.close(); |<br>
+			</p><div class="divider"></div><p>
+				3 | Объект Window.Document | отвечает за отображение html-эл-тов |<br>
+				_.1 | links | HTMLCollection | .style.color = "red" | .style.backgroundColor= "red" |<br>
+				_.2 | var i = document.images[0]; | i.src="a.png"; - меняет исх.картинку на а |<br>
+				var flag = false; if(flag) i.src="a.png"; else i.src="b.png"; flag = !flag; |<br>
+				i.width = 640; i.height = 470; | if(i.width < 640){width*=1.1; i.height*=1.1;}<br>
+				_.3 | forms | => |<br>
+				_.4 | table | .rows | .width | .border | .(create/delete)(Caption/THead) | .(insert/delete)Row[0] |<br>
+				_.5 | в style дефис заменяется на camelCase | искл. label.htmlFor | style.cssFloat | .className |<br>
+				_.6 | a[href="javascript:fn()"]{Click me} - вызвать ф-цию fn() |<br>
+				_.7 | innerHTML |<br>
+			</p><div class="divider"></div><p>
+				4 | Window.Document.Forms | object HTMLFormElement |<br>
+				_.1 | var f=document.forms[0]; | var f=document.forms.name; |<br>
+				_.2 | св-ва | .action | .length -  число эл-тов внутри формы | .elements - коллекция эл-тов |<br>
+				_.3 | методы | .submit() | .reset() |<br>
+				_.4 | input | var inp = f.elements.name | .value | .type | .focus() | .blur() | .select() |<br>
+				_.5 | var els= f.elements; for(var i=0; i&lt;els.length; i++){if(els[i].value == "") {els[i].style.borderColor= "red"}} |<br>
+				_.6 | button | var btn = f.elements.name | .click() - позволяет нажать на submit с др. кнопки |<br>
+				_.7 | textarea | var ta = f.elements[2] | .row | .cols |<br>
+				_.8 | checkbox | var ch = f.elements.name | .checked = true |<br>
+				_.9 | select | .form - ссылка на форму | .length -  число options внутри select | .options - коллекция | .type (one/ multiple) | .selectedIndex - индекс выбранного option | .focus() | .blur() | .add() | .remove() |<br>
+				_.10 | option | .form | .index | .text - значение между тэгами |<br>
+				_.11 | var links = new Object(); links["a"] = "b"; var sel= f.selname; <br>
+				for (var lName in links){ var o = new Option(); o.value=links[lName]; o.text=lName; sel.add(o); } |<br>
+				var url = sel.options[sel.selectedIndex].val4e; location.assign(url) |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= JS 6 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#js6" data-toggle="collapse" data-panel="#accord">JS 6</a> | DOM2 | Events |
+	</div>
+	<div class="panel-collapse collapse" id="js6">
+		<div class="panel-body">
+			<p>
+				1 | объект Node | d.appendChild(); |<br>
+				_.1 | типы | element(1) | text(3) | comment(8) | document(9) |<br>
+				_.2 | св-ва | var l=document.links[0]; var d=l.parentNode; d.childNodes.length; |<br>
+				d.nodeName //div | d.nodeType //1 | nodeValue | (first/last)Child | <br>
+				(next/previous)Sibling | l.textContent - текст всех потомков |<br>
+				_.3 | методы | (append/replace/remove)Child(e) | hasChildNodes() | insertBefore() | cloneNode(bool) |<br>		
+			</p><div class="divider"></div><p>
+				2 | тип Element | Node + ... | d.setAttribute("align","right"); |<br>
+				_.1 | св-ва | tagName == nodeName |<br>
+				_.2 | методы | var a=d.getElementsByTagName("a"); | (has/remove)Attribute() |<br>
+				if (a.getAttribute("align") == "left") a.setAttribute("align","right"); |
+			</p><div class="divider"></div><p>
+				3 | тип Document | Node + ... | document.createElement("p") |<br>
+				_.1 | св-ва | documentElement == html | document.body |<br>
+				_.2 | методы | var a=d.getElementById("a"); | getElementsByTagName() | create(DocumentFragment()/Comment(s) |<br>
+				var p = document.createElement("p"); var t = document.createTextNode("lorem"); p.appendChild(t); |<br>
+				_.3 | 1й вар | ... for(var j=0; j&lt;=cell; j++){ var td= tr.appendChild( document. createElement ("td")); <br>
+				td.appendChild( document. createTextNode (i*j));} |<br>
+				_.4 | 2й вар | var txt = table tbody | for(var i=0; i&lt;=row; i++){txt += row} ... | d.innerHTML = txt; |<br>
+			</p><div class="divider"></div><p>
+				4 (v7) | События |<br>
+				_.1 | <a href="http://www.bookmarklets.com" target="_blank">bookmarklets</a>: javascript: URL - js программа | оформляется как закладка в браузере |<br>
+				_.2 | тип 1 | onclick | onmouse (down/up/over/out/move) | onclick у a href встроен по умолчанию | можно отменить |<br>
+				_.3 | тип 2 | body, input, textarea | onkey (down/press/up) | onfocus | onblur |<br>
+				_.4 | тип 4 | form - onsubmit/ onreset | input, textarea - onselect | input, textarea, select - onchange | body - onscroll |<br>
+				_.5 | window | onfocus/ onblur/.. | document | onkey (down/press/up) |<br>
+				_.6 | использование | d1[onclick="fn();"] | onclick - св-во | d1.onclick=fn; | <br>
+				_.7 | определить кто вызвал | div[id="d1" onclick="fn(this);"] | function(el){clg(el);} |<br>
+				_.8 | при проверке формы перед отправкой | form[onsubmit="return fn();"] | fn(){..; return !isEmpty } | если false - то форма не отсылается |<br>
+				_.9 | недостатки: привязывается только 1 ф-ция | костыль: d1.onclick = function(){ fn1.call(d1); fn2.call(d1); } |<br>
+			</p><div class="divider"></div><p>
+				5 | Фазы |<br>
+				_.1 | если onclick есть у всех | body > div > p | человек кликает по р | 3 фазы по W3C: |<br>
+				_.2 | 1.фаза распространения | срабатывает body.onclick, div.onclick | появилась позднее |<br>
+				_.3 | 2.фаза регистрации | срабатывает p.onclick  | <br>
+				_.4 | 3.фаза всплытия | срабатывает div.onclick, body.onclick |<br>
+				_.5 | фаза всплытия отменяется через e.stopPropagation(); |<br>
+				_.6 | d1.addEventListener("click", fn, false); | true - использовать 1 фазу |<br>
+				_.7 | IE: d1.attachEvent("onclick", fn); | обертка function handler(el, ev, fn){try{el.add..}catch(x){el.att..;}} |<br>
+				_.8 | d1.removeEventListener("click", fn, false); |<br>
+				_.9 | function fn(e){e=e||event; clog(e)} //mouseEvent{x: 1; ..} |<br>
+			</p><div class="divider"></div><p>
+				6 | Св-ва события |<br>
+				_.1 | type | click, scroll,.. |<br>
+				_.2 | target | ссылка на объект, в к-ром произошло событие |<br>
+				_.3 | button | Left Click -> 1 |<br>
+				_.4 | mouse: button | Left Click -> 1 |<br>
+				_.5 | mouse: button +.. | altKey, ctrlKey, shiftKey |<br>
+				_.6 | mouse: x, y, clientX, clientY | координаты мыши в body |<br>
+				_.7 | keyboard: keyCode |<br>
+				_.8 | ex | window.onload = function() {allA[i].addEventListener("click", aClick, false);} function aClick(e) {e.target.parentNode; |<br>
+			</p>
+			<!-- -------------------------------------Lesson 660--------------------------------------------- -->
+			<div class="row bdb">
+				<div class="col-xs-2">
+					<div class="row">
+						<div class="col-xs-12" id="d660"></div>
+					</div>
+				</div>
+				<div class="col-xs-10 bdl">
+					660 | #d[id="d660"]{hi} | <div id="d660o"></div>
+				</div>										
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- ============================= JS 7 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#js_typ" data-toggle="collapse" data-panel="#accord">JS 7</a> | Typical tasks |
+	</div>
+	<div class="panel-collapse collapse" id="js_typ">
+		<div class="panel-body">
+			<!-- -------------------------------------Lesson 701--------------------------------------------- -->
+			<div class="row bdb">
+				<div class="col-xs-2">
+					<div class="row">
+						<div class="col-xs-6">					
+							<select id="d701">
+								<option value="">m1</option>
+								<option value="">m2</option>
+							</select>
+						</div>
+						<div class="col-xs-6" id="d701_">hi</div>
+					</div>
+				</div>
+				<div class="col-xs-10 bdl">
+					701 | select[id="d701"]>option*3 | <div id="d701o"></div>
+				</div>										
+			</div>
+			<!-- -------------------------------------Lesson 702--------------------------------------------- -->
+			<div class="row bdb">
+				<div class="col-xs-2">
+					<div class="row">
+						<div class="col-xs-6">					
+							<select id="d702">
+								<option value="">m1</option>
+								<option value="">m2</option>
+							</select>
+						</div>
+						<div class="col-xs-6" id="d702_">hi</div>
+					</div>
+				</div>
+				<div class="col-xs-10 bdl">
+					702 | select[id="d702"]>option*3 | object Mat(n,f) | var m1 = new Mat("a2", 10); |<div id="d702o"></div>
+				</div>										
+			</div>
+			<!-- -------------------------------------Lesson 703--------------------------------------------- -->
+			<div class="row bdb">
+				<div class="col-xs-2">
+					<div class="row">
+						<div class="col-xs-5" id="d703">hi</div>
+						<div class="col-xs-7"><select id="d703_"></select></div>
+					</div>
+				</div>
+				<div class="col-xs-10 bdl">
+					703 | #d703+select[id="d703_"] | Автодобавление options |
+					<div id="d703o"></div>
+				</div>										
+			</div>
+			<!-- -------------------------------------Lesson 704--------------------------------------------- -->
+			<div class="row bdb">
+				<div class="col-xs-2">
+					<div class="row">
+						<div class="col-xs-6"><select id="d704" onchange="fn704();">
+							<option value="t1">t1</option>
+							<option value="t2">t2</option>
+						</select></div>
+						<div class="col-xs-6"><select id="d704_"></select></div>
+					</div>
+				</div>
+				<div class="col-xs-10 bdl">
+					704 | select[id="d704" onchange="fn704();"]>option*2+select[id="d704_"] |
+					<div id="d704o"></div>
+				</div>										
+			</div>
+			<!-- -------------------------------------Lesson 705--------------------------------------------- -->
+			<div class="row bdb">
+				<div class="col-xs-2">
+					<div class="row">
+						<div class="col-xs-6"><select id="d705">
+							<option value="m1">m1</option>
+							<option value="m2">m2</option>
+						</select></div>
+						<div class="col-xs-6"><select id="d705_"></select></div>
+						<div class="col-xs-12" id="d705_2"></div>
+					</div>
+				</div>
+				<div class="col-xs-10 bdl">
+					705 | select[id="d705"]>option*2+select[id="d705_"] |
+					<div id="d705o"></div>
+				</div>										
+			</div>
+			<!-- -------------------------------------Lesson 706--------------------------------------------- -->
+			<div class="row bdb">
+				<div class="col-xs-2">
+					<div class="row">
+						<div class="col-xs-6"><select id="d706">
+							<option value="m1">m1</option>
+							<option value="m2">m2</option>
+						</select></div>
+						<div class="col-xs-6"><select id="d706_"></select></div>
+						<div class="col-xs-12" id="d706_2"></div>
+					</div>
+				</div>
+				<div class="col-xs-10 bdl">
+					706 | select[id="d706"]>option*2+select[id="d706_"] |
+					<div id="d706o"></div>
+				</div>										
+			</div>
+			<!-- -------------------------------------Lesson 707--------------------------------------------- -->
+			<div class="row bdb">
+				<div class="col-xs-2">
+					<div class="row">
+						<div class="col-xs-6"><select id="d707">
+							<option value="m1">m1</option>
+							<option value="m2">m2</option>
+						</select></div>
+						<div class="col-xs-6"><input id="d707_" type="text" size="4" value=0.036 ></div>
+						<div class="col-xs-12" id="d707_2"></div>
+					</div>
+				</div>
+				<div class="col-xs-10 bdl">
+					707 | select[id="d707"]>option*2+input[id="d707_"] |
+					<div id="d707o"></div>
+				</div>										
+			</div>
+			<!-- -------------------------------------Lesson 710--------------------------------------------- -->
+			<div class="row bdb">
+				<div class="col-xs-2">
+					<div class="row">
+						<div class="col-xs-8">					
+							<input id="d710" type="text" size="1" value=1 >*2=
+						</div>
+						<div class="col-xs-4" id="d710_"></div>
+					</div>
+				</div>
+				<div class="col-xs-10 bdl">
+					710 | input[type="text" id="d710" size="1" value=1] | <div id="d710o"></div>
+				</div>										
+			</div>
+			<!-- -------------------------------------Lesson 720--------------------------------------------- -->
+			<div class="row bdb">
+				<div class="col-xs-2">
+					<div class="row">
+						<div class="col-xs-8">					
+							<input id="d720" type="checkbox">
+						</div>
+						<div class="col-xs-4" id="d720_"></div>
+					</div>
+				</div>
+				<div class="col-xs-10 bdl">
+					720 | input[type="checkbox" id="d720"] | <div id="d720o"></div>
+				</div>										
+			</div>
+
+			<!-- -------------------------------------Lesson 730 --------------------------------------------- -->
+			<div class="row bdb">
+				<div class="col-xs-2">
+					<div class="row">
+						<div class="col-xs-8">					
+							<input type="radio" name="d730" value=3 checked>3
+							<input type="radio" name="d730" value=4 >4
+						</div>
+						<div class="col-xs-4 ofh" id="d730_"></div>
+					</div>
+				</div>
+				<div class="col-xs-10 bdl">
+					730 | input[type="radio" name="d730" value=".."] | <div id="d730o"></div>
+				</div>										
+			</div>
+			<!-- -------------------------------------Lesson 740 --------------------------------------------- -->
+			<div class="row bdb">
+				<div class="col-xs-2">
+					<div class="row">
+						<div class="col-xs-8">					
+							<input id="d740" type="range" min="0" min="100" step="1">
+						</div>
+						<div class="col-xs-4" id="d740_"></div>
+					</div>
+				</div>
+				<div class="col-xs-10 bdl">
+					740 | input[type="range" min="0" min="100" step="1"] | <div id="d740o"></div>
+				</div>										
+			</div>
+			<!-- -------------------------------------Lesson 7xx --------------------------------------------- -->
+		</div>
+	</div>
+</div>
+<!-- ============================= JSN 01 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#jsn01" data-toggle="collapse" data-panel="#accord">JSN 01</a> | 
+	</div>
+	<div class="panel-collapse collapse" id="jsn01">
+		<div class="panel-body">
+			<p>
+0 |	<a href="C:\avk_pdf\code\js_ninja.pdf" target="_blank">js ninja</a> |
+1 | введение |<br>
+2 | тестирование |<br>
+3 | ф-ции как основы основ |<br>
+4 | обращения с ф-циями |<br>
+5 | замыкания |<br>
+6 | объекты |<br>
+7 | регулярные |<br>
+8 | потоки и таймеры |<br>
+9 | вычисление кода во время выполнения |<br>
+10 | операторы with |<br>
+			</p><div class="divider"></div><p>
+11 | кросс-браузерный код |<br>
+12 | атрибуты и св-ва CSS |<br>
+13 | обработка событий |<br>\
+14 | DOM-манипуляции |<br>
+15 | селекторы CSS |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= JSN 04 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#jsn04" data-toggle="collapse" data-panel="#accord">JSN 04</a> | обращения с ф-циями |
+	</div>
+	<div class="panel-collapse collapse" id="jsn04">
+		<div class="panel-body">
+			<p>
+1  | анонимные ф-ции |<br>
+2  | рекурсия |<br>
+			</p><div class="divider"></div><p>
+3  | ф-ции как объекты |<br>				
+_.1 | Add function to collection (p.99) |<br>
+_._1 | store.add(fn1); - вызвать метод add у объекта store с параметром fn1 |<br>
+_._2 | function(fn1){if(!fn1.id){ - проверяется, есть ли св-во id у ф-ции fn1. |<br>
+_.__ | Такого св-ва нет, поэтому выдается underfined. !underfined - true, поэтому if выполняется |<br>
+_._3 | fn1.id = store.nextId++; - fn1.id=1; store.nextId = 2; |<br>
+_._4 | store.cache[1] = fn1 - ф-ция сохраняется в cache[1] |<br>
+_._5 | !!fn1 - true |<br>
+			</p><div class="divider"></div><p>
+4  | аргументы переменной длины |<br>	
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= ES601 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#ES601" data-toggle="collapse" data-panel="#accord">ES6 01</a> | ES6->5 | const | let | (a=10) => |
+	</div>
+	<div class="panel-collapse collapse" id="ES601">
+		<div class="panel-body">
+			<p>
+0 | автор: владилен минин |<br>
+			</p><div class="divider"></div><p>
+1 | конвертация ES6 -> ES5 |<br>
+_.1 | Установка nodeJS |<br>
+_.2 | npm i -g webpack |<br>
+_.3 | npm init - инициализация package.json | name="t1" |<br>
+_.4 | npm -i --save-dev webpack - установить как зависимость для разработки |<br>
+_.5 | npm -i _D html-webpack-plugin |<br>
+_.6 | npm -i --save-dev babel-loader babel-core babel-preset-env |<br>
+_.7 | RC -> New File -> webpack.config.js -> OK |<br>
+			</p><div class="divider"></div><p>
+2 | webpack.config.js |<br>
+_.1 | var webpack = require('webpack'); |<br>
+_.2 | var path = require('path'); |<br>
+_.3 | var htmlPlugin = require('html-webpack-plugin'); |<br>
+_.4 | module.exports = {}; |<br>
+_._ | entry: './index.js', |<br>
+_._ | output: {path: path.resilve(_dirname, 'dist'), filename: 'bundle.js'}, |<br>
+_._ | plugins: {new HtmlPlugin()}, |<br>
+_._ | module: ... (взять с github.com/babel/babel-loader -> Usage) |<br>
+			</p><div class="divider"></div><p>
+3 | Продолжение конвертации |<br>
+_.1 | RC -> New File -> index.js -> OK |<br>
+_.2 | index.js | const x=1; |<br>
+_.3 | terminal -> webpack | должна появится папка dist |<br>
+_.4 | dist/bundle.js | в конце - "use strict"; var x=1; |<br>
+			</p><div class="divider"></div><p>
+4 | ScratchJS |<br>
+_.1 | Chrome -> ... -> Расширения -> Еще расширения -> Поиск: ScratchJS -> Установить |<br>
+			</p><div class="divider"></div><p>
+5 | var |<br>
+_.1 | const x = 1; - неизменяемая переменная |<br>
+_.2 | let x = 1; - изменяемая переменная | видна только внутри фиг.скобок, где была определена |<br>
+_._ | x = 1; let x; - ошибка |<br>
+_.3 | for(var i=0; i<5; i++){setTimeout(function(){console.log(i), 3000});} //5  |<br>
+_.4 | for(let i=0; i<5; i++){setTimeout(function(){console.log(i), 3000});} //0 1 2 3 4 |<br>
+			</p><div class="divider"></div><p>
+6 | стрелочные ф-ции |<br>
+_.1 | var x = function(a){return 100+a;}; - ES5 |<br>
+_.2 | const x = (a) => {return 100+a;}; - ES6 |<br>
+_.3 | const x = (a) => 100+a; - ES6, если только return |<br>
+_.4 | const x = a => 100+a; - ES6, если тольк 1 параметр  |<br>
+_.5 | setTimeout(function(){this.name}, 3000) - this ссылается на windows  |<br>
+_.6 | setTimeout(() => {this.name}, 3000) - this ссылается на объект |<br>
+			</p><div class="divider"></div><p>
+7 | значения по-умолчанию |<br>
+_.1 | var x = function(a){a=a||10; return 100+a;}; - ES5 |<br>
+_.2 | const x = (a=10) => 100+a; - ES6 |<br>
+_.3 | const x = (a=10, b=a+10) => a+b; - ES6 |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= ES602 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#ES602" data-toggle="collapse" data-panel="#accord">ES6 02</a> | let {n,a}=u1; | function fn(num, ...args){} |
+	</div>
+	<div class="panel-collapse collapse" id="ES602">
+		<div class="panel-body">
+			<p>
+1 | объекты |<br>
+_.1 | var name='a'; var o = {name:name, age:2}; - ES5 |<br>
+_.2 | var name='a'; var o = {name, age:2}; - ES6 |<br>
+			</p><div class="divider"></div><p>
+2 | методы объекта |<br>
+_.1 | var o = {getName: function(a){return a;}}; - ES5 |<br>
+_._ | var o = {getName(a){return a;}}; - ES6 |<br>
+			</p><div class="divider"></div><p>
+3 | деструктуризация |<br>
+_.1 | var u1 = {n:'a', a:1}; var n=u1.n; var a=u1.a;- ES5 |<br>
+_._ | let u1 = {n:'a', a:1}; let {n,a}=u1; |<br>
+_.2 | var ar = ['a','b']; var a=ar[0]; var b=ar[1];- ES5 |<br>
+_._ | let ar = {n:'a', a:1}; let {a,b}=ar; |<br>
+			</p><div class="divider"></div><p>
+4 | REST и SPREAD |<br>
+_.1 | function fn(n,s1,s2,s3,s4){console.log(n,s1,s23,s3,s4);}) - ES5 (s1-s4 дублируются) |<br>
+_._ | function fn(num){var args = Array.prototype.slice.call(arguments); console.log(num,args);}) - ES5 |<br>
+_._ | function fn(num, ...args){console.log(num,args);}) - ES6 (REST) |<br>
+_.2 | fn('a','b','c','d','e'); - ES5 |<br>
+_._ | var ar = ['a','b','c','d','e']; let fn(20, ...ar); - ES6 (SPREAD) |<br>
+			</p><div class="divider"></div><p>
+5 | Строки |<br>
+_.1 | var n='alex'; var s='hi '+n+' !'; - ES5 (конкатенация) |<br>
+_._ | var n='alex'; var s=`hi ${n} ! ${5+10}`; - ES6 |<br>
+_.2 | let html &lt;h1>hi&lt;/h1>- ES6 |<br>
+			</p><div class="divider"></div><p>
+6 | Циклы |<br>
+_.1 | const ar=['a','b']; ar.forEach(function(i){console.log(i);}) - ES5 |<br>
+_._ | const ar=['a','b']; for (let i of ar){console.log(i);} - ES6 |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= ES603 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#ES603" data-toggle="collapse" data-panel="#accord">ES6 03</a> | class | super | set | map | export |
+	</div>
+	<div class="panel-collapse collapse" id="ES603">
+		<div class="panel-body">
+			<p>
+1 | классы |<br>
+_.1 | function U(n){this.n=n;} - св-ва ES5 |<br>
+_._ | U.prototype.logN = function(){console.log(this.n)} - методы ES5|<br>
+_.2 | class U{constructor(n){this.n=n} logN(){console.log(this.n)}} - ES6 |<br>
+_.3 | var u1 = new U('a'); | u1.logN(); - вызовы |<br>
+_.4 | static method |<br>
+			</p><div class="divider"></div><p>
+2 | наследование |<br>
+_.1 | class Dev extends U{constructor(n){super(n); console.log(n);}} - ES6 |<br>
+_._ | super - ключ.слово, вызывает constructor из U |<br>
+			</p><div class="divider"></div><p>
+3 | Set |<br>
+_.1 | объект как массив |<br>
+_.2 | let set = new Set(); | set.add(10); | set.add(10); |<br>
+_.3 | console.log(set.size); //1 - хранит только уникальные значения |<br>
+_.4 | let set = new Set().add(10).add(10); //1 |<br>
+_.5 | set.size | set.has(3) //false | set.delete(1) //true | set.clear() |<br>
+			</p><div class="divider"></div><p>
+4 | WeakSet |<br>
+_.1 | если ссылка на эл-т set перестает существовать, то удаляется из самого set |<br>
+_.2 | let set = new WeakSet(); | let k = (); |<br>
+			</p><div class="divider"></div><p>
+5 | объект Map |<br>
+_.1 | let map = new Map(); | map.set('name','alex'); | map.set('age',20); | <br>
+_._ | let map = new Map([['name','alex'],['age',20]]); |<br>
+_.2 | console.log(map); //0:{'name'=>'alex'} 1:{'age',20} | <br>
+_.3 | console.log(map.get('name')); //alex | <br>
+_.4 | map.size; //2 | map.has('name); //true |<br>
+_.5 | for (let i of map.keys()){console.log(i);} //'name', 'age' |<br>
+_._ | for (let i of map.values()){console.log(i);} //'alex', 20 |<br>
+_._ | for (let i of map.entries()){console.log(${i[0]},${i[1]});} //'alex', 20 |<br>
+_.6 | WeakMap - то же, что WeakSet |<br>
+			</p><div class="divider"></div><p>
+6 | modules |<br>
+_.1 | extra.js | export let name='alex'; export let age=20; | <br>
+_.2 | index.js | import * as extra from './extra'; console.log(extra); //object | <br>
+_._ | index.js | import {name,age} as extra from './extra'; console.log(name,age); //'alex',20 |<br>
+_._ | index.js | import {age as a} as extra from './extra'; console.log(a); //20 |<br>
+_.3 | extra.js | export function fn(){console.log('hi');} | <br>
+_._ | index.js | import {fn} as extra from './extra'; fn(); //'hi' |<br>
+_.4 | extra.js | export default function fn(){console.log('hi');} | <br>
+_._ | index.js | import fn as extra from './extra'; fn(); //'hi' |<br>
+_.5 | extra.js | export default class U{...} | <br>
+_._ | index.js | import U from './extra'; let u1 = U(); // |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= ES604 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#ES604" data-toggle="collapse" data-panel="#accord">ES6 04</a> | symbol | yield | assign | find | repeat | startWith | promise |
+	</div>
+	<div class="panel-collapse collapse" id="ES604">
+		<div class="panel-body">
+			<p>
+1 | символы |<br>
+_.1 | новый (7й) тип данных | задает уникальные поля |<br>
+_.2 | let s1 = Symbol('a'); |  let s2 = Symbol('b'); |<br>
+_.3 | let n = 1; console.log(typeof n[Symbol.iterator]); //underfined |<br>
+_.4 | function fn(){let c=0; return{next(){return c < arr.length ? .. |<br>
+_._ | (val: arr[c++, done:false] : (val: underfined, done:true])}}}|<br>
+_.5 | let iter = fn([1,2,3]); clog(iter.next()); //{val:1, done: false} |<br>
+			</p><div class="divider"></div><p>
+2 | генераторы | v15 |<br>
+_._ | ф-ция, может приостанавливаться, возвращать промеж. результат и продолжает далее |<br>
+_.1 | function* g1(){yield 1; yield 2;} let g = g1(); console.log(g.next());//Object{value:1} |<br>
+_._ | g - генератор | у него есть метод next |<br>
+_.2 | function* g1(){yield 1; yield* g2();} function* g2(){yield 2; yield 3;} |<br>
+_._ | let g = g1(); console.log(g.next());// 4 раза - value: 1 2 3 |<br>
+_._ | генератор внутри генератора |<br>
+_.3 | function* g1(){yield* [1,2,3]} let g = g1(); console.log(g.next());// value:1 2 3 |<br>
+_._ | генератор из массива |<br>
+_.4 | function* g1(s=0, e=10, i=1){while(s&lt;e){yield s; s+=i;}} |<br>
+_._ | for(let n of g1(1,5)){console.log(n);} //1,2,3,4  |<br>
+_.5 | let f = {*[Symbol.iterator](){let c=1, p=0; for(;;){[c,p]=[c+p,c]; yield c;}}}; |<br>
+_._ | for(let n of f){if(n&gt;3000) break; console.log(n);} //1,2,3,5,8..  |<br>
+_._ | числа Фибоначчи | c-текущее, p-предыдущее |<br>
+			</p><div class="divider"></div><p>
+3 | методы | v16 |<br>
+_.1 | assign | копирует в первый объект св-ва из остальных |<br>
+_._ | let u1={a:1}; let u2={b:2, c:3}; |<br>
+_._ | Object.assign(u1, u2); console.log(u1); //{a:1, b:2, c:3} |<br>
+_.2 | find | возвращает 1й элемент, соответвующий условиям |<br>
+_._ | let f=[1,2,3,4].find(x=>x>2); console.log(f);//3 |<br>
+_.3 | repeat | дублирование строки |<br>
+_._ | let s='hi'; console.log(s.repeat(3)); //hihihi |<br>
+_.4 | startsWith | определяет, начинается ли строка с символов |<br>
+_._ | let s='hi'; console.log(s.startsWith('h')); //true |<br>
+_.5 | includes | возвращает булев тип, в отличии от indexOf |<br>
+_._ | let s='hi'; console.log(s.includes('i')); //true |<br>
+			</p><div class="divider"></div><p>
+4 | promise | v17 |<br>
+_.1 | обертка для ф-ций обратного вызова (callback) |<br>
+_.2 | гарантирует обработку данных только после выполнения запроса |<br>
+_.3 | цепочки асинхронных опреаций позволяют выполнять послед. операции только после успешного завершения предыдущей |<br>
+_.3 | позволяет удобно обробатывать ошибки |<br>
+_.4 | 3 состояния: pending; fulfilled, rejected |<br>
+_.5 | function fn5(ms, f){setTimeout(function(){f();},ms);} |<br>
+_._ | fn5(3000, function(){console.log('hi');}) |<br>
+_.6 | function fn6(ms=3000){return new Promise((res,rej) => {setTimeout(() => {res();}, ms);});} |<br>
+_._ | fn6().<b>then</b>(() => {console.log('hi');}).<b>catch</b>(() => {console.log('er');}); |<br>
+_._ | then - метод, к-рый регистрирует обратный вызов |<br>
+			</p><div class="divider"></div><p>
+5 | promise AJAX |<br>
+_.1 | npm install jquery | import $ from 'jquery' |<br>
+_.2 | let p=new Promise((res,rej) => {$.ajax({url:'http://date.jsontest.com/',dataType: 'json', success: function(resp){res(resp);}, error: function(er){rej(er);}});}); |<br>
+_._ | p.then((d)=>{console.log('good',d);}); |<br>
+
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= TS01 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#TS01" data-toggle="collapse" data-panel="#accord">TS 01</a> | any | void | age? | type U | enum |
+	</div>
+	<div class="panel-collapse collapse" id="TS01">
+		<div class="panel-body">
+			<p>
+1 | Начало |<br>
+_.1 | >npm install -g typescript |<br>
+_.2 | >tsc --help - проверка правильности установки |<br>
+_.3 | RC -> New File -> index.ts -> OK |<br>
+_.4 | RC -> New File -> index.html -> OK | ! | script="index.js" |<br>
+_.5 | >tsc --init - инициализация конфиг.файла tsconfig.json |<br>
+_.6 | index.ts | const x=1; |<br>
+_.7 | >tsc index.ts - компиляция TypeScript |<br>
+_.8 | должен появится index.js: var x=1; |<br>
+			</p><div class="divider"></div><p>
+2 | Базовые типы |<br>
+_.1 | let str = 'a'; | str=10; - ошибка |<br>
+_.2 | let str: string = 'a'; |<br>
+_.3 | let num: number = 1; |<br>
+_.4 | let b: boolean = true; |<br>
+_.5 | let x: string | number  = '1'; |<br>
+_.6 | let unknown: any = '1'; |<br>
+			</p><div class="divider"></div><p>
+3 | array |<br>
+_.1 | let arr: number[] = [1,2,3]; |<br>
+_.2 | let arr: Array&lt;number> = [1,2,3]; |<br>
+_.3 | let arr: [number, number, string] = [1,2,'3']; |<br>
+			</p><div class="divider"></div><p>
+4 | function |<br>
+_.1 | const s: string ='a'; function fn(): string {return s;} |<br>
+_._ | var s ='a'; function fn(){return s;} - ES5 |<br>
+_.2 | function fn(n:number): number {return n;} |<br>
+_.3 | function fn(s:string): void {console.log(s);} - ничего не возвращает |<br>
+_.4 | let sum: (n1:number, n2:number) => number; sum = fn; - присвоение переменной ф-ции |<br>
+			</p><div class="divider"></div><p>
+5 | object |<br>
+_.1 | let u1: {name:string, age?:number} = {name:'a', age:1}; |<br>
+_._ | age? - необязательное значение |<br>
+_.2 | let u1: {ar:string[], m:() => void} = {ar:['a','b'], m(): void {console.log(this.ar)}}; |<br>
+_.3 | type U = {name:string, age:number, ar:string[], m:() => void}; - св-ва объекта выносятся отдельно |<br>
+_._ | let u1: U = {name:'b', age:2, ar:['a'], m(): void {console.log(this.ar)}}; |<br>
+			</p><div class="divider"></div><p>
+6 | tsconfig.json: "compilerOptions" |<br>
+_.1 | "sourceMap": true - появится файл index.js.map |<br>
+_.2 | "noEmitOnError": true - при ошибке js файл не создается |<br>
+_.3 | "noImplicitAny": true - ошибка, если не пишется "any" |<br>
+			</p><div class="divider"></div><p>
+7 | типы |<br>
+_.1 | enum Job {front, back=50, design} |<br>
+_._ | const job: Job = Job.back; console.log(job); //50 |<br>
+_.2 | function throwNewError(err:string):never {...} - never - ничего не возвращает и продолжает работу |<br>
+_.3 | let a: number | null = 20; - или 20 или null |<br>
+			</p>
+		</div>
+	</div>
+</div> 
+<!-- ============================= TS02 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#TS02" data-toggle="collapse" data-panel="#accord">TS 02</a> | class | constructor | interface |
+	</div>
+	<div class="panel-collapse collapse" id="TS02">
+		<div class="panel-body">
+			<p>
+1 | Классы |<br>
+_.1 | class U {public n:string; private a:number=30; isTeacher:boolean; constructor(n:string){this.n=n;}} |<br>
+_._ | class U {private a:number=30; isTeacher:boolean; constructor(<b>public</b> n:string){}} - то же, что и пункт 1 |<br>
+_.2 | const u1 = new U('a'); |<br>
+_.3 | public n - по умолчанию доступно везде |<br>
+_.4 | private a - u1 свойство a не доступно |<br>
+_.5 | protected isTeacher - u1 свойство a не доступно |<br>
+			</p><div class="divider"></div><p>
+2 | Наследование |<br>
+_.1 | class U {private a:number=30; isTeacher:boolean; constructor(<b>public</b> n:string, public job:string){}} |<br>
+_.2 | class Front extends U {n:string="alex"; constructor(job:string){<b>super</b>('a',job);}  |<br>
+_.3 | const u1 = new U('a', 'front'); | const front = new Front('front'); |<br>
+			</p><div class="divider"></div><p>
+3 | Создание абстрактных классов (нельзя создать объекты) |<br>
+_.1 | abstract class Car {model:string; year: number=2010; abstract logInfo(info:string):void; } |<br>
+_.2 | class Mers extends Car{logInfo(info:string):void{console.log(info);}} |<br>
+_.3 | const car = ne Mers(); console.log(car); //Mers{year: 2010} |<br>
+			</p><div class="divider"></div><p>
+4 | Интерфейсы |<br>
+_._ | указание обязательного поля |<br>
+_.1 | interface <b>ILength</b> {length: number; age?:number ]} |<br>
+_._ | function len(v:<b>ILength</b>):void{clog(v.length);} |<br>
+_._ | const u1= {n:'a', length:20}; |<br>
+_._ | len(u1); //20 |<br>
+_.2 | interface <b>IUser</b> {name: string; age?:number ]} |<br>
+_._ | class User implements <b>IUser</b> {name: string='a';} |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= TS03 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#TS03" data-toggle="collapse" data-panel="#accord">TS 03</a> | generic | @abc |
+	</div>
+	<div class="panel-collapse collapse" id="TS03">
+		<div class="panel-body">
+			<p>
+1 | Generic |<br>
+_.1 | function getter(d:any){return d; } | console.log(getter(10)); //10 |<br>
+_._ | проблема: any - не знаем что придет |<br>
+_.2 | function getter&lt;T&gt;(d:T):T{return d; } | console.log(getter(10)); //10 |<br>
+_._ | T - прозвольная буква (type) |<br>
+_.3 | function getter(d:any){return d; } |<br>
+_._ | let newGetter&lt;T&gt;(d:T) => T = getter; |<br>
+_.__ | newGetter - новая переменная |<br>
+_.__ | &lt;T&gt;(d:T) => T - ф-ция принимает параметр d типа Т |<br>
+_._ | console.log(newGetter&lt;string&gt;(10).length;); //10 |<br>
+			</p><div class="divider"></div><p>
+2 | Generic с классами |<br>
+_.1 | class M {constructor(private a:number){} public res(): number {return this.a*2;}} |<br>
+_._ | const m: M = new M(10);| console.log(m.res()) |<br>
+_.2 | class M&lt;T&gt; {constructor(private a:T){} public res(): number {return Number(this.a)*2;}} |<br>
+_._ | const mStr: M = new M('10');| console.log(mStr.res()) |<br>
+			</p><div class="divider"></div><p>
+3 | Декораторы |<br>
+_.1 | это ф-ции, возможности Typescript по добавлению метадаты |<br>
+_.2 | function log(fn_constr:Function){console.log(fn_constr);} |<br>
+_.3 | @log |<br>
+_.4 | class U{constructor(public n:string, public a:number{console.log('hi');} |<br>
+_.5 | tsconfig.json | "experimentalDecorators, true" |<br>
+			</p><div class="divider"></div><p>
+4 | Декораторы c параметрами |<br>
+_.1 | function log(fn_constr:Function){console.log(fn_constr);} |<br>
+_.2 | function shouldLog(flag:boolean):any {return flag ? log: null;} |<br>
+_.3 | @shouldLog(true) |<br>
+_.4 | class U{constructor(public n:string, public a:number{console.log('hi');} |<br>
+_.5 | tsconfig.json | "experimentalDecorators, true" |<br>
+			</p><div class="divider"></div><p>
+5 | Namespace |<br>
+_.1 | function isEmpty(d:any):boolean {return !d;} |<br>
+_.2 | const PI == Math.PI; |<br>
+_.3 | ф-ция и константа лежат в глобальной области видимости |<br>
+_.4 | namespace Util {export function .., export const..} - переносим весь код сюда |<br>
+_.5 | console.log(Util.isEmpty(' ')); - обращение к ф-ции |<br>
+			</p><div class="divider"></div><p>
+6 | Webpack |<br>
+_.1 | npm init -> создание package.json |<br>
+_.2 | npm i --save-dev webpack typescript |<br>
+_.3 | webpack.config.js |<br>
+_._ | var path = require('path'); |<br>
+_._ | module.exports = {entry: './src/index.js', output: {..}} |<br>
+_.__ | filename: 'bundle.js', path: path.resolve(__dirname, 'dist') |<br>
+_.4 | Google -> awesome typescript loader -> copy |<br>
+_._ | resolve: {extensions: ['.ts', '.tsx', '.js', '.jsx'], ..} |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= bship ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#bship" data-toggle="collapse" data-panel="#accord">Battleship</a> |
+	</div>
+	<div class="panel-collapse collapse" id="bship">
+		<div class="panel-body">
+			<p>
+1 | index.html > #board {bgc0} |<br>
+_._ | {pos; w1024; h863; m:a; bg: url("board.jpg") no-repeat;} |<br>
+_.1 | #messageArea | {posa; t0; l0; color: rgb(83, 175, 19); } |<br>
+_.2 | table > tr > td#00+td#01+..+td#06 | 7 tr |<br>
+_._ | table{posa; l173; t98; border-spacing: 0px;} | td{w94; h94;} |<br>
+_.3 | form > input#guessInput + button#fireButton |<br>
+_._ | form {posa; b0; r0; p15; bgc: rgb(83, 175, 19);} |<br>
+_._ | form input form input {bg: rgb(152, 207, 113); bdc: rgb(83, 175, 19); fz1em; } |<br>
+_.4 | .hit { background: url("ship.png") no-repeat center center; } |<br>
+_.5 | .miss { background: url("miss.png") no-repeat center center; } |<br>
+			</p><div class="divider"></div><p>
+2 | battleship.js - view |<br>
+_.1 | var view = { |<br>
+_.2 | displayMsg: function(msg){document.getElementById("messageArea").innerHTML = msg; }, |<br>
+_.3 | displayHit: 	function(loc){document.getElementById(loc).setAttribute("class", "hit"); }, |<br>
+_.4 | displayMiss: 	function(loc){document.getElementById(loc).setAttribute("class", "miss"); }, }; |<br>
+			</p><div class="divider"></div><p>
+3 | battleship.js - model |<br>
+_.1 | var model = {boardSize: 7, numShips: 3, shipsSunk: 0, shipLength: 3, |<br>
+_.2 | ships: [ {loc: ["06", "16", "26"], hits: ["", "", ""] }, |<br>
+_._ | {loc: ["24", "34", "44"], hits: ["", "", ""] }, |<br>
+_._ | {loc: ["10", "11", "12"], hits: ["", "", ""] },], |<br>
+_.3 | fire: function(guess){ |<br>
+_.__ | for(var i=0; i < this.numShips; i++){ //перебор по всем кораблям <br>
+_.___ | var ship = this.ships[i]; var index = ship.loc.indexOf(guess); <br>
+_.___ //indexOf() ищет совпадение и отдает номер позиции; если нет - -1 |<br>
+_.___ | if(index >= 0) { //если попал ..<br>
+_.____ | ship.hits[index] = "hit"; view.displayHit(guess); view.displayMsg("HIT!"); |<br>
+_.____ | if(this.isSunk(ship)){this.shipsSunk++;} return true; }} |<br>
+_._ | view.displayMiss(guess); view.displayMsg("You missed."); |<br>
+_._ | return false;}, |<br>
+_.4 | isSunk: function(ship){ |<br>
+_.__ | for(var i=0; i&lt;this.shipLength; i++){ |<br>
+_.___ | if (ship.hits[i] !== "hit"){return false;}}return true;},}; |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ======================================== Next ======================================== -->		    
+</div>	    
+</div>
+</div>
+</div>
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/bootstrap.min.js"></script>
+<script src="../_js/front.js"></script>
+</body>
+</html>

@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Static Strength</title>
+
+	<link href="../_css/bootstrap.min.css" rel="stylesheet">
+ 	<link rel="stylesheet" href="../_css/style.css">
+</head>
+<body>
+	<!-- ================================= Navigation ==================================== -->
+	<nav class="navbar navbar-default">
+
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+
+			<div class="navbar-header">
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			<a class="navbar-brand" href="C:\avk\index.html">AvK <span class="glyphicon glyphicon-flash"></span></a>
+
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav">
+			<!-- Sites -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sites<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\stravkcom\index.html">stravk.com</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\sowlru\index.html">sowl.ru</a></li>
+						</ul>
+        			</li>
+			<!-- Aero -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aero<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\aero\general.html">General</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fem.html">FEM</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="active"><a href="C:\avk\index\aero\static.html">Static</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fatigue.html">Fatigue</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\dt.html">Damage Tolerance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\structure.html">Structure</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\doors.html">Door</a></li>
+						</ul>
+        			</li>
+			<!-- Code General -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code G<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_g\basics.html">Basics</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\objects.html">Objects</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\algorithm.html">Algorithm</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\other_code.html">Other</a></li>
+						</ul>
+	    			</li>
+			<!-- Code Project -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code P<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_p\c.html">C</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\unix.html">UX</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\python.html">Python</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\php.html">PHP</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\vba.html">VBA</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\ml.html">ML</a></li>
+						</ul>
+	    			</li>
+			<!-- Front -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Front<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\front\web.html">HTML - 1991</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ecma.html">ECMA - 1995</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ajax.html">AJAX - 2005</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\jquery.html">jQuery - 2006</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\nodejs.html">Node - 2009</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\angular.html">Angular - 2014</a></li>
+						</ul>
+	    			</li>
+			<!-- Other -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\other\finance.html">Finance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\english.html">English</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\electro.html">Electro</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\scratch.html">Scratch</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\roblox.html">Roblox</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\other.html">Other</a></li>
+						</ul>
+	    			</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+
+		</div><!-- /.container-fluid -->
+
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<h3>Static Strength</h3>
+				<div class="panel-group" id="accord">
+							<!-- ================================ Initial ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#Initial" data-toggle="collapse" data-panel="#accord">Initial</a> | P=200 lbs | L=80" | b=1.5" | h=2" | t=0.1" |
+								</div>
+								<div class="panel-collapse collapse" id="Initial">
+									<div class="panel-body">
+										<p>
+1 | Initial |<br>
+_.1 | Здесь и далее вводятся основные факторы, используемые при расчетах |<br>
+_.2 | P=200 lbs (~ 90 кг) - средний вес человека |<br>
+_.3 | L=80 in (~ 2,000 мм) - рост человека |<br>
+_.4 | Wx=1 |<br>
+_._ | rect: b=1.5; h=2 |<br>
+_._ | rect with hollow: b~1.508; h=3; t=0.1 |<br>
+_.5 | T-section(w=h=1; t=0.1): A=1*0.1+0.9*0.1=0.1+0.09=0.19 in^2 |<br>
+_.6 | материал 2024-T3 Clad Sheet: fty=47 ksi |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ Tension ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#Tension" data-toggle="collapse" data-panel="#accord">Tension</a> | 6210 |
+								</div>
+								<div class="panel-collapse collapse" id="Tension">
+									<div class="panel-body">
+										<p>
+1 | Factor 0.9 |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\ase\24a-Joints.pdf#page=9" target="_blank">ASE-Joints</a> |<br>
+_.2 | The stress concentration near the hole must be considered in determining the joint strength. |<br>
+_.3 | The stress is considered to be evenly distributed across the plate up to the fastener hole. |<br>
+_.4 | The fastener hole causes a high local stress concentration near the hole’s edge |<br>
+_.5 | An efficiency factor f is used to compensate for the uneven stress distribution. | f=0.9 (based on experience) |<br>
+_.6 |  |<br>
+										</p><div class="divider"></div><p>
+2 | Niu |<br>
+_.1 | <a href="C:/avk_pdf/aero/1_static\niu.pdf#page=94" target="_blank">Niu</a> |<br>
+										</p><div class="divider"></div><p>
+3 | Ферма: метод узлов |<br>
+_.1 | a - единичная нагрузка вверх; b-вправо; <kbd>c</kbd>-вниз; d-влево; |<br>
+_.2 | x - шарнир с 1 степенью свободы; y-2 степени; z - заделка; |<br>
+_.3 | по числу узлов j можно определить число эл-тов, если j=3 |<br>
+_.4 | число эл-тов m = 2*j-3 = 2*3-3=3 | insure stabilty |<br>
+_.5 | если эл-тов меньше - unstable equilibrium |<br>
+_.6 | если эл-тов больше - statically indeterminate |<br>
+_.7 | обход нужно начинать с точки где 2 неизвестные реакции |<br>
+										</p><div class="divider"></div><p>
+4 | Ферма: задача 1 |<br>
+_.1 | узлы j=3: p1x=[0,0]; p2y=[0,4], p3<kbd>c</kbd>=[3,4] |<br>
+_.2 | эл-ты m=3: p1p2, p1p3, p2p3 |<br>
+_.3 | 1=4 & p1p3=5 => p1p3 = 5/4 = -1.25 |<br>
+_.4 | p2p3 = p1p3*3/5 = (5/4)*(3/5) = 0.75 |<br>
+_.5 | p1p2 = p1p3*4/5 = (5/4)*(4/5) = 1 |<br>
+_.6 | проверка: sqrt(1+0,75^2) = sqrt(1.5625) = 1.25 |<br>
+										</p><div class="divider"></div><p>
+5 | Ферма: задача 2 |<br>
+_.1 | узлы j=5: p1x=[0,0]; p2y=[0,4], p3=[3,0], p4=[3,4], p5=[6,4], |<br>
+_.2 | эл-ты m=2*5-3=7: p1p2, p1p3, p1p4, p2p4, p3p4, p3p5, p4p5 |<br>
+_.3 | из предыдущей задачи: p4p5=0.75, p3p4=1, p3p5=-1.25 |<br>
+_.4 | узел p3: h: p1p3=-1.25*(3/5) = -0.75 |<br>
+_.5 | p4 | v: p1p4=1*5/4=-1.25 | h: p2p4-(1.25*3/5)=0.75 => p2p4= 1.5 |<br>
+										</p>
+<img class="img-responsive img-thumbnail center-block" src="img/truss01.png">
+										<div class="divider"></div><p>
+6 | Ферма: задача 3 |<br>
+_.1 | узлы j=5: p1x=[0,0], p2=[0,2] p3y=[0,4], p4=[1.5,2], p4=[1.5,4], p5=[3,4] |<br>
+_.2 | p1 | R=P*x/y =3/4=0.75 | p1p4*3/5=R | p1p4=(5/3)*(3/4)=1.25 |<br>
+_.3 | p6 из задачи 1 | p5p6=p1p3=-1.25 |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ Compression ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#Compression" data-toggle="collapse" data-panel="#accord">Compression</a> | 6200 |
+								</div>
+								<div class="panel-collapse collapse" id="Compression">
+									<div class="panel-body">
+										<p>
+1 | Устойчивость при осевой нагрузке |<br>
+_._ | <kbd>BDM-6230</kbd>: Column Flexural Instability - общие сведения |<br>
+_.1 | Гибкость стержня (slenderness ratio) = sr=L0/i |<br>
+_.2 | L0 = L * mu (коэффициент, зависящий от условий закрепления стержня) |<br>
+_._ | mu -> <kbd>BDM-6232</kbd>: Column Fixity Coefficients and Effective Lenghts | |<br>
+_.3 | i = sqrt(I/A) - радиус инерции (radius of gyration) |<br>
+_.4 | long column (>100) - Euler | Pcr = PI^2*E*I/L^2 |<br>
+_._ | <kbd>BDM-6234</kbd>: Euler/ Euler- Engesser Columns | E -> Et | cutoff at Fcy |<br>
+_.5 | middle  - Johnson | <kbd>BDM-6236</kbd>: Johnson - Euler Column Buckling |<br>
+_.6 | short (<12,5) - crippling | <kbd>BDM-6220</kbd> |<br>
+_.7 | если сечение меняется по длине | <kbd>BDM-6238</kbd>: Newmark Column Buckling Analysis |<br>
+										</p><div class="divider"></div><p>
+2 | <kbd>BDM-6220</kbd> | Compression Crippling |<br>
+_.1 | Crippling - inelastic distortion of cross-section of structural element under compression load | <br>
+_.2 | There is no analytical basis for the prediction of crippling so empirical techniques developed with coefficeint from test | <br>
+_.3 | Fcc=Fcc1*b1*t1+Fcc2*b2*t2/(b1*t1+b2*t2) |<br>
+_.4 | B10/(b/(10*gf*t))^m = 0.054/(10*3.4*0.063)^0.8 = 0.054/1.839 = 0.029 |<br>
+_._ | gf=1 for 1 free edge |<br>
+_.5 | sqrt(Fcy*E) = sqrt(39*10,000) = sqrt(390,000) = 624.5 |<br>
+_.6 | Fcc = 0.029(_.4)*624.5(_.5)=18.33ksi |<br>
+										</p><div class="divider"></div><p>
+3 | <kbd>BDM-6236</kbd> | johnson-euler column buckling |<br>
+_.1 | эмпирическая ф-ла, позволяет плавно переходит от Fcc к Эйлеру |<br>
+_._ | учитывает влиение тонкостенности |<br>
+_.2 | f = Fcc - (Fcc^2)*(sr^2)/(4*(PI^2)*E) |<br>
+_.3 | Fcc=18 | E=10,000 | sr=1,f=324/394,786=18 | sr=10,f=32,400/394,786=17.9 |<br>
+_._ | sr=50,f=810,00/394,786=15.9 | sr=100,f=3,240,000/394,786=<kbd>9.8</kbd> |<br>
+_._ | Euler: f=PI^2*E*I/A*L^2 | sr=L/sqrt(I/A) => f=PI^2*E/(sr^2) |<br>
+_._ | f=9.9*(10,000/(100*100)) = <kbd>9.9</kbd> | при sr=100 Johnson = Euler |<br>
+										</p><div class="divider"></div><p>
+4 | <kbd>BDM-6242</kbd> | column flexural-torsional instability | road-map |<br>
+_.1 | beams | BDM-6140: beams lateral-torsional instability |<br>
+_._ | BDM-6142: restarined beams |<br>
+_._ | BDM-6144: un-restarined beams |<br>
+_.2 | columns | BDM-6242: column flexural-torsional instability |<br>
+_._ | BDM-6230: pure flexural buckling |<br>
+_._ | BDM-6250: pure torsional buckling |<br>
+_._ | BDM-6244: combined flexural-torsional buckling |<br>
+_.3 | beam-columns | BDM-6255: classical beam columns |<br>
+_.? | BDM-6240: generalized flexural/ lateral-torsional instability | нет в PSDS |<br>
+										</p><div class="divider"></div><p>
+5 | <kbd>BDM-6244</kbd> | generalized flexural-torsional instability of columns |<br>
+_._ | изгибно-крутильная неустойчивость |<br>
+_.1 | determine the basic section properties |<br>
+_.2 | determine the stiffness properties, kx, ky, and kt, of the stringers |<br>
+_.3 | determine the effective lengths of the column |<br>
+_.4 | evaluate the coefficients, ao, a1, and a2, of the characteristic equation |<br>
+_.5 | calculate the flexural-torsional instability load of the column |<br>
+										</p><div class="divider"></div><p>
+6 | Bending + compression | y''=M/EI |<br>
+_._ | Given: w=20lb/in | L=100in | I=10 in^4 | Pcomp=4,420lb | M1=3,315 lb*in | M2=8,640 lb*in |<br>
+_._ | Mmax= -55,505(_1)/0.634(_2) + 58,820(_3) = -28,700 lb*in | Mmax=D1/cos(x/j)+w*j^2 |<br>
+_.1 | D1=M1-w*j^2=3,315-58,820=-55,505 |<br>
+_._1 | w*j^2= 20*2,941 = 58,820 |<br>
+_.__1 | <kbd>j</kbd>=sqrt(EI/P)= sqrt(1.3*10^6*10/4,420) = sqrt(2,941) = 54.23 |<br>
+_.2 | cos(x/j)= cos(0.884) = 0.634 |<br>
+_._1 | x/j=arctg(1.219)=0.884 |<br>
+_.__1 | tg(x/j)=(D2-D1*cos(L/<kbd>j</kbd>))/(D1*sin(L/<kbd>j</kbd>)) = 1.219 |<br>
+_.___ | (50,180-(-55,505*-0.270))/(-55,505*x0.963) = -65,156/-53,441 = 1.219 |<br>
+_.___1 | (L/j) = 100/54.23 = 1.844 | sin(L/j)=0.963 | cos(L/j)=-0.270 |<br>
+_.___2 | D2=M2-w*j^2=8,640-58,820=-50,180 |<br>
+_.3 | w*<kbd>j</kbd>^2=58,820 |<br>
+										</p><div class="divider"></div><p>
+7 | Other |<br>
+6250- Column Torsional Instability | 6255- Classical Beam Columns | 6260- Thermal Effects on Axial Stresses | 6270- Compression Strength of Corrugated and Beaded Panels |
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ Bending ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#bending" data-toggle="collapse" data-panel="#accord">Bending</a> | 0.025/125k | 0.202/16k |
+								</div>
+								<div class="panel-collapse collapse" id="bending">
+									<div class="panel-body">
+										<p>
+1 | Постановка задачи и построение эпюр | <a href="C:\avk_pdf\aero\1_static\belyaev.pdf#page=221" target="_blank">12</a> |<br>
+_.1 | z2-l1-z1 - схема | sigma=fn(M) | tau=fn(Q) | dM=Q*dx | dQ=q*dx | if Q=dM/dx=0 => M=Mmax |<br>
+_.2 | 2х опорная балка: R=P/2=90 lb | M=R*L/2=90*35=3,150 in*lb |<br>
+										</p><div class="divider"></div><p>
+2 | Нормальные напряжения | <a href="C:\avk_pdf\aero\1_static\belyaev.pdf#page=258" target="_blank">13</a> |<br>
+_.1 | отложим по оси х ось балки длиной=x, по оси у вниз отложим точку А на расстоянии R | |<br>
+_.2 | на расст. z вниз и вверх от оси балки строятся крайние слои ненагруженной балки |<br>
+_.3 | проводим через А и край нейтр.оси линию - деформированная балка |<br>
+_.4 | tg_th=x/R | tg_th=dx/z => x/R=dx/z => dx/x=z/R=e - относит.удлинение |<br>
+_.5 | из Гука sigma=E*e => sigma=E*z/R |<br>
+_.6 | integ(sigma*dA*z)=M => M=integ((E*z/R)*dA*z)=integ(E*(z^2*dA)/R) |<br>
+_.7 | заменим integ(z^2*dA) на J - по определению |<br>
+_.8 | M=E*J/R => 1/R=M/E*J |<br>
+										</p><div class="divider"></div><p>
+3 | Моменты инерции простых фигур |<br>
+_.1 | прямоугольник: Ix=b*h^3/12 | Wx=b*h^2/6 |<br>
+_.2 | круг: Ix=PI*D^4/64 | Wx=PI*D^3/32 |<br>
+_.3 | кольцо: Wx= (PI*D^3/32)*(1-(d/D)^4) |<br>
+										</p><div class="divider"></div><p>
+4 | Вычисление моментов инерции плоских фигур | <a href="C:\avk_pdf\aero\1_static\belyaev.pdf#page=296" target="_blank">14</a> |<br>
+_.1 | статич.момент относительно низа (T-section): S=1*0.1*(1-0.05)+0.9*0.1*0.5=0.095+0.0405=0.1355 in^3 |<br>
+_.2 | центр тяжести относительно низа: z=S/A=0.1355/0.19=0.713 |<br>
+_.3 | момент инерции отдельно (b*h^3/12): J1=1*0.1^3/12=0.00008 | J2=0.1*0.9^3/12=0.00608 |<br>
+_.4 | перенос к центру тяжести: J1_=1*0.1*(0.95-0.713)^2=0.00561 | J2_=0.9*0.1*(0.713-0.45)^2=0.00623 |<br>
+_.5 | общий момент инерции: J=(0.00008+0.00561)+(0.00608+0.00623)=0.00569+0.01231=0.01800 |<br>
+_.6 | момент сопротивления: W=J/z=0.01800/0.713=0.02524 |<br>
+_.7 | нормальные напряжения: sigma=M/W=3,150/0.02524=125k |<br>
+_.8 | 1:0.025/125k | 2:0.202/16k |<br>
+										</p><div class="divider"></div><p>
+5 | Касательные напряжения | <a href="C:\avk_pdf\aero\1_static\belyaev.pdf#page=298" target="_blank">15</a> |<br>
+_.1 | Дано: балка шириной=b, длиной L, нагруженная силой Q |<br>
+_.2 | из-за длины момент справа будет больше левого на величину Q*L |<br>
+_.3 | вырежем участок шириной dx |<br>
+										</p>
+<img class="img-responsive img-thumbnail center-block" src="img/tau_01.png">
+										<p>
+_.4 | если моменты на концах балки разные, то и силы будут разные N1+dT=N2 |<br>
+_.5 | разница между силами и будет равна касательной силе dT=N2-N1=(sigma2-sigma1)*A |<br>
+										</p>
+<img class="img-responsive img-thumbnail center-block" src="img/tau_02.png">
+										<p>
+_.6 | sig2-sig1=(M+Q*dx)*y/I-M*y/I=Q*dx*y/I |<br>
+_.7 | dT=(Q*dx*y/I)*A | заменив S=A*y => dT = Q*dx*S/I |<br>
+_.8 | dT=tau*b*dx | приравнивая tau*b*dx = Q*dx*S/I  |<br>
+_.9 | tau = Q*S/(b*I) |<br>
+_.10 | 16.Расчет составных балок | 17.Расчет ж/бетон. балок | |<br>
+										</p><div class="divider"></div><p>
+6 | Касательные напряжения для фигур |<br>
+_.1 | прямоугольник высотой h, шириной b | tau=Q*S/(I*b) |<br>
+_._ | S=A*y = integ(h/2->0)(b*dy*y) = integ(h/2->0)(by^2/2) |<br>
+_._ | S=b*(h/2)^2/2=1*(b*h^2)/8 | I=b*h^3/12 | S/I=3/(2*h) |<br>
+_._ | tau=Q*(b*h^2/8)/((b*h^3/12)*b) = (12/8)*Q/(b*h)= 1.5*Q/(b*h) |<br>
+_.2 | I-section (h,b и толщиной t=0.1*b=0.1*h) | b1=0.1*b | h1=0.8*h |<br>
+_._ | middle_S=b/8*((h^2-(0.8*h)^2)+0.1*((0.8*h)^2))=(b*h^2)/8*(0.36+0.064)=0.424*(b*h^2)/8 |<br>
+_._ | end_S=b/8*((h^2-(0.8*h)^2)=0.36*(b*h^2)/8 |<br>
+_._ | Jchord=A*y^2=b*(h/2-h1/2)*((h/2+h1/2)/2)^2=0.27*(b*h^3/12)  |<br>
+_._ | Jweb=b1*h1^2/12=0.1*0.8^3=0.0512*(b*h^3/12) | J=<br>
+_._ | if t=0.05 => middle_S=0.23 & end_S=0.19 |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ Bending_def ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#bending_def" data-toggle="collapse" data-panel="#accord">Bending: y''=1/R </a> |
+								</div>
+								<div class="panel-collapse collapse" id="bending_def">
+									<div class="panel-body">
+										<p>
+1 | Общие сведения | <a href="C:\avk_pdf\aero\1_static\belyaev.pdf#page=351" target="_blank">18</a> |<br>
+_.1 | расчет деформаций необходим для сохранения от расшатывания и уменьшения колебаний |<br>
+_.2 | также через деформации считаются статически неопределимые системы |<br>
+_.3 | для стальных балок прогиб состовляет от L/1000 - L/250 |<br>
+										</p><div class="divider"></div><p>
+2 | Вывод формулы |<br>
+_.1 | отложим часть балки (dx) по оси x, по оси у откладываются деформации (dy) |<br>
+_.2 | из тригонометрии: tg(th) = dy/dx или если th мал -> th=dy/dx |<br>
+_.3 | деформация dy=th*dx | нужно найти th |<br>
+										</p>
+<img class="img-responsive img-thumbnail center-block" src="img/def_01.png">
+										<p>
+_.4 | из точки деформации проводим перепендикуляр на ось у (радиус R) |<br>
+_.5 | получается прямоугольный треугольник в котором нижний угол = th |<br>
+_.6 | из тригонометрии: tg(th) = dx/R или если th мал-> th=dx/R |<br>
+										</p>
+<img class="img-responsive img-thumbnail center-block" src="img/def_02.png">
+										<p>
+_.7 | подставляем th=dx/R в dy=th*dx -> dy = dx*dx/R или y''=1/R |<br>
+_.8 | заменяя 1/R=M/E*I -> y'' = M/EI |<br>
+										</p><div class="divider"></div><p>
+2 | Графические методы вычисления деформаций | <a href="C:\avk_pdf\aero\1_static\belyaev.pdf#page=375" target="_blank">19</a> |<br>
+_.1 | смысл метода найти y(действ.прогиб) = Mf(фикт.момент))/E*J |<br>
+_.2 | вводится фикт.балка с фикт.нагрузкой qf, к-рая меняется по закону действ.момента(M=qf) |<br>
+_.3 | qf=dQf/dx=dMf^2/dx^2 | dy^2/dx^2=M/EJ => M=(dy^2/dx^2)*EJ | <br>
+_.4 | приравнивая qf=M => dMf^2/dx^2=(dy^2/dx^2)*EJ => Mf=y*EJ | Qf=th*EJ |<br>
+_.5 | при этом для фикт.балки необходимо поменять закрепления: |<br>
+_.__ | действ.(y=0 & th=0) = заделка => фикт.(M=0 & Q=0) = своб.конец |<br>
+_.__ | действ.(y!=0 & th!=0) = своб.конец => фикт.(M!=0 & Q!=0) = заделка |<br>
+_.__ | действ.(y=0 & th!=0) = концев.шарнир => фикт.(M=0 & Q!=0) = концев.шарнир |<br>
+_.6 | консоль:  для фикт.балки заделка и своб.конец меняются местами |<br>
+_._ | эпюра действ.моментов = фикт.погонной нагруке qf |<br>
+_._ | поперечная сила от qf: Qf= (P*L)*L*(1/2)(площадь эпюры)= |<br>
+_._ | момент от qf: Mf= Qf*2*L/3(расст.до центра тяжести)= P*L^3/3 |<br>
+_.7 | 2х-опорная балка с силой P:  концев.шарниры остаются |<br>
+_._ | реакция в опоре (площадь половины эпюры): Qf= (P*L/4)*L/2*(1/2)=P*L^3/16 |<br>
+_._ | момент от qf: Mf= Qf*(L/2-L/6)(расст.до центра тяжести треугольника)= P*L^3/48 |<br>
+_.__ | (L/2-L/6)=(L/6)*(3-1)=L/3 - 1/3 момент растет, 1/3-не меняется, 1/3-убывает |<br>
+_.2 | 20.Балки перменного сечения |<br>
+										</p><div class="divider"></div><p>
+3 | Потенциальная энергия | <a href="C:\avk_pdf\aero\1_static\belyaev.pdf#page=400" target="_blank">21</a> |<br>
+_.1 | Состав главы: 124.Постановка вопроса | 125.Вычисление потенциальной энергии |<br>
+_._ | 126.Теорема Кастильяно | 127.Примеры приложения теоремы Кастильяно |<br>
+_._ | 128.Прием введения добавочной силы | 129.Теорема о взаимности работ |<br>
+_._ | 130.Теорема Максвелла-Мора | 131.Способ Верещагина |<br>
+_._ | 132.Прогибы балок от действия поперечной силы | 133.Примеры |<br>
+_.2 | Работа растяжения- сжатия | A=0.5*P*dx |<br>
+_._ | sigma=E*(dx/x) => P/A=E(dx/x) => dx=P*x/(E*A) |<br>
+_._ | 1точка: A=P*dx | 2т: A=(P/2)*(dx/2)+P*(dx/2)=0.75*P*dx |<br>
+_._ | 4т: A=(P/4)*(dx/4)+(2P/4)*(dx/4)+(3P/4)*(dx/4)+(4P/4)*(dx/4)=(1+2+3+4)*P*dx/16=0.625*P*dx |<br>
+_.3 | Энергия изгиба | A=0.5*M*th | th=L*(1/R) | M/EJ=1/R => th=M*L/(EJ) |<br>
+_._ | A=0.5*M*(M*L/(EJ))=> | A=M^2*L/(2*E*J) |<br>
+										</p><div class="divider"></div><p>
+4 | Приближенное ур-ние изогнутой оси балки | <a href="C:\avk_pdf\aero\1_static\belyaev.pdf#page=427" target="_blank">22</a> |<br>
+_.1 | |<br>
+										</p><div class="divider"></div><p>
+5 | Статически неопределимые балки | <a href="C:\avk_pdf\aero\1_static\belyaev.pdf#page=433" target="_blank">23</a> |<br>
+_.1 | схема: z5c10_5x - 1 раз статически неопределимая |<br>
+_.2 | момент в заделке должен повернуть 2х-опорную балку так, что th=0 |<br>
+_.3 | угол поворота от силы P в 2х-опорной балке = (1/16)*(P*L^2)/(E*J) |<br>
+_.4 | возвращ. момент = (1/3)*M*L/(E*J) |<br>
+_.5 | приравнивая (1/16)*(P*L^2)/(E*J)=(1/3)*M*L/(E*J) => (1/16)*(P*L)=(1/3)*M  |<br>
+_.6 | M=(3/16)*P*L | sum M=0: -(3/16)*P*L+R0*L-P*L/2=0 -> R0=(3/16)*P+P/2 -> R0=(11/16)*P |<br>
+_.7 | RL=P-(11/16)*P=(5/16)*P |<br>
+_.8 | 24.Расчет стат.неопред. балок по допускаемым нагрузкам | 25.Балка на упругом основании |<br>
+_._ | 26.Косой изгиб | 27.Совместное действие изгиба и растяжения/ сжатия |<br>
+_._ | 28.Совместное действие изгиба и кручения | 29.Общий случай сложного сопротивления |<br>
+_._ | 30.Расчет тонкостенных стержней на изгиб и кручение | 31.Кривые стержни |<br>
+_._ | 32.Расчет толсто и тонкостенных сосудов |<br>
+										</p><div class="divider"></div><p>
+6 | консоль | z10c10 - zadelka-(L=10)-(P=-10) |<br>
+_.1 | E*J*y''= -P*(L-x) |<br>
+_.2 | E*J*y'= theta= -P*(L*x-x^2/2)+С1 |<br>
+_.__ | x=0 -> y'=0: 0=-0-0+C1 => C1=0 |<br>
+_.__ | x=L -> -P*L^2*(1-1/2) -> 1/2 -> y'=-(1/2)*(P*L^2)/(E*J) |<br>
+_.__ | th_max=-(1/2)*(P*L^2)/(E*J) |<br>
+_.3 | E*J*y = -P*(L*x^2/2-x^3/6)+C1*x+C2 |<br>
+_.__ | x=0; y=0: 0=-0-0+0+C2 => C2=0 |<br>
+_.__ | x=L: -P*L^3*(1/2-1/6) -> (3/6-1/6) -> 2/6 -> 1/3 -> y=(1/3)*(P*L^3)/(E*J) |<br>
+_.__ | y_max=(1/3)*(P*L^3)/(E*J) |<br>
+										</p><div class="divider"></div><p>
+7 | консоль | z5c10_5 |<br>
+_.1 | 1: E*J*y''= -P*(L/2-x) | 2: E*J*y''= 0 |<br>
+_.2 | 1: E*J*y'= -P*(L/2*x-x^2/2)+C1 | 2: E*J*y'= C2 |<br>
+_.__ | 1: х=0 -> y'=0: 0=0-0+C1 => C1=0 |<br>
+_.__ | 1: x=L/2: С1+P*(L/2)^2*(1/2)=C2 => C2=0+P*L^2/8=> C2=P*L^2/8 |<br>
+_.__ | th_max=C2=(1/8)*(P*L^2)/(E*J) |<br>
+_.3 | 1: E*J*y= -P*(L*x^2/2-x^3/6)+C1*x+C3 | 2: E*J*y'= C2*x+C4 |<br>
+_.__ | 1: х=0 -> y=0: 0=0-0+0+C3 => C3=0 |<br>
+_.__ | 1: x=L/2: -P*(L*(L/2)^2/2+(L/2)^3/6)=(P*L^2/8)*(L/2)+C4 = .. |<br>
+_.___ | (L^3/8)-(L^3/48)=(L^3/16)+C4 => C4=P*L^3*(1/8-1/48-1/16)=(1/24)*(P*L^3) |<br>
+_.__ | 2: x=L: y=P*L^2/8*L+(1/24)*(P*L^3) -> y=P*L^3*(1/8+1/24) |<br>
+_.__ |]y_max=(1/6)*(P*L^3)/(E*J) |<br>
+										</p><div class="divider"></div><p>
+8 | 2х-опорная балка | y5c10_5x |<br>
+_.1 | 1: E*J*y''= -(P*x/2) | 2: E*J*y''= -(P*x/2)+P*(x-L/2) |<br>
+_.2 | 1: E*J*y'= -(P*x^2/4)+C1 | 2: E*J*y'= -(P*x^2/4)+P*(x-L/2)^2/2+C2 |<br>
+_.__ | 1: х=L/2 -> -(P*L^2/8)+C1=-(P*L^2/8)+P*(L/2-L/2)^2/2+C2 => C1=C2 |<br>
+_.__ | th_max=C1=(1/16)*(P*L^2)/(E*J) |<br>
+_.3 | 1: E*J*y= -(P*x^3/12)+C1*x+C3 | 2: E*J*y= -(P*x^3/12)+P*(x-L/2)^3/6+C1*x+C4 |<br>
+_.__ | 1: х=0 -> y=0: 0=0+0+C3 -> C3=0 |<br>
+_.__ | 1: х=L/2 -> -(P*L^3/96)+C1*(L/2)=-(P*L^3/96)+0+C1*(L/2)+C4 -> C4=0 |<br>
+_.__ | 2: х=L -> y=0: 0=-(P*L^3/12)+P*L^3/48+C1*L -> C1=P*L^2*(1/12-1/48) -> C1=(1/16)*(P*L^2) |<br>
+_.__ | 1: х=L/2 -> y=-(P*L^3/96)+(1/16)*(P*L^2)*(L/2)=(-1/96+1/32)*(P*L^3)=.. |<br>
+_.__ | y_max=(1/48)*(P*L^3)/(E*J) |<br>
+										</p><div class="divider"></div><p>
+9 | 2х-опорная балка | m1y10x |<br>
+_.1 | 1: E*J*y''= -M+(M/L)*x |<br>
+_.2 | 1: E*J*y'= -M*x+(M/L)*x^2/2+C1 |<br>
+_.__ | th_max=C1=(1/3)*M*L/(E*J) |<br>
+_.3 | 1: E*J*y= -M*x^2/2+(M/L)*x^3/6+C1*x+C2 |<br>
+_.__ | 1: х=0 -> y=0: 0=0+0+C2 -> C2=0 |<br>
+_.__ | 1: х=L -> y=0: 0=-M*L^2/2+M*L^2/6+C1*L -> C1=ML/2-ML/6 = (1/3)*ML |<br>
+_.__ | 1: х=L/2 -> y=M*L^2*(-1/8+1/48+1/6)=(-6+1+8)/48=1/16 |<br>
+_.__ | y_max=C1=(1/16)*M*L^2/(E*J) |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ Shear ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#Shear" data-toggle="collapse" data-panel="#accord">Shear</a> | tau=G*gamma |
+								</div>
+								<div class="panel-collapse collapse" id="Shear">
+									<div class="panel-body">
+										<p>
+1 | <a href="\\fil-mow01-01\PTGroup\STRESS\TECHNICAL_LITERATURE\Тимошенко Прочность и колебания элементов конструкций.pdf#page=65" target="_blank">Формулы сложного сопротивления с точки зрения различных теорий прочности</a> |<br>
+_.1 | Введение |<br>
+_.2 | Старые теории о прочности | 3 гипотезы: max norm stress, max strain, max dif s1-s3 |<br>
+_.3 | Новые опыты |<br>
+_._ | строится точка для каждого предельного состояния, осн.проблема в создании такого давления |<br>
+_.4 | Работы А.Феппля | сжатие по 1 оси без трения ~= сжатию по 2 осям |<br>
+_.5 | Опыты В.Фойхта | сжатию по 2 осям + растяжение по 3 |<br>
+_.6 | Работы Дж.Геста | сталь: растяжение, чистые сдвиг (кручение трубки), 3х-осное | s2 не влияет |<br>
+_.7 | Теории Ш.Дюге и О.Мора | tau+0.176*s=const |<br>
+_.8 | Формулы сложного сопротивления |<br>
+_.9 | Формулы сложного сопротивления для чугуна |<br>
+										</p><div class="divider"></div><p>
+2 | Главные напряжения |<br>
+_.1 | Площадки, где нет касательных напряжений называют главными |<br>
+_.2 | в любой точки тела можно построить 3 плащадки с главными напряжениями |<br>
+_.3 | <kbd>линейное</kbd> состояние - 1 главное напряжение не равно 0 (растянутая полоска) |<br>
+_.4 | плоское состояние - 2 главных напряжения не равны 0 (цилиндр под давлением) |<br>
+_.5 | объемное состояние - 3 главных напряжения не равны 0 (колеса и рельсы) |<br>
+										</p><div class="divider"></div><p>
+3 | <kbd>линейное</kbd> напряженное состояние |<br>
+_.1 | Дано: полоска площадью А=1 in^2 и нагруженная силой P1=1 lbs | sigma1=P1/A=1 psi |<br>
+_.2 | Разрезаем ее под углом alpha = 30deg | cos(30)=sqrt(3)/2 |<br>
+_.3 | Нормальная сила равна N1=P1*cos(alpha)=0.866 |<br>
+_._ | площадь разреза увеличивается An=A/cos(alpha) = 1.155 |<br>
+_._ | напряжение sigmaN1 = N1/An= P1*cos(alpha)/(A/cos(alpha))=sigma1*cos(alpha)^2=<b>0.750</b> |<br>
+_._ | sigmaN max = 1 |<br>
+_.4 | Касательная сила равна T1=P1*sin(alpha)=0.500 |<br>
+_._ | напряжение sigmaT1 = T1/An= P1*sin(alpha)/(A/cos(alpha))=sigma1*sin(alpha)*cos(alpha)=<b>0.433</b> |<br>
+_._ | sigmaT: 30:0.433 | 45:0.5 | 60:0.433 |<br>
+_._ | sigmaT max = 0.5 |<br>
+										</p><div class="divider"></div><p>
+4 | плоское напряженное состояние |<br>
+_.1 | вырежем треугольник гипот: площ=A; N перпендикулярна; cos(alpha)=x/n |<br>
+_.2 | вдоль N: N-Px*cos-Py*sin-Tx*cos-Ty*sin=0 |<br>
+_._ | Px=x*A*cos | Py=y*A*sin | Tx=t*A*sin | Ty=t*A*cos |<br>
+_._ | stress, A=1: n-x*cos2-y*sin2-t*sin*cos-t*sin*cos=0 |<br>
+_._ | n=x*cos2+y*sin2+2*t*sin*cos |<br>
+_.3 | вдоль T: T+Px*sin-Py*cos-Tx*cos-Ty*sin=0 |<br>
+_._ | tau=x*sin*cos-y*sin*cos+t*cos2-t*sin2 |<br>
+_._ | tau=(x-y)*sin*cos+t*(cos2-sin2) |<br>
+_.4 | если площадки главные (t=0) | n=x*cos2+y*sin2 | tau=(x-y)*sin*cos |<br>
+_.5 | x=1 | y=2 | t=1 | s1/s2=(x+y)/2+/-sqrt[((x-y)/2)^2+t^2]=2.62/0.38 |<br>
+_._ | alpha=30 deg | tmax=(2.62-0.38)=1.15 | sn=0.38+1.15+1.15*cos30=2.12 |<br>
+										</p><div class="divider"></div><p>
+5 | Модуль сдвига G | <a href="C:\avk_pdf\aero\1_static\timoshenko.pdf#page=58" target="_blank">tim1-16</a> |<br>
+_.1 | E=sigma/e аналогично G=tau/gamma (угол пооврота) |<br>
+_.2 | в осях x-y строится треугольник с 2ми сторонами = R (углы 45 град) |<br>
+_.3 | если по y-сжитие, по х-расстяжение и они равны, то в гипотенузе - чистый сдвиг (круг Мора) |<br>
+_.4 | при деформации по х происходит удлинение x2=R*(1+ex), по у - y2=R*(1-ey) |<br>
+_.5 | tg_gamma/2= y2/x2=R*(1-ey)/(R*(1+ex))=(1-ey)/(1+ex) |<br>
+_._ | из тригонометрии: tg_gamma=tg(45-d_gamma/2)/2=(tg45-tg(d_gamma/2))/(1+tg45*tg(d_gamma/2))=.. |<br>
+_._ | =(1-tg(d_gamma/2))/(1+tg(d_gamma/2)) = (1-d_gamma/2)/(1+d_gamma/2) |<br>
+_.6 | (1-ey)/(1+ex) = (1-d_gamma/2)/(1+d_gamma/2) => ex=ey=d_gamma/2 |<br>
+_.7 | ex=sigma_x/E+mu*sigma_y/E - сжатие по y увеличивает х |<br>
+_.8 | ey=sigma_y/E+mu*sigma_x/E - растяжение по х сжимает y |<br>
+_.9 | при чистом сдвиге tau=sigma_x=sigma_y |<br>
+_.10 | ex=tau*(1+mu)/E | ey=tau*(1+mu)/E |<br>
+_.11 | d_gamma/2=tau*(1+mu)/E => tau/d_gamma = E/2*(1+mu) => G=E/2.6 |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ BDM6310 ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#bdm6310" data-toggle="collapse" data-panel="#accord">6310</a> | Shear Resistant Beams |
+								</div>
+								<div class="panel-collapse collapse" id="bdm6310">
+									<div class="panel-body">
+										<p>
+1 | BDM 6310 - Flat Shear Resistant Beams |<br>
+_.1 | Given | L=10 in | h=5 in | t=0.063" |<br>
+_.2 | MS=1/(sqrt((fbend/<kbd>Fbend_buckle</kbd>)^2+(1.3fs/<kbd>Fshear_buckle</kbd>)^2)) |<br>
+_.3 | fbend=Mavg*h/(2*I) | Mavg=(M_left+M_right)/2 |<br>
+_._ | I = 2*Ach*(h/2)^2 + 2*Ich + t*h^3/12 |<br>
+_.4 | fs=V/(h*t) |<br>
+										</p><div class="divider"></div><p>
+2 | <kbd>Fbend_buckle</kbd>=21.5*Ca*Er*(t/h)^2 |<br>
+_.1 | Ca=fn(h/c; L/h) | (2;0.2)=2.5 | (2;0.4)=1.22 | (2;0.6)=1 | (2;1)=1 |<br>
+_._ | h/c=2 - нейтральная ось посередине | L/h=1 - стенка квадратная |<br>
+_.2 | Er=0.5*Es[1+sqrt(0.25+0.75(Et/Es)] |<br>
+_.3 | f=40ksi | Er=0.5*9,998*[1+sqrt(0.25+0.75)(9,922/9,998]=9,984ksi |<br>
+_._ | 40:9,984 | 45:8,034 | 46:6,939 | 47:5,422 | 48:3,479 | 50:0,772 |<br>
+_.4 | Fbend_buckle = 21.5*1*9.984*(0.063/5)^2 = 34.08 ksi |<br>
+										</p><div class="divider"></div><p>
+3 | <a href="C:\avk_pdf\aero\1_static\ase\30-ShearResistantBeams.pdf#page=7" target="_blank">Fshear_buckle</a>=Kss*Krest*Gs*(t/b)^2 |<br>
+_.1 | if L>h: a=L, b=h; else a=h; b=L |<br>
+_.2 | Kss=fn(b/a) | 0:12.8 | 0.2:13 | 0.4:14.2 | <b>0.5:15</b> |0.6:16 | 0.8:18.6 | 1:21.8 |<br>
+_._ | коэффициент учитывающий отношение сторон прямоугольника |<br>
+_.3 | Krest=Rst+0.5*(Rch-Rst)*(b/a) | если tweb = t stif = tchord => 1 |<br>
+_._ | коэффициент защемления | учитывает влияние схемы и разность толщин |<br>
+_._ | stiffener #1 and chord #3 & #4 | Rst, Rch=fn(t_st/t, t_ch/t) | 1:1 | 2:1.5 | 3:1.6 |<br>
+_._ | stiffener #2 (from 1 side of web) | 1:0.7 | 2:1.24 | 3:1.3 |<br>
+_._ | Assume t_st=t_ch=t=0.063 for scheme 1,3 | Rst=Rch=1 | Krest=1+0.5(1-1)*(5/10)=1 |<br>
+_.4 | Gs - secant shear modules | Assume Gs=G=3,800 ksi |<br>
+_.5 | Fshear_buckle = 15*1*3,800*(0.063/5)^2 = 9.05 ksi |<br>
+										</p><div class="divider"></div><p>
+4 | Web ultimate shear stress |<br>
+_.1 | web max shear stress | MS=(Fsu/fs_max)-1 | fs_max=V*Q/(I*t) |<br>
+_.2 | web-to-stiffener attachment | MS=(Fsu/fs_net)-1 | fs_net= (s_avg/(s_avg-d))*(t/tp)*fs |<br>
+_.2a | s_avg - average web-to-stiffener fastener spacing |<br>
+_.2b | tp - web thickness in local pad-up area at the attachment |<br>
+_.3 | web-to-chord attachment | MS=1/(sqrt((fbend/Ftu)^2+(fs_net/Fsu)^2))-1 |<br>
+										</p><div class="divider"></div><p>
+5 | Chord & Stiffeners |<br>
+_.1 | t_ch > 1.2*t_web | f_ch=M/Ach*h |<br>
+_.2 | Ist/(h*t^3)*(Est/Eweb)=fn(l/h) | 0.15:4.5 | 0.2:2.75 | 0.4:1 | 0.6:0.6 | 0.8:0.45 | 1.2:0.4 |<br>
+_._ | single: 0.85*fs*A_st/l | double: 0.60*fs*A_st/l |<br>
+										</p><div class="divider"></div><p>
+5 | Tapered shear beams |<br>
+_.1 | Given | h1=6 in | M | V |<br>
+_.2 | tg(alpha)= delta_h/L= (h1-h)/2/L= (6-5)/2/10=0.5/10=0.05 |<br>
+_.3 | cos(alpha)= L/sqrt(L^2+delta_h^2)= 10/sqrt(100+0.25) |<br>
+_.4 | x=0 | P_hor=M/h | P_vert=M/h*tg(alpha) | P_ch=P_hor/cos(alpha) |<br>
+_.5 | x=l | P_hor=(M+V*L)/h1 | P_vert=(M/L+V)*(1-h/h1) | P_ch=(M+V*L)/(h1*cos(alpha)) |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ BDM6320 ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#bdm6320" data-toggle="collapse" data-panel="#accord"> 6320 </a> | Intermediate Diagonal Tension Beams |
+								</div>
+								<div class="panel-collapse collapse" id="bdm6320">
+									<div class="panel-body">
+										<p>
+1 | Given | <a href="C:\avk_pdf\aero\1_static\ase\32-PureDiagonalTensionBeams.pdf#page=1" target="_blank">pure tension</a> | 
+<a href="C:\avk_pdf\aero\1_static\ase\33-IntermediateDiagonalTension.pdf#page=7" target="_blank">idt</a> |<br>
+_.1 | L=10 in | h=5 in | t=0.063" |<br>
+_.2 | MS web: shear buckling, ult shear, max shear, net area, combined stiff-chord |<br>
+_.3 | MS stiff: crippling, column |<br>
+_.4 | MS chord: at stiff,  |<br>
+_.5 | Attach: MS web-chord | MS web-stiff | MS stiff-chord |<br>
+										</p><div class="divider"></div><p>
+2 | MS web shear buckling |<br>
+_.1 | Fscr from bdm-6310 |<br>
+										</p><div class="divider"></div><p>
+3 | MS stiffener crippling |<br>
+_.1 | allowable: Fc=0.00058*E*(Fcy^0.4)*(k_^0.67)*(tst/t)^0.33 |<br>
+_.2 | k_ - diagonal tension factor | 0:shear resist | 0..1:IDT | 1:pure diagonal |<br>
+_._ | k_=tanh(0.5*(log(fs/Fscr)) | 1:0 | 10:4.6 | 30:0.63 |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ Torsion ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#Torsion" data-toggle="collapse" data-panel="#accord">Torsion</a> | 6400 |
+								</div>
+								<div class="panel-collapse collapse" id="Torsion">
+									<div class="panel-body">
+										<p>
+1 | Bending diagram |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\belyaev.pdf#page=200" target="_blank">belyaev</a> |<br>
+										</p><div class="divider"></div><p>
+
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ Joints ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#Joints" data-toggle="collapse" data-panel="#accord">Joints and Fittings</a> | 6600 |
+								</div>
+								<div class="panel-collapse collapse" id="Joints">
+									<div class="panel-body">
+										<p>
+1 | <kbd>BDM-6610</kbd>: Joints and Splices |<br>
+_.1 | intro | primary design for fatigue |<br>
+_.2 | mechanically fastened joints |<br>
+_._ | splices | skin | stringer | frame | wing surface | bulhead splices |<br>
+_._ | joints | wing-body | empennage-body | floor beam |<br>
+_.3 | joint tension and shear effeciency |<br>
+_._ | p.30 | nu = 0.9(1-Ae/Ag) |<br>
+_.4 | miscellaneous graphs |<br>
+_._ | (tskin=0.1) => (3/16, 100 countersink) => (tc/t=0.48) |<br>
+_.5 | eccentric load on fastener group |<br>
+_._ | bolt group/ tension bearing |<br>
+_.6 | load transfer in joint |<br>
+										</p><div class="divider"></div><p>
+2 | <kbd>BDM-6615</kbd>: Fastener Strength |<br>
+_.1 |  | <br>
+										</p><div class="divider"></div><p>
+3 | <kbd>BDM-6620</kbd>: Angle and Channel Clip and T-Fittings |<br>
+_.1 |  | <br>
+										</p><div class="divider"></div><p>
+4 | <kbd>BDM-6630</kbd>: Lug Static Strength Estimation |<br>
+_.1 |  | <br>
+										</p><div class="divider"></div><p>
+5 | <kbd>BDM-6640</kbd>: Strength of Single-Pin Joints |<br>
+_.1 |  | <br>
+										</p><div class="divider"></div><p>
+6 | <kbd>BDM-6650</kbd>: Bathtub Type Tension Fittngs (SMA) |<br>
+_.1 |  | <br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ 6820 ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#6820" data-toggle="collapse" data-panel="#accord">6820</a> | Cutout Reinforcement |
+								</div>
+								<div class="panel-collapse collapse" id="6820">
+									<div class="panel-body">
+										<p>
+1 | Intro | Ref |<br>
+										</p><div class="divider"></div><p>
+3 | Large Cutouts |<br>
+_.1 | loads due to body pressure |<br>
+_.2 | loads due to flight condition |<br>
+_.3 | example criteia for large door |<br>
+_.4 | exffects of major cutout |<br>
+										</p><div class="divider"></div><p>
+4 | Medium Cutouts |<br>
+_.1 | example of non-load-carrying door |<br>
+_.2 | example of beam web cutout |<br>
+_.3 | equally spaced cutouts | <br>
+_.4 | cutout in torque box | <br>
+										</p><div class="divider"></div><p>
+5 | Small Cutouts |<br>
+_.1 | small unreinforced holes |<br>
+_.2 | flenged holes |<br>
+_.3 | reinforced holes |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ BDM ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#bdm" data-toggle="collapse" data-panel="#accord">BDM</a> | 76 |
+								</div>
+								<div class="panel-collapse collapse" id="bdm">
+									<div class="panel-body">
+										<p>
+<a href="https://psds.web.boeing.com/psds/servlet/Psds?action=DisplayMainMenu" target="_blank">BDM</a> | Search: bdm-6001 -> Search | BDM-TOC-6000 |
+										</p><div class="divider"></div><p>
+<b>1 | Basic Methods (10)</b> | 6010 - Section Properties | <kbd>6020</kbd> | 6030 - Transformation of Stress | 6035 - Material Yielding and Failure Criteria | 6040 - Stress Concentrations | 6050 - Inelastic Buckling Equations and Solutions | 6060 - Thermal Effects | 6070 - Margin of Safety | 6080 - Fatigue | 6090 - Structural Design Optimization |
+										</p><div class="divider"></div><p>
+<b>2 | Beam Bending (12)</b> | 6110- Beam Bending Moments and Deflections | 6122- Bending Stresses- Straight Beams | 6124- Plastic Bending | 6126- Bending Stresses- Symmetrical Curved Beams | 6127- Bending of Unsymmetrical Curved Beams | 6128- Curved Thin- Walled Beam Sections | 6130- Bending Stiffeness | 6140- Beam Lateral- Torsional Instability | 6142- Generalized Lateral- Torsional Instability of Beams | 6144- Lateral- Torsional Instability of Unrestrained Beams | 6150- Frames and Rings | 6160- Thermal Effects on Bending |
+										</p><div class="divider"></div><p>
+<b>4 | Shear Loads (5)</b> | 6300 - Shear Beams and Panels | <kbd>6310</kbd> | 6320 - Intermediate Diagonal Tension Beams | 6340 - Curved Panels | 6370 - Shear Strength of Corrugated And Beaded Panels |
+										</p><div class="divider"></div><p>
+
+<b>6 | Plates and Shells (9)</b> | 6510 - Plates under Normal Loads | 6520 - Buckling of Flat Plates | <kbd>6530</kbd> | 6535 - Inter-Rivet Buckling | 6540 - Stability of Flat Stiffened Panels | 6550 - Buckling of Curved Plates and Shells | 6560 - Thermal Effects on Plates and Shells | 6580 - Bending and Buckling of Equivalent Orthotropic Plates | 6590 Stresses in Shells |
+										</p><div class="divider"></div><p>
+1 | 6530 - Effective Skin Width |<br>
+_.1 | Determine Stiffener Compressive Stress, Fst = Fcc = 54.4 (see BDM-6220) |<br>
+_.2 | Calculate the Effective Width: We = 0.85*(t=0.05)*(Esk/Est)*sqrt(E/Fst) = 0.59 |<br>
+_.3 | Determine Total Effective Width: Wt = 0.59 + 0.875 (distance b/w f.) + 0.59 = 2.055 |<br>
+										</p><div class="divider"></div><p>
+<b>8 | Honeycomb Sandwich Structure (9)</b> |
+										</p><div class="divider"></div><p>
+<b>9 | Assemblies (6)</b> | 6810 - Ribs | 6815 - Bulkheads | 6820 - Cutout Reinforcement | 6830 - Fuselage | 6840 - Wing Box | 6845 - Piping and Ducting |
+										</p><div class="divider"></div><p>
+<b>10 | Mechanical Systems (5)</b> | 6852 - Contact Stresses | 6854 - Friction | 6856 - Stresses in Springs | 6868 - Stresses in Shafts | 6870 - Round Tubes |
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- ================================ IAS ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#ias" data-toggle="collapse" data-panel="#accord">IAS</a> |
+								</div>
+								<div class="panel-collapse collapse" id="ias">
+									<div class="panel-body">
+										<p>
+1 | Assign |<br>
+_.1 | создать tem | mkdir task3 | cd task3 | ias | Execute | F5: a | F6: c=a*3 | Edit | Output-> Save tem: t.tem  |<br>
+_.2 | создать dta | a=1 | Output-> Save dta: t.dta | Exit | cd .. |<br>
+_.3 | <code>vi b3</code> -> <kbd>i</kbd>-> Copy text below -> Middle click -> <kbd>ZZ</kbd>| </p>
+<p class="well well-sm"><code>
+#!/usr/bin/bash<br>
+p="task3/t"; touch $p<br>
+echo "Echo" > $p<br>
+echo "Input Template \"$p.tem\"" >> $p<br>
+echo "Input Data \"$p.dta\"" >> $p<br>
+echo "Assign a $1" >> $p<br>
+echo "Calculate" >> $p<br>
+echo "Output PDF \"$p.pdf\"" >> $p<br>
+echo "Exit" >> $p<br>
+ias -f $p</code></p><p>
+_.4 | <code>b3 10</code>-> присвоить а=10 -> открыть t.pdf | <br>
+										</p><div class="divider"></div><p>
+2 | Input |<br>
+_.1 | проверить наличие файлов feadms_out.dta и t.tem/.dta - <code>ls</code> |<br>
+_.2 | <code>ias t.tem t.dta</code> -> Execute-> F3 -> Component: FEADMS/IDTAS Element-> RC->i:x-> independent i: loadcase | 2DStress: tauxy-> Apply |<br>
+_.3 | Components -> 2D Table-> var.name: tauxyS2-> Apply | Edit-> Output-> Save Template-> t.tem |<br>
+_.4 | <code>vi t2</code> -> <kbd>i</kbd>-> Copy text below -> Middle click -> <kbd>ZZ</kbd>| <br>
+Echo<br>
+Input Template "t.tem"<br>
+Input Data "t.dta"<br>
+Input FEADMS "a" "feadms_out.dat"<br>
+Calculate<br>
+Output TableCSV "a" "t.csv"<br>
+Exit<br>
+_.5 | <code>ias -f t2</code>-> открыть t.csv | <br>
+										</p><div class="divider"></div><p>
+3 | Read pnt29b and output pdf |<br>
+<p class="well well-sm"><code>
+fat_max=$(grep body task2/idtas_out/pnt29b | sed "s/ t / t_/g" | sed "s/ t_ / t__/g" | tr -s ' ' | cut -f 6 -d ' ' | sort | tail -n 1)<br>
+res=$(echo "$fat_max*1.05" | bc -l)<br>
+if [ -d task3/ ]; then rm -r task3/; fi<br>
+mkdir task3; b3="task3/b3_ias"; touch $b3<br>
+echo "Echo" > $b3<br>
+echo "Input Template \"task3/fat.tem\"" >> $b3<br>
+echo "Input Data \"task3/fat.dta\"" >> $b3<br>
+echo "Assign Fmax $res" >> $b3<br>
+echo "Calculate" >> $b3<br>
+echo "Engr \"Klimovskikh\"" >> $b3<br>
+echo "Title 1 \"Attachment 1\"" >> $b2<br>
+echo "Note 1 \"757-200PF\"" >> $b3
+echo "Output Data \"task3/fat.dta\"" >> $b3<br>
+echo "Output PDF \"$b3.pdf\"" >> $b3<br>
+echo "Exit" >> $b3<br>
+cp /home/bdc/users/avk8072/_tem_ias/fat.tem task3/<br>
+cp /home/bdc/users/avk8072/_tem_ias/fat.dta task3/<br>
+ias -f $b3<br>
+ias task3/fat.tem task3/fat.dta</code>
+    								             </p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ FAMOSS ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#famoss" data-toggle="collapse" data-panel="#accord">FAMOSS</a> |
+								</div>
+								<div class="panel-collapse collapse" id="famoss">
+									<div class="panel-body">
+										<p>
+1 | Intro | Frame Analysis Margin of Safety Summary |<br>
+_.1 | <a href="https://citrix.web.boeing.com/Citrix/NWAZ-GCE/site/default.aspx?CTX_CurrentFolder=%5cAnalysis%5cUtils_Docs" target="_blank"> XTerm</a> -> User Guide BDC -> Famoss |<br>
+										</p><div class="divider"></div><p>
+2 | Overview |<br>
+_.1 | flowchart: $famoss -> load library x.fa -> save -> exit |<br>
+_.2 | input |<br>
+_._ | <code>View Input - not functional (3)</code> | Create or Edit Input (4) | Std Properties & Allowable (5) |<br>
+_.3 | execution |<br>
+_._ | General Internal Loads (6) | Ultimate MS (7) | Fatigue (8) | Load Plotting (9) |<br>
+_.4 | output (10) |<br>
+_._ | Frame by Stringer Summary | Frame | Detail | Shear Tie | Frame Splice | Frame Joint |<br>
+										</p><div class="divider"></div><p> 
+
+										</p><p>
+											<b>4.Create or Edit Input</b> -p.25 | 11 categories: | 1.Options and Param | 2.Fuselage Geometry | 3.Frame Geometry | 4.IC Param | 5.Web Param | 6.OC Param | 7.Tear Strap Param | 8.Skin | 9.Stringer | 10.Shear Tie | 11.Fastener
+										</p><p>
+											<b>5.Standart Properties and Allowables</b> -p.65 | Material | Stringer Clip | Fastener 
+										</p><p>
+											<b>6.Generate Internal Loads</b> -p.75 | 6.1.Generate Internal Load Process | 6.2 FEADMS Interface | 6.3 Input Internal Loads | 6.4 Effective Width | 6.5 Plot MDS Loads
+										</p><p>
+											<b>7.Compute Static Margins of Safety</b> -p.105 | 
+										</p><p>
+											<b>8.Fatigue Analysis</b> -p.111 | Input: library (.fa)/ geometry/ FEADMS | Output: IDTAS input files | .str - stress files | .ias - additional IDTAS files |
+										</p><p>
+											<b>9.Plotting Internal Loads</b> -p.117 | <b>D.Loads and Stress Plot Files</b> -p.281 | MDS Nodal Balance | Mid-Bay Loads/ Stress Plot | Envelope Mid- Bay Loads/ Stress Plot
+										</p><p>
+											<b>10.Output Files</b> -p.123 | 1.Frame by Stringer Summary | 2.By Frame Summary | 3.Single Location, Detail Analysis in IAS | 4.Shear Tie Shear Flow Output to IAS | 5.Frame Splice Analysis Output | <b>E.Output Summary Files</b> -p.289 | Forms Examples |
+										</p><p>
+											<b>A.Problem Reporting</b>
+										</p><div class="divider"></div><p>
+B | Flow Charts |<br>
+_.1 | Analysis Data Flow |<br>
+_.2 | Mid-Bay Internal Loads Flow |<br>
+_.3 | FAMOSS Analysis Flow (Non-787) |<br>
+_._ | Web Shear Resistance - BDM-6310, 6520 |<br>
+_._ | Web IDT - BDM6320 (if not 0.2 &lt; web ratio &lt; 1 | h/t > 1 | stiff.ratio > 0.25) |<br>
+_._ | IC tension - 0.9*Ftu/f | IC comp - BDM-6236, Beam Column Check | <br>
+_._ | Skin - BDM-6535 | <br>
+_.4 | FAMOSS Analysis Flow (787) |<br>
+										</p><div class="divider"></div><p>
+											<b></b> -p.137 | 1.Analysis Data Flow - Geometry Input (APARD) | 2.Mid-Bay Internal Loads Flow - Loads Input (FEADMS) | 3.FAMOSS Analysis Flow - (Web+ IC+ Skin) | 4.FAMOSS Analysis Flow (787) |
+										</p><p>
+											<b>C.FAMOSS Frame Analysis, Methods and Allowables</b> -p.169 | 10.Ultimate Analysis |
+										</p><p>
+											<b>F.Frame Idealization Types</b> -p.307 | Type 2- Built-up frame + FS chord | Type 6- One-piece frame + FS Chord | Type 8- One-piece frame | Type 9- Built-up frame |
+										</p><p>
+											<b>G.SA Viewer Interface</b> -p.313 | Main Screen-> Create or Edit Input-> IC/ OC/ Tear Parameter-> Shapecode-> SA Viewer Inactive | Shapecodes: | E-A- extruded angle | F-A- formed angle | E-C- extruded channel | F-C- formed channel | E-I - I-section | F-J- J-section | E-T- T-section | RECT - rectangle |
+										</p><p>
+											<b>H.Geocodes</b> -p.327 | R1C1A: t=0.125"/ ht=1.1/ w_in=1.2/ lip_ht=0.5/ rad=0.28 | ...
+										</p><p>
+											<b>I.Frame Inner Chord Stability Equations</b> -p.371 | J.Skin Effective Width | K. FAMOSS and FEADMS Internal Loads Extraction | L.FAMOSS Material Properties | M.Shear Tie Analysis | N.Frame Splice Analysis | O.FAMOSS Effective Width Adjustment | P.FAMOSS Skin/ Striger Separation Analysis - Environmental Correction |
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ niu ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#niu" data-toggle="collapse" data-panel="#accord">Niu</a> | Stress Analysis |
+								</div>
+								<div class="panel-collapse collapse" id="niu">
+									<div class="panel-body">
+										<p>
+1 | General overview |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\niu.pdf#page=15" target="_blank">Overview</a> | Discussion of optimum design |<br>
+_.3 | Structural weight | Design for manufacturing |<br>
+										</p><div class="divider"></div><p>
+2 | Sizing procedures |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\niu.pdf#page=28" target="_blank">Overview</a> | Preliminary sizing | Production stress analysis |<br>
+_.4 | Formal stress reports | Sign conventions | <a href="C:\avk_pdf\aero\1_static\niu.pdf#page=35" target="_blank">Load path and FBD</a> |<br>
+_.7 | Drawing tolerances | Margin of Safety | Stiffness Requirements | Discussion |<br>
+										</p><div class="divider"></div><p>
+3 | External loads |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\niu.pdf#page=41" target="_blank">Introduction</a> |<br>
+_.2 | Structural Design Criteria | Weight and Balance |<br>
+_.4 | Flight loads | Ground loads | Dynamic loads | Controllable surface |<br>
+_.8 | Fuselage pressurization loads | Wing fuel pressure loads |<br>
+_.10 | Miscellaneous loads |<br>
+										</p><div class="divider"></div><p>
+4 | Material properties |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\niu.pdf#page=72" target="_blank">Introduction</a> | Stress-strain curves | Allowables | Airworthiness requirements | <br>
+_.5 | Toughness and crack propogation | Material usage | Material selection procedures |<br>
+										</p><div class="divider"></div><p>
+5 | Structural analysis |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\niu.pdf#page=94" target="_blank">Review of Hook's law</a> |  Principal stress | Equlibrium and compatibility |<br>
+_.4 | Determinate structures | Indeterminate structures | FEM |<br>
+										</p><div class="divider"></div><p>
+6 | Beam stress |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\niu.pdf#page=152" target="_blank">Beam theory</a> | Section properties | <br>
+_.3 | Bending of symmetrical and unsymmetrical sections | Plastic bending |<br>
+_.5 | Shear stress in beams | Shear center | Tapered beams | Torsion |<br>
+_.9 | Crushing load on box beams |<br>
+										</p><div class="divider"></div><p>
+7 | Plates and shells |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\niu.pdf#page=195" target="_blank">Inroduction</a> | Plates | Cylindrical shells |<br>
+_.4 | Hemispherical sheels | Honeycomb panels |<br>
+										</p><div class="divider"></div><p>
+8 | Box beams |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\niu.pdf#page=235" target="_blank">Inroduction</a> | Shear flow due to torsion | Single-cell box |<br>
+_.4 | SIngle-cell box (multistringer) | Two-cell | Tapered cross-sections | Shear lag |<br>
+										</p><div class="divider"></div><p>
+9 | Joints and fittings |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\niu.pdf#page=287" target="_blank">Inroduction</a> | Fastener Info | Splices | Eccentric joints |<br>
+_.5 | Gusset joints | Welded joints | Bonded joints | Lug analysis | Tension fittings | Tension clips | <br>
+_.11 | Gaps and the use of shims | Fatigue considerations |<br>
+										</p><div class="divider"></div><p>
+10 | Column buckling |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\niu.pdf#page=408" target="_blank">Inroduction</a> |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ bruhn ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#bruhn" data-toggle="collapse" data-panel="#accord">Bruhn</a> | Analysis and Design |
+								</div>
+								<div class="panel-collapse collapse" id="bruhn">
+									<div class="panel-body">
+										<p>
+1 | Statically Determinate Structures |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=24" target="_blank">A2 - equilibrium of force systems. truss structures</a> |<br>
+_.2 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=56" target="_blank">A3 - properties of sections</a> |<br>
+_.3 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=72" target="_blank">A4 - general loads on aircraft</a> |<br>
+_.4 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=86" target="_blank">A5 - beams - shear and moments</a> |<br>
+_.5 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=116" target="_blank">A6 - torsion - stresses and deflections</a> |<br>
+_.6 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=134" target="_blank">A7 - deflections of structures</a> |<br>
+										</p><div class="divider"></div><p>
+2 | Theory and methods for solving indeterminate structures |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=174" target="_blank">A8 - statically indeterminate structures</a> |<br>
+_.2 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=218" target="_blank">A9 - bending moments in frames and rings</a> |<br>
+_.3 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=236" target="_blank">A10 - column analogy method</a> |<br>
+_.4 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=242" target="_blank">A11 - moment distribution method</a> |<br>
+_.5 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=280" target="_blank">A12 - slope deflection method</a> |<br>
+										</p><div class="divider"></div><p>
+3 | Beam bending, shear stress, membrane stress, column and plate instability |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=292" target="_blank">A13 - bending stress</a> |<br>
+_.2 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=310" target="_blank">A14 - bending shear stress, shear center</a> |<br>
+_.3 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=328" target="_blank">A15 - shear flow in closed thin-walled sections</a> |<br>
+_.4 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=360" target="_blank">A16 - membrane stresses in pressure vessels</a> |<br>
+_.5 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=370" target="_blank">A17 - bending of plates</a> |<br>
+_.6 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=378" target="_blank">A18 - instability of columns and thin sheets</a> |<br>
+										</p><div class="divider"></div><p>
+4 | Practical aircraft stress analysis |<br>
+_.1 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=409" target="_blank">A19 - wing stress analysis</a> |<br>
+_.2 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=437" target="_blank">A20 - fuselage stress analysis</a> |<br>
+_.3 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=453" target="_blank">A21 - loads and stresses on ribs and frames</a> |<br>
+_.4 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=473" target="_blank">A22 - analysis of special wing problems</a> |<br>
+_.5 | <a href="C:\avk_pdf\aero\1_static\bruhn.pdf#page=489" target="_blank">A23 - analysis by the method of displacement</a> |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ Gordon ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#Gordon" data-toggle="collapse" data-panel="#accord">Gordon</a> | Конструкции, или почему не ломаются вещи |
+								</div>
+								<div class="panel-collapse collapse" id="Gordon">
+									<div class="panel-body">
+										<p>
+1 | Конструкции, или почему не ломаются вещи |<br>
+_.01 |  |<br>
+_.02 |  |<br>
+_.03 |  |<br>
+_.04 | Упругая энергия и современная механика разрушения |<br>
+_.__ | единица энергии Джоуль =  1Н(сила)*1м(путь) |<br>
+_.__ | сила при растяжении материала пропоцональна перемещению P=E*dl/L |<br>
+										</p><div class="divider"></div><p>
+2 | Конструкции, нагруженные растяжением |<br>
+_.05 | Растянутые конструкции и сосуды под давлением |<br>
+_.__ | сила давления P=p*A=p*PI*R^2 | P=L*t=2*PI*R*t | p*PI*R^2=2*PI*R*t => p*R=2*t |<br>
+_.06 | О соединениях, креплениях и людях |<br>
+_.07 | Мягкие материалы и живые конструкции |<br>
+										</p><div class="divider"></div><p>
+3 | Конструкции в условиях сжатия и изгиба |<br>
+_.08 | Стены, арки и плотины |<br>
+_.09 | Кое-что о мостах, или святой Бенезе и святой Изамбар |<br>
+_.11 | Тайна сдвига и кручения |<br>
+_.__ | касат. напряжение tau- мера 1 части тела скользить относительно другой |<br>
+_.__ | d_ang - деформация сдвига, угол на к-рый искажается прямой угол |<br>
+_.__ | tau/d_ang = G -модуль сдвига |<br>
+_.12 | Различные виды разрушения при сжатии |<br>
+										</p><div class="divider"></div><p>
+4 | И последствия были.. |<br>
+_.13 | Философия конструирования, или форма, вес и стоимость |<br>
+_.14 | Катастрофы или очерк усталости металла |<br>
+_.15 | Эффективность и эстетика |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ Belyaev ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#Belyaev" data-toggle="collapse" data-panel="#accord">Belyaev</a> | Сопротивление материалов |
+								</div>
+								<div class="panel-collapse collapse" id="Belyaev">
+									<div class="panel-body">
+										<p>
+1 | Растяжение и сжатие |<br>
+_.1 |  |<br>
+										</p><div class="divider"></div><p>
+2 | Сложные случаи растяжения и сжатия |<br>
+_.1 |  |<br>
+										</p><div class="divider"></div><p>
+3 | Сдвиг и кручение |<br>
+_.1 |  |<br>
+										</p><div class="divider"></div><p>
+4 | Изгиб |<br>
+_.1 |  |<br>
+										</p><div class="divider"></div><p>
+5 | Полная проверка при изгибе |<br>
+_.1 |  |<br>
+										</p><div class="divider"></div><p>
+6 | Деформации при изгибе |<br>
+_.1 |  |<br>
+										</p><div class="divider"></div><p>
+7 | Потенциальная энергия и статически неопределимые балки |<br>
+_.1 |  |<br>
+										</p><div class="divider"></div><p>
+8 | Сложное сопротивление |<br>
+_.1 |  |<br>
+										</p><div class="divider"></div><p>
+9 | Устойчивость |<br>
+_.1 |  |<br>
+										</p><div class="divider"></div><p>
+10 | Динамическое действие нагрузок |<br>
+_.1 |  |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ 10lect ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#10lect" data-toggle="collapse" data-panel="#accord">Феодосьев</a> | Десять лекций |
+								</div>
+								<div class="panel-collapse collapse" id="10lect">
+									<div class="panel-body">
+										<p>
+1 | Сопротивление материалов, теория упругости и прочее.. |<br>
+_.1 | Реальн.конструкция -> расчетн.схема(этап 1) -> анализ(2) -> реальн.конструкция(MS)(3) |<br>
+_.2 | Строительная механика - эффективные методы анализа расчетн.схем для конкретной области |<br>
+										</p><div class="divider"></div><p>
+2 | От реальной конструкции к расчетной схеме |<br>
+_.0 | схемы: материал(M), геометрия(G), нагрузка(L) |<br>
+_.1 | материал - отсутствие трещин, однородность, изотропность |<br>
+_.2 | геометрия - привдение формы к брусу, тонкостен.стержень, оболочка |<br>
+_.3 | нагрузка - зона контакта, ускорения |<br>
+										</p><div class="divider"></div><p>
+3 | От расчетной схемы к реальной конструкции (этап 3) |<br>
+_.1 | необходимо установить, удовлетворяет ли конструкция требованиям прочности |<br>
+_.2 | чтобы дать числовую оценку прочности выбирается критерий (напряжения) |<br>
+_.3 | также учитывается вероятность разрушения |<br>
+_.4 | если при малых геометр.отклонениях - большое снижение прочности  - "неблагородная" кон-ция |<br>
+										</p><div class="divider"></div><p>
+4 | Основные правила и принципы в сопротивлении материалов (3 правила) |<br>
+_.1 | относительная жесткость систем - геометрия при нагружении не меняется |<br>
+_.2 | принцип суперпозиции - независимость действия сил |<br>
+_.3 | правило Сен-Венана - неравномерность в месте приложения сил уменьшается при удалении |<br>
+										</p><div class="divider"></div><p>
+5 | О температурных напряжениях |<br>
+_.1 | темпер.напряжения можно сравнить с силовыми напряжениями |<br>
+_.2 | св-ва стали сохраняются до 600С и при этом удлинение = 0.7% |<br>
+_.3 | 4 параметра: напряжение, деформация, время и температура |<br>
+_.4 | основные проблемы: сложность описания зависимостей между 4 параметрами |<br>
+										</p><div class="divider"></div><p>
+6 | О предельных состояниях |<br>
+_.1 | состояния: упругое -> пластическое (сдвиги в решетке) -> разрушение(трещины) |<br>
+_.2 | 2 группы теории предельных состояний |<br>
+_._1 | критерий(глав.деформац/ наибольш.касательный/ энергия формоиз.) -> эксперимент |<br>
+_._2 | систематизация результатов испытаний (закон Гука) |<br>
+										</p><div class="divider"></div><p>
+7 | Об усталостной прочности |<br>
+_.1 | усталостное разрушение - процесс, состоит из 2 фаз |<br>
+_.2 | 1: образование заметной макротрещины - состояние поверхности, амплит.цикла |<br>
+_.3 | 2: дальнейшее развитие до полного разрушения - размер и форма образца, распред.напряж. |<br>
+										</p><div class="divider"></div><p>
+8-9 | О устойчивости |<br>
+_.1 | обязателен учет поведения сил в процессе деформирования системы |<br>
+_.2 | подход Эйлера не всегда правильный (передача сил через жидкость) |<br>
+										</p><div class="divider"></div><p>
+10 | Расчет конструкций и ЭВМ |<br>
+_.1 | шаговый метод для вычисления нелинейности |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ================================ sopromat ============================ -->			  
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a href="#sopromat" data-toggle="collapse" data-panel="#accord">Sopromat</a> | 
+								</div>
+								<div class="panel-collapse collapse" id="sopromat">
+									<div class="panel-body">
+										<p>
+1 | История |<br>
+_.1 | 15 век - да Винчи: изгиб балки |<br>
+_.2 | 1638 - Галилей: возникновение науки |<br>
+_.3 | 18 век - Гук: sigma=E*e |<br>
+_.4 | Бернулли: прогиб консоли |<br>
+_.5 | Эйлер: устойчивость сжатых стержней |<br>
+_.6 | Лагранж: дифференирование изгиба |<br>
+_.7 | 19 век - Журавский: касательные напряжения при изгибе |<br>
+										</p><div class="divider"></div><p>
+2 | Статика |<br>
+_.1 | Сила - мера мех.возд-вия тв.тел | модуль, точка приложения, направление |<br>
+_.2 | Момент силы - вект.произв. радиус-вектора точки прилож.силы на вектор силы |<br>
+_.3 | Главный момент сил - геометр.сумма моментов всех сил относит. этой точки |<br>
+										</p><div class="divider"></div><p>
+3 | Геометр.хар-ки плоских сечений |<br>
+_.1 | Стат.момент | xc= Sy/Area |<br>
+_.2 | Момент инерции | Ix=integ(y^2)*dA=integ(y^2)*dx*dy=.. |<br>
+_._ | (b/2)integ(-b/2)dx*(h/2)integ(-h/2)y^2dy = b*2*(1/3)*(h/2)^3 |<br>
+_._ | rect: b*h^3/12 | triangle: b*h^3/36 |<br>
+_._ | circle: PI*D^4/64~0.05*D^4 | semicircle: ~0.00686*D^4 |<br>
+_._ | ellipse: A=PI*a*b | Ix=PI*b^3*a/4 |<br>
+_.3 | Полярный момент инерции | Ip=integ(x^2+y^2)*dA=Ix+Iy |<br>
+_._ | круг: PI*D^4/32~0.1*D^4 |  |<br>
+_.4 | Центробеж. момент инерции | Ixy=integ(x*y)*dA | Ixy=0 - главные оси инерции |<br>
+_.5 | Главные оси инерции, проходящие через центр тяжести (цт) - глав.центр.оси инерции |<br>
+										</p><div class="divider"></div><p>
+4 | Паралельный перенос осей |<br>
+_.1 | Sx1=Sx+d*A | 24=0+d*8 | 29=14+d*3 => d=5 |<br>
+_.2 | теорема Штейнера-Гюйгенса: I=Iцт+A*d^2(расстояние между осями) |<br>
+_.__ | Ix=integ(y^2)*dA | Ix1=integ(y+d)^2*dA = Ix+2*d*Sx+A*d^2 |<br>
+_.3 | Ix1y1=Ixy+a*b*A |<br>
+										</p><div class="divider"></div><p>
+5 | Поворот осей |<br>
+_.1 | <kbd>Ix1/Iy1</kbd>=(Ix+Iy)/2+((Ix-Iy)/2)*cos(2*alpha)<kbd>-/+</kbd>Ixy*sin(2*alpha) |<br>
+_.2 | Ix1y1=((Ix-Iy)/2)*sin(2*alpha)+Ixy*cos(2*alpha) |<br>
+_.3 | Ix1+Iy1=Ix+Iy=Ip |<br>
+_.4 | главные оси: Ix1y1=0 | tg(2*alpha)=-2*Ixy/(Ix-Iy) |<br>
+_.5 | главные моменты инерции: Imax/Imin=(Ix+Iy)/2<kbd>+/-</kbd>sqrt(((Ix-Iy)/2)^2+Ixy^2) |<br>
+										</p><div class="divider"></div><p>
+6 | Растяжение и сжатие |<br>
+_.1 | Гипотезы | Сен-Венан |<br>
+_.2 | Закон Гука | ex=dl/l | ey=mu*ex | sigma=E*ex | sigma*A=(E*A)*ex => F=(E*A)*ex |<br>
+_._ | стержень под собств.весом: dl=integ(N/EA)*dz | N=q*(L-z) | dl=q*L^2/(2EA) |<br>
+_._ | треугольное распределение x=0,q=0 -> x=L,q=q: dl=q*L^2/(3EA) |<br>
+_.3 | Статически неопределимые системы | z1-EA-b-3EA-z2 => R1-EA-b-3EA-z2 |<br>
+_._ | dl_b=b*L/3EA = dl_R1=(R1*L/EA)+(R1*L/3EA)=4R1*L/3EA => b=4*R1 |<br>
+_.4 | Мех.св-ва материалов |<br>
+_._ | упругость | твердость | прочность | пластичность | хрупкость |<br>
+										</p><div class="divider"></div><p>
+7 | Кручение |<br>
+_.1 | вид деформации, при к-ром в сечении бруса возникает только крутящий момент |<br>
+_.2 | G=E/2*(1+mu) |<br>
+_.3 | tau=G*gamma | gamma*L=fi*R => tau=G*(R/L)*fi |<br>
+_.4 | Mk=integ(tau*R)dA = integ(G*(fi/L)*R^2)dA | Ip=integ(R^2)dA |<br>
+_._ | Mk=G*(fi/L)*Ip | fi=Mk*L/G*Ip |<br>
+_.5 | tau=G*(R/L)*(Mk*L/G*Ip) = (Mk*R)/Ip |<br>
+_.6 | Wp=Ip/Rmax => tau_max=Mk/Wp |<br>
+_._ | Wp_круг = PI*D^3/16 ~ 0.2D^3 |<br>
+_._ | Wp_кольцо = PI*D^3/16 ~ 0.2D^3*(1-(d/D)^4) |<br>
+_.7 | [tau_сталь] = (0.55-0.6)*sigma | [tau_чугун] = (1-1.2)*sigma |<br>
+_.8 | [theta_сталь] = 0.25-1 град/метр | theta=fi/L |<br>
+										</p><div class="divider"></div><p>
+8 | Изгиб |<br>
+_.1 | момент положит. - сжатые волокна сверху | силы положит. - по часов.стрелке |<br>
+_.2 | косой изгиб - плоскость момента не совпадает с плоскостью главн.центр.осей |<br>
+_._ | sigma=(Mx*y/Ix)+(My*x/Iy) | tg a=(Ix/Iy)*tg fi | прогиб f=sqrt(fx^2+fy^2) |<br>
+_.3 | изгиб + растяжение | sigma=(N/A)+(Mx*y/Ix)+(My*x/Iy) |<br>
+_._ | ур-ние нейтр.оси - (N/A)+(Mx/Ix)*y+(My/Iy)*x=0 |<br>
+_._ | прямоугольное сечение: sigma=(N/A)+(Mx/Wx)+(My/Wy) |<br>
+_._ | ядро сечения - центр.ось торца бруса, где сжимающ.сила вызывает только сжатие |<br>
+_.4 | изгиб + кручение | валы машин |<br>
+_._ | sigma=M/W | tau=M/Wp | пренебрег.касательными напряжениями от момента |<br>
+_._ | s_экв=sqrt(sigma^2+4*tau^2)= sqrt(Mx^2+My^2+Mk^2)/W |<br>
+_._ | d=sqrt3(10*W) | W=sqrt(Mx^2+My^2+Mk^2)/[sigma] |<br>
+										</p><div class="divider"></div><p>
+9 | Устойчивость |<br>
+_.1 | EIy"=M=-F*y(x) -> y"+k*y=0 -> y(x)=C1*sin(kx)+C2*cos(kz) | k=F/(E*I) |<br>
+_._ | C1=0; C2=0 -> sin(kL)=0 -> k=PI()*n/L | n=1,2,3.. | F=PI*E*I/L^2 |<br>
+_.2 | радиус инерции: i=sqrt(I/A) |<br>
+_.3 | гибкость стержня: lambda=mu*L/i  |<br>
+_._ | mu-коэф.закрепления: yx:1 | zx:0.7 | z:2 | z_porsh:0.5 |<br>
+_.4 | sigma_cr=(PI/lambda)^2*E |<br>
+_.5 | ф-ла Ясинского-средняя гибкость: Ст.3: а=310; b=1.14 | lambda_пред=100 |<br>
+_.6 | lambda0=a-sigma_t/b=(310-240)/1.14=61 |<br>
+_.7 | без потери устойчивости &lt; 61 &lt; ф-ла Ясинского &lt; 100 &lt; ф-ла Ейлера |<br>
+										</p><div class="divider"></div><p>
+9 | Напряженно-деформируемое состояние в точке |<br>
+_.1 | тензор-матрица | [s]=sx,tx,tz; tx,sy,ty; tz,ty,sz=1,0,1; 0,2,3; 1,3,4 |<br>
+_._ | тетрадер | n=(cos_a,cos_b,cos_g)=(0.6,0,0.8) | sn=pn*n=[s]*n*n ||<br>
+_._ | px=0.6+0.8=1.4 | py=2.4 | pz=0.6+3.2=3.8 | pn=sn+tn=sqrt(px^2+py^2+pz^2)=4.71 | <br>
+_._ | sn=px*nx+py*ny+pz*nz=1.4*0.6+2.4*0+3.8*0.8=3.88 | tn=sqrt(pn^2-sn^2)=2.67 |<br>
+_.2 | главные площадки | t=0, pn=sn | pn=lambda*n |<br>
+_.3 | виды напряж.состояний: линейное, плоское, объемное |<br>
+_.4 | линейное: sa=s1*cos_a^2=0.5*s1; ta=s1*sin2a/2=0.125*s1 | a=30 deg |<br>
+_.5 | плоское: sa=s1*cos_a^2+s2*sin_a^2; ta=(s1-s2)*sin_a^2/2 |<br>
+_._ | smax=((s1+s2)+sqrt((s1-s2)^2+4*t^2))/2 | tg2a=2*t/(s1-s2) |<br>
+_.6 | объемное: tmax=(s1-s3)/2 | элипсоид напряжений |<br>
+_.7 | круги Мора | R=t=(s1-s3)/2 | t13=t12+t23 |<br>
+_.8 | инварианты тензора напряжений - скаляр.в-ны напряжений, не зависят от системы коорд. |<br>
+_._ | линейный, квадратный и кубический |<br>
+_.9 | шаровой тензор - тензор 2го порядка | th=(1-2*mu)*(s1+s2+s3)/E |<br>
+_.10 | теории прочности |<br>
+_._1 | теория наибольших нормальных напряжений | s_ekv=s1 |<br>
+_._2 | теория наибольших относит.удлинений | s_ekv=s1-mu*(s2+s3) |<br>
+_._3 | теория наибольших касательных напряжений | s_ekv=s1-s3 |<br>
+_._4 | энергетическая | s_ekv=sqrt((s1-s2)^2+(s1-s3)^2+(s2-s3)^2)/sqrt(2) |<br>
+_._5 | Мора | s_ekv=s1-s3*[s_раст]/[s_сж] |<br>
+										</p>
+									</div>
+								</div>
+							</div>
+					<!-- ======================================== Next ======================================== -->	
+				</div>	    
+			</div>
+		</div>
+	</div>
+	<script src="../_js/jquery.min.js"></script>
+	<script src="../_js/bootstrap.min.js"></script>
+</body>
+</html>

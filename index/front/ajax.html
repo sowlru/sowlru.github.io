@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AJAX</title>
+
+	<link href="../_css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../_css/style.css">
+</head>
+<body  onload="init()">
+	<!-- ================================= Navigation ==================================== -->
+	<nav class="navbar navbar-default">
+
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="C:\avk\index.html">AvK <span class="glyphicon glyphicon-flash"></span></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav">
+			<!-- Sites -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sites<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\stravkcom\index.html">stravk.com</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\sowlru\index.html">sowl.ru</a></li>
+						</ul>
+        			</li>
+			<!-- Aero -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aero<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\aero\general.html">General</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fem.html">FEM</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\static.html">Static</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fatigue.html">Fatigue</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\dt.html">Damage Tolerance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\structure.html">Structure</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\doors.html">Door</a></li>
+						</ul>
+        			</li>
+			<!-- Code General -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code G<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_g\basics.html">Basics</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\objects.html">Objects</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\algorithm.html">Algorithm</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\other_code.html">Other</a></li>
+						</ul>
+	    			</li>
+			<!-- Code Project -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code P<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_p\c.html">C</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\unix.html">UX</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\python.html">Python</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\php.html">PHP</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\vba.html">VBA</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\ml.html">ML</a></li>
+						</ul>
+	    			</li>
+			<!-- Front -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Front<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\front\web.html">HTML - 1991</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ecma.html">ECMA - 1995</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="active"><a href="C:\avk\index\front\ajax.html">AJAX - 2005</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\jquery.html">jQuery - 2006</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\nodejs.html">Node - 2009</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\angular.html">Angular - 2014</a></li>
+						</ul>
+	    			</li>
+			<!-- Other -->
+					<li class="dropdown">
+	      				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\other\finance.html">Finance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\english.html">English</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\electro.html">Electro</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\scratch.html">Scratch</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\roblox.html">Roblox</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\other.html">Other</a></li>
+						</ul>
+	    			</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+
+		</div><!-- /.container-fluid -->
+
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<h3>Asynchronous Javascript and XML</h3>
+				<div class="panel-group" id="accord">
+
+<!-- ============================= 01 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#01" data-toggle="collapse" data-panel="#accord">01</a> | var req  = new XMLHttpRequest(); | open() | send() | responseText |
+	</div>
+	<div class="panel-collapse collapse" id="01">
+		<div class="panel-body">
+			<p>
+1 | Основы |<br>
+_.1 | подход, а не технология |<br>
+_.2 | совокупность JS+DOM <-> XML (JSON) <-> XMLHttpRequest <-> server | <br>
+_.3 | обмен данными с сервером без перезагрузки страниц |<br>
+_.4 | в 1996г. Microsoft выпустил iFrame (окно в окне) |<br>
+_.5 | в 1998г. Microsoft захотели сделать веб-клиент для почтового сервера |<br>
+_._ | на базе Remote Scripting сделали объект XMLHttp (из программы делает запрос на сервер) |<br>
+_.6 | в 2005г. появился термин AJAX | <a href="http://adaptivepath.com/ideas/ajax-new-approach-web-applications/" target="_blank">статья</a> |<br>
+_.7 | в 2005г. появился термин Web 2.0 | сайт как служба |<br>
+			</p><div class="divider"></div><p>
+2 | XMLHttpRequest |<br>
+_.1 | объект Javascript, встроенный в браузер |<br>
+_.2 | в IE5 - отдельный объект ActiveXObject("Microsoft.XMLHTTP") |<br>
+_.3 | в IE6 - отдельный объект ActiveXObject("Msxml2.XMLHTTP") |<br>
+_.4 | в IE7+ - встроенный объект |<br>
+			</p><div class="divider"></div><p>
+3 | Подготовка |<br>
+_.1 | Поставить сервер |<br>
+_.2 | создать index.html |<br>
+_._ | script > window.onload = function(){..} |<br>
+_.__ | var req  = new XMLHttpRequest(); |<br>
+_.__ | var d = document.getElementById('d'); |<br>
+_._ | &lt;div id="d">&lt;/div> |<br>
+_.3 | создать t.txt: "hello from txt" |<br>
+			</p><div class="divider"></div><p>
+4 | Синхронный запрос данных с сервера |<br>
+_.1 | req.open("GET", location.href, false); - подготовка запроса |<br>
+_._ | location.href - получить страницу | false - синхронный запрос |<br>
+_.2 | req.send(null); - отправка запроса без данных (null) |<br>
+_.3 | d.innerHTML=req.responseText; - получить html-текст документа |<br>
+			</p><div class="divider"></div><p>
+5 | Асинхронный чтение текстового файла |<br>
+_.1 | req.open("GET", "t.txt", true); |<br>
+_.2 | req.send(null); |<br>
+_.3 | req.onreadystatechange = function(){...} - привязка обработчика |<br>
+_._ | if(req.readyState === 4) d.innerHTML=req.responseText; |<br>
+_._ | дождаться кода возврата = 4 (completed) |<br>
+_.4 | if(req.status != 200) alert(req.status+"; "+req.statusText) - проверка статуса ошибки |<br>
+			</p><div class="divider"></div><p>
+6 | Чтение заголовка |<br>
+_.1 | документ по HTTP: RFC2616 |<br>
+_.2 | клиент: GET/ HTTP/ 1.1 Host: ya.ru | сервер: HTTP/1.1 200 Ok |<br>
+_.5 | req.getAllResponseHeaders(); - все заголовки |<br>
+_.3 | req.getResponseHeader("Content-Length"); - размер файла |<br>
+_.4 | req.getResponseHeader("Last-Modified"); - время изменения файла |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= 02 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#02" data-toggle="collapse" data-panel="#accord">02</a> | getBook | GET |
+	</div>
+	<div class="panel-collapse collapse" id="02">
+		<div class="panel-body">
+			<p>
+1 | index.html > function showBook(){..} |<br>
+_.1 | var num = document.getElementById("txtNum").value; |<br>
+_.2 | var req  = new XMLHttpRequest(); |<br>
+_.3 | req.onreadystatechange = function(){...}<br>
+_._ | if(req.readyState != 4) return; |<br>
+_._ | var div = document.getElementById("divResult"); |<br>
+_._ | div.innerHTML = req.responseText; |<br>
+_.4 | req.open("GET", "getbooktxt.php?num="+num, true); |<br>
+_.5 | req.send(null); |<br>
+			</p><div class="divider"></div><p>
+2 | index.html > body |<br>
+_.1 | input#txtNum |<br>
+_.2 | form action="" onsubmit="return false" |<br>
+_._ | button onclick="showBook()" |<br>
+_.3 | #divResult{...} |<br>
+			</p><div class="divider"></div><p>
+3 | getbooktxt.php |<br>
+_.1 | $books = file('books.txt'); //строка файла становится эл-том массива |<br>
+_.2 | if(!empty($_GET[num])){..} |<br>
+_._ | $num=abs((int)$_GET[num]); |<br>
+_._ | if($num&lt;=count($books) && $num &gt; 0) echo $books[$num-1]; |<br>
+_._ | else echo 'Книга не найдена.'; |<br>
+_.3 | else echo 'Всего книг: ' . count($books); |<br>
+			</p><div class="divider"></div><p>
+4 | books.txt |<br>
+_.1 | Дейв Крейн. Ajax в действии |<br>
+_.2 | Кристиан Дари. Ajax и PHP. Разработка динамических веб-приложений |<br>
+			</p><div class="divider"></div><p>
+5 | .htaccess |<br>
+_.1 | отменяет кэширование |<br>
+_.2 | Header set Cache-Control "no-store, max-age=0" - запрет кэширования |<br>
+_.3 | Header set Cache-Control "no-cache" - чистит кэш при перезагрузке страницы |<br>
+			</p><div class="divider"></div><p>
+6 | проблемы GET |<br>
+_.1 | передача GET-запроса в открытую | encodeuricomponent(title) |<br>
+_.2 | разобать данные |<br>
+			</p><div class="divider"></div><p>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= 03 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#03" data-toggle="collapse" data-panel="#accord">03</a> | searchBook | POST |
+	</div>
+	<div class="panel-collapse collapse" id="03">
+		<div class="panel-body">
+			<p>
+1 | index.html > function searchBook(){..} |<br>
+_.1 | var title = document.getElementById("txtTitle").value; |<br>
+_.2 | var author = document.getElementById("txtAuthor").value; |<br>
+_.3 | var searchString = "title="+title+"&"+"author="+author; |<br>
+_.4 | var req  = new XMLHttpRequest(); |<br>
+_.5 | req.onreadystatechange = function(){...}<br>
+_._ | if(req.readyState != 4) return; |<br>
+_._ | var div = document.getElementById("divResult"); |<br>
+_._ | div.innerHTML = req.responseText; |<br>
+_.6 | req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); |<br>
+_._ | без нее PHP не сможет правильно отработь форму |<br>
+_.7 | req.open("POST", "searchbook.php", true); |<br>
+_.8 | req.send(searchString); |<br>
+			</p><div class="divider"></div><p>
+2 | index.html > body |<br>
+_.1 | input#txtNum |<br>
+_.2 | form action="" onsubmit="return false" |<br>
+_._ | button onclick="showBook()" |<br>
+_.3 | #divResult{...} |<br>
+			</p><div class="divider"></div><p>
+3 | searchbook.php |<br>
+_.1 | if($_SERVER['REQUEST_METHOD'] == 'POST'){..} |<br>
+_._ | $titile=''; $author=''; |<br>
+_._ | if(!empty($_POST['title'])) $title = trim(strip_tags($_POST['title'])); |<br>
+_._ | if(!empty($_POST['author'])) $author = trim(strip_tags($_POST['author'])); |<br>
+			</p><div class="divider"></div><p>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= 04 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#04" data-toggle="collapse" data-panel="#accord">04</a> | guestbook | JSON | 
+	</div>
+	<div class="panel-collapse collapse" id="04">
+		<div class="panel-body">
+			<p>
+1 | JSON - общие сведения | <br>
+_.1 | <a href="https://json.org" target="_blank">JavaScript Object Notation</a> |<br>
+_.2 | нотация - способ записи (на основе JavaScript-объектов) |<br>
+_.3 | сериализация |<br>
+_.4 | объект в JSON - неупорядоченное множество пар "name":"value", "age":25 |<br>
+_.5 | Chrome -> Extension -> JSON Viewer |<br>
+			</p><div class="divider"></div><p>
+3 | JSON объект | <br>
+_.1 | var books = eval(req.responseText); - исполни строку как код (не рекомендуется) |<br>
+_.2 | var books = JSON.parse(req.responseText); - распоковать (рекомендуется) |<br>
+_.3 | var s = JSON.stringify(x); - упаковать |<br>
+			</p><div class="divider"></div><p>
+4 |  gb.html (guestbook) | <br>
+_.1 | function Rec(a,e,m){this.a=author, this.e=email, this.msg=m} - класс записи |<br>
+_.2 | function addRec{var a = document.getElementById("a"); var e = ..; var m = ..;} - данные из формы |<br>
+_.3 | var rec = new Rec(a.value, e.value, m.value); - создание объекта класса записи |<br>
+_.4 | var jsn = JSON.stringify(rec); - сериализация в JSON |<br>
+_.5 | var req = getXmlHttpRequest(); - передача данных |<br>
+_.6 | req.onreadystatechange = function(){...}; |<br>
+_.7 | req.open("POST", <kbd>"handler.php"</kbd>, true); |<br>
+_.8 | req.setRequestHeader("Content-Type", "text/plain"); |<br>
+_.9 | req.send(jsn); |<br>
+			</p><div class="divider"></div><p>
+5 |  <kbd>handler.php</kbd> | <br>
+_.1 | $raw = file_get_contents('php//input'); - принимает сырые данные |<br>
+_.2 | $rec = json_decode($raw); - разбор пакета JSON |<br>
+_.3 | $db = new SQLite('guestbook.db'); - открытие БД |<br>
+_.4 | $a = $db->escapeString($rec->a); $e..; $m..; - получение данных |<br>
+_.5 | $sql = "INSERT INTO gbook(a,e,m) VALUES ('$a','$e','$m')"; - строка запроса |<br>
+_.6 | $db_>query($sql); - передача запроса в БД |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ============================= 05 ===================================== -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="#05" data-toggle="collapse" data-panel="#accord">05</a> | auth | 
+	</div>
+	<div class="panel-collapse collapse" id="05">
+		<div class="panel-body">
+			<p>
+1 | create_db_users.php | <br>
+_.1 | require('user.class.php'); |<br>
+_.2 | $user = new User(); |<br>
+_.3 | $user->add(new UserInfo('vasya','vasyap','password',)); |<br>
+_.4 | $user->add(new UserInfo('fedya','fedyap','password',)); |<br>
+			</p><div class="divider"></div><p>
+2 |   | <br>
+_.1 |   |<br>
+v5 1.05 |<br>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ======================================== Next ======================================== -->		    
+</div>	    
+</div>
+</div>
+</div>
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/bootstrap.min.js"></script>
+<script src="../_js/front.js"></script>
+</body>
+</html>

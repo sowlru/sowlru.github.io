@@ -1,0 +1,176 @@
+body {
+	font-family: Palatino, "Palatino Lynotype", "Book Antiqua", "Hoefler Text",
+	Georgia, "Lucida Bright", Cambria, Times, "Times New Roman", serif;
+}
+p {
+	margin-bottom: 3px;
+}
+/*.row {
+	border: 1px solid #eee
+}*/
+.table_row {
+	font-size: 13px;
+}
+.t1, .t2 {
+/*    background-color: yellow;
+margin: 30px;*/
+padding: 3px;
+}
+.divider {
+ margin-top:5px;
+ margin-bottom:5px;
+ height:1px;
+ width:100%;
+ border-top:1px solid gray;
+}
+/*----------------------------*/
+.bdb { border-bottom: 1px solid #999; }
+.bdl { border-left: 1px solid #ddd; }
+.bgca {background-color: #aaa;}
+.bgcb {background-color: #bbb;}
+.bgcc {background-color: #ccc;}
+.dib { display: inline-block; }
+.fz0 {font-size: 0;}
+.fz10 {font-size: 12px;}
+.ma {margin: auto;}
+.ofh {overflow: hidden;}
+.w50 { width: 50px;}
+.w200 { width: 200px;}
+/*--------------------*/
+
+.one,.two { 
+	height: 30px;
+}
+.wrap3 {
+	font-size: 0;
+}
+.one3,.two3 { 
+	display: inline-block;
+	width: 50%;
+	height: 30px;
+	font-size: 14px;
+}
+.one5,.two5 { 
+	display: inline-block;
+	width: 50%;
+	height: 30px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 30px;
+}
+/*-------------header-----------------*/
+.myheader {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	background-color: #aaa;
+	height: 120px;
+}
+.top {
+	height: 50px;
+	background-color: #bbb;
+}
+.logo-wrap {
+	background-color: #ccc;
+	margin: 0px auto 0px;
+	width: 16px;
+	line-height: 50px;
+}
+.logo {
+	background-color: #ddd;
+}
+.addr-wrap {
+	background-color: #ccc;
+	margin-top: 10px;
+	font-size: 12px;
+	text-align: center;
+}
+.phone-wrap {
+	background-color: #ccc;
+	margin: 10px 10px;
+	font-size: 12px;
+	text-align: right;
+}
+.main-name h1 {
+	margin-top: 5px;
+	font-size: 14px;
+	text-align: center;
+}
+/*----------------nav-------------------*/
+.menu {
+	margin-top: 10px;
+	background-color: #aaa;
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 0;
+}
+.menu li {
+	display: inline-block;
+  vertical-align: top; 
+ 	border-left: 1px solid #555;
+ 	background-color: #bbb;
+}
+.menu li:last-child {
+  border-right: 1px solid #555;
+ }
+.menu a {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	padding: 0 10px;
+	font-size: 14px;
+	color: #333;
+	text-decoration: none;
+	bdl+
+}
+.navactive, .menu a:hover {
+    background-color: #999;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+.n2 i {
+	padding-right: 5px;
+	font-size: 12px;
+}
+/*----------------flex-------------------*/
+.f1,.f2 { 
+	height: 30px;
+}
+.f1 { 
+	display: flex;
+}
+.f3 {
+	display: inline-flex;
+	height: 30px;
+	width: 50px;
+}
+.wrapf {
+
+	display: flex;
+
+    	width: 200px;
+    
+	height: 70px;
+    
+	margin: 5px auto;
+
+}
+.wrapf4 {
+justify-content: space-around;}
+.wrapf5 {
+flex-direction: column-reverse;}
+.wrapf6 {
+flex-wrap: nowrap;}
+.wrapf7 {
+flex-flow: row-reverse wrap-reverse;}
+.wrapf8 {
+align-items: flex-end;}
+.wrapf9 {
+flex-wrap: wrap; 
+align-content: flex-end;}
+.f10 {margin: auto; width: 50px; height: 30px;}

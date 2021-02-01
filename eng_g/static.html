@@ -1,0 +1,154 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<!-- <link href="index/_css/bootstrap.min.css" rel="stylesheet"> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="index/_css/style.css"> -->
+	<title>Static</title>
+</head>
+<body>
+	<!-- ===================================== Navigation ======================================= -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="../index.html">AvK</a>
+			<svg class="bi bi-chevron-right" width="32" height="32" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<!-- Eng G -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eng G</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="eng_general.html">General</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Static</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="C:\avk\index\aero\fatigue.html">Fatigue</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="C:\avk\index\aero\dt.html">Damage Tolerance</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="C:\avk\index\aero\fem.html">FEM</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="C:\avk\index\aero\structure.html">Structure</a></li>
+							<li><hr class="dropdown-divider"></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<h3 style="padding-top: 10px">Static |</h3>
+
+				<div class="accordion" id="accordionExample">
+					<!-- ==================================== Truss ========================================= -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTruss">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTruss" aria-expanded="true" aria-controls="collapseTruss">
+								Truss |
+							</button>
+						</h2>
+						<div id="collapseTruss" class="accordion-collapse collapse show" aria-labelledby="headingTruss" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<p>
+									1 | Ферма: метод узлов |<br>
+									_.1 | a - единичная нагрузка вверх; b-вправо; <kbd>c</kbd>-вниз; d-влево; |<br>
+									_.2 | x - шарнир с 1 степенью свободы; y-2 степени; z - заделка; |<br>
+									_.3 | по числу узлов j можно определить число эл-тов, если j=3 |<br>
+									_.4 | число эл-тов m = 2*j-3 = 2*3-3=3 | insure stabilty |<br>
+									_.5 | если эл-тов меньше - unstable equilibrium |<br>
+									_.6 | если эл-тов больше - statically indeterminate |<br>
+									_.7 | обход нужно начинать с точки где 2 неизвестные реакции |<br>
+									<hr class="dropdown-divider">
+									2 | Ферма: задача 1 |<br>
+									_.1 | узлы j=3: p1x=[0,0]; p2y=[0,4], p3<kbd>c</kbd>=[3,4] |<br>
+									_.2 | эл-ты m=3: p1p2, p1p3, p2p3 |<br>
+									_.3 | 1=4 & p1p3=5 => p1p3 = 5/4 = -1.25 |<br>
+									_.4 | p2p3 = p1p3*3/5 = (5/4)*(3/5) = 0.75 |<br>
+									_.5 | p1p2 = p1p3*4/5 = (5/4)*(4/5) = 1 |<br>
+									_.6 | проверка: sqrt(1+0,75^2) = sqrt(1.5625) = 1.25 |<br>
+									<hr class="dropdown-divider">
+									3 | Ферма: задача 2 |<br>
+									_.1 | узлы j=5: p1x=[0,0]; p2y=[0,4], p3=[3,0], p4=[3,4], p5=[6,4], |<br>
+									_.2 | эл-ты m=2*5-3=7: p1p2, p1p3, p1p4, p2p4, p3p4, p3p5, p4p5 |<br>
+									_.3 | из предыдущей задачи: p4p5=0.75, p3p4=1, p3p5=-1.25 |<br>
+									_.4 | узел p3: h: p1p3=-1.25*(3/5) = -0.75 |<br>
+									_.5 | p4 | v: p1p4=1*5/4=-1.25 | h: p2p4-(1.25*3/5)=0.75 => p2p4= 1.5 |<br>
+
+									<img class="img-responsive img-thumbnail center-block" src="img/truss01.png">
+									<hr class="dropdown-divider">
+									4 | Ферма: задача 3 |<br>
+									_.1 | узлы j=5: p1x=[0,0], p2=[0,2] p3y=[0,4], p4=[1.5,2], p4=[1.5,4], p5=[3,4] |<br>
+									_.2 | p1 | R=P*x/y =3/4=0.75 | p1p4*3/5=R | p1p4=(5/3)*(3/4)=1.25 |<br>
+									_.3 | p6 из задачи 1 | p5p6=p1p3=-1.25 |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ==================================== BDM ========================================= -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingBDM">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBDM" aria-expanded="false" aria-controls="collapseBDM">
+								BDM |
+							</button>
+						</h2>
+						<div id="collapseBDM" class="accordion-collapse collapse" aria-labelledby="headingBDM" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<p>
+									0 | Find BDM: Links-> BDM-> bdm-6001 -> Search | BDM-TOC-6000 |
+									<hr class="dropdown-divider">
+									1 | Basic Methods (10) |<br>
+									6010 - Section Properties | <kbd>6020</kbd> | 6030 - Transformation of Stress | 6035 - Material Yielding and Failure Criteria | 6040 - Stress Concentrations | 6050 - Inelastic Buckling Equations and Solutions | 6060 - Thermal Effects | 6070 - Margin of Safety | 6080 - Fatigue | 6090 - Structural Design Optimization |
+									<hr class="dropdown-divider">
+									2 | Beam Bending (12) |<br>
+									6110- Beam Bending Moments and Deflections | 6122- Bending Stresses- Straight Beams | 6124- Plastic Bending | 6126- Bending Stresses- Symmetrical Curved Beams | 6127- Bending of Unsymmetrical Curved Beams | 6128- Curved Thin- Walled Beam Sections | 6130- Bending Stiffeness | 6140- Beam Lateral- Torsional Instability | 6142- Generalized Lateral- Torsional Instability of Beams | 6144- Lateral- Torsional Instability of Unrestrained Beams | 6150- Frames and Rings | 6160- Thermal Effects on Bending |
+									<hr class="dropdown-divider">
+									3 | Axial Loads |<br>
+									6210 - Tension |<br>
+									_.1 | The stress concentration near the hole must be considered in determining the joint strength. |<br>
+									_.2 | The stress is considered to be evenly distributed across the plate up to the fastener hole. |<br>
+									_.3 | The fastener hole causes a high local stress concentration near the hole’s edge |<br>
+									_.4 | An efficiency factor f is used to compensate for the uneven stress distribution. | <a href="..\..\docs_eng\1_static\ase\24a-Joints.pdf#page=9" target="_blank">f=0.9</a> (based on experience) |<br>
+									<hr class="dropdown-divider">
+									4 | Shear Loads (5) |<br>
+									6300 - Shear Beams and Panels | <kbd>6310</kbd> | 6320 - Intermediate Diagonal Tension Beams | 6340 - Curved Panels | 6370 - Shear Strength of Corrugated And Beaded Panels |
+									<hr class="dropdown-divider">
+									6 | Plates and Shells (9) |<br>
+									6510 - Plates under Normal Loads | 6520 - Buckling of Flat Plates |<br>
+									6530 - Effective Skin Width |<br>
+									_.1 | Determine Stiffener Compressive Stress, Fst = Fcc = 54.4 (see BDM-6220) |<br>
+									_.2 | Calculate the Effective Width: We = 0.85*(t=0.05)*(Esk/Est)*sqrt(E/Fst) = 0.59 |<br>
+									_.3 | Determine Total Effective Width: Wt = 0.59 + 0.875 (distance b/w f.) + 0.59 = 2.055 |<br>
+									6535 - Inter-Rivet Buckling | 6540 - Stability of Flat Stiffened Panels | 6550 - Buckling of Curved Plates and Shells | 6560 - Thermal Effects on Plates and Shells | 6580 - Bending and Buckling of Equivalent Orthotropic Plates | 6590 Stresses in Shells |
+									<hr class="dropdown-divider">
+									8 | Honeycomb Sandwich Structure (9) |
+									<hr class="dropdown-divider">
+									9 | Assemblies (6) |<br>
+									6810 - Ribs | 6815 - Bulkheads | 6820 - Cutout Reinforcement | 6830 - Fuselage | 6840 - Wing Box | 6845 - Piping and Ducting |
+									<hr class="dropdown-divider">
+									10 | Mechanical Systems (5) |<br>
+									6852 - Contact Stresses | 6854 - Friction | 6856 - Stresses in Springs | 6868 - Stresses in Shafts | 6870 - Round Tubes |
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- ======================================== Next Item ======================================== -->
+				</div>
+			</div>	    
+		</div>
+	</div> <!-- .container end -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<!-- <script src="index/_js/bootstrap.min.js"></script> -->
+</body>
+</html>
+

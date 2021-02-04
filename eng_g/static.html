@@ -50,58 +50,14 @@
 				<h3 style="padding-top: 10px">Static |</h3>
 
 				<div class="accordion" id="accordionExample">
-					<!-- ==================================== Truss ========================================= -->
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="headingTruss">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTruss" aria-expanded="true" aria-controls="collapseTruss">
-								Truss |
-							</button>
-						</h2>
-						<div id="collapseTruss" class="accordion-collapse collapse show" aria-labelledby="headingTruss" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								<p>
-									1 | Ферма: метод узлов |<br>
-									_.1 | a - единичная нагрузка вверх; b-вправо; <kbd>c</kbd>-вниз; d-влево; |<br>
-									_.2 | x - шарнир с 1 степенью свободы; y-2 степени; z - заделка; |<br>
-									_.3 | по числу узлов j можно определить число эл-тов, если j=3 |<br>
-									_.4 | число эл-тов m = 2*j-3 = 2*3-3=3 | insure stabilty |<br>
-									_.5 | если эл-тов меньше - unstable equilibrium |<br>
-									_.6 | если эл-тов больше - statically indeterminate |<br>
-									_.7 | обход нужно начинать с точки где 2 неизвестные реакции |<br>
-									<hr class="dropdown-divider">
-									2 | Ферма: задача 1 |<br>
-									_.1 | узлы j=3: p1x=[0,0]; p2y=[0,4], p3<kbd>c</kbd>=[3,4] |<br>
-									_.2 | эл-ты m=3: p1p2, p1p3, p2p3 |<br>
-									_.3 | 1=4 & p1p3=5 => p1p3 = 5/4 = -1.25 |<br>
-									_.4 | p2p3 = p1p3*3/5 = (5/4)*(3/5) = 0.75 |<br>
-									_.5 | p1p2 = p1p3*4/5 = (5/4)*(4/5) = 1 |<br>
-									_.6 | проверка: sqrt(1+0,75^2) = sqrt(1.5625) = 1.25 |<br>
-									<hr class="dropdown-divider">
-									3 | Ферма: задача 2 |<br>
-									_.1 | узлы j=5: p1x=[0,0]; p2y=[0,4], p3=[3,0], p4=[3,4], p5=[6,4], |<br>
-									_.2 | эл-ты m=2*5-3=7: p1p2, p1p3, p1p4, p2p4, p3p4, p3p5, p4p5 |<br>
-									_.3 | из предыдущей задачи: p4p5=0.75, p3p4=1, p3p5=-1.25 |<br>
-									_.4 | узел p3: h: p1p3=-1.25*(3/5) = -0.75 |<br>
-									_.5 | p4 | v: p1p4=1*5/4=-1.25 | h: p2p4-(1.25*3/5)=0.75 => p2p4= 1.5 |<br>
-
-									<img class="img-fluid" src="img/truss01.png">
-									<hr class="dropdown-divider">
-									4 | Ферма: задача 3 |<br>
-									_.1 | узлы j=5: p1x=[0,0], p2=[0,2] p3y=[0,4], p4=[1.5,2], p4=[1.5,4], p5=[3,4] |<br>
-									_.2 | p1 | R=P*x/y =3/4=0.75 | p1p4*3/5=R | p1p4=(5/3)*(3/4)=1.25 |<br>
-									_.3 | p6 из задачи 1 | p5p6=p1p3=-1.25 |<br>
-								</p>
-							</div>
-						</div>
-					</div>
 					<!-- ==================================== BDM ========================================= -->
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="headingBDM">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBDM" aria-expanded="false" aria-controls="collapseBDM">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBDM" aria-expanded="true" aria-controls="collapseBDM">
 								BDM |
 							</button>
 						</h2>
-						<div id="collapseBDM" class="accordion-collapse collapse" aria-labelledby="headingBDM" data-bs-parent="#accordionExample">
+						<div id="collapseBDM" class="accordion-collapse collapse show" aria-labelledby="headingBDM" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								<p>
 									0 | Find BDM: Links-> BDM-> bdm-6001 -> Search | BDM-TOC-6000 |
@@ -141,14 +97,205 @@
 							</div>
 						</div>
 					</div>
+					<!-- ==================================== Truss ========================================= -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTruss">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTruss" aria-expanded="false" aria-controls="collapseTruss">
+								Truss |
+							</button>
+						</h2>
+						<div id="collapseTruss" class="accordion-collapse collapse" aria-labelledby="headingTruss" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<p>
+									1 | Ферма: метод узлов |<br>
+									_.1 | a - единичная нагрузка вверх; b-вправо; <kbd>c</kbd>-вниз; d-влево; |<br>
+									_.2 | x - шарнир с 1 степенью свободы; y-2 степени; z - заделка; |<br>
+									_.3 | по числу узлов j можно определить число эл-тов, если j=3 |<br>
+									_.4 | число эл-тов m = 2*j-3 = 2*3-3=3 | insure stabilty |<br>
+									_.5 | если эл-тов меньше - unstable equilibrium |<br>
+									_.6 | если эл-тов больше - statically indeterminate |<br>
+									_.7 | обход нужно начинать с точки где 2 неизвестные реакции |<br>
+									<hr class="dropdown-divider">
+									2 | Ферма: задача 1 |<br>
+									_.1 | узлы j=3: p1x=[0,0]; p2y=[0,4], p3<kbd>c</kbd>=[3,4] |<br>
+									_.2 | эл-ты m=3: p1p2, p1p3, p2p3 |<br>
+									_.3 | 1=4 & p1p3=5 => p1p3 = 5/4 = -1.25 |<br>
+									_.4 | p2p3 = p1p3*3/5 = (5/4)*(3/5) = 0.75 |<br>
+									_.5 | p1p2 = p1p3*4/5 = (5/4)*(4/5) = 1 |<br>
+									_.6 | проверка: sqrt(1+0,75^2) = sqrt(1.5625) = 1.25 |<br>
+									<hr class="dropdown-divider">
+									3 | Ферма: задача 2 |<br>
+									_.1 | узлы j=5: p1x=[0,0]; p2y=[0,4], p3=[3,0], p4=[3,4], p5=[6,4], |<br>
+									_.2 | эл-ты m=2*5-3=7: p1p2, p1p3, p1p4, p2p4, p3p4, p3p5, p4p5 |<br>
+									_.3 | из предыдущей задачи: p4p5=0.75, p3p4=1, p3p5=-1.25 |<br>
+									_.4 | узел p3: h: p1p3=-1.25*(3/5) = -0.75 |<br>
+									_.5 | p4 | v: p1p4=1*5/4=-1.25 | h: p2p4-(1.25*3/5)=0.75 => p2p4= 1.5 |<br>
 
-					<!-- ======================================== Next Item ======================================== -->
-				</div>
-			</div>	    
-		</div>
-	</div> <!-- .container end -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-	<!-- <script src="index/_js/bootstrap.min.js"></script> -->
-</body>
-</html>
+									<img class="img-fluid" src="img/truss01.png">
+									<hr class="dropdown-divider">
+									4 | Ферма: задача 3 |<br>
+									_.1 | узлы j=5: p1x=[0,0], p2=[0,2] p3y=[0,4], p4=[1.5,2], p4=[1.5,4], p5=[3,4] |<br>
+									_.2 | p1 | R=P*x/y =3/4=0.75 | p1p4*3/5=R | p1p4=(5/3)*(3/4)=1.25 |<br>
+									_.3 | p6 из задачи 1 | p5p6=p1p3=-1.25 |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ==================================== Compression ========================================= -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingCompression">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCompression" aria-expanded="false" aria-controls="collapseCompression">
+								Compression | 6200 |
+							</button>
+						</h2>
+						<div id="collapseCompression" class="accordion-collapse collapse" aria-labelledby="headingCompression" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<p>
+									1 | Устойчивость при осевой нагрузке |<br>
+									_._ | <kbd>BDM-6230</kbd>: Column Flexural Instability - общие сведения |<br>
+									_.1 | Гибкость стержня (slenderness ratio) = sr=L0/i |<br>
+									_.2 | L0 = L * mu (коэффициент, зависящий от условий закрепления стержня) |<br>
+									_._ | mu -> <kbd>BDM-6232</kbd>: Column Fixity Coefficients and Effective Lenghts | |<br>
+									_.3 | i = sqrt(I/A) - радиус инерции (radius of gyration) |<br>
+									_.4 | long column (>100) - Euler | Pcr = PI^2*E*I/L^2 |<br>
+									_._ | <kbd>BDM-6234</kbd>: Euler/ Euler- Engesser Columns | E -> Et | cutoff at Fcy |<br>
+									_.5 | middle  - Johnson | <kbd>BDM-6236</kbd>: Johnson - Euler Column Buckling |<br>
+									_.6 | short (<12,5) - crippling | <kbd>BDM-6220</kbd> |<br>
+									_.7 | если сечение меняется по длине | <kbd>BDM-6238</kbd>: Newmark Column Buckling Analysis |<br>
+									<hr class="dropdown-divider">
+									2 | <kbd>BDM-6220</kbd> | Compression Crippling |<br>
+									_.1 | Crippling - inelastic distortion of cross-section of structural element under compression load | <br>
+									_.2 | There is no analytical basis for the prediction of crippling so empirical techniques developed with coefficeint from test | <br>
+									_.3 | Fcc=Fcc1*b1*t1+Fcc2*b2*t2/(b1*t1+b2*t2) |<br>
+									_.4 | B10/(b/(10*gf*t))^m = 0.054/(10*3.4*0.063)^0.8 = 0.054/1.839 = 0.029 |<br>
+									_._ | gf=1 for 1 free edge |<br>
+									_.5 | sqrt(Fcy*E) = sqrt(39*10,000) = sqrt(390,000) = 624.5 |<br>
+									_.6 | Fcc = 0.029(_.4)*624.5(_.5)=18.33ksi |<br>
+									<hr class="dropdown-divider">
+									3 | <kbd>BDM-6236</kbd> | johnson-euler column buckling |<br>
+									_.1 | эмпирическая ф-ла, позволяет плавно переходит от Fcc к Эйлеру |<br>
+									_._ | учитывает влиение тонкостенности |<br>
+									_.2 | f = Fcc - (Fcc^2)*(sr^2)/(4*(PI^2)*E) |<br>
+									_.3 | Fcc=18 | E=10,000 | sr=1,f=324/394,786=18 | sr=10,f=32,400/394,786=17.9 |<br>
+									_._ | sr=50,f=810,00/394,786=15.9 | sr=100,f=3,240,000/394,786=<kbd>9.8</kbd> |<br>
+									_._ | Euler: f=PI^2*E*I/A*L^2 | sr=L/sqrt(I/A) => f=PI^2*E/(sr^2) |<br>
+									_._ | f=9.9*(10,000/(100*100)) = <kbd>9.9</kbd> | при sr=100 Johnson = Euler |<br>
+									<hr class="dropdown-divider">
+									4 | <kbd>BDM-6242</kbd> | column flexural-torsional instability | road-map |<br>
+									_.1 | beams | BDM-6140: beams lateral-torsional instability |<br>
+									_._ | BDM-6142: restarined beams |<br>
+									_._ | BDM-6144: un-restarined beams |<br>
+									_.2 | columns | BDM-6242: column flexural-torsional instability |<br>
+									_._ | BDM-6230: pure flexural buckling |<br>
+									_._ | BDM-6250: pure torsional buckling |<br>
+									_._ | BDM-6244: combined flexural-torsional buckling |<br>
+									_.3 | beam-columns | BDM-6255: classical beam columns |<br>
+									_.? | BDM-6240: generalized flexural/ lateral-torsional instability | нет в PSDS |<br>
+									<hr class="dropdown-divider">
+									5 | <kbd>BDM-6244</kbd> | generalized flexural-torsional instability of columns |<br>
+									_._ | изгибно-крутильная неустойчивость |<br>
+									_.1 | determine the basic section properties |<br>
+									_.2 | determine the stiffness properties, kx, ky, and kt, of the stringers |<br>
+									_.3 | determine the effective lengths of the column |<br>
+									_.4 | evaluate the coefficients, ao, a1, and a2, of the characteristic equation |<br>
+									_.5 | calculate the flexural-torsional instability load of the column |<br>
+									<hr class="dropdown-divider">
+									6 | Bending + compression | y''=M/EI |<br>
+									_._ | Given: w=20lb/in | L=100in | I=10 in^4 | Pcomp=4,420lb | M1=3,315 lb*in | M2=8,640 lb*in |<br>
+									_._ | Mmax= -55,505(_1)/0.634(_2) + 58,820(_3) = -28,700 lb*in | Mmax=D1/cos(x/j)+w*j^2 |<br>
+									_.1 | D1=M1-w*j^2=3,315-58,820=-55,505 |<br>
+									_._1 | w*j^2= 20*2,941 = 58,820 |<br>
+									_.__1 | <kbd>j</kbd>=sqrt(EI/P)= sqrt(1.3*10^6*10/4,420) = sqrt(2,941) = 54.23 |<br>
+									_.2 | cos(x/j)= cos(0.884) = 0.634 |<br>
+									_._1 | x/j=arctg(1.219)=0.884 |<br>
+									_.__1 | tg(x/j)=(D2-D1*cos(L/<kbd>j</kbd>))/(D1*sin(L/<kbd>j</kbd>)) = 1.219 |<br>
+									_.___ | (50,180-(-55,505*-0.270))/(-55,505*x0.963) = -65,156/-53,441 = 1.219 |<br>
+									_.___1 | (L/j) = 100/54.23 = 1.844 | sin(L/j)=0.963 | cos(L/j)=-0.270 |<br>
+									_.___2 | D2=M2-w*j^2=8,640-58,820=-50,180 |<br>
+									_.3 | w*<kbd>j</kbd>^2=58,820 |<br>
+									<hr class="dropdown-divider">
+									7 | Other |<br>
+								6250- Column Torsional Instability | 6255- Classical Beam Columns | 6260- Thermal Effects on Axial Stresses | 6270- Compression Strength of Corrugated and Beaded Panels |								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ==================================== Bending ========================================= -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingBending">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBending" aria-expanded="false" aria-controls="collapseBending">
+								Bending | 6100 |
+							</button>
+						</h2>
+						<div id="collapseBending" class="accordion-collapse collapse" aria-labelledby="headingBending" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<p>
+									1 | Постановка задачи и построение эпюр | <a href="..\..\docs_eng\1_static\belyaev.pdf#page=221" target="_blank">12</a> |<br>
+									_.1 | z2-l1-z1 - схема | sigma=fn(M) | tau=fn(Q) | dM=Q*dx | dQ=q*dx | if Q=dM/dx=0 => M=Mmax |<br>
+									_.2 | 2х опорная балка: R=P/2=90 lb | M=R*L/2=90*35=3,150 in*lb |<br>
+								<hr class="dropdown-divider">									
+								2 | Нормальные напряжения | <a href="..\..\docs_eng\1_static\belyaev.pdf#page=258" target="_blank">13</a> |<br>
+									_.1 | отложим по оси х ось балки длиной=x, по оси у вниз отложим точку А на расстоянии R | |<br>
+									_.2 | на расст. z вниз и вверх от оси балки строятся крайние слои ненагруженной балки |<br>
+									_.3 | проводим через А и край нейтр.оси линию - деформированная балка |<br>
+									_.4 | tg_th=x/R | tg_th=dx/z => x/R=dx/z => dx/x=z/R=e - относит.удлинение |<br>
+									_.5 | из Гука sigma=E*e => sigma=E*z/R |<br>
+									_.6 | integ(sigma*dA*z)=M => M=integ((E*z/R)*dA*z)=integ(E*(z^2*dA)/R) |<br>
+									_.7 | заменим integ(z^2*dA) на J - по определению |<br>
+									_.8 | M=E*J/R => 1/R=M/E*J |<br>
+								<hr class="dropdown-divider">									
+								3 | Моменты инерции простых фигур |<br>
+									_.1 | прямоугольник: Ix=b*h^3/12 | Wx=b*h^2/6 |<br>
+									_.2 | круг: Ix=PI*D^4/64 | Wx=PI*D^3/32 |<br>
+									_.3 | кольцо: Wx= (PI*D^3/32)*(1-(d/D)^4) |<br>
+								<hr class="dropdown-divider">									
+								4 | Вычисление моментов инерции плоских фигур | <a href="..\..\docs_eng\1_static\belyaev.pdf#page=296" target="_blank">14</a> |<br>
+									_.1 | статич.момент относительно низа (T-section): S=1*0.1*(1-0.05)+0.9*0.1*0.5=0.095+0.0405=0.1355 in^3 |<br>
+									_.2 | центр тяжести относительно низа: z=S/A=0.1355/0.19=0.713 |<br>
+									_.3 | момент инерции отдельно (b*h^3/12): J1=1*0.1^3/12=0.00008 | J2=0.1*0.9^3/12=0.00608 |<br>
+									_.4 | перенос к центру тяжести: J1_=1*0.1*(0.95-0.713)^2=0.00561 | J2_=0.9*0.1*(0.713-0.45)^2=0.00623 |<br>
+									_.5 | общий момент инерции: J=(0.00008+0.00561)+(0.00608+0.00623)=0.00569+0.01231=0.01800 |<br>
+									_.6 | момент сопротивления: W=J/z=0.01800/0.713=0.02524 |<br>
+									_.7 | нормальные напряжения: sigma=M/W=3,150/0.02524=125k |<br>
+									_.8 | 1:0.025/125k | 2:0.202/16k |<br>
+								<hr class="dropdown-divider">									
+								5 | Касательные напряжения | <a href="..\..\docs_eng\1_static\belyaev.pdf#page=298" target="_blank">15</a> |<br>
+									_.1 | Дано: балка шириной=b, длиной L, нагруженная силой Q |<br>
+									_.2 | из-за длины момент справа будет больше левого на величину Q*L |<br>
+									_.3 | вырежем участок шириной dx |<br>
+								</p>
+								<img class="img-fluid" src="img/tau_01.png">
+								<p>
+									_.4 | если моменты на концах балки разные, то и силы будут разные N1+dT=N2 |<br>
+									_.5 | разница между силами и будет равна касательной силе dT=N2-N1=(sigma2-sigma1)*A |<br>
+								</p>
+								<img class="img-fluid" src="img/tau_01.png">
+								<p>
+									_.6 | sig2-sig1=(M+Q*dx)*y/I-M*y/I=Q*dx*y/I |<br>
+									_.7 | dT=(Q*dx*y/I)*A | заменив S=A*y => dT = Q*dx*S/I |<br>
+									_.8 | dT=tau*b*dx | приравнивая tau*b*dx = Q*dx*S/I  |<br>
+									_.9 | tau = Q*S/(b*I) |<br>
+									_.10 | 16.Расчет составных балок | 17.Расчет ж/бетон. балок | |<br>
+								<hr class="dropdown-divider">									6 | Касательные напряжения для фигур |<br>
+									_.1 | прямоугольник высотой h, шириной b | tau=Q*S/(I*b) |<br>
+									_._ | S=A*y = integ(h/2->0)(b*dy*y) = integ(h/2->0)(by^2/2) |<br>
+									_._ | S=b*(h/2)^2/2=1*(b*h^2)/8 | I=b*h^3/12 | S/I=3/(2*h) |<br>
+									_._ | tau=Q*(b*h^2/8)/((b*h^3/12)*b) = (12/8)*Q/(b*h)= 1.5*Q/(b*h) |<br>
+									_.2 | I-section (h,b и толщиной t=0.1*b=0.1*h) | b1=0.1*b | h1=0.8*h |<br>
+									_._ | middle_S=b/8*((h^2-(0.8*h)^2)+0.1*((0.8*h)^2))=(b*h^2)/8*(0.36+0.064)=0.424*(b*h^2)/8 |<br>
+									_._ | end_S=b/8*((h^2-(0.8*h)^2)=0.36*(b*h^2)/8 |<br>
+									_._ | Jchord=A*y^2=b*(h/2-h1/2)*((h/2+h1/2)/2)^2=0.27*(b*h^3/12)  |<br>
+									_._ | Jweb=b1*h1^2/12=0.1*0.8^3=0.0512*(b*h^3/12) | J=<br>
+									_._ | if t=0.05 => middle_S=0.23 & end_S=0.19 |<br>						</p>
+								</div>
+							</div>
+						</div>
+						<!-- ======================================== Next Item ======================================== -->
+					</div>
+				</div>	    
+			</div>
+		</div> <!-- .container end -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<!-- <script src="index/_js/bootstrap.min.js"></script> -->
+	</body>
+	</html>
 

@@ -36,8 +36,6 @@
 							<li><hr class="dropdown-divider"></li>
 							<li><a class="dropdown-item" href="fem.html">FEM</a></li>
 							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="C:\avk\index\aero\structure.html">Structure</a></li>
-							<li><hr class="dropdown-divider"></li>
 						</ul>
 					</li>
 				</ul>
@@ -655,6 +653,104 @@
 								</div>
 							</div>
 						</div>
+						<!-- ==================================== Fuselage ========================================= -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingFuselage">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFuselage" aria-expanded="false" aria-controls="collapseFuselage">
+									Fuselage | 6830 |
+								</button>
+							</h2>
+							<div id="collapseFuselage" class="accordion-collapse collapse" aria-labelledby="headingFuselage" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+										1 | Introduction |<br>
+										_.1 | semimonocoque shell + frames + stringers - cutout |<br>
+										_.2 | skin compression: BDM-6530 |<br>
+										_.3 | skin cutout: BDM-6820 |<br>
+										<hr class="dropdown-divider">
+										2 | General instability |<br>
+										_.1 | . |<br>
+										<hr class="dropdown-divider">
+										3 | Pressure cabin loading: input | p=15 psi |<br>
+										_.1 | стрингер |<br>
+										_._ | Ast=0.1048 in^2 - площадь стрингера |<br>
+										_._ | b=2.7 - расстояние между стрингерами |<br>
+										_.2 | фрейм |<br>
+										_._ | Af=0.276 in^2 - площадь фрейма |<br>
+										_._ | b=11,34 - расстояние между фреймами |<br>
+										_._ | r=63.2 - расстояние до центра фрейма |<br>
+										_._ | tf=0.04 - толщина фланца фрейма |<br>
+										_.3 | обшивка | t=0.03 - толщина | R=66 - радиус |<br>
+										_.4 | материал | E=Ef=17,000 ksi | mu=0.316 | 1-mu^2=0.9 |<br>
+										<hr class="dropdown-divider">
+										4 | A, B, Y, Qf, C |<br>
+										_.1 | d=Ast/(b*t) = 0.1048/(2.7*0.030) = 1.29 - отношение Ast/Askin для 1 пролета |<br>
+										_.2 | N=p*R/2 = 15*66/2 = 495 |<br>
+										<hr class="dropdown-divider">
+										5 | K1,K2,K3,K4 | k1,k2,k3,k4 |<br>
+										_.1 |  |<br>
+										<hr class="dropdown-divider">
+										6 | moment & deflection |<br>
+										_.1 | d_fr = -Y/(1+C/K1) = -0.112/(1+0.607/0.76) = -0.0624 |<br>
+										_.2 | d_mid = -Y*(1-K2/(1+K1/C)) = -0.112*(1-0.94/(1+0.76/0.607) = -0.0654 |<br>
+										_.3 | M_fr = 4*Y*D*K4/(L^2*(1+K1/C) = 63.7 in-lb/in |<br>
+										_._ | 4*0.1122*83,800*0.49/(11.34^2)*(1+0.76/0.607) |<br>
+										_.4 | M_mid = M_fr*K3/K4 = -63.7*0.24/0.49 = -31.2 in-lb/in |<br>
+										<hr class="dropdown-divider">
+										7 | stress in skin |<br>
+										_.1 | max along stringers fsx_max = fsx+fsb |<br>
+										_._ | midspan(10.81+1.32)=12.13 ksi | frame(10.67-2.68)=7,99 ksi |<br>
+										_._1 | along stringers fsx = N-mu*Et(delta/R)/(t+(1-mu^2)*ts) |<br>
+										_.__ | 495-0.316*17,000*0.0388*delta/66/(0.03+0.9*0.0388) = 7,630-48,660*delta |<br>
+										_.__ | midspan(0.0654)=10,81 ksi | frame(0.0624)=10,67 ksi |<br>
+										_._2 | axial bending fsb = M*c/I = (-0.208/0.00493)*M = -42.1*M |<br>
+										_.__ | midspan(-31.2)=1.32 ksi | frame(63.7)=-2.68 ksi |<br>
+										_._3 | tangent fsy = mu*N-E(t+ts)(delta/R)/(t+(1-mu^2)*ts) |<br>
+										_.__ | 0.316*495-17,000*(0.03+0.0388)*delta/66/(0.03+0.9*0.0388) = 2,410-273,000*delta |<br>
+										_.__ | midspan(0.0654)=20,26 ksi | frame(0.0624)=19,44 ksi |<br>
+										<hr class="dropdown-divider">
+										8 | stress in stringer |<br>
+										_.1 | f_st = fax + fbend = 4.51 + 7.39 = 11.9 ksi |<br>
+										_._1 | axial stress fax = N*(1-mu^2)+mu*Et(delta/R)/(t+(1-mu^2)*ts) |<br>
+										_.__ | 495*0.9 + 0.316*17,000*0.03*delta/66/(0.03+0.9*0.0388)= 6,86+37,620*delta |<br>
+										_.__ | midspan(0.0654)=4.40 ksi | frame(0.0624)=4.51 ksi |<br>
+										_._2 | fbend = M*c/I = 0.527*M/0.00493 = 116*M |<br>
+										_.__ | midspan(-31.2)=-3.62 ksi | frame(63.7)=7.39 ksi |<br>
+										<hr class="dropdown-divider">
+										9 | stress in frame |<br>
+										_.1 | f_fr = Ef*delta_f/r = 17,000*0.0624/63.2 = 16.77 ksi |<br>
+										<hr class="dropdown-divider">
+										10 | skin |<br>
+										_.1 | provides aerodynamic surface and protects contents |<br>
+										_.2 | carry shear loads |<br>
+										_.3 | carry pressure loads |<br>
+										<hr class="dropdown-divider">
+										11 | stringer |<br>
+										_.1 | carry axial loads due to Fuselage Bending |<br>
+										_.2 | крепится к обшивке через дублер |<br>
+										<hr class="dropdown-divider">
+										12 | frame |<br>
+										_.1 | maintain shape of skin |<br>
+										_.2 | <a href="../../docs_eng/0_general/777_TrainingManual.pdf#page=251" target="_blank">shear tie</a> - крепит обшивку к шпангоуту |<br>
+										_._ | Psh=7,860 lbs - skin shear | p_horiz=7,860/4=1,965 lbs/bolt |<br>
+										_._ | M=7,860*2=15,720 lbs | 2-dist from skin to frame f. | p_vert=M*dist/sum(dist^2) |<br>
+										_._ | p=sqrt(p_horiz^2+p_vert^2) |<br>
+										<hr class="dropdown-divider">
+										13 | stringer clip |<br>
+										_.1 | transfer pressure loads to the frame |<br>
+										_.2 | reduce column length of stringer |<br>
+										_.3 | frame web panel stiffener |<br>
+										_.4 | <a href="../../docs_eng/0_general/777_TrainingManual.pdf#page=257" target="_blank">free-body diagram</a> |<br>
+										<hr class="dropdown-divider">
+										14 | keelbeam |<br>
+										_.1 | strong beam on the bottom of fuselage |<br>
+										_.2 | carry fuselage bending load |<br>
+										<hr class="dropdown-divider">
+									</p>
+								</div>
+							</div>
+						</div>
+
 						<!-- ==================================== Famoss ========================================= -->
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingFamoss">
@@ -666,13 +762,13 @@
 								<div class="accordion-body">
 									<p>
 										1 | Intro | Frame Analysis Margin of Safety Summary | Links-> Xterm-> User Guide BDC-> Famoss |<br>
-									<hr class="dropdown-divider">	
+										<hr class="dropdown-divider">	
 										2 | Overview |<br>
 										_.1 | flowchart: $famoss-> load library x.fa-> save-> exit |<br>
 										_.2 | input | View Input - not functional (3) | Create or Edit Input (4) | Std Properties & Allowable (5) |<br>
 										_.3 | execution | General Internal Loads (6) | Ultimate MS (7) | Fatigue (8) | Load Plotting (9) |<br>
 										_.4 | output (10) | Frame by Stringer Summary | Frame | Detail | Shear Tie | Frame Splice | Frame Joint |<br>
-									<hr class="dropdown-divider">	 
+										<hr class="dropdown-divider">	 
 										4 | Create or Edit Input | Fuselage/ Frame/ IC/ Web/ OC/ Tear Strap/ Skin/ Stringer/ Shear Tie/ Fastener |<br>
 										5 | Standart Properties and Allowables (p.65) | Material/ Stringer Clip/ Fastener |<br>
 										6 | Generate Internal Loads (p.75) | Process/ FEADMS Interface/ Input Internal Loads/ Effective Width/ Plot MDS Loads |<br>
@@ -680,7 +776,7 @@
 										8 | Fatigue Analysis (p.111) |<br>
 										9 | Plotting Internal Loads (p.117) |<br>
 										10 | Output Files (p.123) |<br>
-									<hr class="dropdown-divider">	
+										<hr class="dropdown-divider">	
 										B | Flow Charts |<br>
 										_.1 | Analysis Data Flow |<br>
 										_.2 | Mid-Bay Internal Loads Flow |<br>
@@ -690,7 +786,7 @@
 										_._ | IC tension - 0.9*Ftu/f | IC comp - BDM-6236, Beam Column Check | <br>
 										_._ | Skin - BDM-6535 | <br>
 										_.4 | FAMOSS Analysis Flow (787) |<br>
-									<hr class="dropdown-divider">
+										<hr class="dropdown-divider">
 										C | FAMOSS Frame Analysis, Methods and Allowables |<br>
 										F | Frame Idealization Types |<br>
 										G | SA Viewer Interface | F-A- formed angle |<br>

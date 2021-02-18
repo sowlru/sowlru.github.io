@@ -1,0 +1,686 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basics</title>
+	<link href="../_css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../_css/style.css">
+</head>
+<body>
+	<!-- ================================= Navigation ==================================== -->
+	<nav class="navbar navbar-default">
+
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="C:\avk\index.html">AvK <span class="glyphicon glyphicon-flash"></span></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav">
+			<!-- Sites -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sites<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\stravkcom\index.html">stravk.com</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\sowlru\index.html">sowl.ru</a></li>
+						</ul>
+        			</li>
+			<!-- Aero -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aero<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\aero\general.html">General</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fem.html">FEM</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\static.html">Static</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\fatigue.html">Fatigue</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\dt.html">Damage Tolerance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\structure.html">Structure</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\aero\doors.html">Door</a></li>
+						</ul>
+        			</li>
+			<!-- Code General -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code G<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="C:\avk\index\code_g\basics.html">Basics</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\objects.html">Objects</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\algorithm.html">Algorithm</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_g\other_code.html">Other</a></li>
+						</ul>
+        			</li>
+			<!-- Code Project -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code P<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\code_p\c.html">C</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\unix.html">UX</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\python.html">Python</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\php.html">PHP</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\vba.html">VBA</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\code_p\ml.html">ML</a></li>
+						</ul>
+        			</li>
+			<!-- Front -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Front<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\front\web.html">HTML - 1991</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ecma.html">ECMA - 1995</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\ajax.html">AJAX - 2005</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\jquery.html">jQuery - 2006</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\nodejs.html">Node - 2009</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\front\angular.html">Angular - 2014</a></li>
+						</ul>
+        			</li>
+
+			<!-- Other -->
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="C:\avk\index\other\finance.html">Finance</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\english.html">English</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\electro.html">Electro</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\scratch.html">Scratch</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\roblox.html">Roblox</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="C:\avk\index\other\other.html">Other</a></li>
+						</ul>
+        			</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+
+		</div><!-- /.container-fluid -->
+
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<h3>Basics</h3> 
+				<div class="panel-group" id="accord">
+					<!-- ===================================== IDE ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#ide" data-toggle="collapse" data-panel="#accord">ide</a> |
+						</div>
+						<div class="panel-collapse collapse" id="ide">
+							<div class="panel-body">
+								<p>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== hi ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#hi" data-toggle="collapse" data-panel="#accord">hi</a> | 1:c | 2:cpp | 3:cs | 4:java | 5:py | 6:php | 7:sh | 8:js | 9:xlsm |
+						</div>
+						<div class="panel-collapse collapse" id="hi">
+							<div class="panel-body">
+								<p>
+
+1 | hi |<br>
+_.1 | #include&lt;stdio.h&gt;&lt;conio.h&gt; | int main(){ printf("hi"); getch(); return 0; } |<br>
+_.2 | #include&lt;iostream&gt; | using namespace std; | int main(){cout<<"hi "<&lt;endl; return 0;} |<br>
+_.3 | using System; class Hi {static void Main() {Console.WriteLine("hi");}} |<br>
+_.4 | Main.java | public class Main {public static void main(String[] args) {System.out.println("hi");}} |<br>
+_.5 | hi.py | print("hi") |<br>
+								</p><div class="divider"></div><p>
+2 | RAD hi |<br>
+_.1 | C++ Builder | File-> New-> Windows VCL Application |<br>
+_._ | Панель справа вверху-> Standard->  TLabel + TButton |<br>
+_._ | Button1-> Events-> OnClick-> 2Cl-> Label1->Caption = "hi"; |<br>
+								</p><div class="divider"></div><p>
+2 | comments |<br>
+_.1 | // | /* */ |<br>
+_.3 | // | /* */ | ///&lt;xml&gt;&lt;/xml&gt; |<br>
+_.4 | // | /* */ | /**javadoc*/ |<br>
+_.5 | # | многострочных нет | '''help''' |<br>
+								</p><div class="divider"></div><p>
+3 | rus |<br>
+_.1 | #include&lt;stdlib.h&gt; | system("chcp 1251 > nul"); | <br>
+_._ | chcp - change cartpage и вывод отправть в мусорный ящик (nul) |<br>
+_._ | " > nul" убирает текст: "Текущая кодовая страница: 1251" |<br>
+_._ | если крякозябры: terminal -> RC -> свойства -> Шрифт: Lucida Console |<br>
+								</p><div class="divider"></div><p>
+4 | показать расширение  |<br>
+_.1 | Win+R -> cmd -> control panel -> |<br>
+_.2 | Windows 07 | Folder Options -> View -> Uncheck Hide extensions foe known file types |<br>
+_.3 | Windows 10 | Оформление и персонализация -> Параметры проводника -> Вид ..|<br>
+								</p><div class="divider"></div><p>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== number ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#number" data-toggle="collapse" data-panel="#accord">number</a> | a=7 | b=2 | bool | enum | && |
+						</div>
+						<div class="panel-collapse collapse" id="number">
+							<div class="panel-body">
+								<p>
+1 | Типы | byte:8=256 | word:16=65.5K | double w:32=4.2B | quad w:64=18.4B*B | 80 |<br>
+_.1 | char | short | int(%3d)/float | long long/double(%.1f) |<br>
+_.2 | char | short | int/float | long long/double | bool |<br>
+_.4 | byte | short | int/float | long/double | boolean |<br>
+_.5 | int | long | float | bool |<br>
+								</p><div class="divider"></div><p>
+2 | Посмотреть макс.значение типа |<br>
+_.2 | #include &lt;limits&gt; | cout << numeric_limits&lt;int&gt;::max() << endl; |<br>
+								</p><div class="divider"></div><p>
+3 | Проверка типа |<br>
+_.5 | print(type(7)) #&lt;class 'int'&gt;  |<br>
+								</p><div class="divider"></div><p>
+4 | 7/2=3.5 |<br>
+_._ | вычисление правой части -> приведение к типу в левой -> присваивание |<br>
+_.1:4 | int a=7, b=2; double c; c=(double)a/b; |<br>
+_.5 | a=7; b=2; c=a/b; |<br>
+								</p><div class="divider"></div><p>
+5 | 7/0 |<br>
+_.1 | 1.#INF00 | 2:inf | 4:Infinity |<br>
+_.5 | ZeroDivisionError: division by zero |<br>
+								</p><div class="divider"></div><p>
+6 | 7^2=49 |<br>
+_.1 | #include &lt;math.h&gt; | int a=7, b=2, c; c=pow(a,b); |<br>
+_.5 | a=7; b=2; c=a**b; print(c) |<br>
+								</p><div class="divider"></div><p>
+7 | неизменяемая переменная |<br>
+_.1:2 | const int a=7; |<br>
+								</p><div class="divider"></div><p>
+8 | &&(and) | ||(or) | високосный год |<br>
+_.4 | int y=2020; boolean is_leap=(y%4==0) && (y%100!=0 || y%400==0); System.out.println(is_leap) |<br>
+_.5 | y=2020; is_leap=(y%4==0) and (y%100!=0 or y%400==0); print(is_leap) |<br>
+								</p><div class="divider"></div><p>
+9 | enum |<br>
+_.3 | enum name {bob, alex=5, mike} | int num=name.bob //0 |<br>
+_.5 | from enum import Enum | class Name(Enum): bob=0; alex=5; mike=2 |<br>
+_._ | num=Name.bob; print(num) #Name.bob |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== string ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#string" data-toggle="collapse" data-panel="#accord">string</a> | s="The quick brown fox jumps over the lazy dog" |
+						</div>
+						<div class="panel-collapse collapse" id="string">
+							<div class="panel-body">
+								<p>
+1 | длина строки | //43 | кодировка |<br>
+_.2 |  #include&lt;string&gt; | cout << s.size(); |<br>
+_.4 | System.out.println(s.length()); | char(16):unicode |<br>
+_.5 | print(len(s)) | str:unicode |<br>
+								</p><div class="divider"></div><p>
+2 | конкатенация |<br>
+_.5 | s+" "+s | (s+" ")*2 | s="The quick {0}..".format(a); print(s) #The quick 7.. |<br>
+_._ | s=f"a({a})+b({b})=c({c})"; print(s) #a(7)+b(2)=c(3.5) |<br>
+								</p><div class="divider"></div><p>
+3 | подсчет кол-ва вхождений 'o' | //4 | if not found:0 |<br>
+_.2 | unsigned cnt=0, pos; for (pos=0; pos < s.size(); pos++){if (s[pos]=='o') cnt++;} cout << cnt; |<br>
+_.5 | s.count('o') |<br>
+								</p><div class="divider"></div><p>
+4 | найти позицию вхождения 'o' | #12 |<br>
+_.2 | int cnt=0; for (unsigned pos=0; pos < s.size(); pos++){ |<br>
+_._ | if (s[pos]=='o') cnt++; if(cnt == 1) {cout << pos; break;}} |<br>
+_.5 | s.find('o') if not found:-1 |<br>
+								</p><div class="divider"></div><p>
+5 | получить подстроку |<br>
+_.5 | s1=s[12:15] #'own'; if not found:' ' |<br>
+								</p><div class="divider"></div><p>
+6 | замена символа |<br>
+_.5:8 | s1=s.replace('brown','red') #The quick red.. |<br>
+								</p><div class="divider"></div><p>
+7 | перевод строки в массив слов |<br>
+_.4 | String Tokinizer // ['The','quick','brown',..] |<br>
+_.5:8 | ar_s=s.split() #['The','quick','brown',..] |<br>
+								</p><div class="divider"></div><p>
+8 | charAt, trim, concat(+),  |<br>
+_.5 | ar_s=s.split() #['The','quick','brown',..] |<br>
+_.8 | ar_s=s.split(' ') #['The','quick','brown',..] |<br>
+								</p><div class="divider"></div><p>
+9 | изменяемая строка (при добавлении остаается 1 объектом) |<br>
+_.4 | StringBuilder |<br>
+								</p><div class="divider"></div><p>
+10 | проверка ссылки: ведут на 1 объект |<br>
+_.4 | String s2="The quick..."; if(s==s2) System.out.println("equal"); |<br>
+								</p><div class="divider"></div><p>
+11 | посимвольная проверка |<br>
+_.4 | String s2="The quick..."; if(s2.equals(s)) System.out.println("equal"); |<br>
+								</p><div class="divider"></div><p>
+12 | ввод многострочной строки | вывод: \n |<br>
+_.5 | s="""The quick...\ | ...""" |<br>
+								</p><div class="divider"></div><p>
+13 | не использовать экранированные символы |<br>
+_.5 | s=r"C:\avk\test\py" |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== string2 ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#string2" data-toggle="collapse" data-panel="#accord">string</a> | ar_ac |
+						</div>
+						<div class="panel-collapse collapse" id="string2">
+							<div class="panel-body">
+								<p>
+1 | подсчет уникальных букв в предложении |<br>
+_.2 |  #include&lt;map&gt; | map&lt;char, int&gt; unq;  for (char c : s) {++unq[c];} |<br>
+								</p><div class="divider"></div><p>
+2 | распечатать 1 пункт | print_ac(unq); |<br>
+_.2 | void print_ac(const map&lt;char, int&gt;& m){...} |<br>
+_._ | for(const auto& item:m){cout << item.first << ":" << item.second << "; ";} |<br>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== if ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#if" data-toggle="collapse" data-panel="#accord">if</a> | switch | while | input |
+						</div>
+						<div class="panel-collapse collapse" id="if">
+							<div class="panel-body">
+								<p>
+1 | if |<br>
+_.1 | if (a&gt;b) printf("a&gt;b"); else if (a&lt;b) printf("a&lt;b"); else printf("a=b"); |<br>
+_.5 | if a &gt; b: print("a&gt;b") | elif a &lt; b: print("a&lt;b") | else: print("a=b") |<br>
+								</p><div class="divider"></div><p>
+2 | switch |<br>
+_.1,3 | int a=0,c; switch(a){case 0:c=1;break; case 1:case 2:c=2;break; default:c=3;break;} |<br>
+_.5 | no switch |<br>
+								</p><div class="divider"></div><p>
+3 | while | a=6 a=4 a=3 |<br>
+_.1 | while (--a&gt;=b){if(a==5) continue; printf("a=%d ",a); if(a==3) break; } |<br>
+_.5 | while a >= b: | a-=1 | if a==5: continue; | print("a=",a) | if a==3: break; |<br>
+								</p><div class="divider"></div><p>
+4 | ввод int |<br>
+_.1 | int n; printf("int?\n"); scanf("%d", &n); printf("int=%d\n", n); |<br>
+_.5 | n=int(input('int?')) | printf("int=",n); |<br>
+								</p><div class="divider"></div><p>
+5 | ввод телефона |<br>
+_.1 | scanf("(3%d)3%d-2%d-2%d") ? |<br>
+								</p><div class="divider"></div><p>
+6 | ввод string |<br>
+_.1 | char n[9]; printf("n?\n"); scanf("%s", &n); printf("hi %s\n", n);  |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== ar ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#ar" data-toggle="collapse" data-panel="#accord">ar</a> | for | random |
+						</div>
+						<div class="panel-collapse collapse" id="ar">
+							<div class="panel-body">
+								<p>
+1 | объявить массив [7,2,8] и распечатать |<br>
+_.1 | #define SIZE 3 | int i; int ar[SIZE]={7,2,8}; for(i=0;i&lt;SIZE;i++) printf("%d ",ar[i]); |<br>
+_.2 | #include&lt;vector&gt; | vector&lt;int&gt; ar={7,2,8}; for(auto i:ar) cout << i <<" "; |<br>
+_.4 | for(int x:ar) System.out.println(x); |<br>
+_.5 | &lt;class  'list'&gt; | ar=[7,2,8]; print(ar) | проверка типа: type(ar) |<br>
+_._ | &lt;class 'tuple'&gt; | ar=(7,2,8); print(ar) | кортеж(неизменяемый массив) |<br>
+								</p><div class="divider"></div><p>
+2 | массив из последовательности (1,000 нечетных чисел) |<br>
+_.5 | ar=[] | for x in range(1,1000,2): ar.append(x) | print(ar) #1;3;5;7;.. |<br>
+								</p><div class="divider"></div><p>
+3 | массив из 1,000 случайных чисел от 1-100 |<br>
+_.1 | #include&lt;time.h&gt; | #define SIZE 1000 | int i, ar[SIZE]={0}; srand(time (NULL)); |<br>
+_._ | for(i=0;i&lt;SIZE;i++){ar[i]=rand()%100+1; printf("%3d ", ar[i]); if((i+1)%20==0) printf("\n");} |<br>
+_.4 | int ar[]; ar=new int[5]; for(int i=0; i&lt;ar.length;i++) ar[i]=(int)(Math.random()*10); |<br>
+_.5 | import random | i=1; ar=[] | for x in range(1000): ar.append(i); i=random.randint(1,100) |<br>
+_._ | == | ar = [random.randint(1,100) for x in range(1,1001)]; print(ar) |<br>
+								</p><div class="divider"></div><p>
+4 | длина массива |<br>
+_.2 | cout << "Length = " << ar.size(); |<br>
+_.5 | print("Length = ",len(ar)) |<br>
+								</p><div class="divider"></div><p>
+5 | сумма элементов массива |<br>
+_.5 | s=sum(ar) #12 |<br>
+_.8 | s=0; for(var i in ar)(s+=ar[i]) #12 |<br>
+								</p><div class="divider"></div><p>
+6 | min/max элемент массива |<br>
+_.5 | m=min(ar) #1 | m=max(ar) #8 |<br>
+_.8 | m=Math.min.apply(null,ar) #1 | m=Math.max.apply(null,ar) #8 |<br>
+								</p><div class="divider"></div><p>
+7 | добавить элемент (3) в конец | [7,2,8,3] |<br>
+_.2 | ar.push_back(3); |<br>
+_.5 | ar.append(3); |<br>
+								</p><div class="divider"></div><p>
+8 | вытащить последний элемент |<br>
+_.5 | ar=[7,2,8,3]; x=ar.pop(); print(x,ar) #3 [7, 2, 8] |<br>
+								</p><div class="divider"></div><p>
+9 | посчитать уникальные элементы | a:2; b:1; |<br>
+_.2 | vector&lt;string&gt; words = {"a", "b", "a"}; | map&lt;string,int&gt; unq; |<br>
+_._ | for(const string& w:words){unq[w]++;} |<br>
+								</p><div class="divider"></div><p>
+10 | убрать последнюю запятую |<br>
+_.1 | for(i=0;i&lt;SIZE;i++) printf("%d ",ar[i]); printf("\b\b \n"); |<br>
+_.2 | string delm=""; for(auto i:ar){sum += delm + i; delm=", ";} |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== ar2D ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#ar2D" data-toggle="collapse" data-panel="#accord">ar2D</a> |
+						</div>
+						<div class="panel-collapse collapse" id="ar2D">
+							<div class="panel-body">
+								<p>
+1 | объявить массив "*" размером 31x20 |<br>
+_.2 | int days=31, letter=20; vector&lt;vector&lt;string&gt;&gt; que(days); |<br>
+_._ | for (int day=0; day &lt; days; day++){que[day].assign(letter, "*");} | print_2D(que); |<br>
+
+								</p><div class="divider"></div><p>
+2 | распечатать массив |<br>
+_.2 | void print_2D(vector&lt;vector&lt;string&gt;&gt; ar){...} |<br>
+_._ | for (int row=0; row &lt; ar.size(); row++){cout << row << ": "; ... cout << endl; } |<br>
+_.__ | for (int elem=0; elem &lt; ar[row].size(); elem++){cout << ar[row][elem] << " ";}|<br>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== prime ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#prime" data-toggle="collapse" data-panel="#accord">time</a> | prime | 
+						</div>
+						<div class="panel-collapse collapse" id="prime">
+							<div class="panel-body">
+								<p>
+1 | time |<br>
+_.1 | #include&lt;time.h&gt; | clock_t diff; ...; diff = clock(); |<br>
+_._ | printf("time=%.3f\n", (double)diff/CLOCKS_PER_SEC); |<br>
+_.2 | #include&lt;chrono&gt; | using namespace std::chrono; |<br>
+_._ | auto start = steady_clock::now(); ...; auto finish = steady_clock::now(); |<br>
+_._ | cout << "time=" << duration_cast&lt;milliseconds&gt;(finish-start).count();|<br>
+								</p><div class="divider"></div><p>   
+
+2 | prime C |<br>
+_.1 | #include&lt;math.h&gt; | #define NUM 65000 |  char is_complex=0; |<br>
+_.2 | unsigned short odds=3, ar[NUM]={2}, ar_len=1, lim=1, count=1; ar[ar_len]=2;  |<br>
+_.3 | //первый цикл проходит по всем нечетным числам: 3,5,7,.. |<br>
+_._ | for(odds=3;odds&lt;NUM;odds+=2){is_complex=0; lim=sqrt(ar_len);...} |<br>
+_.__ | //второй цикл из первого удаляет числа, к-рые делятся на простые |<br>
+_.__ | for(count=1; count<=lim; count++){if(odds%ar[count]==0){is_complex++; break;}} |<br>
+_.__ | if(is_complex) continue; ar_len++; ar[ar_len]=odds; |<br>
+_.4 | //распечатать по 16 чисел в ряду |<br>
+_._ | for(count=1;count<=ar_len;count++){printf("%5u ",ar[count]); if(count%16==0) printf("\n");} |<br>
+								</p><div class="divider"></div><p>
+3 | prime Python |<br>
+_._ | ar=[]; N=100 | for x in range(1,N,2): || is_complex=0; lim=(x//3)+1 |<br>
+_._ || for y in range(3,lim,2): ||| if x%y == 0: is_complex=1; break |<br>
+_._ || if is_complex: continue; || ar.append(x) | print(ar) |<br>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== ar_ac ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#ar_ac" data-toggle="collapse" data-panel="#accord">ar_ac</a> | dict | a:7; b:2; c:8; |
+						</div>
+						<div class="panel-collapse collapse" id="ar_ac">
+							<div class="panel-body">
+								<p>
+1 | объявить массив [7,2,8] и распечатать | a:7; b:2; c:8; |<br>
+_.2 | #include&lt;map&gt; | map&lt;string, int&gt; ar_ac={{"a",7},{"b",2},{"c",8}}; |<br>
+_._ | for(const auto& item:ar_ac){cout << item.first << ":" << item.second << "; ";} |<br>
+_.5 | ar_ac={"a":3,"b":1,"c":8} | for k in ar_ac: print (k,ar_ac[k]) #a 3; b 1;.. |<br>
+								</p><div class="divider"></div><p>
+2 | распечатать все ключи и значения |<br>
+_.5 | print(ar_ac.keys(), ar_ac.values())# dict_keys(['a', 'b', 'c']) dict_values([3, 1, 8]) |<br>
+								</p><div class="divider"></div><p>
+3 | получить значение по ключу "a" | 7 |<br>
+_.2 | cout << ar_ac["a"] << endl; |<br>
+_.5 | print (ar_ac.get("a","no data")) | если не найден: no data |<br>
+								</p><div class="divider"></div><p>
+4 | размер массива |<br>
+_.2 | cout << ar_ac.size(); |<br>
+								</p><div class="divider"></div><p>
+5 | добавить элемент массива |<br>
+_.2 | ar_ac["d"] = 3; |<br>
+								</p><div class="divider"></div><p>
+6 | удалить элемент массива |<br>
+_.2 | ar_ac.erase("d"); |<br>
+								</p><div class="divider"></div><p>
+7 | перевернуть key:value | 2:b; 7:a; 8:c; |<br>
+_.2 | map&lt;int,string&gt; val_key; for(auto item:ar_ac){val_key[item.second] = item.first;} |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== ar_ac_2D ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#ar_ac_2D" data-toggle="collapse" data-panel="#accord">ar_ac_2D</a> | a:{7,6}; b:{2,0}; c:{8,7}; |
+						</div>
+						<div class="panel-collapse collapse" id="ar_ac_2D">
+							<div class="panel-body">
+								<p>
+1 | объявить массив | a:6 7; b:0 2; c:7 8; |<br>
+_.2 | #include&lt;map&gt;&lt;set&gt; | map&lt;string,set&lt;int&gt;&gt; map_set = {{"a",{7,6}},{"b",{2,0}},{"c",{8,7}},}; |<br>
+								</p><div class="divider"></div><p>
+2 | распечатать массив в функции |<br>
+_.2 | void print_map_set(const map&lt;string,set&lt;int&gt;&gt;& map_set){...} |<br>
+_._ | for(auto row:map_set){cout << row.first << ": ";...} |<br>
+_.__ | for(auto item:row.second) cout << item << " "; cout << endl; |<br>
+								</p><div class="divider"></div><p>
+3 | добавить элемент массива | a:6 7; b:0 2 3; c:7 8; |<br>
+_.2 | map_set["b"].insert(3);|<br>
+								</p><div class="divider"></div><p>
+4 | проверка существования ключа |<br>
+_.2 | if(map_set.count("a") > 0) cout << "exist" << endl; |<br>
+								</p><div class="divider"></div><p>
+5 | удалить весь ряд/ ключ |<br>
+_.2 | map_set.erase("b"); |<br>     
+								</p><div class="divider"></div><p>
+6 | удалить 1 эл-т из ключа |<br>
+_.2 | map_set["b"].erase(2); |<br>
+								</p><div class="divider"></div><p>
+7 | создать массив из ключа "a" | 6 7 |<br>
+_.2 | vector&lt;int&gt; vec_map; for(auto elm:map_set.at("a")){vec_map.push_back(elm);} |<br>
+								</p><div class="divider"></div><p>
+8 | узнать число ключей в массиве |<br>
+_.2 | map_set.size() |<br> 
+
+        								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== fn ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#fn" data-toggle="collapse" data-panel="#accord">fn</a> | module | package |
+						</div>
+						<div class="panel-collapse collapse" id="fn">
+							<div class="panel-body">
+								<p>
+1 | Рекурсия | //up:3 up:2 stop down:2 down:3 rec:3 |<br>
+_.4 | static int <b>rec</b>(int n){if(n&lt;=1){System.out.println("stop"); return n;}; |<br>
+_._ | System.out.println("up:"+n);<b>rec</b>(n-1); System.out.println("down:"+n); return n;} |<br>
+_._ | int c; c=<b>rec</b>(3); System.out.println("rec:"+c); |<br>
+_.5 | def <b>rec</b>(n=7): | if n<=1: print("stop"); return n |<br>
+_._ | print("up:",n); <b>rec</b>(n-1); print("down:",n); return n; | c=<b>rec</b>(3); print("rec:",c); |<br>
+								</p><div class="divider"></div><p>
+2 | Фибоначчи |<br>
+_.5 | def fib(n): || if n<=1: print("stop",n); return n |<br>
+_._ || print("beg",n); a=fib(n-1); print("mid",n); b=fib(n-2); print("end",n); return (a+b) |<br>
+_._ | s=fib(5); print("fib=",s) #5 |<br>
+_._ | # {block 2}: beg 2 	stop 1 		mid 2 	stop 0 		end 2 |<br>
+_._ | # {block 3}: beg 3	{block 2}	mid 3 	stop 1 		end 3 |<br>
+_._ | # {block 4}: beg 4	{block 3}	mid 4	{block 2}	end 4 |<br>
+_._ | # {block 5}: beg 5 	{block 4} 	mid 5 	{block 3} 	end 5 |<br>
+
+								</p><div class="divider"></div><p>
+3 | Сумма переменного числа аргументов |<br>
+_.4 | static int sum(int ... args){int n=0; .., return n;} | System.out.println("sum:"+sum(3,1,8)); |<br>
+_.5 | def fn(*args): print(sum(args)) | fn(3,1,8) #12, args - кортеж |<br>
+								</p><div class="divider"></div><p>
+4 | Переменное кол-во аргументов ассоциативного массива |<br>
+_.5 | def fn(**args): || for k,v in args.items(): print(k,v) | fn(a=3,b=1,c=8) |<br>
+								</p><div class="divider"></div><p>
+5 | Глобальная переменная |<br>
+_.5 | global x |<br>
+								</p><div class="divider"></div><p>
+6 | Создание модуля с ф-цией rec.py (в одной папке с main.py) |<br>
+_.5 | def rec - сохранить в файл rec.py | main.py: import rec | rec.rec() |<br>
+								</p><div class="divider"></div><p>
+7 | Получить имя модуля который вызвал rec.py |<br>
+_.5 | rec.py: print(__name__) #__main__ |<br>
+								</p><div class="divider"></div><p>
+8 | Создание пакета my_lib с rec.py |<br>
+_.5 | new folder: my_lib | new file: __init__.py | main.py: import  my_lib.rec | my_lib.rec.rec() |<br>
+								</p><div class="divider"></div><p>
+9 | Генератор ф-ций |</p>
+_.1 | def <b>gen()</b>: yield 1; yield 4; yield 7 |<br>
+_.2 | for g in <b>gen()</b>: print (g) # 1;4;7 |<br>
+_.3 | yield работает почти как return, возвратит 1 и зависнит |<br>
+_.4 | при повторном вызове начнет работу с yield 4 |<br>
+_.5 | применение: загрузка данных из базы | считывание файла |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== file ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#file" data-toggle="collapse" data-panel="#accord">file</a> | stream |
+						</div>
+						<div class="panel-collapse collapse" id="file">
+							<div class="panel-body">
+								<p>
+1 | стандартные потоки (stream) |<br>
+_.1 | ввод и вывод - потоки байтов с указателем текущей позиции |<br>
+_.2 | библиотеки: io.h(дескрипторы) | stdio.h(указатели на поток) |<br>
+_.3 | при запуске любой программы подготавливаются 3 потока: in/out/err |<br>
+_.4 | stderr: небуферизованный | getch() |<br>
+_.5 | stdin/stdout: строчно-буфер. | конец потока: Enter |<br>
+								</p><div class="divider"></div><p>
+2 | файловые потоки |<br>
+_.1 | блочно-буфер. | конец потока: сектор(512 байт) или fflush |<br>
+_.2 | бинарный | конец потока: кол-во байт |<br>
+_.3 | текстовый | конец строки: CR(0x0D) LF(0x0A) | конец потока: Ctrl+Z(0x1A) |<br>
+_._ | конец потока: Ctrl+Z(0x1A) |<br>
+_.4 | создание файла -  создается struct FILE (описание в stdio.h) |<br>
+_.5 | содержание FILE: имя файла, длина, текущая позиция,.. |<br>
+_.6 | открытие файла - программа получает указатель на FILE |<br>
+_.7 | закрытие файла - указатель освобождается |<br>
+								</p><div class="divider"></div><p>
+3 | FILE | test.txt |<br>
+_.1 | FILE *fopen(filename, mode) |<br>
+_.2 | успешно: возвращает указатель на struct | ошибка: NULL |<br>
+_.3 | text mode: w-записать |  a-добавить |  r-прочитать | <br>
+_.4 | binary mode: wb-записать | ab-добавить | rb-прочитать | <br>
+_.__ | 12345-> 00110000 00111001-> 48 57-> 0 9(ASCII) |<br>
+_.5 | произвольный доступ: w+, wb+,.. |<br>
+_.__ |  |<br>
+_.6 | закрыть: int fclose(FILE *fp) | успешно: 0 | ошибка: EOF |<br>
+								</p><div class="divider"></div><p>
+4 | записать текстовые данные |<br>
+_.1 | #include &lt;stdio.h&gt; | int i, ar[SIZE]={0}; FILE* file = fopen("test.txt","wt"); |<br>
+_._ | if (!file) { perror("test.txt"); exit(1); } //error handler |<br>
+_._ | for(i=0;i&lt;SIZE;i++) {fprintf(file,"%d ",ar[i]); |<br>
+_._ | if((i+1)%20==0) fprintf(file,"\n");} fclose(file); |<br>
+								</p><div class="divider"></div><p>
+5 | прочитать текстовые данные |<br>
+_.1 | int x; FILE* file = fopen("test.txt","rt"); |<br>
+_._ | if (!file) { perror("test.txt"); exit(1); } //error handler |<br>
+_._ | while((x=fgetc(file))!=EOF) putchar(x); |<br>
+_.5 | f=open("C:/avk/test/py/hi.py", "r"); | for line in f: print(line) | f.close() |<br>
+								</p><div class="divider"></div><p>
+6 | записать бинарные данные | <br>
+_.1 | int a = 12345; FILE * fp1; fp1 = fopen("test.txt","wb"); |<br>
+_._ | fwrite(&a, sizeof(a),1,fp1); fclose(fp1); |<br>
+								</p><div class="divider"></div><p>
+7 | прочитать бинарные данные |<br>
+_.1 | int b; FILE * fp2; fp2 = fopen("test.txt","rb"); |<br>
+_._ | fread(&b, sizeof(b),1,fp2); printf("%d\n",b); fclose(fp2); |<br>
+								</p><div class="divider"></div><p>
+7 | записать данные произвольно |<br>
+_.1 | int a = 12345; FILE * fp1; fp1 = fopen("test.txt","wb+"); |<br>
+_._ | fseek(fp1, 7, SEEK_CUR); fprintf(fp1,"%d",a); fclose(fp1); |<br>
+								</p><div class="divider"></div><p>
+8 | дописать в файл имя файла |<br>
+_.5 | with open("C:/avk/test/py/t.py", "a") as f: f.write('\n'+f.name) |<br>
+								</p><div class="divider"></div><p>
+9 | прочитать файл csv |<br>
+_.5 | import csv | with open('t.csv', 'r') as f: || r=csv.reader(f, delimiter=',') |<br>
+_._ || for row in r: print(row) #['a', '7']['b', '2']['c', '8'] |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ===================================== dir ===================================== -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="#dir" data-toggle="collapse" data-panel="#accord">dir</a> |
+						</div>
+						<div class="panel-collapse collapse" id="dir">
+							<div class="panel-body">
+								<p>
+1 | Получить список файлов |<br>
+_.1 | #include &lt;dirent.h&gt; | DIR * wdir; wdir = opendir("C:/avk"); struct dirent * file; |<br>
+_._ | while(file = readdir(wdir)){printf("%21d %s\n", telldir(wdir), file->d_name);} closedir(wdir); |<br>
+
+								</p><div class="divider"></div><p>
+2 |  |<br>
+_.1 |  |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ======================================== Next ======================================== -->		    
+				</div>	    
+			</div>
+		</div>
+	</div>
+	<script src="../_js/jquery.min.js"></script>
+	<script src="../_js/bootstrap.min.js"></script>
+</body>
+</html>

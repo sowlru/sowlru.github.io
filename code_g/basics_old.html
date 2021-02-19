@@ -127,116 +127,13 @@
 			</div><!-- /.navbar-collapse -->
 
 		</div><!-- /.container-fluid -->
-
 	</nav>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 col-xs-12">
 				<h3>Basics</h3> 
 				<div class="panel-group" id="accord">
-					<!-- ===================================== IDE ===================================== -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<a href="#ide" data-toggle="collapse" data-panel="#accord">ide</a> |
-						</div>
-						<div class="panel-collapse collapse" id="ide">
-							<div class="panel-body">
-								<p>
 
-								</p>
-							</div>
-						</div>
-					</div>
-					<!-- ===================================== hi ===================================== -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<a href="#hi" data-toggle="collapse" data-panel="#accord">hi</a> | 1:c | 2:cpp | 3:cs | 4:java | 5:py | 6:php | 7:sh | 8:js | 9:xlsm |
-						</div>
-						<div class="panel-collapse collapse" id="hi">
-							<div class="panel-body">
-								<p>
-
-1 | hi |<br>
-_.1 | #include&lt;stdio.h&gt;&lt;conio.h&gt; | int main(){ printf("hi"); getch(); return 0; } |<br>
-_.2 | #include&lt;iostream&gt; | using namespace std; | int main(){cout<<"hi "<&lt;endl; return 0;} |<br>
-_.3 | using System; class Hi {static void Main() {Console.WriteLine("hi");}} |<br>
-_.4 | Main.java | public class Main {public static void main(String[] args) {System.out.println("hi");}} |<br>
-_.5 | hi.py | print("hi") |<br>
-								</p><div class="divider"></div><p>
-2 | RAD hi |<br>
-_.1 | C++ Builder | File-> New-> Windows VCL Application |<br>
-_._ | Панель справа вверху-> Standard->  TLabel + TButton |<br>
-_._ | Button1-> Events-> OnClick-> 2Cl-> Label1->Caption = "hi"; |<br>
-								</p><div class="divider"></div><p>
-2 | comments |<br>
-_.1 | // | /* */ |<br>
-_.3 | // | /* */ | ///&lt;xml&gt;&lt;/xml&gt; |<br>
-_.4 | // | /* */ | /**javadoc*/ |<br>
-_.5 | # | многострочных нет | '''help''' |<br>
-								</p><div class="divider"></div><p>
-3 | rus |<br>
-_.1 | #include&lt;stdlib.h&gt; | system("chcp 1251 > nul"); | <br>
-_._ | chcp - change cartpage и вывод отправть в мусорный ящик (nul) |<br>
-_._ | " > nul" убирает текст: "Текущая кодовая страница: 1251" |<br>
-_._ | если крякозябры: terminal -> RC -> свойства -> Шрифт: Lucida Console |<br>
-								</p><div class="divider"></div><p>
-4 | показать расширение  |<br>
-_.1 | Win+R -> cmd -> control panel -> |<br>
-_.2 | Windows 07 | Folder Options -> View -> Uncheck Hide extensions foe known file types |<br>
-_.3 | Windows 10 | Оформление и персонализация -> Параметры проводника -> Вид ..|<br>
-								</p><div class="divider"></div><p>
-								</p>
-							</div>
-						</div>
-					</div>
-					<!-- ===================================== number ===================================== -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<a href="#number" data-toggle="collapse" data-panel="#accord">number</a> | a=7 | b=2 | bool | enum | && |
-						</div>
-						<div class="panel-collapse collapse" id="number">
-							<div class="panel-body">
-								<p>
-1 | Типы | byte:8=256 | word:16=65.5K | double w:32=4.2B | quad w:64=18.4B*B | 80 |<br>
-_.1 | char | short | int(%3d)/float | long long/double(%.1f) |<br>
-_.2 | char | short | int/float | long long/double | bool |<br>
-_.4 | byte | short | int/float | long/double | boolean |<br>
-_.5 | int | long | float | bool |<br>
-								</p><div class="divider"></div><p>
-2 | Посмотреть макс.значение типа |<br>
-_.2 | #include &lt;limits&gt; | cout << numeric_limits&lt;int&gt;::max() << endl; |<br>
-								</p><div class="divider"></div><p>
-3 | Проверка типа |<br>
-_.5 | print(type(7)) #&lt;class 'int'&gt;  |<br>
-								</p><div class="divider"></div><p>
-4 | 7/2=3.5 |<br>
-_._ | вычисление правой части -> приведение к типу в левой -> присваивание |<br>
-_.1:4 | int a=7, b=2; double c; c=(double)a/b; |<br>
-_.5 | a=7; b=2; c=a/b; |<br>
-								</p><div class="divider"></div><p>
-5 | 7/0 |<br>
-_.1 | 1.#INF00 | 2:inf | 4:Infinity |<br>
-_.5 | ZeroDivisionError: division by zero |<br>
-								</p><div class="divider"></div><p>
-6 | 7^2=49 |<br>
-_.1 | #include &lt;math.h&gt; | int a=7, b=2, c; c=pow(a,b); |<br>
-_.5 | a=7; b=2; c=a**b; print(c) |<br>
-								</p><div class="divider"></div><p>
-7 | неизменяемая переменная |<br>
-_.1:2 | const int a=7; |<br>
-								</p><div class="divider"></div><p>
-8 | &&(and) | ||(or) | високосный год |<br>
-_.4 | int y=2020; boolean is_leap=(y%4==0) && (y%100!=0 || y%400==0); System.out.println(is_leap) |<br>
-_.5 | y=2020; is_leap=(y%4==0) and (y%100!=0 or y%400==0); print(is_leap) |<br>
-								</p><div class="divider"></div><p>
-9 | enum |<br>
-_.3 | enum name {bob, alex=5, mike} | int num=name.bob //0 |<br>
-_.5 | from enum import Enum | class Name(Enum): bob=0; alex=5; mike=2 |<br>
-_._ | num=Name.bob; print(num) #Name.bob |<br>
-								</p>
-							</div>
-						</div>
-					</div>
 					<!-- ===================================== string ===================================== -->
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -246,13 +143,13 @@ _._ | num=Name.bob; print(num) #Name.bob |<br>
 							<div class="panel-body">
 								<p>
 1 | длина строки | //43 | кодировка |<br>
-_.2 |  #include&lt;string&gt; | cout << s.size(); |<br>
+_.2 | #include&lt;string&gt; | cout << s.size(); |<br>
+_.3 | Console.WriteLine(s.Length); |<br>
 _.4 | System.out.println(s.length()); | char(16):unicode |<br>
 _.5 | print(len(s)) | str:unicode |<br>
 								</p><div class="divider"></div><p>
 2 | конкатенация |<br>
-_.5 | s+" "+s | (s+" ")*2 | s="The quick {0}..".format(a); print(s) #The quick 7.. |<br>
-_._ | s=f"a({a})+b({b})=c({c})"; print(s) #a(7)+b(2)=c(3.5) |<br>
+_.4:5 | s+" "+s |<br>
 								</p><div class="divider"></div><p>
 3 | подсчет кол-ва вхождений 'o' | //4 | if not found:0 |<br>
 _.2 | unsigned cnt=0, pos; for (pos=0; pos < s.size(); pos++){if (s[pos]=='o') cnt++;} cout << cnt; |<br>
@@ -263,8 +160,9 @@ _.2 | int cnt=0; for (unsigned pos=0; pos < s.size(); pos++){ |<br>
 _._ | if (s[pos]=='o') cnt++; if(cnt == 1) {cout << pos; break;}} |<br>
 _.5 | s.find('o') if not found:-1 |<br>
 								</p><div class="divider"></div><p>
-5 | получить подстроку |<br>
-_.5 | s1=s[12:15] #'own'; if not found:' ' |<br>
+5 | получить подстроку = 'own' |<br>
+_.4 | s1=s.Substring(12:15) |<br>
+_.5 | s1=s[12:15] if not found:' ' |<br>
 								</p><div class="divider"></div><p>
 6 | замена символа |<br>
 _.5:8 | s1=s.replace('brown','red') #The quick red.. |<br>
@@ -291,6 +189,13 @@ _.5 | s="""The quick...\ | ...""" |<br>
 								</p><div class="divider"></div><p>
 13 | не использовать экранированные символы |<br>
 _.5 | s=r"C:\avk\test\py" |<br>
+								</p><div class="divider"></div><p>
+14 | подстановка переменных в строку |<br>
+_.4 | s+" "+s |<br>
+_.5 | s=f"a({a})+b({b})=c({c})"; print(s) #a(7)+b(2)=c(3.5) |<br>
+								</p><div class="divider"></div><p>
+15 | int -> string |<br>
+_.4 | 7.ToString() |<br>
 								</p>
 							</div>
 						</div>

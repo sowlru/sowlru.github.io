@@ -140,17 +140,75 @@
 										4 | показать расширение  |<br>
 										_.1 | Win+R -> cmd -> control panel -> |<br>
 										_.2 | Windows 07 | Folder Options -> View -> Uncheck Hide extensions foe known file types |<br>
-										_.3 | Windows 10 | Оформление и персонализация -> Параметры проводника -> Вид ..|<br>									</p>
-									</div>
+										_.3 | Windows 10 | Оформление и персонализация -> Параметры проводника -> Вид ..|<br>									
+									</p>
 								</div>
 							</div>
-							<!-- ======================================== Next Item ======================================== -->
 						</div>
-					</div>	    
-				</div>
-			</div> <!-- .container end -->
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-			<!-- <script src="index/_js/bootstrap.min.js"></script> -->
-		</body>
-		</html>
+						<!-- ==================================== Number ========================================= -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingNumber">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNumber" aria-expanded="false" aria-controls="collapseNumber">
+									number |
+								</button>
+							</h2>
+							<div id="collapseNumber" class="accordion-collapse collapse" aria-labelledby="headingNumber" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+										1 | Типы | byte:8=256 | word:16=65.5K | double w:32=4.2B | quad w:64=18.4B*B | 80 |<br>
+										_.1 | char | short | int(%3d)/float | long long/double(%.1f) |<br>
+										_.2 | char | short | int/float | long long/double | bool |<br>
+										_.3 | byte | (u)short | (u)int/float | (u)long/double | deciaml |<br>
+										_.4 | byte | short | int/float | long/double | boolean |<br>
+										_.5 | int | long | float | bool |<br>
+										<hr class="dropdown-divider">
+										2 | constant |<br>
+										_.1:2 | const int a=7; |<br>
+										<hr class="dropdown-divider">
+										3 | Посмотреть макс.значение типа |<br>
+										_.2 | #include &lt;limits&gt; | cout << numeric_limits&lt;int&gt;::max() << endl; |<br>
+										<hr class="dropdown-divider">
+										4 | Проверка типа |<br>
+										_.5 | print(type(7)) #&lt;class 'int'&gt;  |<br>
+										<hr class="dropdown-divider">
+										5 | 7/2=3.5 |<br>
+										_._ | вычисление правой части -> приведение к типу в левой -> присваивание |<br>
+										_.1:4 | int a=7, b=2; double c; c=(double)a/b; |<br>
+										_.5 | a=7; b=2; c=a/b; |<br>
+										<hr class="dropdown-divider">
+										6 | 7/0 |<br>
+										_.1 | 1.#INF00 | 2:inf | 4:Infinity |<br>
+										_.5 | ZeroDivisionError: division by zero |<br>
+										<hr class="dropdown-divider">
+										7 | 7^2=49 |<br>
+										_.1 | #include &lt;math.h&gt; | int a=7, b=2, c; c=pow(a,b); |<br>
+										_.5 | a=7; b=2; c=a**b; print(c) |<br>
+										<hr class="dropdown-divider">
+										8 | &&(and) | ||(or) | високосный год |<br>
+										_.4 | int y=2020; boolean is_leap=(y%4==0) && (y%100!=0 || y%400==0); System.out.println(is_leap) |<br>
+										_.5 | y=2020; is_leap=(y%4==0) and (y%100!=0 or y%400==0); print(is_leap) |<br>
+										<hr class="dropdown-divider">
+										9 | enum |<br>
+										_.3 | enum name {bob, alex=5, mike} | int num=name.bob //0 |<br>
+										_.5 | from enum import Enum | class Name(Enum): bob=0; alex=5; mike=2 |<br>
+										_._ | num=Name.bob; print(num) #Name.bob |<br>
+										<hr class="dropdown-divider">
+										10 | round |<br>
+										_.3 | Math.Round() |<br>
+										<hr class="dropdown-divider">
+										11 | string -> int |<br>
+										_.4 | int.Parse("7") |<br>								
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- ======================================== Next Item ======================================== -->
+					</div>
+				</div>	    
+			</div>
+		</div> <!-- .container end -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<!-- <script src="index/_js/bootstrap.min.js"></script> -->
+	</body>
+	</html>
 

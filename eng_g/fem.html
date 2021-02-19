@@ -133,215 +133,187 @@
 						</h2>
 						<div id="collapseFeadms" class="accordion-collapse collapse" aria-labelledby="headingFeadms" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								<p>
-									1 | Основные комманды |<br>
-									_.1 | F2 - выделить |<br>
-									_.2 | Middle Click - закончить выделение |<br>
-									_.3 | F3 - отменить выделение |<br>
-									_.4 | View -> Solid Line Inactive Element | для лучшей читаемости |<br>
-									_.5 | File -> Save As: сохранить детейл |<br>
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="card">
+											<div class="card-body">
+												<h5 class="card-title">-det</h5>
+												<p class="card-text">
+													_.1 | XTerm-> cd current project-> feadms -m B478FC46FDMS |<br>
+													_.2 | дождаться в терминале: SeeGRSforModel |<br>
+													_.3 | max GRS window | <br>
+													_.4 | pick elements | Selection -> Element by Identifier |<br>
+													_.5 | Working Volume -> Promote Selected -> pick -> yellow | <br>
+													_.6 | File-> Save As-> Please type: elem.det.Z | <br>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="card">
+												<div class="card-body">
+													<h5 class="card-title">-set</h5>
+													<p class="card-text">
+														_.1 | System -> Attributes-> 1D Stress |<br>
+														_.2 | Element: element(sorted)/ type/ xmid/ ymid/ zmid |<br>
+														_.3 | Loadcase: loadcase: loadcase(sorted) | <br>
+														_.4 | 1DStress: element(sorted)/ loadcase(sorted)/ sigx1 |<br>
+													</p>
+													<img src="img/feadms.png" class="card-img-top" alt="...">
+													<p class="card-text">
+														_.5 | Print: Element/ LoadCase/ 1-D_Stress-> Apply |<br>
+														_.6 | Export: Element/ LoadCase/ 1-D_Stress-> ASCII |<br>
+														_.7 | Save Settings -> 1d.set |<br>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<p>
+										<hr class="dropdown-divider">
+										3 | Основные команды |<br>
+										_.1 | F2 - начать выделить |<br>
+										_.2 | Middle Click - закончить выделение |<br>
+										_.3 | F3 - отменить выделение |<br>
+										_.4 | View -> Solid Line... | для лучшей читаемости |<br>
+										<hr class="dropdown-divider">											
+										4 | Bias |<br>
+										_.1 | Bias - смещение элемента к узлу |<br>
+										_.2 | Просмотреть в GRS: Selection -> Modes -> Bias Elements |<br>
+										_.3 | Прибиасить: Biasing |<br>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- ==================================== Getdata ========================================= -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingGetdata">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGetdata" aria-expanded="false" aria-controls="collapseGetdata">
+									Getdata |
+								</button>
+							</h2>
+							<div id="collapseGetdata" class="accordion-collapse collapse" aria-labelledby="headingGetdata" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+										1 | Загрузка модели |<br>
+										_.1 | XTerm-> Analysis Sustaining -> Finite Element-> Getdata -> Use 1280 by 1024 screen size |<br>
+										_.2 | Plot/Get 757-200 SAMECS related data -> Щелчок -> Get ACTSOL output (2ая сверху) |<br>
+										_.3 | Output Information for every loadcase -> I want ... (recomended) -> Fatigue -> Щелчок |<br>
+										_.4 | FWD-Body -> Freighter -> Substructure35 -> Apply -> Yes -> Reset All Settings .. |<br>
+										<hr class="dropdown-divider">
+										2 | Extract loads |<br>
+										_.1 | Find element in model and write it's number down |<br>
+										_.2 | Main Menu/ Controls -> Exit the viewer and continue the current analysis |<br>
+										_.3 | Ignore Node .. with No Preselected Item |<br>
+										_.4 | Reaction Forces=Yes | Stresses and Loads=Yes -> Apply |<br>
+										_.5 | Plates -> Apply | Beams (Direct Pick Box) -> Apply | Nodes -> Apply -> Input A Title: xxx |<br>
+										_.6 | Output Filename: xxx -> Do you want create IAS ... -> Yes -> xxx.dta -> Create IAS I & J(loadcase) |<br>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- ==================================== Abacqus ========================================= -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingAbacqus">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbacqus" aria-expanded="false" aria-controls="collapseAbacqus">
+									Abacqus |
+								</button>
+							</h2>
+							<div id="collapseAbacqus" class="accordion-collapse collapse" aria-labelledby="headingAbacqus" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+										0 | Scripts |<br>
+										_.1 | <a href="..\..\docs_eng\4_fem\abaqus" target="_blank">abaqus</a> -> перенести xxx.py в <a href="C:/avk/test/abaqus" target="_blank">test/abaqus</a> |<br>
+										_.2 | File -> Set Work Directory -> C:\avk\test\abaqus -> OK |<br>
+										_.3 | File -> Macro Manager -> Create -> Dir..:Work -> Continue -> Dismiss |<br>
+										_._ | проверить файл abaqusMacros.py в test/abaqus |<br>
+										<hr class="dropdown-divider">								
+										1 | 1D console | Middle Click(MC)<br>
+										_.1 | Module:Part -> Create Part(1,1) -> name:b/wire/100-> Continue |<br>
+										_._ | Create Line(1,2) -> LC -> LC+100 -> MC:появилась линия -> 2MC(выход) |<br>
+										_.2 | Module:Property -> Material Manager(1,2) -> Create -> name:al |<br>
+										_._ | Mechanical -> Elasticity -> Elastic | Young: 10e6 | mu=0.3 -> OK -> Dismiss |<br>
+										_._ | Create Section(2,1) -> name:r/beam -> Continue -> |<br>
+										_.__ | Сreate beam profile (иконка трубы) -> name:rect, shape:rect.. -> Continue -> 1,1 -> 2OK |<br>
+										_._ | Assign Section(3,1) -> выделить линию -> Done -> OK (green) |<br>
+										_._ | Assign Beam Orient..(5,2) -> выделить линию -> Done -> 0,0,1 -> Enter -> OK (green) |<br>
+										_.3 | Module:Assembly -> Create Instance(1,1) -> OK |<br>
+										_.4 | Module:Step -> Create Step(1,1) -> Type:Static,Genearal -> Continue -> OK |<br>
+										_.5 | Module:Load -> Create Load(1,1) -> name:c -> Continue -> |<br>
+										_.__ | выбрать точку -> Done -> CF2:-1 -> OK |<br>
+										_._ | Bound.Cond.Manager(2,2) -> Create -> name:z -> Continue -> |<br>
+										_.__ | выбрать плоскость -> Done -> Encastre -> OK -> Dismiss |<br>
+										_.6 | Module:Mesh -> check Part -> Seed Part(1,1) -> size:10 -> Apply -> OK  |<br>
+										_._ | Assign Element4,1) -> выбрать линию -> Done -> family:beam -> OK |<br>
+										_._ | Mesh part(2,1) -> Yes(внизу) |<br>
+										_.7 | Module:Job -> Job Manager(1,2) -> Create -> Continue -> OK -> Submit |<br>
+										_._ | дождаться "Job completed successfully" -> Results |<br>
+										_._ | Plot Contour(4,1) -> вверху S поменять на U(деформации) -> Stop Recording |<br>
+										<hr class="dropdown-divider">
+										2 | 3D console |<br>
+										_.1 | Module:Part -> Part Manager(1,2) -> Create -> name:b/3D -> Continue  |<br>
+										_._ | Create Rect(2,2) -> X,Y:0,0 -> Enter -> X,Y:1,1 -> Enter -> MC -> Done -> Depth:10 -> OK |<br>
+										_.2 | Module:Property -> Material Manager(1,2) -> Create -> name:al |<br>
+										_._ | Mechanical -> Elasticity -> Elastic | Young: 10e6 | mu=0.3 -> OK -> Dismiss |<br>
+										_._ | Create Section(2,1) -> name:r -> Continue -> OK |<br>
+										_._ | Assign Section(3,1) -> выделить балку -> Done -> OK (green) |<br>
+										_.3 | Module:Assembly -> Create Instance(1,1) -> OK |<br>
+										_.4 | Module:Step -> Create Step(1,1) -> Type:Static,Genearal -> Continue -> OK |<br>
+										_.5 | Module:Load -> Create Load(1,1) -> name:c -> Continue -> |<br>
+										_._ | выбрать точку -> Done -> CF2:-1 -> OK |<br>
+										_._ | Bound.Cond.Manager(2,2) -> Create -> name:z -> Continue -> |<br>
+										_._ | выбрать плоскость -> Done -> Encastre -> OK -> Dismiss |<br>
+										_.6 | Module:Mesh -> check Part -> Seed Edge(1,2) -> |<br>
+										_._ | выбрать грани (Shift+..) -> Done -> By number:20 -> Apply -> OK |<br>
+										_._ | выбрать малые грани -> By number:2 -> Apply -> OK |<br>
+										_._ | Mesh part(2,1) -> Yes(внизу) |<br>
+										_.7 | Module:Job -> Job Manager(1,2) -> Create -> Continue -> OK -> Submit |<br>
+										_._ | дождаться "Job completed successfully" -> Results |<br>
+										_._ | Plot Contour(4,1) -> вверху S поменять на U(деформации) -> Stop Recording |<br>
+										<hr class="dropdown-divider">
+										3 | 3D console(batch) |<br>
+										_.1 | Copy abaqusMacros.py -> 3D_beam.py -> RC -> Edit with Notepad++ |<br>
+										_.2 | удалить def Macro1() -> убрать все отступы (Shift+Tab) |<br>
+										_.3 | File -> New Model | File -> Run Script |<br>
+										_.4 | дождаться "Job completed successfully" |<br>
+										_.5 | проверить: Property, Mesh, Visualization |<br>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- ==================================== Theory ========================================= -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTheory">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTheory" aria-expanded="false" aria-controls="collapseTheory">
+									Theory |
+								</button>
+							</h2>
+							<div id="collapseTheory" class="accordion-collapse collapse" aria-labelledby="headingTheory" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+										1 | Theory |<br>
+										_.1 | Ф-ция- закон, по которому каждому эл-ту одного мн-ва ставится в соответсвие эл-т другого мн-ва |<br>
+										_.2 | Функционал- переменная в-на, зависящая от ф-ции (площадь, внутри замкнутой кривой) |<br>
+										_.3 | Вариация ф-нала- главная линейная часть приращения ф-нала вдоль определенного направления |<br>
+										_.4 | Вариационное исчисление- раздел ф-ного анализа, в к-ром изучаются вариации ф-лов |<br>
+										<hr class="dropdown-divider">
+										2 | Метод Ритца |<br>
+										_.1 | Метод Ритца - прямой метод нахождения приблизительного решения краевых задач вариационного исчисления |<br>
+										_.2 | Краевая задча- диф. ур-ние с заданными линейными соотношениями между значениями искомых ф-ций на начале и конце интервала интегрирования |<br>
+										<hr class="dropdown-divider">
+										3 | Метод Рунге- Кутты |<br>
+										_.1 | Метод Рунге- Кутты- семейство численных алгоритмов обыкновенных дифф. ур-ний |<br>							
+									</p>
+								</div>
+							</div>
+						</div>
 
-									<hr class="dropdown-divider">									
-									2 | Создание настроечного файла 2d.settings | лежит в ~/_profile |<br>
-									_.1 | System -> Attributes |<br>
-									_.2 | Element: element(sorted)/ type/ xmid/ ymid/ zmid |<br>
-									_.3 | Loadcase: loadcase: loadcase(sorted) | <br> 
-									_.4 | 2DStress: element(sorted)/ loadcase(sorted)/ sigx/sigy/ taux |<br>
-									_.5 | Print: Element/ LoadCase/ 2-D_Stress -> Apply |<br>
-									_.6 | Export: Element/ LoadCase/ 2-D_Stress |<br>
-									_.7 | Save Settings -> 2d.settings |<br>
-									<hr class="dropdown-divider">									
-									3 | Создание файла нагрузок feadms_out.dat |<br>
-									_.1 | XTerm -> <code>bash</code> -> <code>~/b</code> - запустится батч файл с подсказками -> <code>cd cur/m/ текущий проект</code> |<br>
-									_.2 | <code>cp ~/_profile/acd.det.Z .</code> - скачать детейл Aft Cargo Door в текущую папку |<br>
-									_.3 | <code>feadms -m B478FC46FDMS -det acd.det.Z</code> -> min Feadms window -> max GRS window |<br>
-									_.4 | дождаться в окне FEADMS: Msg: Preloading of GRS Detail, Loadcases, and Settings completes. Going Interactive !!!<br>
-									_.5 | GRS -> Selection -> Element by Identifier -> ввести номер (495094) -> OK |<br>
-									_.6 | Working Volume -> Promote Selected -> pick -> желтая рамка | если не обрезать ненужное - считает долго  (~ 7min) | <br>
-									_.7 | File -> Save As -> d.det.Z | Ctrl+C -> <code>ls -l</code> - проверка наличия |<br>
-									_.8 | <code>cp ~/_profile/2d.settings .</code> - файл настроек копируется в текущую папку |<br>
-									_.9 | <code>feadms -m B478FC46FDMS -det d.det.Z -set 2d.settings -o feadms_out.dat</code> |<br>
-									<hr class="dropdown-divider">									
-									4 | Bias |<br>
-									_.1 | Bias - смещение элемента к узлу |<br>
-									_.2 | Просмотреть в GRS: Selection -> Modes -> Bias Elements |<br>
-									_.3 | Прибиасить: Biasing |<br>
-									<hr class="dropdown-divider">									
-									5 | Intro |<br>
-									_.1 | Overview |<br>
-									_.2 | What is Feadms? |<br>
-									_.3 | Start |<br>
-									_.4 | GRS |<br>
-									<hr class="dropdown-divider">									
-									6 | Tutorial |<br>
-									_.1 | Select Model: CBEAMTRN |<br>
-									_.2 | Sum Forces: F2-> MidCl | Pick nodes 5/ 10-> Source one | Pick nodes 5/ 10-> Nodes-> Aux-> Select B/w | Pick prev. node-> Target | Solution-> LoadCase-> C4 | Results-> Corner Force |<br>
-									_.3 | Extract Loads | 2.4 Derive Attributes | 2.5 Bias | 2.6 Control Pick |<br>
-									<hr class="dropdown-divider">									
-									7 | GRS |<br>
-									_.1 | File I/O |<br>
-									_.2 | View |<br>
-									_.3 | Deflection |<br>
-									_.4 | Properties |<br>
-									_.5 | Menu: Working Volume |<br>
-									_.6 | Menu: Selection |<br>
-									_.7 | Menu: Node Operation |<br>
-									_.8 | Menu: Elements |<br>
-									_.9 | Menu: Associations |<br>
-									_.10 | Menu: Bias |<br>
-									_.11 | Menu: Geometry |<br>
-									_.12 | Relation Dialog |<br>
-									_.13 | Beam and Node Info Dialog |<br>
-									<hr class="dropdown-divider">									
-									8 | FEADMS |<br>
-									_.1 | Structure-> Model-> LC |<br>
-									_.2 | Description -> Node/ Elem/ Mat/ Constr/ Prop |<br>
-									_.3 | Solution Report-> Bound/ Loadcase/ Mskey/ Solset |<br>
-									_.4 | Result Report-> Displacement/ CornerF/ Int.Load/ Stress/ Strain |<br>
-									_.5 | System-> Save/ Read/ Attribute/ Export (SDIO-> .dat) |<br>
-									_.6 | Exit |<br>
-									<hr class="dropdown-divider">									
-									9 | Other |<br>
-									_.1 | Glossary |<br>
-									_.2 | Ref |<br>
-									_.3 | A.Consideration |<br>
-									_.4 | B.Sign Convention |<br>
-									_.5 | C.Command Line |<br>
-									_.6 | D.Beam example |<br>
-								</p>
-							</div>
-						</div>
+						<!-- ======================================== Next Item ======================================== -->
 					</div>
-					<!-- ==================================== Getdata ========================================= -->
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="headingGetdata">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGetdata" aria-expanded="false" aria-controls="collapseGetdata">
-								Getdata |
-							</button>
-						</h2>
-						<div id="collapseGetdata" class="accordion-collapse collapse" aria-labelledby="headingGetdata" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								<p>
-									1 | Загрузка модели |<br>
-									_.1 | XTerm-> Analysis Sustaining -> Finite Element-> Getdata -> Use 1280 by 1024 screen size |<br>
-									_.2 | Plot/Get 757-200 SAMECS related data -> Щелчок -> Get ACTSOL output (2ая сверху) |<br>
-									_.3 | Output Information for every loadcase -> I want ... (recomended) -> Fatigue -> Щелчок |<br>
-									_.4 | FWD-Body -> Freighter -> Substructure35 -> Apply -> Yes -> Reset All Settings .. |<br>
-									<hr class="dropdown-divider">
-									2 | Extract loads |<br>
-									_.1 | Find element in model and write it's number down |<br>
-									_.2 | Main Menu/ Controls -> Exit the viewer and continue the current analysis |<br>
-									_.3 | Ignore Node .. with No Preselected Item |<br>
-									_.4 | Reaction Forces=Yes | Stresses and Loads=Yes -> Apply |<br>
-									_.5 | Plates -> Apply | Beams (Direct Pick Box) -> Apply | Nodes -> Apply -> Input A Title: xxx |<br>
-									_.6 | Output Filename: xxx -> Do you want create IAS ... -> Yes -> xxx.dta -> Create IAS I & J(loadcase) |<br>
-								</p>
-							</div>
-						</div>
-					</div>
-					<!-- ==================================== Abacqus ========================================= -->
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="headingAbacqus">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbacqus" aria-expanded="false" aria-controls="collapseAbacqus">
-								Abacqus |
-							</button>
-						</h2>
-						<div id="collapseAbacqus" class="accordion-collapse collapse" aria-labelledby="headingAbacqus" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								<p>
-									0 | Scripts |<br>
-									_.1 | <a href="..\..\docs_eng\4_fem\abaqus" target="_blank">abaqus</a> -> перенести xxx.py в <a href="C:/avk/test/abaqus" target="_blank">test/abaqus</a> |<br>
-									_.2 | File -> Set Work Directory -> C:\avk\test\abaqus -> OK |<br>
-									_.3 | File -> Macro Manager -> Create -> Dir..:Work -> Continue -> Dismiss |<br>
-									_._ | проверить файл abaqusMacros.py в test/abaqus |<br>
-									<hr class="dropdown-divider">								
-									1 | 1D console | Middle Click(MC)<br>
-									_.1 | Module:Part -> Create Part(1,1) -> name:b/wire/100-> Continue |<br>
-									_._ | Create Line(1,2) -> LC -> LC+100 -> MC:появилась линия -> 2MC(выход) |<br>
-									_.2 | Module:Property -> Material Manager(1,2) -> Create -> name:al |<br>
-									_._ | Mechanical -> Elasticity -> Elastic | Young: 10e6 | mu=0.3 -> OK -> Dismiss |<br>
-									_._ | Create Section(2,1) -> name:r/beam -> Continue -> |<br>
-									_.__ | Сreate beam profile (иконка трубы) -> name:rect, shape:rect.. -> Continue -> 1,1 -> 2OK |<br>
-									_._ | Assign Section(3,1) -> выделить линию -> Done -> OK (green) |<br>
-									_._ | Assign Beam Orient..(5,2) -> выделить линию -> Done -> 0,0,1 -> Enter -> OK (green) |<br>
-									_.3 | Module:Assembly -> Create Instance(1,1) -> OK |<br>
-									_.4 | Module:Step -> Create Step(1,1) -> Type:Static,Genearal -> Continue -> OK |<br>
-									_.5 | Module:Load -> Create Load(1,1) -> name:c -> Continue -> |<br>
-									_.__ | выбрать точку -> Done -> CF2:-1 -> OK |<br>
-									_._ | Bound.Cond.Manager(2,2) -> Create -> name:z -> Continue -> |<br>
-									_.__ | выбрать плоскость -> Done -> Encastre -> OK -> Dismiss |<br>
-									_.6 | Module:Mesh -> check Part -> Seed Part(1,1) -> size:10 -> Apply -> OK  |<br>
-									_._ | Assign Element4,1) -> выбрать линию -> Done -> family:beam -> OK |<br>
-									_._ | Mesh part(2,1) -> Yes(внизу) |<br>
-									_.7 | Module:Job -> Job Manager(1,2) -> Create -> Continue -> OK -> Submit |<br>
-									_._ | дождаться "Job completed successfully" -> Results |<br>
-									_._ | Plot Contour(4,1) -> вверху S поменять на U(деформации) -> Stop Recording |<br>
-									<hr class="dropdown-divider">
-									2 | 3D console |<br>
-									_.1 | Module:Part -> Part Manager(1,2) -> Create -> name:b/3D -> Continue  |<br>
-									_._ | Create Rect(2,2) -> X,Y:0,0 -> Enter -> X,Y:1,1 -> Enter -> MC -> Done -> Depth:10 -> OK |<br>
-									_.2 | Module:Property -> Material Manager(1,2) -> Create -> name:al |<br>
-									_._ | Mechanical -> Elasticity -> Elastic | Young: 10e6 | mu=0.3 -> OK -> Dismiss |<br>
-									_._ | Create Section(2,1) -> name:r -> Continue -> OK |<br>
-									_._ | Assign Section(3,1) -> выделить балку -> Done -> OK (green) |<br>
-									_.3 | Module:Assembly -> Create Instance(1,1) -> OK |<br>
-									_.4 | Module:Step -> Create Step(1,1) -> Type:Static,Genearal -> Continue -> OK |<br>
-									_.5 | Module:Load -> Create Load(1,1) -> name:c -> Continue -> |<br>
-									_._ | выбрать точку -> Done -> CF2:-1 -> OK |<br>
-									_._ | Bound.Cond.Manager(2,2) -> Create -> name:z -> Continue -> |<br>
-									_._ | выбрать плоскость -> Done -> Encastre -> OK -> Dismiss |<br>
-									_.6 | Module:Mesh -> check Part -> Seed Edge(1,2) -> |<br>
-									_._ | выбрать грани (Shift+..) -> Done -> By number:20 -> Apply -> OK |<br>
-									_._ | выбрать малые грани -> By number:2 -> Apply -> OK |<br>
-									_._ | Mesh part(2,1) -> Yes(внизу) |<br>
-									_.7 | Module:Job -> Job Manager(1,2) -> Create -> Continue -> OK -> Submit |<br>
-									_._ | дождаться "Job completed successfully" -> Results |<br>
-									_._ | Plot Contour(4,1) -> вверху S поменять на U(деформации) -> Stop Recording |<br>
-									<hr class="dropdown-divider">
-									3 | 3D console(batch) |<br>
-									_.1 | Copy abaqusMacros.py -> 3D_beam.py -> RC -> Edit with Notepad++ |<br>
-									_.2 | удалить def Macro1() -> убрать все отступы (Shift+Tab) |<br>
-									_.3 | File -> New Model | File -> Run Script |<br>
-									_.4 | дождаться "Job completed successfully" |<br>
-									_.5 | проверить: Property, Mesh, Visualization |<br>
-								</p>
-							</div>
-						</div>
-					</div>
-					<!-- ==================================== Theory ========================================= -->
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="headingTheory">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTheory" aria-expanded="false" aria-controls="collapseTheory">
-								Theory |
-							</button>
-						</h2>
-						<div id="collapseTheory" class="accordion-collapse collapse" aria-labelledby="headingTheory" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								<p>
-									1 | Theory |<br>
-									_.1 | Ф-ция- закон, по которому каждому эл-ту одного мн-ва ставится в соответсвие эл-т другого мн-ва |<br>
-									_.2 | Функционал- переменная в-на, зависящая от ф-ции (площадь, внутри замкнутой кривой) |<br>
-									_.3 | Вариация ф-нала- главная линейная часть приращения ф-нала вдоль определенного направления |<br>
-									_.4 | Вариационное исчисление- раздел ф-ного анализа, в к-ром изучаются вариации ф-лов |<br>
-									<hr class="dropdown-divider">
-									2 | Метод Ритца |<br>
-									_.1 | Метод Ритца - прямой метод нахождения приблизительного решения краевых задач вариационного исчисления |<br>
-									_.2 | Краевая задча- диф. ур-ние с заданными линейными соотношениями между значениями искомых ф-ций на начале и конце интервала интегрирования |<br>
-									<hr class="dropdown-divider">
-									3 | Метод Рунге- Кутты |<br>
-									_.1 | Метод Рунге- Кутты- семейство численных алгоритмов обыкновенных дифф. ур-ний |<br>							
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- ======================================== Next Item ======================================== -->
-				</div>
-			</div>	    
-		</div>
-	</div> <!-- .container end -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-	<!-- <script src="index/_js/bootstrap.min.js"></script> -->
-</body>
-</html>
+				</div>	    
+			</div>
+		</div> <!-- .container end -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<!-- <script src="index/_js/bootstrap.min.js"></script> -->
+	</body>
+	</html>
 

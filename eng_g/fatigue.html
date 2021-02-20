@@ -257,6 +257,7 @@
 									_.3 | echo "         2        60   / " > $in159 |<br>
 									_.4 | echo "495024             1 mod $mod dmf 1890         /" >> $in159 |<br>
 									_.5 | echo "495103             2 mod $mod dmf 1970         /" >> $in159 |<br>
+									_._ | ! должно быть 12 пробелов после эл-та или его не находит |<br>
 									<hr class="dropdown-divider">	
 									5 | prepare idtas batch file |<br>
 									_.1 | bat="task2/idtas_batch"; touch $bat |<br>
@@ -273,6 +274,15 @@
 									_.2 | echo $fat_max |<br>
 									_.3 | #grep: clear headers | #sed: remove ' ' after t |<br>
 									_.4 | #tr -s: squeeze repeat to single | #cut: - cut fmax column |<br>
+									<hr class="dropdown-divider">
+									8 | Run new feadms_idtas |<br>
+									_._ | # 1_detail | 2_loads | 3_profile | 4_result |<br>
+									_.1 | cp -r feadms_idtas_tem feadms_idtas |<br>
+									_.2 | ftp: заменить details/ нагрузки/ profile и выписать в notepad |<br>
+									_.3 | найти номера элементов и выписать в notepad |<br>
+									_.4 | cd feadms_idtas-> vi b: переписать нагрузки/ profile/ elements |<br>
+									_.5 | vi 3_profile/xxx: ../2_loads/xxx.dat |<br>
+									_.6 | b - запуск |<br>
 								</p>
 							</div>
 						</div>

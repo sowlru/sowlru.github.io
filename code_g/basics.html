@@ -107,7 +107,7 @@
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingHi">
 								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHi" aria-expanded="false" aria-controls="collapseHi">
-									hi |
+									hi | 1:c | 2:cpp | 3:cs | 4:java | 5:py | 6:php | 7:sh | 8:js | 9:xlsm |
 								</button>
 							</h2>
 							<div id="collapseHi" class="accordion-collapse collapse" aria-labelledby="headingHi" data-bs-parent="#accordionExample">
@@ -119,6 +119,7 @@
 										_.3 | using System; class Hi {static void Main() {Console.WriteLine("hi");}} |<br>
 										_.4 | Main.java | public class Main {public static void main(String[] args) {System.out.println("hi");}} |<br>
 										_.5 | hi.py | print("hi") |<br>
+										_.7 | echo "hi" |<br>
 										<hr class="dropdown-divider">
 										2 | RAD hi |<br>
 										_.1 | C++ Builder | File-> New-> Windows VCL Application |<br>
@@ -163,7 +164,7 @@
 										_.5 | int | long | float | bool |<br>
 										<hr class="dropdown-divider">
 										2 | constant |<br>
-										_.1:2 | const int a=7; |<br>
+										_.1:3 | const int a=7; |<br>
 										<hr class="dropdown-divider">
 										3 | Посмотреть макс.значение типа |<br>
 										_.2 | #include &lt;limits&gt; | cout << numeric_limits&lt;int&gt;::max() << endl; |<br>
@@ -184,12 +185,9 @@
 										_.1 | #include &lt;math.h&gt; | int a=7, b=2, c; c=pow(a,b); |<br>
 										_.5 | a=7; b=2; c=a**b; print(c) |<br>
 										<hr class="dropdown-divider">
-										8 | &&(and) | ||(or) | високосный год |<br>
-										_.4 | int y=2020; boolean is_leap=(y%4==0) && (y%100!=0 || y%400==0); System.out.println(is_leap) |<br>
-										_.5 | y=2020; is_leap=(y%4==0) and (y%100!=0 or y%400==0); print(is_leap) |<br>
-										<hr class="dropdown-divider">
 										9 | enum |<br>
-										_.3 | enum name {bob, alex=5, mike} | int num=name.bob //0 |<br>
+										_.3 | enum Names {Bob, Alex = 5} | p((int)Names.Bob); //0 |<br>
+										_.4 | enum name {bob, alex=5, mike} | int num=name.bob //0 |<br>
 										_.5 | from enum import Enum | class Name(Enum): bob=0; alex=5; mike=2 |<br>
 										_._ | num=Name.bob; print(num) #Name.bob |<br>
 										<hr class="dropdown-divider">
@@ -271,6 +269,116 @@
 										<hr class="dropdown-divider">
 										16 | подсчет уникальных букв в предложении |<br>
 										_.2 |  #include&lt;map&gt; | map&lt;char, int&gt; unq;  for (char c : s) {++unq[c];} |<br>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- ==================================== Input ========================================= -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingInput">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInput" aria-expanded="false" aria-controls="collapseInput">
+									input |
+								</button>
+							</h2>
+							<div id="collapseInput" class="accordion-collapse collapse" aria-labelledby="headingInput" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+										1 | ввод int |<br>
+										_.1 | int n; printf("int?\n"); scanf("%d", &n); printf("int=%d\n", n); |<br>
+										_.3 | int n = int.Parse(Console.Readline()); |<br>
+										_.5 | n=int(input('int?')) | printf("int=",n); |<br>
+										<hr class="dropdown-divider">
+										2 | ввод телефона |<br>
+										_.1 | scanf("(3%d)3%d-2%d-2%d") ? |<br>
+										<hr class="dropdown-divider">
+										3 | ввод string |<br>
+										_.1 | char n[9]; printf("n?\n"); scanf("%s", &n); printf("hi %s\n", n);  |<br>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- ==================================== If ========================================= -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingIf">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIf" aria-expanded="false" aria-controls="collapseIf">
+									if | bool | while |
+								</button>
+							</h2>
+							<div id="collapseIf" class="accordion-collapse collapse" aria-labelledby="headingIf" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+										1 | &&(and) | ||(or) | високосный год |<br>
+										_.4 | int y=2020; boolean is_leap=(y%4==0) && (y%100!=0 || y%400==0); System.out.println(is_leap) |<br>
+										_.5 | y=2020; is_leap=(y%4==0) and (y%100!=0 or y%400==0); print(is_leap) |<br>
+										<hr class="dropdown-divider">
+										2 | if |<br>
+										_.1-3 | if (a&gt;b) p("a&gt;b"); else if (a&lt;b) p("a&lt;b"); else p("a=b"); |<br>
+										_.5 | if a &gt; b: p("a&gt;b") | elif a &lt; b: p("a&lt;b") | else: p("a=b") |<br>
+										<hr class="dropdown-divider">
+										3 | switch |<br>
+										_.1,3 | int a=0,c; switch(a){case 0:c=1;break; case 1:case 2:c=2;break; default:c=3;break;} |<br>
+										_.5 | no switch |<br>
+										<hr class="dropdown-divider">
+										4 | while | a=6 a=4 a=3 |<br>
+										_.1 | while (--a&gt;=b){if(a==5) continue; printf("a=%d ",a); if(a==3) break; } |<br>
+										_.5 | while a >= b: | a-=1 | if a==5: continue; | print("a=",a) | if a==3: break; |<br>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- ==================================== Ar ========================================= -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingAr">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAr" aria-expanded="false" aria-controls="collapseAr">
+									ar | for |
+								</button>
+							</h2>
+							<div id="collapseAr" class="accordion-collapse collapse" aria-labelledby="headingAr" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+1 | объявить массив [7,2,8] и распечатать |<br>
+_.1 | #define SIZE 3 | int i; int ar[SIZE]={7,2,8}; for(i=0;i&lt;SIZE;i++) printf("%d ",ar[i]); |<br>
+_.2 | #include&lt;vector&gt; | vector&lt;int&gt; ar={7,2,8}; for(auto i:ar) cout << i <<" "; |<br>
+_.4 | for(int x:ar) System.out.println(x); |<br>
+_.5 | &lt;class  'list'&gt; | ar=[7,2,8]; print(ar) | проверка типа: type(ar) |<br>
+_._ | &lt;class 'tuple'&gt; | ar=(7,2,8); print(ar) | кортеж(неизменяемый массив) |<br>
+								<hr class="dropdown-divider">
+2 | массив из последовательности (1,000 нечетных чисел) |<br>
+_.5 | ar=[] | for x in range(1,1000,2): ar.append(x) | print(ar) #1;3;5;7;.. |<br>
+								<hr class="dropdown-divider">
+3 | массив из 1,000 случайных чисел от 1-100 |<br>
+_.1 | #include&lt;time.h&gt; | #define SIZE 1000 | int i, ar[SIZE]={0}; srand(time (NULL)); |<br>
+_._ | for(i=0;i&lt;SIZE;i++){ar[i]=rand()%100+1; printf("%3d ", ar[i]); if((i+1)%20==0) printf("\n");} |<br>
+_.4 | int ar[]; ar=new int[5]; for(int i=0; i&lt;ar.length;i++) ar[i]=(int)(Math.random()*10); |<br>
+_.5 | import random | i=1; ar=[] | for x in range(1000): ar.append(i); i=random.randint(1,100) |<br>
+_._ | == | ar = [random.randint(1,100) for x in range(1,1001)]; print(ar) |<br>
+								<hr class="dropdown-divider">
+4 | длина массива |<br>
+_.2 | cout << "Length = " << ar.size(); |<br>
+_.5 | print("Length = ",len(ar)) |<br>
+								<hr class="dropdown-divider">
+5 | сумма элементов массива |<br>
+_.5 | s=sum(ar) #12 |<br>
+_.8 | s=0; for(var i in ar)(s+=ar[i]) #12 |<br>
+								<hr class="dropdown-divider">
+6 | min/max элемент массива |<br>
+_.5 | m=min(ar) #1 | m=max(ar) #8 |<br>
+_.8 | m=Math.min.apply(null,ar) #1 | m=Math.max.apply(null,ar) #8 |<br>
+								<hr class="dropdown-divider">
+7 | добавить элемент (3) в конец | [7,2,8,3] |<br>
+_.2 | ar.push_back(3); |<br>
+_.5 | ar.append(3); |<br>
+								<hr class="dropdown-divider">
+8 | вытащить последний элемент |<br>
+_.5 | ar=[7,2,8,3]; x=ar.pop(); print(x,ar) #3 [7, 2, 8] |<br>
+								<hr class="dropdown-divider">
+9 | посчитать уникальные элементы | a:2; b:1; |<br>
+_.2 | vector&lt;string&gt; words = {"a", "b", "a"}; | map&lt;string,int&gt; unq; |<br>
+_._ | for(const string& w:words){unq[w]++;} |<br>
+								<hr class="dropdown-divider">
+10 | убрать последнюю запятую |<br>
+_.1 | for(i=0;i&lt;SIZE;i++) printf("%d ",ar[i]); printf("\b\b \n"); |<br>
+_.2 | string delm=""; for(auto i:ar){sum += delm + i; delm=", ";} |<br>
 									</p>
 								</div>
 							</div>

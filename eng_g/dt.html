@@ -81,25 +81,14 @@
 									<a href="..\..\docs_eng\3_damage_tol\book3\b3_05.pdf#page=1" target="_blank">05</a> - CG allowables |<br>
 									_.1 | параметр M - КИН, при котором скорость роста трещины 0.0001 in/cycles |<br>
 									<hr class="dropdown-divider">
-									<a href="..\..\docs_eng\3_damage_tol\book3\b3_06.pdf#page=1" target="_blank">06</a> - RS methods |<br>
-									_.1 | Frs(остаточная прочность) - напряжения, которое выдерживает поврежденный силовой эл-т до разрушения |<br>
-									_.2 | M:7075-T651 | G:h=72/ w=48/ t=0.14 | L:fmax=16ksi | Lcenter_crack-? |<br>
-									_._ | Ka=fn(mat,t)=67 | Fty=72*1.1(typ_factor)=79 (верхн.предел) |<br>
-									_.3 | принимаем L=7" -итеративный процесс |<br>
-									_._ | так как у трещины 2 конца - необходимо поделить на 2: Leq=3.5" |<br>
-									_._ | пересчитывается F с учетом трещины F=Fty(79)*An(48-7)/48=67.5 |<br>
-									_.4 | определить в какой зоне находиться трещина 0-> 0.02-> t-> Transition-> Ly-> LEFM |<br>
-									_._ | Ly=1.024*(Ka/(Y*F))^2= 1.024*(67/1.01*67.5)^2=0.98" - длина трещины при переходе |<br>
-									_._ | L=3.5>0.98 - зона LFEM -> Frs=Ka/(Y*sqrt(PI*Le))=20.2 |<br>
-									_.5 | аналогично построить несколько точек, провести линию и найти L=10.8 для f=16ksi |<br>
+									<a href="..\..\docs_eng\3_damage_tol\book3\b3_06.pdf#page=1" target="_blank">06</a> | RS methods |<br>
+									<a href="..\..\docs_eng\3_damage_tol\book3\b3_07.pdf#page=1" target="_blank">07</a> | RS allowables |<br>
+									<a href="..\..\docs_eng\3_damage_tol\book3\b3_08.pdf#page=1" target="_blank">08</a> | Cracking pattern |<br>
+									<a href="..\..\docs_eng\3_damage_tol\book3\b3_09.pdf#page=1" target="_blank">09</a> | Y factors |<br>
+									<a href="..\..\docs_eng\3_damage_tol\book3\b3_10.pdf#page=1" target="_blank">10</a> | C factors |<br>
+									<a href="..\..\docs_eng\3_damage_tol\book3\b3_11.pdf#page=1" target="_blank">11</a> | WFD methods |<br>
 									<hr class="dropdown-divider">
-									<a href="..\..\docs_eng\3_damage_tol\book3\b3_07.pdf#page=1" target="_blank">07</a> - RS allowables |<br>
-									<a href="..\..\docs_eng\3_damage_tol\book3\b3_08.pdf#page=1" target="_blank">08</a> - Cracking pattern |<br>
-									<a href="..\..\docs_eng\3_damage_tol\book3\b3_09.pdf#page=1" target="_blank">09</a> - Y factors |<br>
-									<a href="..\..\docs_eng\3_damage_tol\book3\b3_10.pdf#page=1" target="_blank">10</a> - C factors |<br>
-									<a href="..\..\docs_eng\3_damage_tol\book3\b3_11.pdf#page=1" target="_blank">11</a> - WFD methods |<br>
-									<hr class="dropdown-divider">
-									<a href="..\..\docs_eng\3_damage_tol\book3\b3_12.pdf#page=1" target="_blank">12</a> - DT Rating |<br>
+									<a href="..\..\docs_eng\3_damage_tol\book3\b3_12.pdf#page=1" target="_blank">12</a> | DT Rating |<br>
 									_.1 | Вероятность обнаружения трещины на однотипных самолетах выше поэтому используется Fleet DTR |<br>
 									_.2 | First Crack DTR: 1.ремонты; 2.number of airplanes < 50; 3.WFD |<br>
 									_.3 | Required DTR для pressure structure выбирается равным 10, т.к. нагрузки при давлении достигают 90% от Limit Load, в то время как нагрузки от полета примерно  = 20% |<br>
@@ -114,11 +103,109 @@
 							</div>
 						</div>
 					</div>
+					<!-- ==================================== RSmethod ========================================= -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingRSmethod">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRSmethod" aria-expanded="false" aria-controls="collapseRSmethod">06 | RS method | </button>
+						</h2>
+						<div id="collapseRSmethod" class="accordion-collapse collapse" aria-labelledby="headingRSmethod" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="card">
+											<img src="dt_img/01.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">1.Problem: find max crack length Lcrit</h5>
+												<p class="card-text">
+												Given<br>
+												material: 2024-T3, thk=0.1, Fty=47ksi<br>
+												geometry: on picture. As process iterative - assume crack length = 7 in. Crack have 2 tips, so Leq = 7/2 = 3.5 in<br>
+												stress: f=16 ksi.<br><br>
+												<a href="..\..\docs_eng\3_damage_tol\book3\b3_06.pdf#page=1" target="_blank">Frs</a> (остаточная прочность) - напряжения, которое выдерживает поврежденный силовой эл-т до разрушения |<br>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="card">
+											<img src="dt_img/02.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">2.Simple method (net area).</h5>
+												<p class="card-text">Option 1. Draw 2 points and line between them.<br>
+												Point 1. Lcr=7 in. Frs= Fty*(An/Ag)= Fty*(w-Lcr)/w= 47*(41/48)= 40 ksi<br>
+												Point 2. Lcr=40 in. Frs= Fty*(w-Lcr)/w= 47*(28/48)= 8 ksi<br>
+												Draw arrow that begin at f=16 ksi and get Lcrit=32 in<br>
+												<br>
+												Option 2. Analytical analysis.<br>
+												Actual applied load Pact= w*t*f= 48*0.1*16= 77 kips.<br>
+												Anet= Pact/Fty = 77/47= 1.6 in^2 - min area, that can sustian this load.<br>
+												w_min= Anet/t= 1.6/0.1= 16 in - min width, that can sustian this load. <br>
+												Lcrit= w-w_min= 48-16= 32 in<br>
+												
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="card">
+											<img src="dt_img/03.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">3.Fracture mechanic method.</h5>
+												<p class="card-text">From graph for given material and thickness find Ka=143.<br>
+												Ftyp= Fty*1.1= 52 ksi.<br>
+												F=Ftyp*(An/Ag)= 52*0.85= 45 ksi<br>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="card">
+											<img src="dt_img/04.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">4.Find transition crack length Ly</h5>
+												<p class="card-text">Define. which zone to use: linear elastic or transition.<br>
+												To do this, we need find Ly. Assume Y=1 (infinite plate), see more in Section 9.<br>
+												Ly = 1.024 * (143/(1* 45))^2 = 10.3 in<br>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="card">
+											<img src="dt_img/05.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">5.Find Frs for Lcr=7 in.</h5>
+												<p class="card-text">Leq/Ly= 3.5/10.3= 0.34<br>
+												Draw line and find Frs/F=0.78<br>
+												Frs= 0.78*F= 0.78*45= 35 ksi.<br>
+												As allowable stress Frs(35) > actual stress f(16), increase crack length.
+												
+												
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="card">
+											<img src="dt_img/06.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">6.Compare LEFM vs Net Section method.</h5>
+												<p class="card-text"> Min 3 points needed to build curve line.<br>
+												More points - more acuracy.<br>
+												As shown on picture above, LEFM method give more conservative stress than net section.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<!-- ==================================== Pattern ========================================= -->
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="headingPattern">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePattern" aria-expanded="false" aria-controls="collapsePattern">
-								Cracking Pattern | 08 |
+							08 | Cracking Pattern |
 							</button>
 						</h2>
 						<div id="collapsePattern" class="accordion-collapse collapse" aria-labelledby="headingPattern" data-bs-parent="#accordionExample">
@@ -197,7 +284,7 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="headingJfactors">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJfactors" aria-expanded="false" aria-controls="collapseJfactors">
-								J factors | 09 |
+							09 | J factors | 
 							</button>
 						</h2>
 						<div id="collapseJfactors" class="accordion-collapse collapse" aria-labelledby="headingJfactors" data-bs-parent="#accordionExample">
@@ -214,7 +301,7 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="headingWFD">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWFD" aria-expanded="false" aria-controls="collapseWFD">
-								WFD | 11 |
+							11 | WFD | 
 							</button>
 						</h2>
 						<div id="collapseWFD" class="accordion-collapse collapse" aria-labelledby="headingWFD" data-bs-parent="#accordionExample">
@@ -256,7 +343,7 @@
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingRepair">
 								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRepair" aria-expanded="false" aria-controls="collapseRepair">
-									Repair | 16 |
+								16 | Repair |
 								</button>
 							</h2>
 							<div id="collapseRepair" class="accordion-collapse collapse" aria-labelledby="headingRepair" data-bs-parent="#accordionExample">

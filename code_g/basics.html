@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 	<!-- Required meta tags -->
@@ -28,14 +28,6 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="#">Basics</a></li>
 							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="static.html">Static</a></li>
-							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="fatigue.html">Fatigue</a></li>
-							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="dt.html">Damage Tolerance</a></li>
-							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="fem.html">FEM</a></li>
-							<li><hr class="dropdown-divider"></li>
 						</ul>
 					</li>
 				</ul>
@@ -52,7 +44,7 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="headingInstall">
 							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstall" aria-expanded="true" aria-controls="collapseInstall">
-								install |
+								install | ide |
 							</button>
 						</h2>
 						<div id="collapseInstall" class="accordion-collapse collapse show" aria-labelledby="headingInstall" data-bs-parent="#accordionExample">
@@ -141,7 +133,16 @@
 										4 | показать расширение  |<br>
 										_.1 | Win+R -> cmd -> control panel -> |<br>
 										_.2 | Windows 07 | Folder Options -> View -> Uncheck Hide extensions foe known file types |<br>
-										_.3 | Windows 10 | Оформление и персонализация -> Параметры проводника -> Вид ..|<br>									
+										_.3 | Windows 10 | Оформление и персонализация -> Параметры проводника -> Вид ..|<br>
+										<hr class="dropdown-divider">
+										5 | time in ms |<br>
+										_.1 | #include&lt;time.h&gt; | clock_t diff; ...; diff = clock(); |<br>
+										_._ | printf("time=%.3f\n", (double)diff/CLOCKS_PER_SEC); |<br>
+										_.2 | #include&lt;chrono&gt; | using namespace std::chrono; |<br>
+										_._ | auto start = steady_clock::now(); ...; auto finish = steady_clock::now(); |<br>
+										_._ | cout << "time=" << duration_cast&lt;milliseconds&gt;(finish-start).count(); |<br>
+										_.3 | using System.Diagnostics; | var w = new Stopwatch(); |<br>
+										_._ | w.Start(); ...; w.Stop(); Console.WriteLine("time = " + w.ElapsedMilliseconds); |<br>
 									</p>
 								</div>
 							</div>
@@ -336,60 +337,353 @@
 							<div id="collapseAr" class="accordion-collapse collapse" aria-labelledby="headingAr" data-bs-parent="#accordionExample">
 								<div class="accordion-body">
 									<p>
-1 | объявить массив [7,2,8] и распечатать |<br>
-_.1 | #define SIZE 3 | int i; int ar[SIZE]={7,2,8}; for(i=0;i&lt;SIZE;i++) printf("%d ",ar[i]); |<br>
-_.2 | #include&lt;vector&gt; | vector&lt;int&gt; ar={7,2,8}; for(auto i:ar) cout << i <<" "; |<br>
-_.4 | for(int x:ar) System.out.println(x); |<br>
-_.5 | &lt;class  'list'&gt; | ar=[7,2,8]; print(ar) | проверка типа: type(ar) |<br>
-_._ | &lt;class 'tuple'&gt; | ar=(7,2,8); print(ar) | кортеж(неизменяемый массив) |<br>
-								<hr class="dropdown-divider">
-2 | массив из последовательности (1,000 нечетных чисел) |<br>
-_.5 | ar=[] | for x in range(1,1000,2): ar.append(x) | print(ar) #1;3;5;7;.. |<br>
-								<hr class="dropdown-divider">
-3 | массив из 1,000 случайных чисел от 1-100 |<br>
-_.1 | #include&lt;time.h&gt; | #define SIZE 1000 | int i, ar[SIZE]={0}; srand(time (NULL)); |<br>
-_._ | for(i=0;i&lt;SIZE;i++){ar[i]=rand()%100+1; printf("%3d ", ar[i]); if((i+1)%20==0) printf("\n");} |<br>
-_.4 | int ar[]; ar=new int[5]; for(int i=0; i&lt;ar.length;i++) ar[i]=(int)(Math.random()*10); |<br>
-_.5 | import random | i=1; ar=[] | for x in range(1000): ar.append(i); i=random.randint(1,100) |<br>
-_._ | == | ar = [random.randint(1,100) for x in range(1,1001)]; print(ar) |<br>
-								<hr class="dropdown-divider">
-4 | длина массива |<br>
-_.2 | cout << "Length = " << ar.size(); |<br>
-_.5 | print("Length = ",len(ar)) |<br>
-								<hr class="dropdown-divider">
-5 | сумма элементов массива |<br>
-_.5 | s=sum(ar) #12 |<br>
-_.8 | s=0; for(var i in ar)(s+=ar[i]) #12 |<br>
-								<hr class="dropdown-divider">
-6 | min/max элемент массива |<br>
-_.5 | m=min(ar) #1 | m=max(ar) #8 |<br>
-_.8 | m=Math.min.apply(null,ar) #1 | m=Math.max.apply(null,ar) #8 |<br>
-								<hr class="dropdown-divider">
-7 | добавить элемент (3) в конец | [7,2,8,3] |<br>
-_.2 | ar.push_back(3); |<br>
-_.5 | ar.append(3); |<br>
-								<hr class="dropdown-divider">
-8 | вытащить последний элемент |<br>
-_.5 | ar=[7,2,8,3]; x=ar.pop(); print(x,ar) #3 [7, 2, 8] |<br>
-								<hr class="dropdown-divider">
-9 | посчитать уникальные элементы | a:2; b:1; |<br>
-_.2 | vector&lt;string&gt; words = {"a", "b", "a"}; | map&lt;string,int&gt; unq; |<br>
-_._ | for(const string& w:words){unq[w]++;} |<br>
-								<hr class="dropdown-divider">
-10 | убрать последнюю запятую |<br>
-_.1 | for(i=0;i&lt;SIZE;i++) printf("%d ",ar[i]); printf("\b\b \n"); |<br>
-_.2 | string delm=""; for(auto i:ar){sum += delm + i; delm=", ";} |<br>
+										1 | объявить массив [7,2,8] и распечатать |<br>
+										_.1 | #define SIZE 3 | int i; int ar[SIZE]={7,2,8}; for(i=0;i&lt;SIZE;i++) printf("%d ",ar[i]); |<br>
+										_.2 | #include&lt;vector&gt; | vector&lt;int&gt; ar={7,2,8}; for(auto i:ar) cout << i <<" "; |<br>
+										_.4 | for(int x:ar) System.out.println(x); |<br>
+										_.5 | &lt;class  'list'&gt; | ar=[7,2,8]; print(ar) | проверка типа: type(ar) |<br>
+										_._ | &lt;class 'tuple'&gt; | ar=(7,2,8); print(ar) | кортеж(неизменяемый массив) |<br>
+										<hr class="dropdown-divider">
+										2 | массив из последовательности (1,000 нечетных чисел) |<br>
+										_.5 | ar=[] | for x in range(1,1000,2): ar.append(x) | print(ar) #1;3;5;7;.. |<br>
+										<hr class="dropdown-divider">
+										3 | массив из 1,000 случайных чисел от 1-100 |<br>
+										_.1 | #include&lt;time.h&gt; | #define SIZE 1000 | int i, ar[SIZE]={0}; srand(time (NULL)); |<br>
+										_._ | for(i=0;i&lt;SIZE;i++){ar[i]=rand()%100+1; printf("%3d ", ar[i]); if((i+1)%20==0) printf("\n");} |<br>
+										_.4 | int ar[]; ar=new int[5]; for(int i=0; i&lt;ar.length;i++) ar[i]=(int)(Math.random()*10); |<br>
+										_.5 | import random | i=1; ar=[] | for x in range(1000): ar.append(i); i=random.randint(1,100) |<br>
+										_._ | == | ar = [random.randint(1,100) for x in range(1,1001)]; print(ar) |<br>
+										<hr class="dropdown-divider">
+										4 | длина массива |<br>
+										_.2 | cout << "Length = " << ar.size(); |<br>
+										_.5 | print("Length = ",len(ar)) |<br>
+										<hr class="dropdown-divider">
+										5 | сумма элементов массива |<br>
+										_.5 | s=sum(ar) #12 |<br>
+										_.8 | s=0; for(var i in ar)(s+=ar[i]) #12 |<br>
+										<hr class="dropdown-divider">
+										6 | min/max элемент массива |<br>
+										_.5 | m=min(ar) #1 | m=max(ar) #8 |<br>
+										_.8 | m=Math.min.apply(null,ar) #1 | m=Math.max.apply(null,ar) #8 |<br>
+										<hr class="dropdown-divider">
+										7 | добавить элемент (3) в конец | [7,2,8,3] |<br>
+										_.2 | ar.push_back(3); |<br>
+										_.5 | ar.append(3); |<br>
+										<hr class="dropdown-divider">
+										8 | вытащить последний элемент |<br>
+										_.5 | ar=[7,2,8,3]; x=ar.pop(); print(x,ar) #3 [7, 2, 8] |<br>
+										<hr class="dropdown-divider">
+										9 | посчитать уникальные элементы | a:2; b:1; |<br>
+										_.2 | vector&lt;string&gt; words = {"a", "b", "a"}; | map&lt;string,int&gt; unq; |<br>
+										_._ | for(const string& w:words){unq[w]++;} |<br>
+										<hr class="dropdown-divider">
+										10 | убрать последнюю запятую |<br>
+										_.1 | for(i=0;i&lt;SIZE;i++) printf("%d ",ar[i]); printf("\b\b \n"); |<br>
+										_.2 | string delm=""; for(auto i:ar){sum += delm + i; delm=", ";} |<br>
 									</p>
 								</div>
 							</div>
 						</div>
-						<!-- ======================================== Next Item ======================================== -->
+						<!-- ==================================== Ar2D ========================================= -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingAr2D">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAr2D" aria-expanded="false" aria-controls="collapseAr2D">
+									table |
+								</button>
+							</h2>
+							<div id="collapseAr2D" class="accordion-collapse collapse" aria-labelledby="headingAr2D" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+										1 | объявить массив "*" размером 31x20 | int rows = 31, elems = 20; |<br>
+										_.2 | vector&lt;vector&lt;string&gt;&gt; table(rows); |<br>
+										_._ | for (int row = 0; row &lt; rows; row++){table[row].assign(elems, "*");} |<br>
+										_.3 | var table = new List&lt;List&lt;string&gt;&gt;(); |<br>
+										_._ | for (int row = 0; row < rows; row++){var ar = new List&lt;string&gt;(); ...} |<br>
+										_.__ | for (int elem = 0; elem < elems; elem++){ar.Add("*");} table.Add(ar); |<br>
+										<hr class="dropdown-divider">
+										2 | распечатать таблицу |<br>
+										_.2 | void PrintTable(vector&lt;vector&lt;string&gt;&gt; table){...} |<br>
+										_._ | for (int row = 0; row &lt; table.size(); row++){cout << row << ": "; ... cout << endl; } |<br>
+										_.__ | for (int elem = 0; elem &lt; table[row].size(); elem++){cout << table[row][elem] << " ";} |<br>
+										_.3 | static void PrintTable(List&lt;List&lt;string&gt;&gt; table){...} |<br>
+										_._ | for (int row = 0; row < table.Count; row++){Console.Write(row + ":");... Console.WriteLine(' ');} |<br>
+										_.__ | for (int elem = 0; elem < table[row].Count(); elem++) { Console.Write(table[row][elem] + ' '); } |<br>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- ==================================== Dict ========================================= -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingDict">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDict" aria-expanded="false" aria-controls="collapseDict">
+									dict |
+								</button>
+							</h2>
+							<div id="collapseDict" class="accordion-collapse collapse" aria-labelledby="headingDict" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+										1 | объявить словарь | a:7; b:2; c:8; |<br>
+										_.2 | #include&lt;map&gt; | map&lt;string, int&gt; dict={{"a",7},{"b",2},{"c",8}}; |<br>
+										_.3 | var dict = new Dictionary&lt;string, int&gt;() { { "a", 7 }, { "b", 2 }, { "c", 8 } }; |<br>
+										_.5 | dict={"a":3,"b":1,"c":8} |<br>
+										<hr class="dropdown-divider">
+										2 | распечатать |<br>
+										_.2 | for(const auto& item:dict){cout << item.first << ":" << item.second << "; ";} |<br>
+										_.3 | foreach (var pair in dict){Console.Write(pair.Key + ":" + pair.Value);} |<br>
+										_.5 | for k in dict: print (k, dict[k]) |<br>
+										<hr class="dropdown-divider">
+										3 | получить значение по ключу | b=2 |<br>
+										_.2 | cout << dict["b"]; |<br>
+										_.3 | Console.WriteLine(dict["b"]); |<br>
+										_.5 | print (dict.get("a","no data")) | если не найден: no data |<br>
+										<hr class="dropdown-divider">										
+										4 | размер словаоя |<br>
+										_.2 | cout << dict.size(); |<br>
+										_.3 | Console.WriteLine(dict.Count); |<br>
+										<hr class="dropdown-divider">	
+										5 | добавить/ удалить элемент |<br>
+										_.2 | dict["d"] = 3; | dict.erase("d"); <br>
+										_.3 | dict.Add("d", 3); | dict.Remove("d"); |<br>
+										<hr class="dropdown-divider">	
+										6 | перевернуть key:value | 2:b; 7:a; 8:c; |<br>
+										_.2 | map&lt;int,string&gt; val_key; for(auto item:dict){val_key[item.second] = item.first;} |<br>
+										<hr class="dropdown-divider">	
+										7 | подсчет кол-ва уникальных строк | a 2; b 1; c 1; |<br>
+										_.3 | var ar = new[] { "a", "b", "a", "c" }; var dict = new Dictionary&lt;string, int&gt;(); |<br>
+										_._ | foreach (var e in ar){if (!dict.ContainsKey(e)) { dict[e] = 0; } dict[e]++; } |<br>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- ==================================== DictAr ========================================= -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingDictAr">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDictAr" aria-expanded="false" aria-controls="collapseDictAr">
+									dict_ar |
+								</button>
+							</h2>
+							<div id="collapseDictAr" class="accordion-collapse collapse" aria-labelledby="headingDictAr" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+										1 | объявить массив | a:[6, 7]; b:[0, 2]; c:[7, 8]; |<br>
+										_.2 | #include&lt;map&gt;&lt;set&gt; | map&lt;string,set&lt;int&gt;&gt; map_set = {{"a",{7,6}},{"b",{2,0}},{"c",{8,7}},}; |<br>
+										<hr class="dropdown-divider">
+										2 | распечатать массив в функции |<br>
+										_.2 | void print_map_set(const map&lt;string,set&lt;int&gt;&gt;& map_set){...} |<br>
+										_._ | for(auto row:map_set){cout << row.first << ": ";...} |<br>
+										_.__ | for(auto item:row.second) cout << item << " "; cout << endl; |<br>
+										<hr class="dropdown-divider">
+										3 | добавить элемент массива | a:6 7; b:0 2 3; c:7 8; |<br>
+										_.2 | map_set["b"].insert(3);|<br>
+										<hr class="dropdown-divider">
+										4 | проверка существования ключа |<br>
+										_.2 | if(map_set.count("a") > 0) cout << "exist" << endl; |<br>
+										<hr class="dropdown-divider">
+										5 | удалить весь ряд/ ключ |<br>
+										_.2 | map_set.erase("b"); |<br>     
+										<hr class="dropdown-divider">
+										6 | удалить 1 эл-т из ключа |<br>
+										_.2 | map_set["b"].erase(2); |<br>
+										<hr class="dropdown-divider">
+										7 | создать массив из ключа "a" | 6 7 |<br>
+										_.2 | vector&lt;int&gt; vec_map; for(auto elm:map_set.at("a")){vec_map.push_back(elm);} |<br>
+										<hr class="dropdown-divider">
+										8 | узнать число ключей в массиве |<br>
+										_.2 | map_set.size() |<br> 
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- ==================================== Fn ========================================= -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingFn">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFn" aria-expanded="false" aria-controls="collapseFn">
+									fn | module | package |
+								</button>
+							</h2>
+							<div id="collapseFn" class="accordion-collapse collapse" aria-labelledby="headingFn" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+										1 | Рекурсия | //up:3 up:2 stop down:2 down:3 rec:3 |<br>
+										_.4 | static int <b>rec</b>(int n){if(n&lt;=1){System.out.println("stop"); return n;}; |<br>
+										_._ | System.out.println("up:"+n);<b>rec</b>(n-1); System.out.println("down:"+n); return n;} |<br>
+										_._ | int c; c=<b>rec</b>(3); System.out.println("rec:"+c); |<br>
+										_.5 | def <b>rec</b>(n=7): | if n<=1: print("stop"); return n |<br>
+										_._ | print("up:",n); <b>rec</b>(n-1); print("down:",n); return n; | c=<b>rec</b>(3); print("rec:",c); |<br>
+										<hr class="dropdown-divider">
+										2 | Фибоначчи |<br>
+										_.5 | def fib(n): || if n<=1: print("stop",n); return n |<br>
+										_._ || print("beg",n); a=fib(n-1); print("mid",n); b=fib(n-2); print("end",n); return (a+b) |<br>
+										_._ | s=fib(5); print("fib=",s) #5 |<br>
+										_._ | # {block 2}: beg 2 	stop 1 		mid 2 	stop 0 		end 2 |<br>
+										_._ | # {block 3}: beg 3	{block 2}	mid 3 	stop 1 		end 3 |<br>
+										_._ | # {block 4}: beg 4	{block 3}	mid 4	{block 2}	end 4 |<br>
+										_._ | # {block 5}: beg 5 	{block 4} 	mid 5 	{block 3} 	end 5 |<br>
+										<hr class="dropdown-divider">
+										3 | Сумма переменного числа аргументов |<br>
+										_.4 | static int sum(int ... args){int n=0; .., return n;} | System.out.println("sum:"+sum(3,1,8)); |<br>
+										_.5 | def fn(*args): print(sum(args)) | fn(3,1,8) #12, args - кортеж |<br>
+										<hr class="dropdown-divider">
+										4 | Переменное кол-во аргументов ассоциативного массива |<br>
+										_.5 | def fn(**args): || for k,v in args.items(): print(k,v) | fn(a=3,b=1,c=8) |<br>
+										<hr class="dropdown-divider">
+										5 | Глобальная переменная |<br>
+										_.5 | global x |<br>
+										<hr class="dropdown-divider">
+										6 | Создание модуля с ф-цией rec.py (в одной папке с main.py) |<br>
+										_.5 | def rec - сохранить в файл rec.py | main.py: import rec | rec.rec() |<br>
+										<hr class="dropdown-divider">
+										7 | Получить имя модуля который вызвал rec.py |<br>
+										_.5 | rec.py: print(__name__) #__main__ |<br>
+										<hr class="dropdown-divider">
+										8 | Создание пакета my_lib с rec.py |<br>
+										_.5 | new folder: my_lib | new file: __init__.py | main.py: import  my_lib.rec | my_lib.rec.rec() |<br>
+										<hr class="dropdown-divider">
+									9 | Генератор ф-ций |</p>
+									_.1 | def <b>gen()</b>: yield 1; yield 4; yield 7 |<br>
+									_.2 | for g in <b>gen()</b>: print (g) # 1;4;7 |<br>
+									_.3 | yield работает почти как return, возвратит 1 и зависнит |<br>
+									_.4 | при повторном вызове начнет работу с yield 4 |<br>
+									_.5 | применение: загрузка данных из базы | считывание файла |<br>
+								</p>
+							</div>
+						</div>
 					</div>
-				</div>	    
-			</div>
-		</div> <!-- .container end -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-		<!-- <script src="index/_js/bootstrap.min.js"></script> -->
-	</body>
-	</html>
+					<!-- ==================================== Prime ========================================= -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingPrime">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrime" aria-expanded="false" aria-controls="collapsePrime">
+								prime |
+							</button>
+						</h2>
+						<div id="collapsePrime" class="accordion-collapse collapse" aria-labelledby="headingPrime" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<p>
+									1 | prime C |<br>
+									_.1 | #include&lt;math.h&gt; | #define NUM 65000 |  char is_complex=0; |<br>
+									_.2 | unsigned short odds=3, ar[NUM]={2}, ar_len=1, lim=1, count=1; ar[ar_len]=2;  |<br>
+									_.3 | //первый цикл проходит по всем нечетным числам: 3,5,7,.. |<br>
+									_._ | for(odds=3;odds&lt;NUM;odds+=2){is_complex=0; lim=sqrt(ar_len);...} |<br>
+									_.__ | //второй цикл из первого удаляет числа, к-рые делятся на простые |<br>
+									_.__ | for(count=1; count<=lim; count++){if(odds%ar[count]==0){is_complex++; break;}} |<br>
+									_.__ | if(is_complex) continue; ar_len++; ar[ar_len]=odds; |<br>
+									_.4 | //распечатать по 16 чисел в ряду |<br>
+									_._ | for(count=1;count<=ar_len;count++){printf("%5u ",ar[count]); if(count%16==0) printf("\n");} |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ==================================== Stream ========================================= -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingStream">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStream" aria-expanded="false" aria-controls="collapseStream">
+								stream |
+							</button>
+						</h2>
+						<div id="collapseStream" class="accordion-collapse collapse" aria-labelledby="headingStream" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<p>
+									1 | стандартные потоки (stream) |<br>
+									_.1 | ввод и вывод - потоки байтов с указателем текущей позиции |<br>
+									_.2 | библиотеки: io.h(дескрипторы) | stdio.h(указатели на поток) |<br>
+									_.3 | при запуске любой программы подготавливаются 3 потока: in/out/err |<br>
+									_.4 | stderr: небуферизованный | getch() |<br>
+									_.5 | stdin/stdout: строчно-буфер. | конец потока: Enter |<br>
+									<hr class="dropdown-divider">
+									2 | файловые потоки |<br>
+									_.1 | блочно-буфер. | конец потока: сектор(512 байт) или fflush |<br>
+									_.2 | бинарный | конец потока: кол-во байт |<br>
+									_.3 | текстовый | конец строки: CR(0x0D) LF(0x0A) | конец потока: Ctrl+Z(0x1A) |<br>
+									_._ | конец потока: Ctrl+Z(0x1A) |<br>
+									_.4 | создание файла -  создается struct FILE (описание в stdio.h) |<br>
+									_.5 | содержание FILE: имя файла, длина, текущая позиция,.. |<br>
+									_.6 | открытие файла - программа получает указатель на FILE |<br>
+									_.7 | закрытие файла - указатель освобождается |<br>
+									<hr class="dropdown-divider">
+									3 | FILE | test.txt |<br>
+									_.1 | FILE *fopen(filename, mode) |<br>
+									_.2 | успешно: возвращает указатель на struct | ошибка: NULL |<br>
+									_.3 | text mode: w-записать |  a-добавить |  r-прочитать | <br>
+									_.4 | binary mode: wb-записать | ab-добавить | rb-прочитать | <br>
+									_.__ | 12345-> 00110000 00111001-> 48 57-> 0 9(ASCII) |<br>
+									_.5 | произвольный доступ: w+, wb+,.. |<br>
+									_.__ |  |<br>
+									_.6 | закрыть: int fclose(FILE *fp) | успешно: 0 | ошибка: EOF |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ==================================== File ========================================= -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFile">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFile" aria-expanded="false" aria-controls="collapseFile">
+								file |
+							</button>
+						</h2>
+						<div id="collapseFile" class="accordion-collapse collapse" aria-labelledby="headingFile" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<p>
+									1 | записать текстовые данные |<br>
+									_.1 | #include &lt;stdio.h&gt; | int i, ar[SIZE]={0}; FILE* file = fopen("test.txt","wt"); |<br>
+									_._ | if (!file) { perror("test.txt"); exit(1); } //error handler |<br>
+									_._ | for(i=0;i&lt;SIZE;i++) {fprintf(file,"%d ",ar[i]); |<br>
+									_._ | if((i+1)%20==0) fprintf(file,"\n");} fclose(file); |<br>
+									<hr class="dropdown-divider">
+									2 | прочитать текстовые данные |<br>
+									_.1 | int x; FILE* file = fopen("test.txt","rt"); |<br>
+									_._ | if (!file) { perror("test.txt"); exit(1); } //error handler |<br>
+									_._ | while((x=fgetc(file))!=EOF) putchar(x); |<br>
+									_.5 | f=open("C:/avk/test/py/hi.py", "r"); | for line in f: print(line) | f.close() |<br>
+									<hr class="dropdown-divider">
+									3 | записать бинарные данные | <br>
+									_.1 | int a = 12345; FILE * fp1; fp1 = fopen("test.txt","wb"); |<br>
+									_._ | fwrite(&a, sizeof(a),1,fp1); fclose(fp1); |<br>
+									<hr class="dropdown-divider">
+									4 | прочитать бинарные данные |<br>
+									_.1 | int b; FILE * fp2; fp2 = fopen("test.txt","rb"); |<br>
+									_._ | fread(&b, sizeof(b),1,fp2); printf("%d\n",b); fclose(fp2); |<br>
+									<hr class="dropdown-divider">
+									5 | записать данные произвольно |<br>
+									_.1 | int a = 12345; FILE * fp1; fp1 = fopen("test.txt","wb+"); |<br>
+									_._ | fseek(fp1, 7, SEEK_CUR); fprintf(fp1,"%d",a); fclose(fp1); |<br>
+									<hr class="dropdown-divider">
+									6 | дописать в файл имя файла |<br>
+									_.5 | with open("C:/avk/test/py/t.py", "a") as f: f.write('\n'+f.name) |<br>
+									<hr class="dropdown-divider">
+									7 | прочитать файл csv |<br>
+									_.5 | import csv | with open('t.csv', 'r') as f: || r=csv.reader(f, delimiter=',') |<br>
+									_._ || for row in r: print(row) #['a', '7']['b', '2']['c', '8'] |<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- ==================================== Dir ========================================= -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingDir">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDir" aria-expanded="false" aria-controls="collapseDir">
+								dir |
+							</button>
+						</h2>
+						<div id="collapseDir" class="accordion-collapse collapse" aria-labelledby="headingDir" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<p>
+									1 | Получить список файлов |<br>
+									_.1 | #include &lt;dirent.h&gt; | DIR * wdir; wdir = opendir("C:/avk"); struct dirent * file; |<br>
+									_._ | while(file = readdir(wdir)){printf("%21d %s\n", telldir(wdir), file->d_name);} closedir(wdir); |<br>
+									<hr class="dropdown-divider">
+
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- ======================================== Next Item ======================================== -->
+				</div>
+			</div>	    
+		</div>
+	</div> <!-- .container end -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<!-- <script src="index/_js/bootstrap.min.js"></script> -->
+</body>
+</html>
 

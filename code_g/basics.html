@@ -337,47 +337,45 @@
 							<div id="collapseAr" class="accordion-collapse collapse" aria-labelledby="headingAr" data-bs-parent="#accordionExample">
 								<div class="accordion-body">
 									<p>
-										1 | объявить массив [7,2,8] и распечатать |<br>
-										_.1 | #define SIZE 3 | int i; int ar[SIZE]={7,2,8}; for(i=0;i&lt;SIZE;i++) printf("%d ",ar[i]); |<br>
-										_.2 | #include&lt;vector&gt; | vector&lt;int&gt; ar={7,2,8}; for(auto i:ar) cout << i <<" "; |<br>
-										_.4 | for(int x:ar) System.out.println(x); |<br>
-										_.5 | &lt;class  'list'&gt; | ar=[7,2,8]; print(ar) | проверка типа: type(ar) |<br>
-										_._ | &lt;class 'tuple'&gt; | ar=(7,2,8); print(ar) | кортеж(неизменяемый массив) |<br>
+										1 | объявить массив [7,2,8] |<br>
+										_.1 | #define SIZE 3 | int ar[SIZE]={7,2,8}; |<br>
+										_.2 | #include&lt;vector&gt; | vector&lt;int&gt; ar={7,2,8};  |<br>
+										_.3 | var ar = new int[]{7,2,8}; |<br>
+										_.5 | &lt;class  'list'&gt;: ar=[7,2,8]; | &lt;class 'tuple'&gt;: ar=(7,2,8); |<br>
 										<hr class="dropdown-divider">
-										2 | массив из последовательности (1,000 нечетных чисел) |<br>
-										_.5 | ar=[] | for x in range(1,1000,2): ar.append(x) | print(ar) #1;3;5;7;.. |<br>
+										2 | распечатать массив |<br>
+										_.1 | for(int i=0; i&lt;SIZE; i++) printf("%d ",ar[i]); |<br>
+										_.2 | for(auto i:ar) cout << i <<" "; |<br>
+										_.3 | foreach(var i in ar) Console.WriteLine(i); |<br>
+										_.5 | print(ar) |<br>
 										<hr class="dropdown-divider">
-										3 | массив из 1,000 случайных чисел от 1-100 |<br>
+										3 | массив из последовательности (1,000 нечетных чисел) |<br>
+										_.5 | ar=[] | for x in range(1,1000,2): ar.append(x) | #1;3;5;7;.. |<br>
+										<hr class="dropdown-divider">
+										4 | массив из 1,000 случайных чисел от 1-100 |<br>
 										_.1 | #include&lt;time.h&gt; | #define SIZE 1000 | int i, ar[SIZE]={0}; srand(time (NULL)); |<br>
 										_._ | for(i=0;i&lt;SIZE;i++){ar[i]=rand()%100+1; printf("%3d ", ar[i]); if((i+1)%20==0) printf("\n");} |<br>
 										_.4 | int ar[]; ar=new int[5]; for(int i=0; i&lt;ar.length;i++) ar[i]=(int)(Math.random()*10); |<br>
 										_.5 | import random | i=1; ar=[] | for x in range(1000): ar.append(i); i=random.randint(1,100) |<br>
 										_._ | == | ar = [random.randint(1,100) for x in range(1,1001)]; print(ar) |<br>
 										<hr class="dropdown-divider">
-										4 | длина массива |<br>
-										_.2 | cout << "Length = " << ar.size(); |<br>
-										_.5 | print("Length = ",len(ar)) |<br>
+										5 | длина массива |<br>
+										_._ | 2:ar.size(); | 3:ar.Length | 5:len(ar) |<br>
 										<hr class="dropdown-divider">
-										5 | сумма элементов массива |<br>
+										6 | сумма элементов массива |<br>
 										_.5 | s=sum(ar) #12 |<br>
 										_.8 | s=0; for(var i in ar)(s+=ar[i]) #12 |<br>
 										<hr class="dropdown-divider">
-										6 | min/max элемент массива |<br>
-										_.5 | m=min(ar) #1 | m=max(ar) #8 |<br>
-										_.8 | m=Math.min.apply(null,ar) #1 | m=Math.max.apply(null,ar) #8 |<br>
+										7 | min/max элемент массива |<br>
+										_.3 | m=ar.Min() | m=ar.Max() |<br>
+										_.5 | m=min(ar)  | m=max(ar)  |<br>
+										_.8 | m=Math.min.apply(null,ar) | m=Math.max.apply(null,ar) |<br>
 										<hr class="dropdown-divider">
-										7 | добавить элемент (3) в конец | [7,2,8,3] |<br>
-										_.2 | ar.push_back(3); |<br>
-										_.5 | ar.append(3); |<br>
+										8 | добавить/ удалить элемент в конце | [7,2,8,3] |<br>
+										_.2 | ar.push_back(3); | <br>
+										_.5 | ar.append(3) | x=ar.pop() |<br>
 										<hr class="dropdown-divider">
-										8 | вытащить последний элемент |<br>
-										_.5 | ar=[7,2,8,3]; x=ar.pop(); print(x,ar) #3 [7, 2, 8] |<br>
-										<hr class="dropdown-divider">
-										9 | посчитать уникальные элементы | a:2; b:1; |<br>
-										_.2 | vector&lt;string&gt; words = {"a", "b", "a"}; | map&lt;string,int&gt; unq; |<br>
-										_._ | for(const string& w:words){unq[w]++;} |<br>
-										<hr class="dropdown-divider">
-										10 | убрать последнюю запятую |<br>
+										9 | убрать последнюю запятую |<br>
 										_.1 | for(i=0;i&lt;SIZE;i++) printf("%d ",ar[i]); printf("\b\b \n"); |<br>
 										_.2 | string delm=""; for(auto i:ar){sum += delm + i; delm=", ";} |<br>
 									</p>
@@ -394,7 +392,7 @@
 							<div id="collapseAr2D" class="accordion-collapse collapse" aria-labelledby="headingAr2D" data-bs-parent="#accordionExample">
 								<div class="accordion-body">
 									<p>
-										1 | объявить массив "*" размером 31x20 | int rows = 31, elems = 20; |<br>
+										1 | объявить таблицу "*" размером 31x20 | int rows = 31, elems = 20; |<br>
 										_.2 | vector&lt;vector&lt;string&gt;&gt; table(rows); |<br>
 										_._ | for (int row = 0; row &lt; rows; row++){table[row].assign(elems, "*");} |<br>
 										_.3 | var table = new List&lt;List&lt;string&gt;&gt;(); |<br>
@@ -416,7 +414,7 @@
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingDict">
 								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDict" aria-expanded="false" aria-controls="collapseDict">
-									dict |
+									dict | unq |
 								</button>
 							</h2>
 							<div id="collapseDict" class="accordion-collapse collapse" aria-labelledby="headingDict" data-bs-parent="#accordionExample">
@@ -449,6 +447,10 @@
 										_.2 | map&lt;int,string&gt; val_key; for(auto item:dict){val_key[item.second] = item.first;} |<br>
 										<hr class="dropdown-divider">	
 										7 | подсчет кол-ва уникальных строк | a 2; b 1; c 1; |<br>
+										<hr class="dropdown-divider">
+										8 | посчитать уникальные элементы | a:2; b:1; |<br>
+										_.2 | vector&lt;string&gt; ar = { "a", "b", "a", "c" }; | map&lt;string,int&gt; dict; |<br>
+										_._ | for(const string& e:ar){dict[e]++;} |<br>
 										_.3 | var ar = new[] { "a", "b", "a", "c" }; var dict = new Dictionary&lt;string, int&gt;(); |<br>
 										_._ | foreach (var e in ar){if (!dict.ContainsKey(e)) { dict[e] = 0; } dict[e]++; } |<br>
 									</p>
